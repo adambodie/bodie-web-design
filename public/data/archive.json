@@ -166,5 +166,13 @@
     "location" : "Baltimore",
     "state" : "Maryland", 
     "week" : "December 13, 2015"
+},
+{
+    "title" : "Merry Hodag Christmas",
+    "image" : "img/hodag.jpg",
+    "description" : "And my favorite Christmas Picture...courtesy of the Hodag of Rhinelander, Wisconsin.",
+    "location" : "Rhinelander",
+    "state" : "Wisconsin", 
+    "week" : "December 20, 2015"
 }
 ]
