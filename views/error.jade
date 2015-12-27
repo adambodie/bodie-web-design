@@ -1,0 +1,11 @@
+head
+	include ./partials/_head.jade
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js") 
+	script(src="static/js/error.js")
+body
+	h1.error 404 - File Not Found
+	p.error If you've gotten to this page, either it means the page you're looking for has moved, or it doesn't exist.  
+	p.error Please take the time to read the name of the link you entered.  
+	p.error If you're still convinced the page you're looking for exists as you entered it, press the button.  Or else, go back to the previous page and try again.
+	button#report Report Me
+	img#scream(src="static/img/scream.jpg").img-responsive

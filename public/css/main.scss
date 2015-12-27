@@ -1,0 +1,223 @@
+$primary-color: #5a5a5a;
+$primary-bg-color: #CAE1FF;
+$footer-color: #9d9d9d;
+$white: white;
+$darken: darken($white, 50%);
+$raleway: 'Raleway', sans-serif;
+$fjalla:  'Fjalla One', sans-serif;
+
+@mixin gradient($color1, $color2) {
+	background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient($color1, $color2); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6 to 15 */
+   background: linear-gradient($color1, $color2); /* Standard syntax (must be last) */
+}
+
+/* MAIN.CSS
+-------------------------------------------------- */
+
+body {
+  color: $primary-color;
+  background-color: $primary-bg-color;
+  padding-bottom: 40px;
+  font-family: $raleway;
+}
+
+a:hover {
+	text-decoration: none;
+	color: lighten(black, 50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.intro {
+  padding-bottom: 30px;
+}
+
+.block {
+	display: inline-block;
+}
+
+.section-heading {
+	padding: 10px;    
+	font-weight: bold;
+}  
+
+
+/* TOPBAR STYLES
+--------------------*/
+#topbar {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 110px; 
+	z-index: 999;
+	border-bottom: 1px solid black;
+	@include gradient (black, $primary-color);
+	#navbar {
+		float: left;
+		width: 100%;
+		@include gradient(black, $primary-color);
+	}	
+	img {
+		float: left;
+		margin: 10px;
+		display: inline-block;
+	}
+	ul {	
+			padding: 0;
+			text-align: center;   	
+			height: 60px;
+			margin-top: -30px;
+			display: block;
+	}
+	li {
+		font-size: 0.8em;
+   	margin-top: 30px;
+   	padding: 10px;
+   	
+   	a {
+   		color: $white;
+			text-decoration: none;
+			&:hover {
+				color: $darken;			
+			}
+   	}
+	}
+}	
+
+
+
+/* BUTTON STYLES
+----------------------*/
+#meowButton {
+	display: block;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	margin-top: 150px;
+	padding: 10px;
+}
+
+.btn {
+	@include gradient(black, $primary-color);
+   color: $white;
+   border: 1px solid black;
+	&:hover {
+		color: $darken;	
+	}
+}
+
+
+/* PROJECT STYLES
+------------------------- */
+.container {
+	.row {
+		border-top: 1px solid $white;
+	}
+		
+	.box {
+		vertical-align: top;
+		border-top: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+ 		font-weight: normal;
+		p {
+  			margin-right: 10px;
+  			margin-left: 10px;
+  			text-align: justify;
+  			clear: both;
+  		}
+	}
+}
+
+
+
+/* FOOTER STYLES
+------------------------*/
+
+footer {
+  color: $footer-color;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  p {
+		margin-right: 10px; 
+  }
+  a {
+		color: $footer-color; 
+		&:hover {
+			text-decoration: none;
+			color: white;		
+		}
+  }
+  
+}
+
+.navbar-bottom {
+	margin-bottom: -50px;
+	border-radius: 0;
+}
+
+/* GITHUB AD STYLES
+----------------------*/
+#ad {
+  	display: none;
+}	  
+
+#close {
+  float: right;
+  color: black;
+}
+
+.btn-primary {
+	padding: 15px;
+	margin-left: 10px;
+}
+
+
+/* FEATURE PROJECT
+-------------------------*/
+#feature_project {
+	font-weight: bold;
+}
+
+#feature img {
+	border-radius: 40px;
+}
+
+#feature img:hover {
+	box-shadow: 5px 5px 10px gray;
+}
+
+/* PICTURE OF THE WEEK
+-----------------------*/
+
+#week :hover {
+	opacity: 0.7;
+   filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.error {
+	text-align: center;
+}
+
+#report {
+	background-color: $primary-color;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	color: $white;
+}
+
+@import '_about.scss';
+
+@import '_archive.scss';
+
+@import "_post.scss";
+
+@import "_query.scss";

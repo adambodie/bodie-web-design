@@ -1,0 +1,47 @@
+[
+{
+	"articles" : "grandcanyon",
+	"title" : "Adam Hits the Big 3-0",
+	"link" : "grandcanyon"
+}, 
+{
+	"articles" : "redvelvet",
+	"title" : "Jenn's Birthday",
+	"link" : "birthday"
+}, 
+{
+	"articles" : "beer",
+	"title" : "Great Breweries in Oregon",
+	"link" : "brewery"
+}, 
+{
+	"articles" : "ashland",
+	"title" : "Visit Ashland, Oregon",
+	"link" : "ashland"
+}, 
+{
+	"articles" : "fortune",
+	"title" : "Read Your Fortune Cookie",
+	"link" : "fortune"
+}, 
+{
+	"articles" : "delaware",
+	"title" : "Duck vs. Blue Hen!",
+	"link" : "battle"
+}, 
+{
+	"articles" : "compton",
+	"title" : "Compton: A Soundtrack by Dr. Dre",
+	"link" : "compton"
+},
+{
+	"articles" : "video",
+	"title" : "This is My Life",
+	"link" : "video.html"
+},
+{
+	"articles" : "small",
+	"title" : "Great Small Towns",
+	"link" : "small"
+} 
+]

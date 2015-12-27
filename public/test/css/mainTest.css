@@ -1,0 +1,61 @@
+.mainTest {
+	background-color: #CAE1FF;	
+}
+
+h1 {
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+ul {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+li {
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	font-family: 'Raleway', sans-serif;
+	margin: 10px;
+}
+
+#qunit-header {
+	background-color: #9d9d9d;
+	font-family: 'Raleway', sans-serif;
+	padding: 20px;
+	font-weight: bold;
+}
+
+#qunit-header a{
+	color: black;
+}
+
+#qunit-banner.qunit-pass {
+	background-color: #CAE1FF;
+}
+
+#qunit-testrunner-toolbar {
+	color: black;
+	font-weight: bold;
+}
+
+#qunit-userAgent {
+	padding: 20px;
+	font-size: 1.0em;
+	background-color: #9d9d9d;
+}
+
+#qunit-tests li a {
+	color: black;
+}
+span.test-name, .counts {
+	font-size: 2em;
+}
+

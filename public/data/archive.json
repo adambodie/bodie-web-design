@@ -1,0 +1,170 @@
+[
+{
+    "title" : "Buxton",
+    "image" : "img/buxton.jpg",
+    "description" : "Walking along the bridge on the Buxton Trail",
+    "location" : "Buxton",
+    "state" : "Oregon", 
+    "week" : "July 26, 2015"
+},
+{
+    "title" : "Budd Inlet",
+    "image" : "img/budd.jpg",
+    "description" : "Taking a stroll along the Budd Inlet.  Don&apos;t worry, that X won&apos;t symbolize your death like in The Departed",
+    "location" : "Olympia",
+    "state" : "Washington", 
+    "week" : "August 2, 2015"
+},
+{
+    "title" : "Netarts",
+    "image" : "img/netarts.jpg",
+    "description" : "Enjoying a nice foggy view at the Oregon Coast.",
+    "location" : "Netarts",
+    "state" : "Oregon", 
+    "week" : "August 9, 2015"
+},
+{
+    "title" : "Rowena",
+    "image" : "img/rowena.jpg",
+    "description" : "A fantastic view of Mt. Adams and the Columbia River with winds so high it will blow your hat right off!",
+    "location" : "Rowena",
+    "state" : "Oregon", 
+    "week" : "August 16, 2015"
+},
+{
+    "title" : "Overlook Park",
+    "image" : "img/overlook.jpg",
+    "description" : "Shabbat in the Park: We all Scream for Ice Cream!",
+    "location" : "Portland",
+    "state" : "Oregon", 
+    "week" : "August 23, 2015"
+},
+{
+    "title" : "St. Johns Bridge",
+    "image" : "img/stjohns.jpg",
+    "description" : "Looking up at the large and in-charge St. John&apos;s Bridge",
+    "location" : "Portland",
+    "state" : "Oregon", 
+    "week" : "August 30, 2015"
+},
+{
+    "title" : "Pipestone National Monument",
+    "image" : "img/pipestone.jpg",
+    "description" : "Throwback pic of Pipestone National Monument in Minnesota.  That was a nice trip.",
+    "location" : "Pipestone National Monument",
+    "state" : "Minnesota", 
+    "week" : "September 6, 2015"
+},
+{
+    "title" : "View of Eugene",
+    "image" : "img/eugene.jpg",
+    "description" : "Reminiscing of old times in Eugene while seeing new spots.",
+    "location" : "Eugene",
+    "state" : "Oregon", 
+    "week" : "September 13, 2015"
+},
+{
+    "title" : "Koosah Falls",
+    "image" : "img/koosah.jpg",
+    "description" : "I forgot how wonderful this picture of Koosah Falls was.  Amazing!",
+    "location" : "McKenzie River",
+    "state" : "Oregon", 
+    "week" : "September 20, 2015"
+},
+{
+    "title" : "Nashville",
+    "image" : "img/nashville.jpg",
+    "description" : "Artwork and skyscraper perfectly aligned in Nashville.  Perfect, like Marcus Mariota.",
+    "location" : "Nashville",
+    "state" : "Tennessee", 
+    "week" : "September 27, 2015"
+},
+{
+    "title" : "Medford",
+    "image" : "img/medford.jpg",
+    "description" : "A nice picture of Medford, dedicated to those affected by the tragedy at Umpqua CC.",
+    "location" : "Medford",
+    "state" : "Oregon", 
+    "week" : "October 4, 2015"
+},
+{
+    "title" : "Tilikum Crossing",
+    "image" : "img/tilikum.jpg",
+    "description" : "Tilikum Crossing: Bridge of the People.  Because the Native Chinook never drove cars.",
+    "location" : "Portland",
+    "state" : "Oregon", 
+    "week" : "October 11, 2015"
+},
+{
+    "title" : "Mt. Rushmore",
+    "image" : "img/rushmore.JPG",
+    "description" : "Mt. Rushmore, beautiful even in the the less celebrated views.",
+    "location" : "Mt. Rushmore National Monument",
+    "state" : "South Dakota", 
+    "week" : "October 18, 2015"
+},
+{
+    "title" : "Ashwaubenon",
+    "image" : "img/ashwaubenon.jpg",
+    "description" : "Ashwaubenon, WI: Where I once sneaked into someone&apos;s yard to take this picture of the Fox River sunrise.  Strange but true!",
+    "location" : "Ashwaubenon",
+    "state" : "Wisconsin", 
+    "week" : "October 25, 2015"
+},
+{
+    "title" : "Halloween 2015",
+    "image" : "img/halloween.jpg",
+    "description" : "Happy Halloween! My 2015 costume: A Rastafarian with a triple-chin.",
+    "location" : "Beaverton",
+    "state" : "Oregon", 
+    "week" : "November 1, 2015"
+},
+{
+    "title" : "Boston",
+    "image" : "img/boston.JPG",
+    "description" : "I wish I was in Boston.  Lucky for those who are there.",
+    "location" : "Boston",
+    "state" : "Massachusetts", 
+    "week" : "November 8, 2015"
+},
+{
+    "title" : "Portland Prays for Paris",
+    "image" : "img/paris.jpg",
+    "description" : "Pray for Paris, Sincerely: Portland.",
+    "location" : "Portland",
+    "state" : "Oregon", 
+    "week" : "November 15, 2015"
+},
+{
+    "title" : "Monterosso al Mare",
+    "image" : "img/monterosso.JPG",
+    "description" : "Monterosso al Mare, a beautiful spot along Italy&apos;s famed Cinque Terre.",
+    "location" : "Monterosso al Mare",
+    "state" : "Italy", 
+    "week" : "November 22, 2015"
+},
+{
+    "title" : "Duluth",
+    "image" : "img/duluth.jpg",
+    "description" : "Seeing commercials for Duluth Trading underwear made me think of my trip to Duluth, Minnesota.",
+    "location" : "Duluth",
+    "state" : "Minnesota", 
+    "week" : "November 29, 2015"
+},
+{
+    "title" : "John Day Fossil Beds",
+    "image" : "img/hay.jpg",
+    "description" : "Sometimes the simple things in life are fascinating.",
+    "location" : "John Day Fossil Beds",
+    "state" : "Oregon", 
+    "week" : "December 6, 2015"
+},
+{
+    "title" : "Happy Hanukkah",
+    "image" : "img/hanukkah.jpg",
+    "description" : "Best Hanukkah Picture Ever...Happy Hanukkah!!!",
+    "location" : "Baltimore",
+    "state" : "Maryland", 
+    "week" : "December 13, 2015"
+}
+]

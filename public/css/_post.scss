@@ -1,0 +1,64 @@
+/* POST CSS
+------------------------------*/
+.article {
+	.image {
+		width: 50%;
+		height: 50%;
+		padding: 20px;
+	   float: left;
+	}
+}
+.back {
+	font-weight: bold;
+	color: lighten(black, 20%);
+	font-size: 2em;
+
+}
+
+/* BLOG POST CSS
+-----------------------*/
+
+.post {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.post h2 {
+	font-weight: bold;
+}
+
+.author {
+	text-align: right;
+}
+
+.article {
+	text-indent: 4em;
+}
+
+.preview {
+	white-space: nowrap; 
+   overflow: hidden;
+   text-overflow: ellipsis;
+   margin-bottom: 20px;
+}
+
+.article-preview {
+	padding: 20px;
+}
+
+.blog-button {
+	width: 40%;
+	margin-bottom: 20px;
+}
+
+.col-md-8 {
+	a {
+		color: $primary-color;		
+		font-size: 1.2em;
+		font-weight: bold;
+		font-weight: bold;
+		&:hover {
+			color: $darken;		
+		}
+	}
+}
