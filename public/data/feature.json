@@ -1,8 +1,14 @@
 [
 {
+	"articles" : "nfl",
+	"title" : "NFL Passer Rating",
+	"link" : "nfl-passer-rating"
+}, 
+
+{
 	"articles" : "grandcanyon",
 	"title" : "Adam Hits the Big 3-0",
-	"link" : "grandcanyon"
+	"link" : "Grand-Canyon"
 }, 
 {
 	"articles" : "redvelvet",
@@ -12,17 +18,17 @@
 {
 	"articles" : "beer",
 	"title" : "Great Breweries in Oregon",
-	"link" : "brewery"
+	"link" : "Brewery"
 }, 
 {
 	"articles" : "ashland",
 	"title" : "Visit Ashland, Oregon",
-	"link" : "ashland"
+	"link" : "Ashland"
 }, 
 {
 	"articles" : "fortune",
 	"title" : "Read Your Fortune Cookie",
-	"link" : "fortune"
+	"link" : "Fortune-Cookie"
 }, 
 {
 	"articles" : "delaware",
@@ -32,7 +38,7 @@
 {
 	"articles" : "compton",
 	"title" : "Compton: A Soundtrack by Dr. Dre",
-	"link" : "compton"
+	"link" : "Compton"
 },
 {
 	"articles" : "video",
@@ -42,6 +48,6 @@
 {
 	"articles" : "small",
 	"title" : "Great Small Towns",
-	"link" : "small"
+	"link" : "Small-Towns"
 } 
 ]

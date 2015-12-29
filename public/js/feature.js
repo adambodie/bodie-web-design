@@ -16,7 +16,7 @@
 	function myFunction(arr) {
 		var feattxt = "";
 		var random = Math.floor(Math.random() * arr.length);
-      feattxt += "<a href='projects/" + arr[random].link 
+      feattxt += "<a href='http://aduo3000.github.io/" + arr[random].link 
 		feattxt += "'><img src='static/img/" + arr[random].articles 
 		feattxt += ".jpg' class='img-responsive center-block'></a>"
 		feattxt += "<h3 style='text-align: center'>" 

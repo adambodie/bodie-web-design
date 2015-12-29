@@ -3,12 +3,13 @@
 }
 
 h1 {
+	background-color: #9d9d9d;
 	font-family: 'Raleway', sans-serif;
-	text-align: center;
+	padding: 20px;
+	font-weight: bold;
 }
 a {
 	text-decoration: none;
-	font-size: 1.5em;
 	font-family: 'Raleway', sans-serif;
 	color: black;
 }
@@ -16,14 +17,14 @@ ul {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
 }
 li {
 	list-style: none;
-	display: inline-block;
-	padding: 20px;
+	padding: 5px;
 	font-family: 'Raleway', sans-serif;
-	margin: 10px;
+}
+a:hover {
+	color: gray;
 }
 
 #qunit-header {

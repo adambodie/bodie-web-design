@@ -1,8 +1,9 @@
 var date = [
-{id: "daysAgo", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo', updateYear: 2015, updateMonth: 9, updateDay: 9 },
+{id: "daysAgo", year: 2014, month: 8, day: 14, updateId: 'updateDaysAgo1', updateYear: 2014, updateMonth: 8, updateDay: 14 },
+{id: "daysAgo1", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo1', updateYear: 2015, updateMonth: 9, updateDay: 9 },
 {id: "daysAgo2", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo2', updateYear: 2015, updateMonth: 6, updateDay: 11 },
 {id: "daysAgo3", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo3', updateYear: 2015, updateMonth: 6, updateDay: 11 },
-{id: "daysAgo4", year: 2015, month: 6, day: 12, updateId: 'updateDaysAgo4', updateYear: 2015, updateMonth: 6, updateDay: 12 },
+{id: "daysAgo4", year: 2015, month: 6, day: 12, updateId: 'updateDaysAgo4', updateYear: 2015, updateMonth: 11, updateDay: 26 },
 {id: "daysAgo5", year: 2015, month: 6, day: 17, updateId: 'updateDaysAgo5', updateYear: 2015, updateMonth: 10, updateDay: 11 },
 {id: "daysAgo6", year: 2015, month: 6, day: 25, updateId: 'updateDaysAgo6', updateYear: 2015, updateMonth: 6, updateDay: 25 },
 {id: "daysAgo7", year: 2015, month: 7, day: 8, updateId: 'updateDaysAgo7', updateYear: 2015, updateMonth: 7, updateDay: 8 },

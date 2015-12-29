@@ -41,6 +41,10 @@ function howManyDaysAgo (years, months, days, current) {
     if (daysAgo > 0 && daysAgo <=1) {
         var ago = " day ago.";
         return Math.round(daysAgo) + ago;
+    }
+    if (daysAgo == 0) {
+		  var ago = " days ago.";
+        return Math.round(daysAgo) + ago;     
     } 
     if (daysAgo < 0) {
         return undefined;
