@@ -1,5 +1,5 @@
 var date = [
-{id: "daysAgo", year: 2014, month: 8, day: 14, updateId: 'updateDaysAgo1', updateYear: 2014, updateMonth: 8, updateDay: 14 },
+{id: "daysAgo", year: 2014, month: 8, day: 14, updateId: 'updateDaysAgo', updateYear: 2014, updateMonth: 8, updateDay: 14 },
 {id: "daysAgo1", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo1', updateYear: 2015, updateMonth: 9, updateDay: 9 },
 {id: "daysAgo2", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo2', updateYear: 2015, updateMonth: 6, updateDay: 11 },
 {id: "daysAgo3", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo3', updateYear: 2015, updateMonth: 6, updateDay: 11 },

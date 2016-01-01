@@ -2,8 +2,8 @@ $(document).ready(function(){
 	$("#meowButton").click(function(){
 		$( "body" ).add().css( "background-color", "#EB1F22").css( "color", "#A0C5BE"); 
 		$( ".navbar-brand").replaceWith("<a class='navbar-brand' href='#'>Bodie Meow Design</a>");
-		for (var i = 0; i < 9; i ++) {
-				$( ".links" ).eq(i).replaceWith("<img class='links' src='static/img/cat" + (i+1) + ".jpg' alt='Meooooowwwww!'>   ");
+		for (var i = 0; i < 10; i ++) {
+				$( ".links" ).eq(i).replaceWith("<div class= 'box block col-sm-6 links'><img src='static/img/cat" + (i+1) + ".jpg' width='400' height='300' alt='Meooooowwwww!' class='img-responsive'></div>   ");
 		};
 		$( "#week" ).replaceWith("<div id='week'><div class='box block col-md-6'>" +
 		   "<a href='https://www.youtube.com/watch?t=119&v=KEgoBOZ9cug'>" +
