@@ -174,5 +174,13 @@
     "location" : "Rhinelander",
     "state" : "Wisconsin", 
     "week" : "December 20, 2015"
+},
+{
+    "title" : "Grand Canyon Birthday",
+    "image" : "img/sunset.jpg",
+    "description" : "Ending 2015 with my highlight, my 30th Birthday at the Grand Canyon!!!",
+    "location" : "Grand Canyon National Park",
+    "state" : "Arizona", 
+    "week" : "December 27, 2015"
 }
 ]
