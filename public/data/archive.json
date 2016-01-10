@@ -182,5 +182,13 @@
     "location" : "Grand Canyon National Park",
     "state" : "Arizona", 
     "week" : "December 27, 2015"
+},
+{
+    "title" : "Portland, Oregon",
+    "image" : "img/portland.jpg",
+    "description" : "Beginning the New Year in Portland, my hometown.",
+    "location" : "Portland",
+    "state" : "Oregon", 
+    "week" : "January 3, 2016"
 }
 ]
