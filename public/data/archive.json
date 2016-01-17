@@ -190,5 +190,13 @@
     "location" : "Portland",
     "state" : "Oregon", 
     "week" : "January 3, 2016"
+},
+{
+    "title" : "My Selfie with Abraham Lincoln",
+    "image" : "img/lincoln.jpg",
+    "description" : "My selfie with Abraham Lincoln.  Sweet!",
+    "location" : "Springfield",
+    "state" : "Illinois", 
+    "week" : "January 10, 2016"
 }
 ]
