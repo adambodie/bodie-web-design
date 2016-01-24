@@ -198,5 +198,13 @@
     "location" : "Springfield",
     "state" : "Illinois", 
     "week" : "January 10, 2016"
+}, 
+{
+    "title" : "The Winter Carnival",
+    "image" : "img/winter.jpg",
+    "description" : "Nothing says &apos;I love Winter&apos; more than a Winter Carnival",
+    "location" : "St. Paul",
+    "state" : "Minnesota", 
+    "week" : "January 17, 2016"
 }
 ]
