@@ -206,5 +206,13 @@
     "location" : "St. Paul",
     "state" : "Minnesota", 
     "week" : "January 17, 2016"
+},
+{
+    "title" : "Cholla Cacti at Joshua Tree",
+    "image" : "img/joshua.jpg",
+    "description" : "The opposite of a massive Winter Storm...a hot dry desert with little water.",
+    "location" : "Joshua Tree National Park",
+    "state" : "California", 
+    "week" : "January 24, 2016"
 }
 ]
