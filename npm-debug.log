@@ -11,10 +11,10 @@
 10 verbose lifecycle bodie@0.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/aduo3000/bodie/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/aduo3000/.rvm/bin:/home/aduo3000/.rvm/bin
 11 verbose lifecycle bodie@0.0.0~start: CWD: /home/aduo3000/bodie
 12 silly lifecycle bodie@0.0.0~start: Args: [ '-c', 'node ./bin/www' ]
-13 silly lifecycle bodie@0.0.0~start: Returned: code: 8  signal: null
+13 silly lifecycle bodie@0.0.0~start: Returned: code: 1  signal: null
 14 info lifecycle bodie@0.0.0~start: Failed to exec start script
 15 verbose stack Error: bodie@0.0.0 start: `node ./bin/www`
-15 verbose stack Exit status 8
+15 verbose stack Exit status 1
 15 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
 15 verbose stack     at EventEmitter.emit (events.js:98:17)
 15 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/lib/utils/spawn.js:24:14)
@@ -29,7 +29,7 @@
 21 error npm  v3.3.5
 22 error code ELIFECYCLE
 23 error bodie@0.0.0 start: `node ./bin/www`
-23 error Exit status 8
+23 error Exit status 1
 24 error Failed at the bodie@0.0.0 start script 'node ./bin/www'.
 24 error This is most likely a problem with the bodie package,
 24 error not with npm itself.
