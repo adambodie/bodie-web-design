@@ -214,5 +214,13 @@
     "location" : "Joshua Tree National Park",
     "state" : "California", 
     "week" : "January 24, 2016"
+},
+{
+    "title" : "Mt. Adams",
+    "image" : "img/adams.jpg",
+    "description" : "A beautiful shot of my mountain, Mt. Adams.",
+    "location" : "Trout Lake",
+    "state" : "Washington", 
+    "week" : "January 31, 2016"
 }
 ]
