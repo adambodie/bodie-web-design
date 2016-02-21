@@ -230,5 +230,13 @@
     "location" : "Yellowstone National Park",
     "state" : "Wyoming", 
     "week" : "February 7, 2016"
+},
+{
+    "title" : "The magnificent Oneonta Gorge",
+    "image" : "img/oneonta.jpg",
+    "description" : "The Magnificent Oneonta Gorge, even in Black & White",
+    "location" : "Oneonta Gorge",
+    "state" : "Oregon", 
+    "week" : "February 14, 2016"
 }
 ]
