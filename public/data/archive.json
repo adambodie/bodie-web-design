@@ -238,5 +238,13 @@
     "location" : "Oneonta Gorge",
     "state" : "Oregon", 
     "week" : "February 14, 2016"
+},
+{
+    "title" : "Humuhumunukunukuapua'a Wai'anapanapa",
+    "image" : "img/hawaii.jpg",
+    "description" : "Looking outside my window makes me want to go to the beautiful tropical Hawaii",
+    "location" : "Wai'anapanapa State Park",
+    "state" : "Hawaii", 
+    "week" : "February 21, 2016"
 }
 ]
