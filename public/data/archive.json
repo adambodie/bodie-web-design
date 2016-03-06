@@ -246,5 +246,13 @@
     "location" : "Wai'anapanapa State Park",
     "state" : "Hawaii", 
     "week" : "February 21, 2016"
+},
+{
+    "title" : "The Great UFO Mystery at St. Mark's Basilica",
+    "image" : "img/venice.jpg",
+    "description" : "The great unsolved mystery of the UFO I saw at St. Mark&apos;s Basilica.",
+    "location" : "Venice",
+    "state" : "Italy", 
+    "week" : "February 28, 2016"
 }
 ]
