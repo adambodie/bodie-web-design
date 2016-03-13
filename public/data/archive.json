@@ -254,5 +254,13 @@
     "location" : "Venice",
     "state" : "Italy", 
     "week" : "February 28, 2016"
+},
+{
+    "title" : "Rainbow at Work",
+    "image" : "img/rainbow.jpg",
+    "description" : "Sometimes it&apos;s good to be in the right place at the right time.",
+    "location" : "Beaverton",
+    "state" : "Oregon", 
+    "week" : "March 6, 2016"
 }
 ]
