@@ -262,5 +262,13 @@
     "location" : "Beaverton",
     "state" : "Oregon", 
     "week" : "March 6, 2016"
+},
+{
+    "title" : "My Dad's Blue Picture of Dutch Harbor",
+    "image" : "img/blue.jpg",
+    "description" : "My Dad took this picture in Dutch Harbor: I&apos;d feel blue too being here.",
+    "location" : "Dutch Harbor",
+    "state" : "Alaska", 
+    "week" : "March 13, 2016"
 }
 ]
