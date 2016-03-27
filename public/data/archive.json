@@ -270,5 +270,13 @@
     "location" : "Dutch Harbor",
     "state" : "Alaska", 
     "week" : "March 13, 2016"
+},
+{
+    "title" : "Amazing Palouse Falls, I apologize for nothing.",
+    "image" : "img/palouse.jpg",
+    "description" : "Amazing Palouse Falls, I apologize for nothing.",
+    "location" : "Palouse Falls State Park",
+    "state" : "Washington", 
+    "week" : "March 20, 2016"
 }
 ]
