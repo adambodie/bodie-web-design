@@ -278,5 +278,13 @@
     "location" : "Palouse Falls State Park",
     "state" : "Washington", 
     "week" : "March 20, 2016"
+},
+{
+    "title" : "Our cherry blossoms are better than D.C.'s.",
+    "image" : "img/salem.jpg",
+    "description" : "Our cherry blossoms are better than D.C.'s.",
+    "location" : "Salem",
+    "state" : "Oregon", 
+    "week" : "March 27, 2016"
 }
 ]
