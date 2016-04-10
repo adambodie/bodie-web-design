@@ -286,5 +286,13 @@
     "location" : "Salem",
     "state" : "Oregon", 
     "week" : "March 27, 2016"
+},
+{
+    "title" : "Cloud Gate",
+    "image" : "img/cloudgate.jpg",
+    "description" : "Nothing says amazing more than Chicago's Cloud Gate.",
+    "location" : "Chicago",
+    "state" : "Illinois", 
+    "week" : "April 3, 2016"
 }
 ]
