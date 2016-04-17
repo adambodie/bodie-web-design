@@ -59,6 +59,11 @@
 	"articles" : "walla-walla",
 	"title" : "Adam's Wonderful Wild Weekend in Walla Walla Washington",
 	"link" : "Walla-Walla"
+},
+{
+	"articles" : "artshowcase",
+	"title" : "Adam's Art Showcase",
+	"link" : "adamsartshowcase"
 } 
  
 ]
