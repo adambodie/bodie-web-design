@@ -294,5 +294,13 @@
     "location" : "Chicago",
     "state" : "Illinois", 
     "week" : "April 3, 2016"
+},
+{
+    "title" : "Kites at Seaside",
+    "image" : "img/seaside.jpg",
+    "description" : "Having an adventure when you least expect it makes it even better!",
+    "location" : "Seaside",
+    "state" : "Oregon", 
+    "week" : "April 10, 2016"
 }
 ]
