@@ -302,5 +302,13 @@
     "location" : "Seaside",
     "state" : "Oregon", 
     "week" : "April 10, 2016"
+},
+{
+    "title" : "Vítejte na krásné Praze, v České republice!",
+    "image" : "img/prague.jpg",
+    "description" : "Vítejte na krásné Praze, v České republice!",
+    "location" : "Prague",
+    "state" : "Czech Republic", 
+    "week" : "April 10, 2016"
 }
 ]
