@@ -1,10 +1,8 @@
-/*$primary-color: #5a5a5a;
-$primary-bg-color: #CAE1FF;*/
 /* MAIN.CSS
 -------------------------------------------------- */
 body {
-  color: white;
-  background-color: purple;
+  color: #5a5a5a;
+  background-color: #CAE1FF;
   padding-bottom: 40px;
   font-family: "Raleway", sans-serif; }
 
@@ -35,24 +33,24 @@ h1 {
   height: 110px;
   z-index: 999;
   border-bottom: 1px solid black;
-  background: -webkit-linear-gradient(black, white);
+  background: -webkit-linear-gradient(black, #5a5a5a);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, white);
+  background: -o-linear-gradient(black, #5a5a5a);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, white);
+  background: -moz-linear-gradient(black, #5a5a5a);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, white);
+  background: linear-gradient(black, #5a5a5a);
   /* Standard syntax (must be last) */ }
   #topbar #navbar {
     float: left;
     width: 100%;
-    background: -webkit-linear-gradient(black, white);
+    background: -webkit-linear-gradient(black, #5a5a5a);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(black, white);
+    background: -o-linear-gradient(black, #5a5a5a);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(black, white);
+    background: -moz-linear-gradient(black, #5a5a5a);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(black, white);
+    background: linear-gradient(black, #5a5a5a);
     /* Standard syntax (must be last) */ }
   #topbar img {
     float: left;
@@ -86,13 +84,13 @@ h1 {
   padding: 10px; }
 
 .btn {
-  background: -webkit-linear-gradient(black, white);
+  background: -webkit-linear-gradient(black, #5a5a5a);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(black, white);
+  background: -o-linear-gradient(black, #5a5a5a);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(black, white);
+  background: -moz-linear-gradient(black, #5a5a5a);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(black, white);
+  background: linear-gradient(black, #5a5a5a);
   /* Standard syntax (must be last) */
   color: white;
   border: 1px solid black; }
@@ -169,7 +167,7 @@ footer {
   text-align: center; }
 
 #report {
-  background-color: white;
+  background-color: #5a5a5a;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -182,7 +180,7 @@ footer {
   text-align: left; }
 
 h4 a {
-  color: white; }
+  color: #5a5a5a; }
 
 h4:hover {
   color: gray;
@@ -200,7 +198,7 @@ h3 {
   list-style: none;
   font-size: 2em;
   font-weight: bold;
-  color: white;
+  color: #5a5a5a;
   text-align: left; }
   .news li:hover {
     color: gray; }
@@ -276,7 +274,7 @@ h3 {
 }*/
 #pictureArchive {
   margin-top: 20px;
-  color: white;
+  color: #5a5a5a;
   text-align: center; }
 
 /* IMAGE LIGHTBOX STYLES 
@@ -309,7 +307,7 @@ h3 {
   height: 2.5em;
   /* 40 */
   text-align: left;
-  background-color: white;
+  background-color: #5a5a5a;
   position: fixed;
   z-index: 10002;
   top: 2.5em;
@@ -424,7 +422,7 @@ h3 {
   margin-bottom: 20px; }
 
 .col-md-8 a {
-  color: white;
+  color: #5a5a5a;
   font-size: 1.2em;
   font-weight: bold;
   font-weight: bold; }
