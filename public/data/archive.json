@@ -310,5 +310,13 @@
     "location" : "Prague",
     "state" : "Czech Republic", 
     "week" : "April 10, 2016"
+},
+{
+    "title" : "R.I.P. Prince",
+    "image" : "img/first-avenue.jpg",
+    "description" : "R.I.P. Prince",
+    "location" : "Minneapolis",
+    "state" : "Minnesota", 
+    "week" : "April 10, 2016"
 }
 ]
