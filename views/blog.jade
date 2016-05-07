@@ -1,0 +1,19 @@
+extends ./layout
+
+block content
+
+    for post in posts
+        section.post
+          .container
+            .row
+              .col-lg-8.col-lg-offset-2
+                  .article-preview
+                    h2.section-heading.text-center #{post.title}
+                    p.author by Adam Bodie
+                    p #{post.date}
+                    .col-md-8
+                        p.text-faded.block #{post.description[0].paragraph}
+                        a(href='/blog/' + post.title).read-more Read more!
+                    .col-md-4
+                        img.block(src="#{post.image[0].name}" style="width: 100%; height: 100%")
+                    

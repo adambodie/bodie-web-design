@@ -35,28 +35,29 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/', tests);
 
--app.get('/blog/:title?', function(req, res) {
- -	var path = req.path;
- -	res.locals.path = path;
- -
- -	var title = req.params.title;
- -	if (title === undefined) {
- -		res.status(503);
- -		res.render('blog', {title: bodie + "Blog", posts: postsLists});
- -	} else {
- -		var post = posts[title] || {};
- -		res.render('post', {title: bodie + "Blog", post :post});
- -	}
- -});
- -
- -app.get('/posts', function(req, res) {
- -	if (req.query.raw) {
- -		res.json(posts);
- -	} else {
- -		res.json(postsLists);
- -	}
- -});
- -
+
+app.get('/blog/:title?', function(req, res) {
+	var path = req.path;
+	res.locals.path = path;
+
+	var title = req.params.title;
+	if (title === undefined) {
+		res.status(503);
+		res.render('blog', {title: bodie + "Blog", posts: postsLists});
+	} else {
+		var post = posts[title] || {};
+		res.render('post', {title: bodie + "Blog", post :post});
+	}
+});
+
+app.get('/posts', function(req, res) {
+	if (req.query.raw) {
+		res.json(posts);
+	} else {
+		res.json(postsLists);
+	}
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
