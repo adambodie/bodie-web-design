@@ -309,7 +309,7 @@
     "description" : "Vítejte na krásné Praze, v České republice!",
     "location" : "Prague",
     "state" : "Czech Republic", 
-    "week" : "April 10, 2016"
+    "week" : "April 17, 2016"
 },
 {
     "title" : "R.I.P. Prince",
@@ -317,6 +317,14 @@
     "description" : "R.I.P. Prince",
     "location" : "Minneapolis",
     "state" : "Minnesota", 
-    "week" : "April 17, 2016"
+    "week" : "April 24, 2016"
+},
+{
+    "title" : "Two dogs out for a race enjoying life, the way it should be",
+    "image" : "img/dogs.jpg",
+    "description" : "Two dogs out for a race enjoying life, the way it should be",
+    "location" : "Hood River",
+    "state" : "Oregon", 
+    "week" : "May 1, 2016"
 }
 ]
