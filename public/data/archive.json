@@ -326,5 +326,13 @@
     "location" : "Hood River",
     "state" : "Oregon", 
     "week" : "May 1, 2016"
+},
+{
+    "title" : "My birthday present eight years ago: A trip to Denver, fun times!",
+    "image" : "img/denver.jpg",
+    "description" : "My birthday present eight years ago: A trip to Denver, fun times!",
+    "location" : "Denver",
+    "state" : "Colorado", 
+    "week" : "May 8, 2016"
 }
 ]
