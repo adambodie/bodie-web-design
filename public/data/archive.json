@@ -334,5 +334,13 @@
     "location" : "Denver",
     "state" : "Colorado", 
     "week" : "May 8, 2016"
+},
+{
+    "title" : "The Gateway Arch: How something so simple can be so Perfect.",
+    "image" : "img/gateway.jpg",
+    "description" : "The Gateway Arch: How something so simple can be so Perfect.",
+    "location" : "St. Louis",
+    "state" : "Missouri", 
+    "week" : "May 15, 2016"
 }
 ]
