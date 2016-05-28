@@ -42,9 +42,9 @@ function howManyDaysAgo (years, months, days, current) {
         var ago = " day ago.";
         return Math.round(daysAgo) + ago;
     }
-    if (daysAgo == 0) {
+    if (daysAgo < 1) {
 		  var ago = " days ago.";
-        return Math.round(daysAgo) + ago;     
+        return "Today";     
     } 
     if (daysAgo < 0) {
         return undefined;
