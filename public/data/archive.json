@@ -342,5 +342,13 @@
     "location" : "St. Louis",
     "state" : "Missouri", 
     "week" : "May 15, 2016"
+},
+{
+    "title" : "To help a friend who needs cheering up: A nice picture of a beach in the best place for beaches, Maui..",
+    "image" : "img/lahaina.jpg",
+    "description" : "To help a friend who needs cheering up: A nice picture of a beach in the best place for beaches, Maui.",
+    "location" : "Lahaina",
+    "state" : "Hawaii", 
+    "week" : "May 22, 2016"
 }
 ]
