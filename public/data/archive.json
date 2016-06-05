@@ -350,5 +350,13 @@
     "location" : "Lahaina",
     "state" : "Hawaii", 
     "week" : "May 22, 2016"
+},
+{
+    "title" : "Look Mom!  I made it to the top of the Monkey Face...I wish.",
+    "image" : "img/monkey.jpg",
+    "description" : "Look Mom!  I made it to the top of the Monkey Face...I wish.",
+    "location" : "Smith Rock State Park",
+    "state" : "Oregon", 
+    "week" : "May 29, 2016"
 }
 ]
