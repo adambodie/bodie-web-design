@@ -280,9 +280,9 @@
     "week" : "March 20, 2016"
 },
 {
-    "title" : "Our cherry blossoms are better than D.C.'s.",
+    "title" : "Our cherry blossoms are better than D.C.&apos;s.",
     "image" : "img/salem.jpg",
-    "description" : "Our cherry blossoms are better than D.C.'s.",
+    "description" : "Our cherry blossoms are better than D.C.&apos;s.",
     "location" : "Salem",
     "state" : "Oregon", 
     "week" : "March 27, 2016"
@@ -358,5 +358,13 @@
     "location" : "Smith Rock State Park",
     "state" : "Oregon", 
     "week" : "May 29, 2016"
+},
+{
+    "title" : "To honor a friend who&apos;s living life happy and free as he should.  I&apos;m proud.",
+    "image" : "img/moscone.jpg",
+    "description" : "To honor a friend who&apos;s living life happy and free as he should.  I&apos;m proud.",
+    "location" : "San Francisco",
+    "state" : "California", 
+    "week" : "June 5, 2016"
 }
 ]
