@@ -366,5 +366,13 @@
     "location" : "San Francisco",
     "state" : "California", 
     "week" : "June 5, 2016"
+},
+{
+    "title" : "What happens in the middle of nowhere, stays in the middle of nowhere.",
+    "image" : "img/nowhere.jpg",
+    "description" : "What happens in the middle of nowhere, stays in the middle of nowhere.",
+    "location" : "Wheeler County",
+    "state" : "Oregon", 
+    "week" : "June 12, 2016"
 }
 ]

@@ -214,6 +214,11 @@ footer {
 	color: $white;
 }
 
+.special img {
+    display: inline-block;
+    max-width: 25%;
+}
+
 @import '_about.scss';
 
 @import '_archive.scss';
