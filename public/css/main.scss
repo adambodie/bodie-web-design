@@ -93,15 +93,6 @@ h1 {
 
 /* BUTTON STYLES
 ----------------------*/
-#meowButton {
-	display: block;
-	max-width: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	border-radius: 5px;
-	margin-top: 150px;
-	padding: 10px;
-}
 
 .btn {
 	@include gradient(black, $primary-color);
@@ -112,6 +103,26 @@ h1 {
 	}
 }
 
+
+/* UPDATE STYLES
+-----------------*/
+#update {
+	text-align: left;
+	font-weight: bold;
+	margin-left: 50px;	
+}
+.update {
+	margin-left: 100px;
+	li {
+    	list-style: none;
+    	font-size: 1.2em;
+    	color: $primary-color;
+    	text-align: left;
+    	&:hover {
+			color: $darken;    	
+    	}
+	}
+}
 
 /* PROJECT STYLES
 ------------------------- */
@@ -214,10 +225,6 @@ footer {
 	color: $white;
 }
 
-.special img {
-    display: inline-block;
-    max-width: 25%;
-}
 
 @import '_about.scss';
 

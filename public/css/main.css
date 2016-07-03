@@ -74,15 +74,6 @@ h1 {
 
 /* BUTTON STYLES
 ----------------------*/
-#meowButton {
-  display: block;
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  margin-top: 150px;
-  padding: 10px; }
-
 .btn {
   background: -webkit-linear-gradient(black, #5a5a5a);
   /* For Safari 5.1 to 6.0 */
@@ -96,6 +87,23 @@ h1 {
   border: 1px solid black; }
   .btn:hover {
     color: gray; }
+
+/* UPDATE STYLES
+-----------------*/
+#update {
+  text-align: left;
+  font-weight: bold;
+  margin-left: 50px; }
+
+.update {
+  margin-left: 100px; }
+  .update li {
+    list-style: none;
+    font-size: 1.2em;
+    color: #5a5a5a;
+    text-align: left; }
+    .update li:hover {
+      color: gray; }
 
 /* PROJECT STYLES
 ------------------------- */
@@ -173,10 +181,6 @@ footer {
   margin-right: auto;
   padding: 20px;
   color: white; }
-
-.special img {
-  display: inline-block;
-  max-width: 25%; }
 
 /* ABOUT.CSS
 ----------------------------------------------*/
