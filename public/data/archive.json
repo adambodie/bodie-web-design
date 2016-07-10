@@ -390,5 +390,13 @@
     "location" : "Las Vegas",
     "state" : "Nevada", 
     "week" : "June 26, 2016"
+},
+{
+    "title" : "Happy 4th of July, from someone who loves America!",
+    "image" : "img/white-house.jpg",
+    "description" : "Happy 4th of July, from someone who loves America!",
+    "location" : "Washington",
+    "state" : "D.C.", 
+    "week" : "July 3, 2016"
 }
 ]
