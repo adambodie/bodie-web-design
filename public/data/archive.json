@@ -398,5 +398,13 @@
     "location" : "Washington",
     "state" : "D.C.", 
     "week" : "July 3, 2016"
+},
+{
+    "title" : "Rule Number 1 for a Successful Roadtrip, Make sure your car is in good shape.  Learned that in Alabama.",
+    "image" : "img/cathedral-cavern.jpg",
+    "description" : "Rule Number 1 for a Successful Roadtrip, Make sure your car is in good shape.  Learned that in Alabama.",
+    "location" : "Cathedral Caverns State Park",
+    "state" : "Alabama", 
+    "week" : "July 10, 2016"
 }
 ]
