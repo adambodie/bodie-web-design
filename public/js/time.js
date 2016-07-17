@@ -11,7 +11,8 @@ var date = [
 {id: "daysAgo9", year: 2015, month: 8, day: 7, updateId: 'updateDaysAgo9', updateYear: 2015, updateMonth: 8, updateDay: 19 },
 {id: "daysAgo10", year: 2016, month: 2, day: 13, updateId: 'updateDaysAgo10', updateYear: 2016, updateMonth: 5, updateDay: 22 },
 {id: "daysAgo11", year: 2016, month: 2, day: 24, updateId: 'updateDaysAgo11', updateYear: 2016, updateMonth: 2, updateDay: 24 },
-{id: "daysAgo12", year: 2016, month: 3, day: 16, updateId: 'updateDaysAgo12', updateYear: 2016, updateMonth: 3, updateDay: 16 }
+{id: "daysAgo12", year: 2016, month: 3, day: 16, updateId: 'updateDaysAgo12', updateYear: 2016, updateMonth: 3, updateDay: 16 },
+{id: "daysAgo13", year: 2016, month: 6, day: 17, updateId: 'updateDaysAgo13', updateYear: 2016, updateMonth: 6, updateDay: 17 }
 ]
 
 var current = new Date();
