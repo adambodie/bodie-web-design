@@ -406,5 +406,13 @@
     "location" : "Cathedral Caverns State Park",
     "state" : "Alabama", 
     "week" : "July 10, 2016"
+},
+{
+    "title" : "The Future for me started in 2005 at the Ars Electronica Center in Linz, Austria",
+    "image" : "img/ars.jpg",
+    "description" : "The Future for me started in 2005 at the Ars Electronica Center in Linz, Austria",
+    "location" : "Linz",
+    "state" : "Austria", 
+    "week" : "July 17, 2016"
 }
 ]
