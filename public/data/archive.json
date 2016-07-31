@@ -414,5 +414,12 @@
     "location" : "Linz",
     "state" : "Austria", 
     "week" : "July 17, 2016"
+},{
+    "title" : "The Higher the Better: The Story of My Trip to Reno",
+    "image" : "img/reno.jpg",
+    "description" : "The Higher the Better: The Story of My Trip to Reno",
+    "location" : "Reno",
+    "state" : "Nevada", 
+    "week" : "July 24, 2016"
 }
 ]
