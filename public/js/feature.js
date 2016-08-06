@@ -16,7 +16,7 @@
 	function myFunction(arr) {
 		var feattxt = "";
 		var random = Math.floor(Math.random() * arr.length);
-		if (random == 10 || random == 12 || random == 13) {
+		if (random == 10 || random == 12 || random == 13 || random == 14) {
 			feattxt += "<a href='http://" + arr[random].link + ".bodiewebdesign.com"
 		} else {
       feattxt += "<a href='http://aduo3000.github.io/" + arr[random].link 
