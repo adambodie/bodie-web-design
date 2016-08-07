@@ -421,5 +421,12 @@
     "location" : "Reno",
     "state" : "Nevada", 
     "week" : "July 24, 2016"
+},{
+    "title" : "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
+    "image" : "img/crater.jpg",
+    "description" : "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
+    "location" : "Crater Lake National Park",
+    "state" : "Oregon", 
+    "week" : "July 31, 2016"
 }
 ]
