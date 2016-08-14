@@ -8,7 +8,7 @@
 {
 	"articles" : "grandcanyon",
 	"title" : "Adam Hits the Big 3-0",
-	"link" : "Grand-Canyon"
+	"link" : "grand-canyon"
 }, 
 {
 	"articles" : "redvelvet",
@@ -18,17 +18,17 @@
 {
 	"articles" : "beer",
 	"title" : "Great Breweries in Oregon",
-	"link" : "Brewery"
+	"link" : "brewery"
 }, 
 {
 	"articles" : "ashland",
 	"title" : "Visit Ashland, Oregon",
-	"link" : "Ashland"
+	"link" : "ashland"
 }, 
 {
 	"articles" : "fortune",
 	"title" : "Read Your Fortune Cookie",
-	"link" : "Fortune-Cookie"
+	"link" : "fortune-cookie"
 }, 
 {
 	"articles" : "delaware",
@@ -38,17 +38,17 @@
 {
 	"articles" : "compton",
 	"title" : "Compton: A Soundtrack by Dr. Dre",
-	"link" : "Compton"
+	"link" : "compton"
 },
 {
 	"articles" : "video",
 	"title" : "This is My Life",
-	"link" : "video.html"
+	"link" : "mylife"
 },
 {
 	"articles" : "small",
 	"title" : "Great Small Towns",
-	"link" : "Small-Towns"
+	"link" : "small-town"
 },
 {
 	"articles" : "waterfall",
@@ -58,12 +58,22 @@
 {
 	"articles" : "walla-walla",
 	"title" : "Adam's Wonderful Wild Weekend in Walla Walla Washington",
-	"link" : "Walla-Walla"
+	"link" : "walla-walla"
 },
 {
 	"articles" : "artshowcase",
 	"title" : "Adam's Art Showcase",
 	"link" : "adamsartshowcase"
-} 
+},
+{
+	"articles" : "nama",
+	"title" : "Overview of the Nama Language",
+	"link" : "nama"
+},
+{
+	"articles" : "reno-rnc",
+	"title" : "Reno Nice 'n' Cool: A Better RNC",
+	"link" : "reno"
+}  
  
 ]
