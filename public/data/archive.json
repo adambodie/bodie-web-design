@@ -422,9 +422,9 @@
     "state" : "Nevada", 
     "week" : "July 24, 2016"
 },{
-    "title" : "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
+    "title" : "Kinda looks like Lake Tahoe doesn&apos;t it?  But no, it&apos;s Crater Lake",
     "image" : "img/crater.jpg",
-    "description" : "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
+    "description" : "Kinda looks like Lake Tahoe doesn&apos;t it?  But no, it&apos;s Crater Lake",
     "location" : "Crater Lake National Park",
     "state" : "Oregon", 
     "week" : "July 31, 2016"
@@ -435,5 +435,12 @@
     "location" : "Portland",
     "state" : "Oregon", 
     "week" : "August 7, 2016"
+},{
+    "title" : "Everything&apos;s better when bigger, including Shuttlecocks",
+    "image" : "img/shuttlecock.jpg",
+    "description" : "Everything&apos;s better when bigger, including Shuttlecocks",
+    "location" : "Kansas City",
+    "state" : "Missouri", 
+    "week" : "August 14, 2016"
 }
 ]
