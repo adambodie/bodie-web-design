@@ -290,7 +290,7 @@
 {
     "title" : "Cloud Gate",
     "image" : "img/cloudgate.jpg",
-    "description" : "Nothing says amazing more than Chicago's Cloud Gate.",
+    "description" : "Nothing says amazing more than Chicago&apos;s Cloud Gate.",
     "location" : "Chicago",
     "state" : "Illinois", 
     "week" : "April 3, 2016"
@@ -449,5 +449,12 @@
     "location" : "Detroit Lake",
     "state" : "Oregon", 
     "week" : "August 21, 2016"
+},{
+    "title" : "Cahokia Mounds: Where Native American history meets big city views",
+    "image" : "img/cahokia.jpg",
+    "description" : "Cahokia Mounds: Where Native American history meets big city views",
+    "location" : "Cahokia Mounds, Illinois",
+    "state" : "Illinois", 
+    "week" : "August 28, 2016"
 }
 ]
