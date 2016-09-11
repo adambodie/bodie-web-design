@@ -453,8 +453,15 @@
     "title" : "Cahokia Mounds: Where Native American history meets big city views",
     "image" : "img/cahokia.jpg",
     "description" : "Cahokia Mounds: Where Native American history meets big city views",
-    "location" : "Cahokia Mounds, Illinois",
+    "location" : "Cahokia Mounds",
     "state" : "Illinois", 
     "week" : "August 28, 2016"
+},{
+    "title" : "Sometimes, the best joys in life are at home.",
+    "image" : "img/home.jpg",
+    "description" : "Sometimes, the best joys in life are at home.",
+    "location" : "Beaverton",
+    "state" : "Oregon", 
+    "week" : "September 4, 2016"
 }
 ]
