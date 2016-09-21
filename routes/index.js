@@ -15,11 +15,11 @@ router.get('/about.html', function(req, res) {
 	res.locals.path = path;
 	res.render('about', {title: bodie + "About"});
 });
- 
-router.get('/archive.html', function(req, res) {
+
+router.get('/picture.html', function(req, res) {
 	var path = req.path;
 	res.locals.path = path;
-	res.render('archive', {title: bodie + "Archive"});
+	res.render('picture', {title: bodie + "Picture of the Week"});
 });
 
 module.exports = router;

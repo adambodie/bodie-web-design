@@ -51,7 +51,7 @@ gulp.task('imageLightbox', function() {
 });
 
 gulp.task('minify', function () {
-	return gulp.src(['./' + destJS + 'feature.js', './' + destJS + 'overlay.js', './' + destJS + 'meow.js', './' + destJS + 'howManyDaysAgo.js', './' + destJS + 'archive.js', './' + destJS + 'time.js', './' + destJS + 'ad.js'])
+	return gulp.src(['./' + destJS + 'feature.js', './' + destJS + 'overlay.js', './' + destJS + 'locations.js', './' + destJS + 'howManyDaysAgo.js', './' + destJS + 'archive.js', './' + destJS + 'time.js', './' + destJS + 'ad.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest(destJS));

@@ -24,6 +24,11 @@ h1 {
   padding: 10px;
   font-weight: bold; }
 
+#map {
+  height: 400px;
+  width: 100%;
+  border: 3px solid white; }
+
 /* TOPBAR STYLES
 --------------------*/
 #topbar {
@@ -182,96 +187,6 @@ footer {
   padding: 20px;
   color: white; }
 
-/* ABOUT.CSS
-----------------------------------------------*/
-.about {
-  margin-top: 100px; }
-  .about h1 {
-    text-align: left; }
-
-h4 a {
-  color: #5a5a5a; }
-
-h4:hover {
-  color: gray;
-  text-decoration: none; }
-
-.row {
-  margin-top: 20px; }
-
-h3 {
-  text-align: center; }
-
-/* NEWS STYLES
------------------*/
-.news li {
-  list-style: none;
-  font-size: 2em;
-  font-weight: bold;
-  color: #5a5a5a;
-  text-align: left; }
-  .news li:hover {
-    color: gray; }
-
-/* AUTHOR IMG STYLES
------------------------*/
-#adam {
-  border-radius: 100%;
-  display: inline-block;
-  margin-bottom: 30px;
-  box-shadow: 10px 10px 10px gray; }
-
-#authorDiv {
-  text-align: center; }
-
-/* LINKEDIN AD STYLES
------------------------*/
-#linkedinad {
-  display: none; }
-
-/* ARCHIVE.CSS
--------------------------------------*/
-#gallery ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: block;
-  text-align: center; }
-  #gallery ul li {
-    display: inline-block;
-    margin: 20px; }
-    #gallery ul li a {
-      text-decoration: none; }
-    #gallery ul li p {
-      margin-top: 20px;
-      text-align: center; }
-    #gallery ul li img {
-      display: inline-block;
-      max-width: 200px;
-      border-radius: 20px;
-      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
-      #gallery ul li img:hover {
-        opacity: 0.7;
-        filter: alpha(opacity=70);
-        /* For IE8 and earlier */
-        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); }
-    #gallery ul li h4 {
-      max-width: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-
-#imagelightbox {
-  position: fixed;
-  z-index: 9999;
-  -ms-touch-action: none;
-  touch-action: none; }
-
-#pictureArchive {
-  margin-top: 20px;
-  color: #5a5a5a;
-  text-align: center; }
-
 /* IMAGE LIGHTBOX STYLES 
 ---------------------------*/
 #imagelightbox {
@@ -374,6 +289,53 @@ h3 {
     /* 20 */
     right: 1.25em;
     /* 20 */ } }
+
+/* ABOUT.CSS
+----------------------------------------------*/
+.about {
+  margin-top: 100px; }
+  .about h1 {
+    text-align: left; }
+
+h4 a {
+  color: #5a5a5a; }
+
+h4:hover {
+  color: gray;
+  text-decoration: none; }
+
+.row {
+  margin-top: 20px; }
+
+h3 {
+  text-align: center; }
+
+/* NEWS STYLES
+-----------------*/
+.news li {
+  list-style: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #5a5a5a;
+  text-align: left; }
+  .news li:hover {
+    color: gray; }
+
+/* AUTHOR IMG STYLES
+-----------------------*/
+#adam {
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 10px gray; }
+
+#authorDiv {
+  text-align: center; }
+
+/* LINKEDIN AD STYLES
+-----------------------*/
+#linkedinad {
+  display: none; }
 
 /* POST CSS
 ------------------------------*/
