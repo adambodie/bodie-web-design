@@ -690,6 +690,17 @@ function initMap() {
                 lat: 43.9174603,
                 lng: -121.8186165
            }
+       },{
+           title : "Respect your Opponent: Some things are bigger than a Game.",
+           image : "img/omaha.jpg",
+           description : "Respect your Opponent: Some things are bigger than a Game.",
+           location : "Omaha",
+           state : "Nebraska",
+           week : "September 18, 2016",
+           coordinates: {
+                lat: 41.2555843,
+                lng: -95.9374766
+           }
        }
 ];
     var infoWindow = new google.maps.InfoWindow();
