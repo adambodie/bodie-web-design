@@ -1,0 +1,314 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='Bodie Web Design')
+    meta(name='author', content='Unknown')
+    meta(property='og:url', content='http://bodiewebdesign.com')
+    meta(property='og:type', content='website')
+    meta(property='og:title', content='Bodie Web Design')
+    meta(property='og:description', content='My personal web page for showing my portfolio')
+    meta(property='og:image', content='http:/bodiewebdesign.com/img/bodie-web-design-favicon')
+    title Bodie Web Design | Home
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Damion', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Orbitron:500', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='static/css/normalize.css')
+    link(rel='stylesheet', href='static/css/main.css')
+  body#page-top
+    #topbar.navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        i.fa.fa-bars
+      |  
+      img.img-responsive.block(src='/static/img/bwd.svg', alt='Bodie Web Design', style='max-width: 150px; max-height: 150px;')
+      #navbar.navbar-collapse.collapse
+        ul.block
+          li.block
+            a(href='/') Home
+          li.block
+            a(href='http://blog.bodiewebdesign.com') Blog
+          li.block
+            a(href='about.html') About
+          li.block
+            a(href='picture.html') Pictures
+          li.block
+            a(href='#projects') Projects
+    .container.intro
+      #fb-root
+      script(src='static/js/facebook.js')
+      .row
+        h2.section-heading Welcome to Bodie Web Design
+        .col-md-6
+          p
+            | Here you will find many of the web projects I&apos;ve developed since I began web development. Proficient in languages including HTML5, CSS3, JavaScript, and many of JavaScript&apos;s popular libraries such as jQuery and AngularJS, I have used many techniques to build what you see here. There&apos;s plenty to explore and see, and plenty more on its way in the future, so feel free to check out my work and explore everything I have to offer. For those looking for a bit of history, I have been learning and practicing software development since the end of 2013. My main area of expertise is front-end web development, but I also know the basics of languages like Ruby, Python, and Java, as well as web frameworks combining these languages with front-end development.
+          .fb-like(style='padding: 10px', data-href='http://www.bodiewebdesign.com', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
+          .link(style='padding: 10px')
+            script(src='//platform.linkedin.com/in.js', type='text/javascript')
+              lang: en_US
+            script(type='IN/Share', data-url='http://www.bodiewebdesign.com', data-counter='right').
+        .col-md-6
+          h1#feature_project Featured Project
+          #feature
+      section#about
+        .container
+          .row
+            h2.section-heading Picture of the Week
+            #week
+              .box.block.col-md-6
+                a(href='static/img/winona.jpg')
+                  img.img-responsive.center-block(src='static/img/winona.jpg', alt='Is this the turning point to the biggest mystery ever? Only time will tell...', width='70%')
+              .box.block.description.col-md-6
+                h4 Is this the turning point to the biggest mystery ever? Only time will tell...
+                p Date Taken: November 5, 2006
+                p Location: Winona, Minnesota
+      section
+        .row
+          #ad
+            button#close
+              i.fa.fa-times
+            a(href='http://www.github.com/aduo3000', target='_blank')
+              h1#github
+                | Visit my GitHub page!!!
+                i.fa.fa-github.fa-2x
+      section#projects
+        .container
+          h2.section-heading Projects
+          .row
+            h3#update Recent updates
+            .update
+              ul
+                li
+                  strong Small Towns
+                  |  - Updated Google Map with styling and info - August 28, 2016
+                li
+                  strong Adam&apos;s Wonderful World of Waterfalls
+                  |  - Updated August 14, 2016 to add Burney Falls and Salt Creek Falls
+                li
+                  strong Reno Nice &apos;n&apos; Cool: A Better RNC
+                  |  - Added August 5, 2016
+                li
+                  strong Overview of the Nama Language
+                  |  - Added July 17, 2016
+                li
+                  strong Adam&apos;s Wonderful World of Waterfalls
+                  |  - Updated June 22, 2016 to add Narada Falls
+                li
+                  strong Ashland
+                  |  - Updated May 29, 2016 to add weather API, Flip-Clock jQuery plugin
+                li
+                  strong NFL Passer Rating
+                  |  - Updated May 28, 2016 to change name from St. Louis Rams to Los Angeles Rams
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/nfl.jpg', alt='NFL Passer Rating', width='400', height='300')
+            .box.block.col-sm-6
+              h2 NFL Passer Rating
+              p#daysAgo
+              p#updateDaysAgo
+              p
+                | Check out my NFL Passer Rating I made with Java. A GUI made from NetBeans, please follow the instructions to download and give it a whirl. Must have Java installed on your computer for it to work.
+              p
+              h3
+                a.btn(href='http://nfl-passer-rating.bodiewebdesign.com/', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/grandcanyon.jpg', alt='Grand Canyon', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Adam Hits the Big 3-0
+              p#daysAgo1
+              p#updateDaysAgo1
+              p
+                | Check out Adam&apos;s 30th Birthday Celebration at the Grand Canyon! Enjoy all the pictures and videos Adam and the Bodie family took at the Grand Canyon and surrounding areas, and don&apos;t forget to read Adam&apos;s interesting facts about the Grand Canyon and surrounding area. A trip in itself, without actually going there (if you can&apos;t, of course, you should if you can).
+              p
+              h3
+                a.btn(href='http://grand-canyon.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/redvelvet.jpg', alt='Red Velvet', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Jenn&apos;s Birthday
+              p#daysAgo2
+              p#updateDaysAgo2
+              p
+                | My Sister Jenn is a wonderful soul. She knows how to have fun. On this project, I show off Jenn having fun with her wonderful peeps in her second home, Maryland. Whether it&apos;s putting on a nice smile or picking a statue&apos;s nose, Jenn is always the delight of any party, and one of the nicest people you would ever meet.
+              p
+              h3
+                a.btn(href='http://birthday.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/beer.jpg', alt='Breweries', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Great Breweries in Oregon
+              p#daysAgo3
+              p#updateDaysAgo3
+              p
+                | One passion I&apos;ve developed over the past four years is Beer-culture. Living in a city with over 40 microbreweries on site alone, it&apos;s no wonder that Oregon is one of the best states for tasty craft beer. Here, you will find out the best breweries that I&apos;ve come across in Oregon.
+              p
+              h3
+                a.btn(href='http://brewery.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/ashland.jpg', alt='Ashland', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Visit Ashland, Oregon
+              p#daysAgo4
+              p#updateDaysAgo4
+              p
+                | Once upon a time, I took a trip to Southern Oregon, where he visited the cities in the area, including Ashland. It was a nice trip, and although it was smoky and hazy by the time I got to Ashland, I managed to get a fascinating sun-smoked image of the Elizabethan Stage at the Oregon Shakespeare Festival. It inspired me to make a little web application about why you should visit Ashland
+              p
+              h3
+                a.btn(href='http://ashland.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/fortune.jpg', alt='Read Your Fortune Cookie', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Read your Fortune Cookie
+              p#daysAgo5
+              p#updateDaysAgo5
+              p
+                | A simple yet mind boggling app that gives you a fortune cookie to read. All you got to do is fill in your name and age, and let the app do the rest. Don&apos;t you love 21st Century Single Page Application Technology. You never know what your fortune cookie will tell you! It&apos;s that simple! Trust me.
+              p
+              h3
+                a.btn(href='http://fortune-cookie.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/delaware.jpg', alt='Duck vs. Blue Hen', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Duck vs. Blue Hen!
+              p#daysAgo6
+              p#updateDaysAgo6
+              p
+                | In an epic battle of the ages, we compare the Duck and the Blue Hen by comparing their state of choice. One the one end, we have the Duck representing Oregon. The other, it&apos;s Blue Hen representing Delaware. We find out who&apos;s better by comparing the states down to the core. So whose side are you on?
+              p
+              h3
+                a.btn(href='http://battle.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/compton.jpg', alt='Compton', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Compton: A Soundtrack by Dr. Dre
+              p#daysAgo7
+              p#updateDaysAgo7
+              p
+                | Surprise surprise. Dr. Dre finally released his third and final album. And no, it&apos;s not Detox. Check out my review of Dr. Dre&apos;s new album, and a synopsis of his career that led up to this point.
+              p
+              h3
+                a.btn(href='http://compton.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/video2.jpg', alt='This is My Life', width='400', height='300')
+            .box.block.col-sm-6
+              h2 This is My Life
+              p#daysAgo8
+              p#updateDaysAgo8
+              p
+                | Straight outta my vault: A collection of videos I&apos;ve taken over the years mostly ignored. Now available as a montage of everything Me. Come check it out and see everything I&apos;ve done in video!
+              p
+              h3
+                a.btn(href='http://mylife.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/small.jpg', alt='Great Small Towns', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Great Small Towns
+              p#daysAgo9
+              p#updateDaysAgo9
+              p
+                | Yes, it&apos;s always fun to visit the big city lights. But what would happen if the massive crowds and noise got too much for you? That&apos;s why you should appreciate the finest in small town tourism. You may be surprised by how much is out there.
+              p
+              h3
+                a.btn(href='http://small-town.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/waterfall.jpg', alt="Adam's Wonderful World of Waterfalls", width='400', height='300')
+            .box.block.col-sm-6
+              h2 Adam&apos;s Wonderful World of Waterfalls
+              p#daysAgo10
+              p#updateDaysAgo10
+              p
+                | I&apos;ve seen plenty of waterfalls in my life. They&apos;re quite a charm to see, no matter where you are. Here is my website dedicated to all things waterfalls from someone who has seen plenty of them. Take time in enjoying everything I&apos;ve seen and more.
+              p
+              h3
+                a.btn(href='http://waterfall.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/walla-walla.jpg', alt='Walla-Walla', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Adam&apos;s Wonderful Wild Weekend in Walla Walla Washington
+              p#daysAgo11
+              p#updateDaysAgo11
+              p
+                | With a full time job at Seterus and the ability to take PTO, I took my first day off on Friday March 18th. Looking for action, I headed east to Walla Walla, Washington. Here&apos;s my trip to Walla Walla...
+              h3
+                a.btn(href='http://walla-walla.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/artshowcase.jpg', alt="Adam's Art Showcase", width='400', height='300')
+            .box.block.col-sm-6
+              h2 Adam&apos;s Art Showcase
+              p#daysAgo12
+              p#updateDaysAgo12
+              p
+                | Back in 2001-2002, I loved to draw and paint. It was a real passion. I must have spent hours drawing whatever interested me. I even made two projects of a select few with Microsoft PowerPoint. With my new web skills, I have turned my old projects into a web page full of my old drawings and paintings. Talk about a trip down memory lane.
+              h3
+                a.btn(href='http://adamsartshowcase.bodiewebdesign.com', role='button') Check Me Out &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/nama.jpg', alt='Nama', width='400', height='300')
+            .box.block.col-sm-6
+              h2 Overview of the Nama Language
+              p#daysAgo13
+              p#updateDaysAgo13
+              p
+                | During my senior year of college at the University of Minnesota, I took a Linguistics class and had to write a final paper on a language of my choice. I chose Nama, a Khoisan langauge in Africa that&apos;s known for their click consonants. With that said, here is my 25 page paper turned into an Ember.js backed web project.
+              h3
+                a.btn(href='http://nama.bodiewebdesign.com', role='button') Check Me Out &raquo;
+              p
+          .row
+            .box.block.col-sm-6.links
+              img.img-responsive(src='static/img/reno-rnc.jpg', alt="Reno Nice 'n' Cool", width='400', height='300')
+            .box.block.col-sm-6
+              h2 Reno Nice &apos;n&apos; Cool: A Better RNC
+              p#daysAgo14
+              p#updateDaysAgo14
+              p
+                | With a week vacation from work, I went on a road trip down to Reno, where I visited the city, Lake Tahoe and plenty of places along the way. To see my adventures and get a better RNC experience, click the link below.
+              h3
+                a.btn(href='http://reno.bodiewebdesign.com', role='button') Check Me Out &raquo;
+              p
+    nav.navbar.navbar-inverse.navbar-bottom
+      footer
+        p.pull-right
+          a#top(href='#') Back to top
+        p#year.block
+        script(type='text/javascript').
+          var date = new Date();
+          var year = "Adam Bodie &copy; " + date.getFullYear();
+          document.getElementById("year").innerHTML = year;
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='static/js/overlay.min.js')
+    script(src='static/js/ad.min.js')
+    script(src='static/js/vticker.min.js')
+    script(src='static/js/scrollbar.min.js')
+    script(src='static/js/howManyDaysAgo.min.js')
+    script(src='static/js/time.min.js')
+    script(src='static/js/feature.min.js')
