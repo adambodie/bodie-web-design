@@ -12,11 +12,6 @@ var jsonlint = require("gulp-jsonlint");
 var destJS = './public/js/';
 var destCSS = './public/css/';
 
-gulp.task('json', function () {
-	return gulp.src("./mock/posts.json")
-    .pipe(jsonlint())
-    .pipe(jsonlint.reporter());
-});
 
 gulp.task('scrollMe', function() {
   return gulp.src(['./public/scroll-up-bar/scroll-up-bar.js', './public/js/scroll.js'])
@@ -51,7 +46,7 @@ gulp.task('imageLightbox', function() {
 });
 
 gulp.task('minify', function () {
-	return gulp.src(['./' + destJS + 'feature.js', './' + destJS + 'overlay.js', './' + destJS + 'locations.js', './' + destJS + 'howManyDaysAgo.js', './' + destJS + 'archive.js', './' + destJS + 'time.js', './' + destJS + 'ad.js'])
+	return gulp.src(['./' + destJS + 'feature.js', './' + destJS + 'overlay.js', './' + destJS + 'locations.js', './' + destJS + 'howManyDaysAgo.js', './' + destJS + 'time.js', './' + destJS + 'ad.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest(destJS));
