@@ -10,8 +10,6 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var postsLists = Object.keys(posts).map(function (value) {
-												return posts[value]});
 // my route variables
 var routes = require('./routes/index');
 var tests = require('./routes/tests');
