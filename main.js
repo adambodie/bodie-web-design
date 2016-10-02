@@ -22,7 +22,7 @@ app.set('view engine', 'pug');
 
 app.use('/static', express.static(__dirname + '/public'));
 
-app.use(favicon(__dirname + '/public/img/icon.gif'));
+app.use(favicon(__dirname + '/public/img/bwd-icon.gif'));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
