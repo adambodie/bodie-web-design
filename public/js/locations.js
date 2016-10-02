@@ -698,9 +698,20 @@ function initMap() {
            state : "Nebraska",
            week : "September 18, 2016",
            coordinates: {
-                lat: 41.2555843,
-                lng: -95.9374766
-           }
+               lat: 41.2555843,
+               lng: -95.9374766
+            }
+       },{
+           title : "Is this the turning point to the biggest mystery ever? Only time will tell...",
+           image : "img/winona.jpg",
+           description : "Is this the turning point to the biggest mystery ever? Only time will tell...",
+           location : "Winona",
+           state : "Minnesota",
+           week : "September 25, 2016",
+           coordinates: {
+                lat: 44.0347799,
+                lng: -91.654577
+             }
        }
 ];
     var infoWindow = new google.maps.InfoWindow();
