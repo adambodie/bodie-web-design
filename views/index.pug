@@ -1,43 +1,5 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='Bodie Web Design')
-    meta(name='author', content='Unknown')
-    meta(property='og:url', content='http://bodiewebdesign.com')
-    meta(property='og:type', content='website')
-    meta(property='og:title', content='Bodie Web Design')
-    meta(property='og:description', content='My personal web page for showing my portfolio')
-    meta(property='og:image', content='http:/bodiewebdesign.com/img/bodie-web-design-favicon')
-    title Bodie Web Design | Home
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-    link(href='https://fonts.googleapis.com/css?family=Damion', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Orbitron:500', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='static/css/normalize.css')
-    link(rel='stylesheet', href='static/css/main.css')
-  body#page-top
-    #topbar.navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-        i.fa.fa-bars
-      |  
-      img.img-responsive.block(src='/static/img/bwd.svg', alt='Bodie Web Design', style='max-width: 150px; max-height: 150px;')
-      #navbar.navbar-collapse.collapse
-        ul.block
-          li.block
-            a(href='/') Home
-          li.block
-            a(href='http://blog.bodiewebdesign.com') Blog
-          li.block
-            a(href='about.html') About
-          li.block
-            a(href='picture.html') Pictures
-          li.block
-            a(href='#projects') Projects
+extends ./layout.pug
+block content
     .container.intro
       #fb-root
       script(src='static/js/facebook.js')
@@ -294,21 +256,3 @@ html(lang='en')
               h3
                 a.btn(href='http://reno.bodiewebdesign.com', role='button') Check Me Out &raquo;
               p
-    nav.navbar.navbar-inverse.navbar-bottom
-      footer
-        p.pull-right
-          a#top(href='#') Back to top
-        p#year.block
-        script(type='text/javascript').
-          var date = new Date();
-          var year = "Adam Bodie &copy; " + date.getFullYear();
-          document.getElementById("year").innerHTML = year;
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    script(src='static/js/overlay.min.js')
-    script(src='static/js/ad.min.js')
-    script(src='static/js/vticker.min.js')
-    script(src='static/js/scrollbar.min.js')
-    script(src='static/js/howManyDaysAgo.min.js')
-    script(src='static/js/time.min.js')
-    script(src='static/js/feature.min.js')

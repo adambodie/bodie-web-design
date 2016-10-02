@@ -1,59 +1,9 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    meta(name='description', content='Bodie Web Design')
-    meta(name='author', content='Unknown')
-    meta(property='og:url', content='http://bodiewebdesign.com')
-    meta(property='og:type', content='website')
-    meta(property='og:title', content='Bodie Web Design')
-    meta(property='og:description', content='My personal web page for showing my portfolio')
-    meta(property='og:image', content='http:/bodiewebdesign.com/img/bodie-web-design-favicon')
-    title Bodie Web Design | Picture of the Week
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
-    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-    link(href='https://fonts.googleapis.com/css?family=Damion', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Orbitron:500', rel='stylesheet', type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Raleway', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='static/css/normalize.css')
-    link(rel='stylesheet', href='static/css/main.css')
-  body#page-top
-    #topbar.navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
-        i.fa.fa-bars
-      |  
-      img.img-responsive.block(src='/static/img/bwd.svg', alt='Bodie Web Design', style='max-width: 150px; max-height: 150px;')
-      #navbar.navbar-collapse.collapse
-        ul.block
-          li.block
-            a(href='/') Home
-          li.block
-            a(href='http://blog.bodiewebdesign.com') Blog
+extends ./layout.pug
+
+block content
     .container.intro
-      .row
-        h1 Picture of the Week
-        p
-          | To view previous pictures, click on a star to pull up an info window and select the picture.
         .row
-          #map
-    nav.navbar.navbar-inverse.navbar-bottom
-      footer
-        p.pull-right
-          a#top(href='#') Back to top
-        p#year.block
-        script(type='text/javascript').
-          var date = new Date();
-          var year = "Adam Bodie &copy; " + date.getFullYear();
-          document.getElementById("year").innerHTML = year;
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
-    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-    script(src='static/js/overlay.min.js')
-    script(src='static/js/ad.min.js')
-    script(src='static/js/vticker.min.js')
-    script(src='static/js/scrollbar.min.js')
-    script(src='static/js/myImageLightbox.min.js')
-    script(src='static/js/locations.min.js')
-    script(async='', defer='', src='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3&callback=initMap')
+            h1 Picture of the Week
+            p To view previous pictures, click on a star to pull up an info window and select the picture. 
+            .row
+                #map
