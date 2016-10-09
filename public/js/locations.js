@@ -712,7 +712,18 @@ function initMap() {
                 lat: 44.0347799,
                 lng: -91.654577
              }
-       }
+       },{
+           title : "Putting the Locks on Cascade Locks",
+           image : "img/locks.jpg",
+           description : "Putting the Locks on Cascade Locks",
+           location : "Cascade Locks",
+           state : "Oregon",
+           week : "October 2, 2016",
+           coordinates: {
+                  lat: 45.6749851,
+                  lng: -121.9051406
+                 }
+           }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
