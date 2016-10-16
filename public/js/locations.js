@@ -723,7 +723,18 @@ function initMap() {
                   lat: 45.6749851,
                   lng: -121.9051406
                  }
-           }
+           },{
+                       title : "My thoughts to those affected by Hurricane Matthew.  Jacksonville much nicer when my Mom visited.",
+                       image : "img/jacksonville.jpg",
+                       description : "My thoughts to those affected by Hurricane Matthew.  Jacksonville much nicer when my Mom visited.",
+                       location : "Jacksonville",
+                       state : "Florida",
+                       week : "October 9, 2016",
+                       coordinates: {
+                              lat: 30.3216626,
+                              lng: -81.6720094
+                             }
+                       }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
