@@ -745,6 +745,17 @@ function initMap() {
                 lat: 35.0101349,
                 lng: -85.3386472
                }
+       },{
+           title : "Cat vs. Mole, the Epic Battle",
+           image : "img/cat-vs-mole.jpg",
+           description : "Cat vs. Mole, the Epic Battle",
+           location : "Beaverton",
+           state : "Oregon",
+           week : "October 23, 2016",
+           coordinates: {
+                lat: 45.5055146,
+                lng: -122.892767
+               }
        }
 ];
     var infoWindow = new google.maps.InfoWindow();
