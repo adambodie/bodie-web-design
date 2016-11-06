@@ -755,8 +755,19 @@ function initMap() {
            coordinates: {
                 lat: 45.5055146,
                 lng: -122.892767
-               }
-       }
+            }
+       },{
+            title : "If this isn&apos;t what life&apos;s all about, I don&apos;t know what is",
+            image : "img/double-rainbow.jpg",
+            description : "If this isn&apos;t what life&apos;s all about, I don&apos;t know what is",
+            location : "Beaverton",
+            state : "Oregon",
+            week : "October 30, 2016",
+            coordinates: {
+                 lat: 45.5071748,
+                 lng: -122.9043866
+              }
+        }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
