@@ -767,6 +767,17 @@ function initMap() {
                  lat: 45.5071748,
                  lng: -122.9043866
               }
+        },{
+            title : "The future of our country could be made here: I held a bell for Red, White and Blue.  Not White, Blue and Red",
+            image : "img/reno-bell.jpg",
+            description : "The future of our country could be made here: I held a bell for Red, White and Blue.  Not White, Blue and Red",
+            location : "Reno",
+            state : "Nevada",
+            week : "November 6, 2016",
+            coordinates: {
+                 lat: 39.5281353,
+                 lng: -119.8158833
+              }
         }
 ];
     var infoWindow = new google.maps.InfoWindow();
