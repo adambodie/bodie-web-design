@@ -778,7 +778,18 @@ function initMap() {
                  lat: 39.5281353,
                  lng: -119.8158833
               }
-        }
+        },{
+            title : "Pompeii: A perfect analogy to describe what the United States moral values have become with Dictator Trump in charge",
+            image : "img/pompeii.jpg",
+            description : "Pompeii: A perfect analogy to describe what the United States moral values have become with Dictator Trump in charge",
+            location : "Pompeii",
+            state : "Italy",
+            week : "November 13, 2016",
+                coordinates: {
+                    lat: 40.7501102,
+                    lng: 14.3350664
+                }
+          }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
