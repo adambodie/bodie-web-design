@@ -789,6 +789,17 @@ function initMap() {
                     lat: 40.7501102,
                     lng: 14.3350664
                 }
+        },{
+            title : "Welcome to Wisconsin: Home of the Cheese, Land of the Fat",
+            image : "img/sheboygan.jpg",
+            description : "Welcome to Wisconsin: Home of the Cheese, Land of the Fat",
+            location : "Sheboygan",
+            state : "Wisconsin",
+            week : "November 20, 2016",
+                coordinates: {
+                    lat: 43.7509609,
+                    lng: -87.7087782
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();
