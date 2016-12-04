@@ -800,6 +800,17 @@ function initMap() {
                     lat: 43.7509609,
                     lng: -87.7087782
                 }
+        },{
+            title : "Native Americans deserve more respect than they get",
+            image : "img/warm-springs.jpg",
+            description : "Native Americans deserve more respect than they get",
+            location : "Warm Springs",
+            state : "Oregon",
+            week : "November 27, 2016",
+                coordinates: {
+                    lat: 44.7634432,
+                    lng: -121.271032
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();
