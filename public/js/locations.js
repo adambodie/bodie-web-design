@@ -811,6 +811,17 @@ function initMap() {
                     lat: 44.7634432,
                     lng: -121.271032
                 }
+        },{
+            title : "Winter&apos;s almost here, time to bundle up!",
+            image : "img/blizzard.jpg",
+            description : "Winter&apos;s almost here, time to bundle up!",
+            location : "Minneapolis",
+            state : "Minnesota",
+            week : "December 4, 2016",
+                coordinates: {
+                    lat: 44.970159,
+                    lng: -93.220517
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();
