@@ -822,6 +822,17 @@ function initMap() {
                     lat: 44.970159,
                     lng: -93.220517
                 }
+        },{
+            title : "A crazy week is all you need to wish you were in Hawaii",
+            image : "img/beach.jpg",
+            description : "A crazy week is all you need to wish you were in Hawaii",
+            location : "Ka'anapali",
+            state : "Hawaii",
+            week : "December 11, 2016",
+                coordinates: {
+                    lat: 20.9331934,
+                    lng: -156.6999958
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();
