@@ -235,7 +235,7 @@ footer {
 			cursor: pointer;
 			position: fixed;
 			z-index: 10000;
-
+            transform: none!important;
 			-ms-touch-action: none;
 			touch-action: none;
 
@@ -346,3 +346,5 @@ footer {
 @import "_post.scss";
 
 @import "_query.scss";
+
+@import "_archive.scss";

@@ -833,6 +833,17 @@ function initMap() {
                     lat: 20.9331934,
                     lng: -156.6999958
                 }
+        },{
+            title : "A Car Parts Winter Wonderland",
+            image : "img/car-parts.jpg",
+            description : "A Car Parts Winter Wonderland",
+            location : "Sherwood",
+            state : "Oregon",
+            week : "December 18, 2016",
+                coordinates: {
+                    lat: 45.3736771,
+                    lng: -122.8315957
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();

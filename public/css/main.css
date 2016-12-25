@@ -193,6 +193,7 @@ footer {
   cursor: pointer;
   position: fixed;
   z-index: 10000;
+  transform: none !important;
   -ms-touch-action: none;
   touch-action: none;
   -webkit-box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
@@ -469,5 +470,157 @@ h3 {
     font-size: 1.3em;
     margin-left: 10px;
     margin-right: 10px; } }
+
+/* ARCHIVE.CSS
+-------------------------------------*/
+#map {
+  height: 400px;
+  width: 100%;
+  border: 3px solid white; }
+
+#gallery ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  text-align: center; }
+  #gallery ul li {
+    display: inline-block;
+    margin: 20px; }
+    #gallery ul li a {
+      text-decoration: none; }
+    #gallery ul li p {
+      margin-top: 20px;
+      text-align: center; }
+    #gallery ul li img {
+      display: inline-block;
+      max-width: 200px;
+      border-radius: 20px;
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); }
+      #gallery ul li img:hover {
+        opacity: 0.7;
+        filter: alpha(opacity=70);
+        /* For IE8 and earlier */
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5); }
+    #gallery ul li h4 {
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
+  -ms-touch-action: none;
+  touch-action: none; }
+
+#pictureArchive {
+  margin-top: 20px;
+  color: #5a5a5a;
+  text-align: center; }
+
+/* IMAGE LIGHTBOX STYLES 
+---------------------------*/
+#imagelightbox {
+  cursor: pointer;
+  position: fixed;
+  z-index: 10000;
+  transform: none !important;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
+  /* 50 */
+  box-shadow: 0 0 3.125em rgba(0, 0, 0, 0.75);
+  /* 50 */ }
+
+/* OVERLAY */
+#imagelightbox-overlay {
+  background-color: black;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+/* "CLOSE" BUTTON */
+#imagelightbox-close {
+  width: 2.5em;
+  /* 40 */
+  height: 2.5em;
+  /* 40 */
+  text-align: left;
+  background-color: #5a5a5a;
+  position: fixed;
+  z-index: 10002;
+  top: 2.5em;
+  /* 40 */
+  right: 2.5em;
+  /* 40 */
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease; }
+
+#imagelightbox-close:hover, #imagelightbox-close:focus {
+  background-color: gray; }
+
+#imagelightbox-close:before, #imagelightbox-close:after {
+  width: 2px;
+  background-color: #fff;
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -1px; }
+
+#imagelightbox-close:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+#imagelightbox-close:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+/* CAPTION */
+#imagelightbox-caption {
+  text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  background-color: black;
+  position: fixed;
+  z-index: 10001;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.625em;
+  /* 10 */ }
+
+#imagelightbox-loading,
+#imagelightbox-overlay,
+#imagelightbox-close,
+#imagelightbox-caption {
+  -webkit-animation: fade-in .25s linear;
+  animation: fade-in .25s linear; }
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade-in {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@media only screen and (max-width: 41.25em) {
+  #imagelightbox-close {
+    top: 1.25em;
+    /* 20 */
+    right: 1.25em;
+    /* 20 */ } }
 
 /*# sourceMappingURL=main.css.map */

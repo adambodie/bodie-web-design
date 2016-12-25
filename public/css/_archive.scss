@@ -64,6 +64,7 @@
 			cursor: pointer;
 			position: fixed;
 			z-index: 10000;
+			transform: none!important;
 
 			-ms-touch-action: none;
 			touch-action: none;
