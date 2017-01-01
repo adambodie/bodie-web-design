@@ -844,6 +844,17 @@ function initMap() {
                     lat: 45.3736771,
                     lng: -122.8315957
                 }
+        },{
+            title : "Happy Holidays!",
+            image : "img/holiday.jpg",
+            description : "Happy Holidays!",
+            location : "Baltimore",
+            state : "Maryland",
+            week : "December 25, 2016",
+                coordinates: {
+                    lat: 39.3299884,
+                    lng: -76.6351916
+                }
           }
 ];
     var infoWindow = new google.maps.InfoWindow();
