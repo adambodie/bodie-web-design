@@ -5,7 +5,7 @@ var date = [
 {id: "daysAgo3", year: 2015, month: 6, day: 11, updateId: 'updateDaysAgo3', updateYear: 2015, updateMonth: 6, updateDay: 11 },
 {id: "daysAgo4", year: 2015, month: 6, day: 12, updateId: 'updateDaysAgo4', updateYear: 2017, updateMonth: 0, updateDay: 2 },
 {id: "daysAgo5", year: 2015, month: 6, day: 17, updateId: 'updateDaysAgo5', updateYear: 2015, updateMonth: 10, updateDay: 11 },
-{id: "daysAgo6", year: 2015, month: 6, day: 25, updateId: 'updateDaysAgo6', updateYear: 2015, updateMonth: 6, updateDay: 25 },
+{id: "daysAgo6", year: 2015, month: 6, day: 25, updateId: 'updateDaysAgo6', updateYear: 2017, updateMonth: 0, updateDay: 8 },
 {id: "daysAgo7", year: 2015, month: 7, day: 8, updateId: 'updateDaysAgo7', updateYear: 2015, updateMonth: 7, updateDay: 8 },
 {id: "daysAgo8", year: 2015, month: 7, day: 18, updateId: 'updateDaysAgo8', updateYear: 2015, updateMonth: 7, updateDay: 18 },
 {id: "daysAgo9", year: 2015, month: 8, day: 7, updateId: 'updateDaysAgo9', updateYear: 2016, updateMonth: 7, updateDay: 28 },
