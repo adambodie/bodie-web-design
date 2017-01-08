@@ -855,7 +855,18 @@ function initMap() {
                     lat: 39.3299884,
                     lng: -76.6351916
                 }
-          }
+        },{
+                  title : "Happy New Years!",
+                  image : "img/tahoe.jpg",
+                  description : "Happy New Years!",
+                  location : "Lake Tahoe",
+                  state : "California",
+                  week : "January 1, 2017",
+                      coordinates: {
+                          lat: 38.9543005,
+                          lng: -120.1140641
+                      }
+                }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
