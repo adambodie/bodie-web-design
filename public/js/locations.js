@@ -866,7 +866,18 @@ function initMap() {
                           lat: 38.9543005,
                           lng: -120.1140641
                       }
-                }
+        },{
+                    title : "Start the New Year off right",
+                    image : "img/sunrise.jpg",
+                    description : "Start the New Year off right",
+                    location : "Worth County",
+                    state : "Iowa",
+                    week : "January 8, 2017",
+                        coordinates: {
+                            lat: 43.3772931,
+                            lng: -93.4009498
+                        }
+                  }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
