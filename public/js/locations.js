@@ -877,7 +877,18 @@ function initMap() {
                             lat: 43.3772931,
                             lng: -93.4009498
                         }
-                  }
+        },{
+                    title : "A Snowstorm is not the End of the World",
+                    image : "img/hood.jpg",
+                    description : "A Snowstorm is not the End of the World",
+                    location : "Mt. Hood",
+                    state : "Oregon",
+                    week : "January 15, 2017",
+                          coordinates: {
+                              lat: 45.331388,
+                              lng: -121.7110972
+                            }
+                      }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
