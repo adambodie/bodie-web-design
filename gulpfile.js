@@ -5,18 +5,25 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var coffee = require('gulp-coffee');
 var maps = require('gulp-sourcemaps');
 var jsValidate = require('gulp-jsvalidate');
-var jsonlint = require("gulp-jsonlint");
+var jsonlint = require('gulp-jsonlint');
+var mocha = require('gulp-mocha');
 
 var destJS = './public/js/';
 var destCSS = './public/css/';
 var vendor = './src/vendor/';
 var scripts = './src/scripts/';
-var styles = './src/styles';
+var styles = './src/styles/';
+
+gulp.task('runMochaTests', function(){
+  gulp.src(['./test/HolidayTest.js', './test/OpenTest.js'], {read: false})
+      .pipe(mocha({reporter: 'nyan'}))
+});
 
 gulp.task('createScrollBar', function() {
-  return gulp.src([vendor + 'scroll-up-bar/scroll-up-bar.js', './public/js/scroll.js'])
+  return gulp.src([vendor + 'scroll-up-bar/scroll-up-bar.js', scripts + '/scroll.js'])
     .pipe(concat('./scrollbar.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -32,10 +39,13 @@ gulp.task('createVticker', function() {
 });
 
 gulp.task('createOpenOnDate', function() {
-  return gulp.src([scripts + 'open.js', scripts + 'date.js'])
-    .pipe(concat('./open-on-date.js'))
+  return gulp.src([scripts + 'open.coffee', scripts + 'date.coffee'])
+    .pipe(concat('./open-on-date.coffee'))
+    .pipe(maps.init())
+    .pipe(coffee())
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
+    .pipe(maps.write())
     .pipe(gulp.dest(destJS));
 });
 
@@ -67,6 +77,6 @@ gulp.task('valid', function () {
     .pipe(jsValidate());
 });
 
-gulp.task('default', ['valid', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'turnSassToCss'], function () {
+gulp.task('default', ['valid', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'turnSassToCss', 'runMochaTests'], function () {
 	console.log("All tasks completed");
 });

@@ -187,7 +187,7 @@ footer {
   padding: 20px;
   color: white; }
 
-/* IMAGE LIGHTBOX STYLES 
+/* IMAGE LIGHTBOX STYLES
 ---------------------------*/
 #imagelightbox {
   cursor: pointer;
@@ -337,55 +337,6 @@ h3 {
 -----------------------*/
 #linkedinad {
   display: none; }
-
-/* POST CSS
-------------------------------*/
-.article .image {
-  width: 50%;
-  height: 50%;
-  padding: 20px;
-  float: left; }
-
-.back {
-  font-weight: bold;
-  color: #333333;
-  font-size: 2em; }
-
-/* BLOG POST CSS
------------------------*/
-.post {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-
-.post h2 {
-  font-weight: bold; }
-
-.author {
-  text-align: right; }
-
-.article {
-  text-indent: 4em; }
-
-.preview {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 20px; }
-
-.article-preview {
-  padding: 20px; }
-
-.blog-button {
-  width: 40%;
-  margin-bottom: 20px; }
-
-.col-md-8 a {
-  color: #5a5a5a;
-  font-size: 1.2em;
-  font-weight: bold;
-  font-weight: bold; }
-  .col-md-8 a:hover {
-    color: gray; }
 
 /* MEDIA QUERIES
 -------------------------------------*/
