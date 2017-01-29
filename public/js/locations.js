@@ -888,7 +888,18 @@ function initMap() {
                               lat: 45.331388,
                               lng: -121.7110972
                             }
-                      }
+          },{
+                  title : "The White House has officially been turned upside down",
+                  image : "img/top-secret.jpg",
+                  description : "The White House has officially been turned upside down",
+                  location : "Wisconsin Dells",
+                  state : "Wisconsin",
+                  week : "January 22, 2017",
+                  coordinates: {
+                        lat: 43.6146786,
+                        lng: -89.7946824
+                  }
+        }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
