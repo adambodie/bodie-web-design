@@ -31,7 +31,7 @@ gulp.task('createScrollBar', function() {
 });
 
 gulp.task('createVticker', function() {
-  return gulp.src([vendor + '/vticker/jquery.vticker.js', './public/js/ticker.js'])
+  return gulp.src([vendor + '/vticker/jquery.vticker.js', scripts + '/ticker.js'])
     .pipe(concat('./vticker.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
