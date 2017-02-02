@@ -22,6 +22,13 @@ gulp.task('runMochaTests', function(){
       .pipe(mocha({reporter: 'nyan'}))
 });
 
+gulp.task('turnCoffeeToJavaScript', function () {
+	return gulp.src([scripts + 'feature.coffee', scripts + 'overlay.coffee', scripts + 'locations.coffee', scripts + 'howManyDaysAgo.coffee', scripts + 'updateDaysAgo.coffee'])
+	.pipe(rename({suffix: '.min'}))
+	.pipe(uglify())
+	.pipe(gulp.dest(destJS));
+});
+
 gulp.task('createScrollBar', function() {
   return gulp.src([vendor + 'scroll-up-bar/scroll-up-bar.js', scripts + '/scroll.js'])
     .pipe(concat('./scrollbar.js'))
@@ -49,8 +56,19 @@ gulp.task('createOpenOnDate', function() {
     .pipe(gulp.dest(destJS));
 });
 
+gulp.task('combineHowManyDaysAgo', function() {
+  return gulp.src([scripts + 'howManyDaysAgo.coffee', scripts + 'updateDaysAgo.coffee'])
+    .pipe(concat('./howManyDaysAgoUpdate.coffee'))
+    .pipe(maps.init())
+    .pipe(coffee())
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .pipe(maps.write())
+    .pipe(gulp.dest(destJS));
+});
+
 gulp.task('createImageLightbox', function() {
-  return gulp.src([vendor + '/imageLightbox/imagelightbox.js', './public/js/myLightbox.js'])
+  return gulp.src([vendor + '/imageLightbox/imagelightbox.js', destJS + 'myLightbox.js'])
     .pipe(concat('./myImageLightbox.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -58,7 +76,7 @@ gulp.task('createImageLightbox', function() {
 });
 
 gulp.task('minify', function () {
-	return gulp.src(['./' + scripts + 'feature.js', './' + scripts + 'overlay.js', './' + scripts + 'locations.js', './' + scripts + 'howManyDaysAgo.js', './' + scripts + 'updateDaysAgo.js', './' + scripts + 'ad.js'])
+	return gulp.src([scripts + 'feature.js', scripts + 'overlay.js', scripts + 'locations.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest(destJS));
@@ -73,7 +91,7 @@ gulp.task('turnSassToCss', function () {
 });
 
 gulp.task('valid', function () {
-    return gulp.src('./' + destJS + '*.js')
+    return gulp.src(destJS + '*.js')
     .pipe(jsValidate());
 });
 
