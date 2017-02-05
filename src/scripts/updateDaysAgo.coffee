@@ -1,5 +1,6 @@
 date = [
   {
+    name: 'NFL Passer Rating'
     id: 'daysAgo'
     year: 2014
     month: 8
@@ -10,6 +11,7 @@ date = [
     updateDay: 28
   }
   {
+    name: 'Adam Hits the Big 3-0'
     id: 'daysAgo1'
     year: 2015
     month: 6
@@ -20,6 +22,7 @@ date = [
     updateDay: 9
   }
   {
+    name: 'Jenn\'s Birthday'
     id: 'daysAgo2'
     year: 2015
     month: 6
@@ -30,6 +33,7 @@ date = [
     updateDay: 11
   }
   {
+    name: 'Great Breweries in Oregon'
     id: 'daysAgo3'
     year: 2015
     month: 6
@@ -40,6 +44,7 @@ date = [
     updateDay: 11
   }
   {
+    name: 'Visit Ashland, Oregon'
     id: 'daysAgo4'
     year: 2015
     month: 6
@@ -50,6 +55,7 @@ date = [
     updateDay: 2
   }
   {
+    name: 'Read Your Fortune Cookie'
     id: 'daysAgo5'
     year: 2015
     month: 6
@@ -60,6 +66,7 @@ date = [
     updateDay: 11
   }
   {
+    name: 'Duck vs. Blue Hen!'
     id: 'daysAgo6'
     year: 2015
     month: 6
@@ -70,6 +77,7 @@ date = [
     updateDay: 8
   }
   {
+    name: 'Compton: A Soundtrack by Dr. Dre'
     id: 'daysAgo7'
     year: 2015
     month: 7
@@ -80,6 +88,7 @@ date = [
     updateDay: 8
   }
   {
+    name: 'This is My Life'
     id: 'daysAgo8'
     year: 2015
     month: 7
@@ -90,6 +99,7 @@ date = [
     updateDay: 12
   }
   {
+    name: 'Great Small Towns'
     id: 'daysAgo9'
     year: 2015
     month: 8
@@ -100,6 +110,7 @@ date = [
     updateDay: 28
   }
   {
+    name: 'Adam\'s Wonderful World of Waterfalls'
     id: 'daysAgo10'
     year: 2016
     month: 2
@@ -110,6 +121,7 @@ date = [
     updateDay: 11
   }
   {
+    name: 'Adam\'s Wonderful Wild Weekend in Walla Walla Washington'
     id: 'daysAgo11'
     year: 2016
     month: 2
@@ -120,6 +132,7 @@ date = [
     updateDay: 24
   }
   {
+    name: 'Adam\'s Art Showcase'
     id: 'daysAgo12'
     year: 2016
     month: 3
@@ -130,6 +143,7 @@ date = [
     updateDay: 16
   }
   {
+    name: 'Overview of the Nama Language'
     id: 'daysAgo13'
     year: 2016
     month: 6
@@ -140,6 +154,7 @@ date = [
     updateDay: 17
   }
   {
+    name: 'Reno Nice \'n\' Cool: A Better RNC'
     id: 'daysAgo14'
     year: 2016
     month: 7
@@ -150,6 +165,7 @@ date = [
     updateDay: 5
   }
   {
+    name: 'Dreidel Duel'
     id: 'daysAgo15'
     year: 2017
     month: 0

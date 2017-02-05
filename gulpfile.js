@@ -95,6 +95,6 @@ gulp.task('valid', function () {
     .pipe(jsValidate());
 });
 
-gulp.task('default', ['valid', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'turnSassToCss', 'runMochaTests'], function () {
+gulp.task('default', ['runMochaTests', 'turnCoffeeToJavaScript', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'combineHowManyDaysAgo', 'createImageLightbox', 'minify', 'turnSassToCss', 'valid'], function () {
 	console.log("All tasks completed");
 });

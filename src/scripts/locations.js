@@ -899,7 +899,18 @@ function initMap() {
                         lat: 43.6146786,
                         lng: -89.7946824
                   }
-        }
+        },{
+                title : "The Good Things in Life are all that Matters",
+                image : "img/shaniko.jpg",
+                description : "The Good Things in Life are all that Matters",
+                location : "Shaniko",
+                state : "Oregon",
+                week : "January 29, 2017",
+                coordinates: {
+                      lat: 45.0094742,
+                      lng: -120.7525135
+                }
+      }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
