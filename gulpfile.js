@@ -10,6 +10,8 @@ var maps = require('gulp-sourcemaps');
 var jsValidate = require('gulp-jsvalidate');
 var jsonlint = require('gulp-jsonlint');
 var mocha = require('gulp-mocha');
+var csso = require('gulp-csso');
+var iff = require('gulp-if');
 
 var destJS = './public/js/';
 var destCSS = './public/css/';
@@ -20,13 +22,6 @@ var styles = './src/styles/';
 gulp.task('runMochaTests', function(){
   gulp.src(['./test/HolidayTest.js', './test/OpenTest.js'], {read: false})
       .pipe(mocha({reporter: 'nyan'}))
-});
-
-gulp.task('turnCoffeeToJavaScript', function () {
-	return gulp.src([scripts + 'feature.coffee', scripts + 'overlay.coffee', scripts + 'locations.coffee', scripts + 'howManyDaysAgo.coffee', scripts + 'updateDaysAgo.coffee'])
-	.pipe(rename({suffix: '.min'}))
-	.pipe(uglify())
-	.pipe(gulp.dest(destJS));
 });
 
 gulp.task('createScrollBar', function() {
@@ -68,24 +63,38 @@ gulp.task('combineHowManyDaysAgo', function() {
 });
 
 gulp.task('createImageLightbox', function() {
-  return gulp.src([vendor + '/imageLightbox/imagelightbox.js', destJS + 'myLightbox.js'])
+  return gulp.src([vendor + '/imageLightbox/imagelightbox.js', scripts + 'myLightbox.js'])
     .pipe(concat('./myImageLightbox.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest(destJS));
 });
 
+gulp.task('overlay', function () {
+	return gulp.src(scripts + 'overlay.coffee')
+  .pipe(maps.init())
+  .pipe(coffee())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(uglify())
+  .pipe(maps.write())
+  .pipe(gulp.dest(destJS));
+});
+
+
 gulp.task('minify', function () {
-	return gulp.src([scripts + 'feature.js', scripts + 'overlay.js', scripts + 'locations.js'])
+	return gulp.src([scripts + 'feature.js', scripts + 'locations.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest(destJS));
 });
 
-gulp.task('turnSassToCss', function () {
-	return gulp.src(styles + 'main.scss')
+gulp.task('createAppCss', function () {
+	return gulp.src([styles + 'normalize.css', styles + 'main.scss'])
 	.pipe(maps.init())
-	.pipe(sass())
+	.pipe(iff('main.scss', sass()))
+  .pipe(concat('./app.css'))
+  .pipe(rename({suffix: '.min'}))
+  .pipe(csso())
 	.pipe(maps.write('./'))
 	.pipe(gulp.dest(destCSS));
 });
@@ -95,6 +104,6 @@ gulp.task('valid', function () {
     .pipe(jsValidate());
 });
 
-gulp.task('default', ['runMochaTests', 'turnCoffeeToJavaScript', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'combineHowManyDaysAgo', 'createImageLightbox', 'minify', 'turnSassToCss', 'valid'], function () {
+gulp.task('default', ['runMochaTests', 'turnCoffeeToJavaScript', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'combineHowManyDaysAgo', 'createImageLightbox', 'minify', 'createAppCss', 'valid'], function () {
 	console.log("All tasks completed");
 });
