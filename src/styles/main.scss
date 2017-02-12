@@ -216,15 +216,11 @@ footer {
    filter: alpha(opacity=70); /* For IE8 and earlier */
 }
 
-.error {
-	text-align: center;
-}
 
 #report {
 	background-color: $primary-color;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 150px;
 	padding: 20px;
 	color: $white;
 }

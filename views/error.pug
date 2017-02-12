@@ -1,11 +1,13 @@
 head
 	include ./partials/_head.pug
 body
-	h1.error 404 - File Not Found
-	p.error If you've gotten to this page, either it means the page you're looking for has moved, or it doesn't exist.
-	p.error Please take the time to read the name of the link you entered.
-	p.error If you're still convinced the page you're looking for exists as you entered it, press the button.  Or else, go back to the previous page and try again.
-	button#report Report Me
-	img#scream(src="static/img/scream.jpg").img-responsive
-	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
-	script(src="static/js/error.js")
+	.container(style='margin-top: 50px')
+		h1(style='font-weight:bold; font-size: 4em') 404 - File Not Found
+		.row(style='border-top: none')
+			.col-md-5
+				img.img-responsive.center-block(src='static/img/devil-trump.jpg', alt='Devil Trump')
+			.col-md-7(style='font-size: 1.5em')
+				p If you've gotten to this page, either it means the page you're looking for has moved, or you're looking for a page that never existed to begin with.
+				p Don't worry if you feel alone about not wanting to be at this page, no sensible person would want to be here.
+				p If you're still convinced the page you're looking for exists as you entered it, even with all evidence pointing to the contrary, click the button below and continue believing in the alternative facts.  Otherwise, accept the truth and go back to the previous page.
+				a#report(href='/#', role='button') Report Me
