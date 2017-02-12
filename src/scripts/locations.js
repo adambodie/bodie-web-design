@@ -910,7 +910,18 @@ function initMap() {
                       lat: 45.0094742,
                       lng: -120.7525135
                 }
-      }
+      },{
+              title : "Bad Ideas are bad ideas: All sides can agree to that",
+              image : "img/seattle.jpg",
+              description : "Bad Ideas are bad ideas: All sides can agree to that",
+              location : "Seattle",
+              state : "Washington",
+              week : "February 5, 2017",
+              coordinates: {
+                    lat: 47.6040024,
+                    lng: -122.3410799
+              }
+    }
 ];
     var infoWindow = new google.maps.InfoWindow();
 
