@@ -920,7 +920,18 @@ function initMap() {
               coordinates: {
                     lat: 47.6040024,
                     lng: -122.3410799
-              }
+      }
+      },{
+                      title : "Sometimes it&apos;s good to get away from it all",
+                      image : "img/perpetua.jpg",
+                      description : "Sometimes it&apos;s good to get away from it all",
+                      location : "Cape Perpetua",
+                      state : "Oregon",
+                      week : "February 12, 2017",
+                      coordinates: {
+                            lat: 44.288895,
+                            lng: -124.1118245
+                      }
     }
 ];
     var infoWindow = new google.maps.InfoWindow();
