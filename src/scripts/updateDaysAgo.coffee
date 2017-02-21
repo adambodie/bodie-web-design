@@ -186,6 +186,17 @@ date = [
     updateMonth: 1
     updateDay: 9
   }
+  {
+    name: 'Florence Foundation'
+    id: 'daysAgo17'
+    year: 2017
+    month: 1
+    day: 19
+    updateId: 'updateDaysAgo17'
+    updateYear: 2017
+    updateMonth: 1
+    updateDay: 19
+  }
 ]
 current = new Date
 updated = new Date

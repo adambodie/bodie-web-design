@@ -79,6 +79,11 @@
 	"articles" : "dreidel",
 	"title" : "Dreidel Duel!",
 	"link" : "dreidel"
+},
+{
+	"articles" : "florence",
+	"title" : "Florence Foundations",
+	"link" : "florence"
 }
 
 ]
