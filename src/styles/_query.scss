@@ -12,20 +12,24 @@
       display:none;
       text-align:center;
 		img {
-     		margin-top: 80px; 
+     		margin-top: 80px;
     	}
     	h3 {
-     		color:white; 
+     		color:white;
     	}
 	}
 	p {
-		text-align: justify;	
+		text-align: justify;
 	}
 	#pic-caption {
-		font-size: 1em;	
-	}	
+		font-size: 1em;
+	}
 	/* GITHUB AD STYLES
-	----------------------*/	
+	----------------------*/
+  .ad {
+      border-top: none!important;
+  }
+
   #ad {
   	display: block;
     @include gradient(grey, purple);
@@ -38,7 +42,12 @@
   		margin-left: 50px;
   		padding: 10px;
   		text-shadow: 3px 3px 10px black;
+      font-family: 'Architects Daughter', cursive;
+      font-size: 3em; 
 	}
+  .fa-github {
+    text-shadow: 3px 3px 10px black;
+  }
 	h4 {
   		margin-left: 100px;
   		float: left;
@@ -51,8 +60,16 @@
 	a:hover {
   		color: gray;
 	}
+
   }
-  
+  #github {
+      h1 {
+        margin-top: 30px;
+      }
+      .fa {
+        margin-top: 20px;
+      }
+  }
   /*linkedin ad styles
   ---------------------------*/
   #linkedinad {
@@ -70,33 +87,33 @@
 		display: inline-block;
 		font-weight: bold;
 		&:hover {
-			color: lightgray;	
-		} 
+			color: lightgray;
+		}
 	 }
  	img {
  		margin-left: 20px;
 		margin-top: -10px;
- 	}	
+ 	}
 }
 	.box {
 		border-top: 1px solid white;
 	}
 	#meowButton {
-		margin-top: 100px;	
+		margin-top: 100px;
 	}
-	
+
 	#topbar {
 		#navbar {
 			float: none;
-		}	
+		}
 		ul {
 			text-align: left;
-			margin-top: 0;		
+			margin-top: 0;
 		}
 		li {
 			font-size: 1.3em;
 			margin-left: 10px;
-			margin-right: 10px;		
-		}	
+			margin-right: 10px;
+		}
 	}
 }
