@@ -16,7 +16,7 @@
 	function myFunction(arr) {
 		var feattxt = "";
 		var random = Math.floor(Math.random() * arr.length);
-		if (random == 15) {
+		if (random == 12) {
 			feattxt += "<a href='http://codepen.io/aduo3000/full/woEYxx/"
 		} else {
 			feattxt += "<a href='http://" + arr[random].link + ".bodiewebdesign.com"

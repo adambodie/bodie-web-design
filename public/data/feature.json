@@ -1,19 +1,8 @@
 [
 {
-	"articles" : "nfl",
-	"title" : "NFL Passer Rating",
-	"link" : "nfl-passer-rating"
-},
-
-{
 	"articles" : "grandcanyon",
 	"title" : "Adam Hits the Big 3-0",
 	"link" : "grand-canyon"
-},
-{
-	"articles" : "redvelvet",
-	"title" : "Jenn's Birthday",
-	"link" : "birthday"
 },
 {
 	"articles" : "beer",
@@ -34,16 +23,6 @@
 	"articles" : "delaware",
 	"title" : "Duck vs. Blue Hen!",
 	"link" : "battle"
-},
-{
-	"articles" : "compton",
-	"title" : "Compton: A Soundtrack by Dr. Dre",
-	"link" : "compton"
-},
-{
-	"articles" : "video",
-	"title" : "This is My Life",
-	"link" : "mylife"
 },
 {
 	"articles" : "small",
