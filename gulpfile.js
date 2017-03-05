@@ -20,7 +20,7 @@ var scripts = './src/scripts/';
 var styles = './src/styles/';
 
 gulp.task('runMochaTests', function(){
-  gulp.src(['./test/HolidayTest.js', './test/OpenTest.js'], {read: false})
+  gulp.src(['./test/HolidayTest.js', './test/OpenTest.js', './test/TimeTest.js'], {read: false})
       .pipe(mocha({reporter: 'nyan'}))
 });
 
