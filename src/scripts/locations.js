@@ -1049,6 +1049,17 @@ function initMap() {
                 lat: 44.2904477,
                 lng: -121.5628341
             }
+        },{
+            title: "Who Knew a Giraffe could be so Addicting",
+            image: "img/giraffe.jpg",
+            description: "Who Knew a Giraffe could be so Addicting",
+            location: "Portland",
+            state: "Oregon",
+            week: "February 26, 2017",
+            coordinates: {
+                lat: 45.5100418,
+                lng: -122.7180902
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
