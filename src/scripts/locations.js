@@ -1060,6 +1060,17 @@ function initMap() {
                 lat: 45.5100418,
                 lng: -122.7180902
             }
+        },{
+            title: "Is this where the Egyptians first settled in America?",
+            image: "img/pyramid.jpg",
+            description: "Is this where the Egyptians first settled in America?",
+            location: "Clear Lake",
+            state: "Iowa",
+            week: "March 4, 2017",
+            coordinates: {
+                lat: 43.140547,
+                lng: -93.4069777
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
