@@ -1066,10 +1066,21 @@ function initMap() {
             description: "Is this where the Egyptians first settled in America?",
             location: "Clear Lake",
             state: "Iowa",
-            week: "March 4, 2017",
+            week: "March 5, 2017",
             coordinates: {
                 lat: 43.140547,
                 lng: -93.4069777
+            }
+        },{
+            title: "Ten Years of Being Awesome",
+            image: "img/chicago.jpg",
+            description: "Ten Years of Being Awesome",
+            location: "Chicago",
+            state: "Illinois",
+            week: "March 12, 2017",
+            coordinates: {
+                lat: 41.8988084,
+                lng: -87.6252679
             }
         }
     ];
