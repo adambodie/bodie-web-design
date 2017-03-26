@@ -1082,6 +1082,17 @@ function initMap() {
                 lat: 41.8988084,
                 lng: -87.6252679
             }
+        },{
+            title: "Potheads, the Innocent Version",
+            image: "img/pothead.jpg",
+            description: "Potheads, the Innocent Version",
+            location: "Silverton",
+            state: "Oregon",
+            week: "March 19, 2017",
+            coordinates: {
+                lat: 44.996243,
+                lng: -122.7893273
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
