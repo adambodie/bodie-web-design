@@ -10,13 +10,13 @@ router.get('/', function(req, res) {
 	res.render('index', {title: bodie + "Home"});
 });
 
-router.get('/about.html', function(req, res) {
+router.get('/about', function(req, res) {
 	var path = req.path;
 	res.locals.path = path;
 	res.render('about', {title: bodie + "About"});
 });
 
-router.get('/picture.html', function(req, res) {
+router.get('/picture', function(req, res) {
 	var path = req.path;
 	res.locals.path = path;
 	res.render('picture', {title: bodie + "Picture of the Week"});
