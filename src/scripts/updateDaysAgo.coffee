@@ -153,6 +153,17 @@ date = [
     updateMonth: 1
     updateDay: 19
   }
+  {
+    name: 'NFL Passer Rating'
+    id: 'daysAgo15'
+    year: 2017
+    month: 3
+    day: 2
+    updateId: 'updateDaysAgo15'
+    updateYear: 2017
+    updateMonth: 3
+    updateDay: 2
+  }
 ]
 current = new Date
 updated = new Date

@@ -63,6 +63,11 @@
 	"articles" : "florence",
 	"title" : "Florence Foundations",
 	"link" : "florence"
+},
+{
+	"articles" : "nfl",
+	"title" : "NFL Passer Rating",
+	"link" : "nfl-passer-rating"
 }
 
 ]
