@@ -1093,6 +1093,17 @@ function initMap() {
                 lat: 44.996243,
                 lng: -122.7893273
             }
+        },{
+            title: "Final Four!",
+            image: "img/ducks.jpg",
+            description: "Final Four!",
+            location: "Eugene",
+            state: "Oregon",
+            week: "March 26, 2017",
+            coordinates: {
+                lat: 44.0453319,
+                lng: -123.0658645
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
