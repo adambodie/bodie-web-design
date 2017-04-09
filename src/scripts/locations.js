@@ -1104,6 +1104,17 @@ function initMap() {
                 lat: 44.0453319,
                 lng: -123.0658645
             }
+        },{
+            title: "Going back to the 19th Century",
+            image: "img/train.jpg",
+            description: "Going back to the 19th Century",
+            location: "Columbia Hills State Park",
+            state: "Washington",
+            week: "April 2, 2017",
+            coordinates: {
+                lat: 45.64013,
+                lng: -121.1063577
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
