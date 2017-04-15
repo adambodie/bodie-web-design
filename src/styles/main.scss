@@ -213,19 +213,45 @@ footer {
 
 /* PICTURE OF THE WEEK
 -----------------------*/
-
-#week :hover {
-	opacity: 0.7;
-   filter: alpha(opacity=70); /* For IE8 and earlier */
+.photo {
+	position: relative;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+.photo-container img {
+ 	max-width: 100%;
 }
 
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+	opacity: 0;
+	transition: opacity 1s;
+	&:hover {
+		opacity: 1;
+	}
+	h3 {
+		font-weight: bold;
+	}
+}
 
-#report {
-	background-color: $primary-color;
-	display: block;
-	width: 150px;
-	padding: 20px;
-	color: $white;
+.photo img {
+	transform-origin: 0 0;
+}
+
+.photo:hover img {
+	transform: scale(1.2);
 }
 
 /* IMAGE LIGHTBOX STYLES

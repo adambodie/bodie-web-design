@@ -13,9 +13,7 @@
       text-align:center;
 		img {
      		margin-top: 80px;
-    	}
-    	h3 {
-     		color:white;
+     		transform: scale(1.1, 1.1);
     	}
 	}
 	p {
@@ -97,9 +95,6 @@
 }
 	.box {
 		border-top: 1px solid white;
-	}
-	#meowButton {
-		margin-top: 100px;
 	}
 
 	#topbar {
