@@ -1115,6 +1115,17 @@ function initMap() {
                 lat: 45.64013,
                 lng: -121.1063577
             }
+        },{
+            title: "A Pixelated Birdy in a 3-D World",
+            image: "img/birdy.jpg",
+            description: "A Pixelated Birdy in a 3-D World",
+            location: "Palm Desert",
+            state: "California",
+            week: "April 9, 2017",
+            coordinates: {
+                lat: 33.7183743,
+                lng: -116.3744159
+            }
         }
     ];
     var infoWindow = new google.maps.InfoWindow();
