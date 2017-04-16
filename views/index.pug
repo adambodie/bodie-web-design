@@ -38,27 +38,9 @@ block content
             h3#update Recent updates
             .update
               ul
-                li
-                  strong NFL Passer Rating
-                  |  - Launched April 2, 2017
-                li
-                  strong Florence Foundations
-                  |  - Launched February 19, 2017
-                li
-                  strong Coen Brothers Film Review
-                  |  - Launched February 9, 2017
-                li
-                  strong Dreidel Duel!
-                  |  - Launched January 22, 2017
-                li
-                  strong This Is My Life
-                  |  - Relaunched January 12, 2017
-                li
-                  strong Adam's Wonderful World of Waterfalls
-                  |  - Updated January 11, 2017, replaced with Beta Version.  See note below.
-                li
-                  strong Duck vs. Blue Hen!
-                  |  - Updated January 8, 2017 with redesign, Slick jQuery plugin
+                li(ng-repeat="update in updates")
+                  strong {{update.title}}
+                  |  - {{update.description}}                
 
             div(ng-repeat="project in projects")
               .row
