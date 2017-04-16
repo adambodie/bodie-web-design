@@ -1,8 +1,8 @@
 extends ./layout.pug
 block content
-    .container.intro(ng-controller='MainController')
+    .container.intro
       .row
-        h2.section-heading Welcome to {{title}}
+        h2.section-heading Welcome to Bodie Web Design
         .col-md-6
           p
             | Here you will find many of the web projects I've developed since I began web development. Proficient in languages including HTML5, CSS3, JavaScript, and many of JavaScript's popular libraries such as jQuery and AngularJS, I have used many techniques to build what you see here. There's plenty to explore and see, and plenty more on its way in the future, so feel free to check out my work and explore everything I have to offer. For those looking for a bit of history, I have been learning and practicing software development since the end of 2013. My main area of expertise is front-end web development, but I also know the basics of languages like Ruby, Python, and Java, as well as web frameworks combining these languages with front-end development.
@@ -36,32 +36,32 @@ block content
           h2.section-heading Projects
           .row
             h3#update Recent updates
-            .update
+            .update(ng-controller='UpdateController')
               ul
-                li(ng-repeat="update in updates")
+                li(ng-repeat='update in updates')
                   strong {{update.title}}
-                  |  - {{update.description}}                
-
-            div(ng-repeat="project in projects")
-              .row
-                .box.block.col-sm-6.links
-                  img.img-responsive(ng-src='/static/img/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
-                .box.block.col-sm-6
-                  h2 {{project.title}}
-                  .description
-                    p
-                      strong Created:
-                      |  {{project.created}}
-                    p
-                      strong Added:
-                      |  {{project.createdAt}}
-                    br
-                    p
-                      strong Updated:
-                      |  {{project.updated}}
-                    p
-                      strong Last Updated:
-                      |  {{project.updatedAt}}
-                  p {{project.description}}
-                  h3
-                    a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+                  |  - {{update.description}}
+            div(ng-controller='ProjectController')
+              div(ng-repeat='project in projects')
+                .row
+                  .box.block.col-sm-6.links
+                    img.img-responsive(ng-src='/static/img/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
+                  .box.block.col-sm-6
+                    h2 {{project.title}}
+                    .description
+                      p
+                        strong Created:
+                        |  {{project.created}}
+                      p
+                        strong Added:
+                        |  {{project.createdAt}}
+                      br
+                      p
+                        strong Updated:
+                        |  {{project.updated}}
+                      p
+                        strong Last Updated:
+                        |  {{project.updatedAt}}
+                    p {{project.description}}
+                    h3
+                      a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
