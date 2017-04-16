@@ -1,16 +1,16 @@
 extends ./layout.pug
 
 block content
-    .container.about 
+    .container.about
         .row
             .col-md-6
                 h2 About Me
-                h4 Who is Adam Bodie?    
+                h4 Who is Adam Bodie?
                 p I am a person who is reliable, devoted and always willing to do what needs to be done.  Whether it's work or play, I strive to make sure things are done right and exact.  With me, I am the whole package.  Someone who's loyal to the team, incredibly focused on details, and passionate about what I do.  There's nothing that passes me by.
                 p As you can see in my various projects, I have a knack for creativity and flair.  It's just who I am.  I love what I do and I love what I am.  Take for example, my love of photography.  Since I was young, I've always been creative and artistic.  Currently, my passion is photography, and with my love for developing, I am able to combine these two loves at ease.  You'll see that through my works, and that's what I am about.
                 p My main passion for programming is front-end development, but I consider myself versatile in many ways.  I'm familiar with web frameworks like the popular Ruby on Rails, and Django.  It's important to have one place to combine front-end client-side pages with back-end server side development.  It's the virtual world we live in, where everything comes together to make one cohesive product.  But like technology in general, it's a living creature, always evolving to bigger and greater things.  Because of this, it's important to learn and keep learning.  Ever since I was young, I've always had a passion for learning, not only the basics, but to become "the expert of things."  Learning things is a passion to me, and an enjoyment in my life.  It's what makes me the person I am.  Even though I know some languages and features, I will never stop learning and never stop believing in myself.
                 p Truth is, I won't stop there.  I love what I'm doing.  There are many more beasts to learn and develop with.  Right now, my interest is with other JavaScript libraries I'd love to learn, AJAX, Ember.js, React.js, you name it.
-                p Currently, I live in the Portland, Oregon area looking to begin my career in web development.  But I'm more than willing to relocate to work.  If you're interesting in discussing opportunities with me or have any advice to give, I'm more than willing to talk.  Anywhere, anytime.  That's always been my motto.  
+                p Currently, I live in the Portland, Oregon area looking to begin my career in web development.  But I'm more than willing to relocate to work.  If you're interesting in discussing opportunities with me or have any advice to give, I'm more than willing to talk.  Anywhere, anytime.  That's always been my motto.
             .col-md-6
                 h1#contact Contact Me
                 .col-md-6#authorDiv
@@ -20,27 +20,13 @@ block content
                     h4
                         strong
                             a(href="mailto:adam.bodie@yahoo.com") adam.bodie@yahoo.com
-                    p Of course, like any business that's not open 24 hours, I am closed for business from time to time.  Therefore, if you do send me an email after "closing hours," please note that I am not likely to respond until I'm ready to conduct business.  Please keep that in mind when sending me an email.  But I will respond, just give me time.  Thank you and have a good day!</p>    
+                    p Of course, like any business that's not open 24 hours, I am closed for business from time to time.  Therefore, if you do send me an email after "closing hours," please note that I am not likely to respond until I'm ready to conduct business.  Please keep that in mind when sending me an email.  But I will respond, just give me time.  Thank you and have a good day!</p>
                 #container.block
                 h2#programmingSkills Programming Skills
                 p These are programming skills that I have.  I mostly prefer front-end development with HTML5, CSS3 and JavaScript, but I have knowledge of other languages as well.  The information provided showcases languages, libraries and other parts that I have worked with at some point. I'm also skilled with programs like Microsoft Office and Adobe PhotoShop.  In a sense, I am flexible and can easily adapt with computer software.
                 .news
-                        ul
-                           li HTML5
-                           li CSS3
-                           li JavaScript
-                           li jQuery
-                           li Bootstrap
-                           li AngularJS
-                           li AJAX
-                           li Java
-                           li Ruby
-                           li Ruby On Rails
-                           li Python 2.7
-                           li Django
-                           li Perl 5
-                           li PHP
-                           li Git           
+                        ul(ng-controller="SkillsController")
+                           li(ng-repeat="skill in skills") {{skill}}
     .row
         #linkedinad
             button#close
