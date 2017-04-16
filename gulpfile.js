@@ -51,16 +51,6 @@ gulp.task('createOpenOnDate', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('combineHowManyDaysAgo', function() {
-  return gulp.src([scripts + 'howManyDaysAgo.coffee', scripts + 'updateDaysAgo.coffee'])
-    .pipe(concat('./howManyDaysAgoUpdate.coffee'))
-    .pipe(maps.init())
-    .pipe(coffee())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(maps.write())
-    .pipe(gulp.dest(destJS));
-});
 
 gulp.task('createImageLightbox', function() {
   return gulp.src([vendor + '/imageLightbox/imagelightbox.js', scripts + 'myLightbox.js'])
@@ -104,6 +94,6 @@ gulp.task('valid', function () {
     .pipe(jsValidate());
 });
 
-gulp.task('default', ['runMochaTests', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'combineHowManyDaysAgo', 'createImageLightbox', 'minify', 'createAppCss', 'valid'], function () {
+gulp.task('default', ['runMochaTests', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'createAppCss', 'valid'], function () {
 	console.log("All tasks completed");
 });
