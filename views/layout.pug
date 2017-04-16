@@ -1,10 +1,9 @@
 doctype html
 html(lang="en")
 		include ./partials/_head.pug
-		
-		body#page-top
-			include ./partials/_nav.pug
-			block content						
-			include ./partials/_footer.pug		
-			include ./partials/_javascript.pug
 
+		body#page-top(ng-app='mainApp')
+			include ./partials/_nav.pug
+			block content
+			include ./partials/_footer.pug
+			include ./partials/_javascript.pug
