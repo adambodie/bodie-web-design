@@ -44,11 +44,6 @@ app.controller('ProjectController', ['$scope', function($scope) {
             return undefined;
         };
     }
-    function setDate (years, months, days) {
-        var update = new Date();
-        update.setFullYear(Number.parseInt(years), Number.parseInt(months), Number.parseInt(days));
-        return update.toDateString();
-    }
     $scope.projects = [
       {
         image: "grandcanyon",
