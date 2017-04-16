@@ -8,7 +8,10 @@ block content
             | Here you will find many of the web projects I've developed since I began web development. Proficient in languages including HTML5, CSS3, JavaScript, and many of JavaScript's popular libraries such as jQuery and AngularJS, I have used many techniques to build what you see here. There's plenty to explore and see, and plenty more on its way in the future, so feel free to check out my work and explore everything I have to offer. For those looking for a bit of history, I have been learning and practicing software development since the end of 2013. My main area of expertise is front-end web development, but I also know the basics of languages like Ruby, Python, and Java, as well as web frameworks combining these languages with front-end development.
         .col-md-6
           h1#feature_project Featured Project
-          #feature
+          #feature(ng-controller='FeatureController')
+            a(href='http://{{randomFeature.link}}.bodiewebdesign.com')
+              img(ng-src='static/img/{{randomFeature.image}}.jpg' class='img-responsive center-block')
+            h3 {{randomFeature.title}}
       section#about
         .container
           .row

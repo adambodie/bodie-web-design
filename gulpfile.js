@@ -72,7 +72,7 @@ gulp.task('overlay', function () {
 
 
 gulp.task('minify', function () {
-	return gulp.src([scripts + 'feature.js', scripts + 'locations.js'])
+	return gulp.src([scripts + 'locations.js'])
 	.pipe(rename({suffix: '.min'}))
 	.pipe(uglify())
 	.pipe(gulp.dest(destJS));

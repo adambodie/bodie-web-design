@@ -8,8 +8,7 @@ script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
 // Angular
 script(src='http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js')
 script(src='static/js/angular/main.js')
-script(src='static/js/controllers/UpdateController.js')
-script(src='static/js/controllers/ProjectController.js')
+
 
 // custom JS
 
@@ -19,8 +18,9 @@ script(src="static/js/vticker.min.js")
 script(src="static/js/scrollbar.min.js")
 
 if path === '/'
-	script(src="static/js/feature.min.js")
-
+	script(src='static/js/controllers/UpdateController.js')
+	script(src='static/js/controllers/ProjectController.js')
+	script(src='static/js/controllers/FeatureController.js')
 
 if path === '/about'
 	script(src="static/js/open-on-date.min.js")
