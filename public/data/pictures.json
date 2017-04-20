@@ -374,7 +374,7 @@
 			"lng": -166.7152001
 		}
 	}, {
-		"title": "Amazing Palouse Falls, I apologize for nothing.",
+		"title": "Palouse Falls",
 		"image": "img/palouse.jpg",
 		"description": "Amazing Palouse Falls, I apologize for nothing.",
 		"location": "Palouse Falls State Park",
@@ -385,7 +385,7 @@
 			"lng": -118.2520072
 		}
 	}, {
-		"title": "Our cherry blossoms are better than D.C.'s.",
+		"title": "Oregon State Capitol",
 		"image": "img/salem.jpg",
 		"description": "Our cherry blossoms are better than D.C.'s.",
 		"location": "Salem",
@@ -418,7 +418,7 @@
 			"lng": -123.931113
 		}
 	}, {
-		"title": "Vítejte na krásné Praze, v České republice!",
+		"title": "Prauge Castle",
 		"image": "img/prague.jpg",
 		"description": "Vítejte na krásné Praze, v České republice!",
 		"location": "Prague",
@@ -440,7 +440,7 @@
 			"lng": -93.2736283
 		}
 	}, {
-		"title": "Two dogs out for a race enjoying life, the way it should be",
+		"title": "Two Dogs",
 		"image": "img/dogs.jpg",
 		"description": "Two dogs out for a race enjoying life, the way it should be",
 		"location": "Hood River",
@@ -451,7 +451,7 @@
 			"lng": -121.5102629
 		}
 	}, {
-		"title": "My birthday present eight years ago: A trip to Denver, fun times!",
+		"title": "Denver",
 		"image": "img/denver.jpg",
 		"description": "My birthday present eight years ago: A trip to Denver, fun times!",
 		"location": "Denver",
@@ -462,7 +462,7 @@
 			"lng": -104.9892763
 		}
 	}, {
-		"title": "The Gateway Arch: How something so simple can be so Perfect.",
+		"title": "The Gateway Arch",
 		"image": "img/gateway.jpg",
 		"description": "The Gateway Arch: How something so simple can be so Perfect.",
 		"location": "St. Louis",
@@ -473,7 +473,7 @@
 			"lng": -90.184835
 		}
 	}, {
-		"title": "To help a friend who needs cheering up: A nice picture of a beach in the best place for beaches, Maui.",
+		"title": "Lahaina",
 		"image": "img/lahaina.jpg",
 		"description": "To help a friend who needs cheering up: A nice picture of a beach in the best place for beaches, Maui.",
 		"location": "Lahaina",
@@ -484,7 +484,7 @@
 			"lng": -156.6808077
 		}
 	}, {
-		"title": "Look Mom!  I made it to the top of the Monkey Face...I wish.",
+		"title": "Monkey Face",
 		"image": "img/monkey.jpg",
 		"description": "Look Mom!  I made it to the top of the Monkey Face...I wish.",
 		"location": "Smith Rock State Park",
@@ -495,7 +495,7 @@
 			"lng": -121.142440
 		}
 	}, {
-		"title": "To honor a friend who's living life happy and free as he should.  I'm proud.",
+		"title": "Moscone Center",
 		"image": "img/moscone.jpg",
 		"description": "To honor a friend who's living life happy and free as he should.  I'm proud.",
 		"location": "San Francisco",
@@ -506,7 +506,7 @@
 			"lng": -122.4034264
 		}
 	}, {
-		"title": "What happens in the middle of nowhere, stays in the middle of nowhere.",
+		"title": "Nowhere",
 		"image": "img/nowhere.jpg",
 		"description": "What happens in the middle of nowhere, stays in the middle of nowhere.",
 		"location": "Wheeler County",
@@ -517,9 +517,9 @@
 			"lng": -120.4316954
 		}
 	}, {
-		"title": "I couldn't choose one Picture of the Week from my day trip to Mt. Rainier, so I chose 16 instead.  Click on them to see them full size.",
+		"title": "Mt. Rainer National Park",
 		"image": "img/rainier-collage.jpg",
-		"description": "I couldn't choose one Picture of the Week from my day trip to Mt. Rainier, so I chose 16 instead.  Click on them to see them full size.",
+		"description": "I couldn't choose one Picture of the Week from my day trip to Mt. Rainier, so I chose 16 instead.",
 		"location": "Mt. Rainier National Park",
 		"state": "Washington",
 		"week": "June 19, 2016",
@@ -528,7 +528,7 @@
 			"lng": -121.743728
 		}
 	}, {
-		"title": "Summer begins, here's hoping it's not as hot as Las Vegas in July.",
+		"title": "Mirage",
 		"image": "img/mirage.jpg",
 		"description": "Summer begins, here's hoping it's not as hot as Las Vegas in July.",
 		"location": "Las Vegas",
@@ -539,7 +539,7 @@
 			"lng": -115.1870294
 		}
 	}, {
-		"title": "Happy 4th of July, from someone who loves America!",
+		"title": "The White House",
 		"image": "img/white-house.jpg",
 		"description": "Happy 4th of July, from someone who loves America!",
 		"location": "Washington",
@@ -550,7 +550,7 @@
 			"lng": -77.0393706
 		}
 	}, {
-		"title": "Rule Number 1 for a Successful Roadtrip, Make sure your car is in good shape.  Learned that in Alabama.",
+		"title": "Cathedral Caverns",
 		"image": "img/cathedral-cavern.jpg",
 		"description": "Rule Number 1 for a Successful Roadtrip, Make sure your car is in good shape.  Learned that in Alabama.",
 		"location": "Cathedral Caverns State Park",
@@ -561,7 +561,7 @@
 			"lng": -86.2422688
 		}
 	}, {
-		"title": "The Future for me started in 2005 at the Ars Electronica Center in Linz, Austria",
+		"title": "Ars Electronic Center",
 		"image": "img/ars.jpg",
 		"description": "The Future for me started in 2005 at the Ars Electronica Center in Linz, Austria",
 		"location": "Linz",
@@ -572,7 +572,7 @@
 			"lng": 14.2746958
 		}
 	}, {
-		"title": "The Higher the Better: The Story of My Trip to Reno",
+		"title": "Reno",
 		"image": "img/reno.jpg",
 		"description": "The Higher the Better: The Story of My Trip to Reno",
 		"location": "Reno",
@@ -583,7 +583,7 @@
 			"lng": -119.8256894
 		}
 	}, {
-		"title": "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
+		"title": "Crater Lake",
 		"image": "img/crater.jpg",
 		"description": "Kinda looks like Lake Tahoe doesn't it?  But no, it's Crater Lake",
 		"location": "Crater Lake National Park",
@@ -594,7 +594,7 @@
 			"lng": -122.2113034
 		}
 	}, {
-		"title": "The Columbia River: A Great Place in Oregon to show to your Cousin",
+		"title": "Columbia River",
 		"image": "img/columbia.jpg",
 		"description": "The Columbia River: A Great Place in Oregon to show to your Cousin",
 		"location": "Portland",
@@ -605,7 +605,7 @@
 			"lng": -122.6455796
 		}
 	}, {
-		"title": "Everything's better when bigger, including Shuttlecocks",
+		"title": "Shuttlecocks",
 		"image": "img/shuttlecock.jpg",
 		"description": "Everything's better when bigger, including Shuttlecocks",
 		"location": "Kansas City",
@@ -616,7 +616,7 @@
 			"lng": -94.5925345
 		}
 	}, {
-		"title": "Remember when Detroit Lake was actually filled with water?  I do.",
+		"title": "Detroit Lake",
 		"image": "img/detroit-lake.jpg",
 		"description": "Remember when Detroit Lake was actually filled with water?  I do.",
 		"location": "Detroit Lake",
@@ -627,7 +627,7 @@
 			"lng": -122.218496
 		}
 	}, {
-		"title": "Cahokia Mounds: Where Native American history meets big city views",
+		"title": "Cahokia Mounds",
 		"image": "img/cahokia.jpg",
 		"description": "Cahokia Mounds: Where Native American history meets big city views",
 		"location": "Cahokia Mounds",
@@ -638,7 +638,7 @@
 			"lng": -90.0640115
 		}
 	}, {
-		"title": "Sometimes, the best joys in life are at home.",
+		"title": "Sunset at Home",
 		"image": "img/home.jpg",
 		"description": "Sometimes, the best joys in life are at home.",
 		"location": "Beaverton",
@@ -649,7 +649,7 @@
 			"lng": -122.902098
 		}
 	}, {
-		"title": "I love Mountains.  Central Oregon has plenty great Mountains.",
+		"title": "Three Sisters",
 		"image": "img/sister.jpg",
 		"description": "I love Mountains.  Central Oregon has plenty great Mountains.",
 		"location": "Cascade Lakes Scenic Byway",
@@ -660,7 +660,7 @@
 			"lng": -121.8186165
 		}
 	}, {
-		"title": "Respect your Opponent: Some things are bigger than a Game.",
+		"title": "Omaha",
 		"image": "img/omaha.jpg",
 		"description": "Respect your Opponent: Some things are bigger than a Game.",
 		"location": "Omaha",
@@ -671,7 +671,7 @@
 			"lng": -95.9374766
 		}
 	}, {
-		"title": "Is this the turning point to the biggest mystery ever? Only time will tell...",
+		"title": "Winona",
 		"image": "img/winona.jpg",
 		"description": "Is this the turning point to the biggest mystery ever? Only time will tell...",
 		"location": "Winona",
@@ -682,7 +682,7 @@
 			"lng": -91.654577
 		}
 	}, {
-		"title": "Putting the Locks on Cascade Locks",
+		"title": "Cascade Locks",
 		"image": "img/locks.jpg",
 		"description": "Putting the Locks on Cascade Locks",
 		"location": "Cascade Locks",
@@ -693,7 +693,7 @@
 			"lng": -121.9051406
 		}
 	}, {
-		"title": "My thoughts to those affected by Hurricane Matthew.  Jacksonville much nicer when my Mom visited.",
+		"title": "Jacksonville",
 		"image": "img/jacksonville.jpg",
 		"description": "My thoughts to those affected by Hurricane Matthew.  Jacksonville much nicer when my Mom visited.",
 		"location": "Jacksonville",
@@ -704,7 +704,7 @@
 			"lng": -81.6720094
 		}
 	}, {
-		"title": "In honor of my cousins from Tennessee visiting, a picture inside Ruby Falls Cave.",
+		"title": "Ruby Falls Cave.",
 		"image": "img/ruby.jpg",
 		"description": "In honor of my cousins from Tennessee visiting, a picture inside Ruby Falls Cave.",
 		"location": "Ruby Falls",
@@ -726,7 +726,7 @@
 			"lng": -122.892767
 		}
 	}, {
-		"title": "If this isn't what life's all about, I don't know what is",
+		"title": "Double Rainbow",
 		"image": "img/double-rainbow.jpg",
 		"description": "If this isn't what life's all about, I don't know what is",
 		"location": "Beaverton",
@@ -737,7 +737,7 @@
 			"lng": -122.9043866
 		}
 	}, {
-		"title": "The future of our country could be made here: I held a bell for Red, White and Blue.  Not White, Blue and Red",
+		"title": "Reno Arch",
 		"image": "img/reno-bell.jpg",
 		"description": "The future of our country could be made here: I held a bell for Red, White and Blue.  Not White, Blue and Red",
 		"location": "Reno",
@@ -748,7 +748,7 @@
 			"lng": -119.8158833
 		}
 	}, {
-		"title": "Pompeii: A perfect analogy to describe what the United States moral values have become with Dictator Trump in charge",
+		"title": "Pompeii",
 		"image": "img/pompeii.jpg",
 		"description": "Pompeii: A perfect analogy to describe what the United States moral values have become with Dictator Trump in charge",
 		"location": "Pompeii",
@@ -759,7 +759,7 @@
 			"lng": 14.3350664
 		}
 	}, {
-		"title": "Welcome to Wisconsin: Home of the Cheese, Land of the Fat",
+		"title": "Sheboygan",
 		"image": "img/sheboygan.jpg",
 		"description": "Welcome to Wisconsin: Home of the Cheese, Land of the Fat",
 		"location": "Sheboygan",
@@ -770,7 +770,7 @@
 			"lng": -87.7087782
 		}
 	}, {
-		"title": "Native Americans deserve more respect than they get",
+		"title": "Warm Springs",
 		"image": "img/warm-springs.jpg",
 		"description": "Native Americans deserve more respect than they get",
 		"location": "Warm Springs",
@@ -781,7 +781,7 @@
 			"lng": -121.271032
 		}
 	}, {
-		"title": "Winter's almost here, time to bundle up!",
+		"title": "Blizzard",
 		"image": "img/blizzard.jpg",
 		"description": "Winter's almost here, time to bundle up!",
 		"location": "Minneapolis",
@@ -792,7 +792,7 @@
 			"lng": -93.220517
 		}
 	}, {
-		"title": "A crazy week is all you need to wish you were in Hawaii",
+		"title": "Ka'anapali",
 		"image": "img/beach.jpg",
 		"description": "A crazy week is all you need to wish you were in Hawaii",
 		"location": "Ka'anapali",
@@ -814,7 +814,7 @@
 			"lng": -122.8315957
 		}
 	}, {
-		"title": "Happy Holidays!",
+		"title": "34th Street Lights",
 		"image": "img/holiday.jpg",
 		"description": "Happy Holidays!",
 		"location": "Baltimore",
@@ -825,7 +825,7 @@
 			"lng": -76.6351916
 		}
 	}, {
-		"title": "Happy New Years!",
+		"title": "Lake Tahoe",
 		"image": "img/tahoe.jpg",
 		"description": "Happy New Years!",
 		"location": "Lake Tahoe",
@@ -836,7 +836,7 @@
 			"lng": -120.1140641
 		}
 	}, {
-		"title": "Start the New Year off right",
+		"title": "Sunrise in Iowa",
 		"image": "img/sunrise.jpg",
 		"description": "Start the New Year off right",
 		"location": "Worth County",
@@ -847,7 +847,7 @@
 			"lng": -93.4009498
 		}
 	}, {
-		"title": "A Snowstorm is not the End of the World",
+		"title": "Mt. Hood",
 		"image": "img/hood.jpg",
 		"description": "A Snowstorm is not the End of the World",
 		"location": "Mt. Hood",
@@ -858,7 +858,7 @@
 			"lng": -121.7110972
 		}
 	}, {
-		"title": "The White House has officially been turned upside down",
+		"title": "Top Secret",
 		"image": "img/top-secret.jpg",
 		"description": "The White House has officially been turned upside down",
 		"location": "Wisconsin Dells",
@@ -869,7 +869,7 @@
 			"lng": -89.7946824
 		}
 	}, {
-		"title": "The Good Things in Life are all that Matters",
+		"title": "Shaniko",
 		"image": "img/shaniko.jpg",
 		"description": "The Good Things in Life are all that Matters",
 		"location": "Shaniko",
@@ -880,7 +880,7 @@
 			"lng": -120.7525135
 		}
 	}, {
-		"title": "Bad Ideas are bad ideas: All sides can agree to that",
+		"title": "Seattle",
 		"image": "img/seattle.jpg",
 		"description": "Bad Ideas are bad ideas: All sides can agree to that",
 		"location": "Seattle",
@@ -891,7 +891,7 @@
 			"lng": -122.3410799
 		}
 	}, {
-		"title": "Sometimes it's good to get away from it all",
+		"title": "Cape Perpetua",
 		"image": "img/perpetua.jpg",
 		"description": "Sometimes it's good to get away from it all",
 		"location": "Cape Perpetua",
@@ -902,7 +902,7 @@
 			"lng": -124.1118245
 		}
 	}, {
-		"title": "Welcome to the Wild Wild West",
+		"title": "Sisters",
 		"image": "img/sisters.jpg",
 		"description": "Welcome to the Wild Wild West",
 		"location": "Sisters",
@@ -913,7 +913,7 @@
 			"lng": -121.5628341
 		}
 	}, {
-		"title": "Who Knew a Giraffe could be so Addicting",
+		"title": "Giraffe",
 		"image": "img/giraffe.jpg",
 		"description": "Who Knew a Giraffe could be so Addicting",
 		"location": "Portland",
@@ -924,7 +924,7 @@
 			"lng": -122.7180902
 		}
 	}, {
-		"title": "Is this where the Egyptians first settled in America?",
+		"title": "Clear Lake",
 		"image": "img/pyramid.jpg",
 		"description": "Is this where the Egyptians first settled in America?",
 		"location": "Clear Lake",
@@ -935,7 +935,7 @@
 			"lng": -93.4069777
 		}
 	}, {
-		"title": "Ten Years of Being Awesome",
+		"title": "Chicago",
 		"image": "img/chicago.jpg",
 		"description": "Ten Years of Being Awesome",
 		"location": "Chicago",
@@ -968,7 +968,7 @@
 			"lng": -123.0658645
 		}
 	}, {
-		"title": "Going back to the 19th Century",
+		"title": "Train Tracks",
 		"image": "img/train.jpg",
 		"description": "Going back to the 19th Century",
 		"location": "Columbia Hills State Park",
@@ -979,7 +979,7 @@
 			"lng": -121.1063577
 		}
 	}, {
-		"title": "A Pixelated Birdy in a 3-D World",
+		"title": "A Pixelated Birdy",
 		"image": "img/birdy.jpg",
 		"description": "A Pixelated Birdy in a 3-D World",
 		"location": "Palm Desert",
