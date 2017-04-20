@@ -1,9 +1,15 @@
 extends ./layout.pug
 
 block content
-    .container.intro
+    .container.intro(ng-controller="PictureController")
         .row
             h1 Picture of the Week
-            p To view previous pictures, click on a star to pull up an info window and select the picture. 
             .row
-                #map
+              .col-md-4(ng-repeat='item in data.locations')
+                .photo
+                  img(ng-src="static/{{item.image}}" class="img-responsive" alt="{{item.title}}")
+                  a(href="static/{{item.image}}" data-imagelightbox="a")
+                  .photo-overlay
+                    h1 {{item.title}}
+                    p  {{item.week}}
+                    p  {{item.description}}
