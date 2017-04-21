@@ -90,7 +90,7 @@ gulp.task('createAppCss', function () {
 });
 
 gulp.task('valid', function () {
-    return gulp.src(destJS + '*.js')
+    return gulp.src(scripts + '*.js')
     .pipe(jsValidate());
 });
 

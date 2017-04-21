@@ -12,21 +12,10 @@ $(function() {
 	},
 	closeButtonOff = function(){
 		$( '#imagelightbox-close' ).remove();
-	},
-	// CAPTION
-	captionOn = function(){
-	var description = $( "a[href='" + $( "#imagelightbox" ).attr( "src" ) + "'] img" ).attr( "alt" );
-		if( description.length > 0 )
-			$( "<div id='imagelightbox-caption'>" + description + "</div>" ).appendTo( 'body' );
-	},
-	captionOff = function(){
-		$( '#imagelightbox-caption' ).remove();
 	}
 	var selector = 'a[data-imagelightbox="a"]';
 	var instance = $( selector ).imageLightbox({
 			onStart:		function() { overlayOn(); closeButtonOn( instance ); },
-			onEnd:			function() { overlayOff(); captionOff(); closeButtonOff();},
-			onLoadStart: 	function() { captionOff()},
-			onLoadEnd:	 	function() { captionOn();}
+			onEnd:			function() { overlayOff(); closeButtonOff();}
 		});		
 });

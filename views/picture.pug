@@ -4,12 +4,13 @@ block content
     .container.intro(ng-controller="PictureController")
         .row
             h1 Picture of the Week
-            .row
+            .row(style="border: none")
               .col-md-4(ng-repeat='item in data.locations')
                 .photo
                   img(ng-src="static/{{item.image}}" class="img-responsive" alt="{{item.title}}")
                   a(href="static/{{item.image}}" data-imagelightbox="a")
-                  .photo-overlay
-                    h1 {{item.title}}
-                    p  {{item.week}}
-                    p(style="text-align: center") {{item.description}}
+                    .photo-overlay
+                      h1 {{item.title}}
+                      p  Week of: {{item.week}}
+                      p  {{item.location}}, {{item.state}}
+                      p(style="text-align: center") {{item.description}}
