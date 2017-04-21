@@ -4,7 +4,7 @@ block content
     .container.intro(ng-controller="PictureController")
         .row
             h1 Picture of the Week
-            .row(style="border: none")
+            .row.flex-row(style="border: none")
               .col-md-4(ng-repeat='item in data.locations')
                 .photo
                   img(ng-src="static/{{item.image}}" class="img-responsive" alt="{{item.title}}")
