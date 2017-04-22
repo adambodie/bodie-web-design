@@ -1,40 +1,15 @@
 /* ARCHIVE.CSS
 -------------------------------------*/
-#map {
-    height: 400px;
-    width: 100%;
-    border: 3px solid white;
-}
-
-.flex-row.row {
-	 display: flex;
-	 flex-wrap: wrap;
-}
-.flex-row.row > [class*='col-'] {
-	 display: flex;
-	 flex-direction: column;
-}
-.flex-row.row:after, 
-.flex-row.row:before {
-	 display: flex;
-}
-
 
 #imagelightbox {
     position: fixed;
     z-index: 9999;
- 
+
     -ms-touch-action: none;
     touch-action: none;
 }
 
-
-#pictureArchive {
-	margin-top: 20px;
-	color: $primary-color;
-	text-align: center
-}
-/* IMAGE LIGHTBOX STYLES 
+/* IMAGE LIGHTBOX STYLES
 ---------------------------*/
 	#imagelightbox {
 			cursor: pointer;
@@ -145,4 +120,3 @@
 				right: 1.25em; /* 20 */
 			}
 		}
-

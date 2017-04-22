@@ -217,10 +217,16 @@ footer {
 	position: relative;
 	margin-bottom: 2em;
 	overflow: hidden;
+		img {
+			transform-origin: 0 0;
+			display: black;
+			margin: 0 auto;
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
 }
-.photo-container img {
- 	max-width: 100%;
-}
+
 
 .photo-overlay {
 	color: #fff;
@@ -246,13 +252,7 @@ footer {
 	}
 }
 
-.photo img {
-	transform-origin: 0 0;
-}
 
-.photo:hover img {
-	transform: scale(1.2);
-}
 
 /* IMAGE LIGHTBOX STYLES
 ---------------------------*/
