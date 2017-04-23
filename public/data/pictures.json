@@ -989,5 +989,16 @@
 			"lat": 33.7183743,
 			"lng": -116.3744159
 		}
+	}, {
+		"title": "Cape Lookout",
+		"image": "img/lookout.jpg",
+		"description": "Be On The Lookout for Fun",
+		"location": "Cape Lookout State Park",
+		"state": "Oregon",
+		"week": "April 16, 2017",
+		"coordinates": {
+			"lat": 45.3424211,
+			"lng": -123.9805904
+		}
 	}]
 }
