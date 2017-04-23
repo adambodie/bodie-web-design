@@ -1,9 +1,23 @@
 app.controller('PictureController', ['$scope', 'pictureService', function ($scope, pictureService) {
-    var promise = pictureService.getPictures();
+    $scope.pictures = pictureService.query(function(data) {
+    $scope.data = data.reverse();
+  });
 
-    promise.then(function(data) {
-        $scope.data = data;
-        return $scope.data;
+    $scope.itemsPerPage = 9;
+    $scope.currentPage = 1;
+
+    $scope.pageCount = function () {
+      return Math.ceil($scope.data.length / $scope.itemsPerPage);
+    };
+
+    $scope.pictures.$promise.then(function () {
+      $scope.totalItems = $scope.data.length + $scope.itemsPerPage * 2;
+      $scope.$watch('currentPage + itemsPerPage', function() {
+        var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
+          end = begin + $scope.itemsPerPage;
+
+        $scope.filteredPictures = $scope.data.slice(begin, end);
+      });
     });
 
 }]);

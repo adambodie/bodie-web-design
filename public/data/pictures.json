@@ -1,5 +1,4 @@
-{
-	"locations": [{
+[{
 		"title": "Buxton",
 		"image": "img/buxton.jpg",
 		"description": "Walking along the bridge on the Buxton Trail",
@@ -1001,4 +1000,3 @@
 			"lng": -123.9805904
 		}
 	}]
-}

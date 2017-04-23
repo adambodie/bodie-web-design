@@ -1,10 +1,3 @@
-app.service("pictureService", function($http, $q) {
-  var deferred = $q.defer();
-  $http.get('static/data/pictures.json').then(function(response) {
-    deferred.resolve(response.data);
-  });
-
-  this.getPictures = function() {
-    return deferred.promise;
-  }
-})
+app.factory('pictureService', function($resource) {
+  return $resource('static/data/pictures.json');
+});
