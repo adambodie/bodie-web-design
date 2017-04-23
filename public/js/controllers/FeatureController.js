@@ -32,7 +32,7 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	link : "small-town"
       },
       {
-      	image : "waterfall",
+      	image : "waterfall-beta",
       	title : "Adam's Wonderful World of Waterfalls",
       	link : "waterfall"
       },
