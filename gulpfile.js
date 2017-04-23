@@ -82,9 +82,9 @@ gulp.task('createAppCss', function () {
 	return gulp.src([styles + 'normalize.css', styles + 'main.scss'])
 	.pipe(maps.init())
 	.pipe(iff('main.scss', sass()))
-  .pipe(concat('./app.css'))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(csso())
+	.pipe(concat('./app.css'))
+	.pipe(rename({suffix: '.min'}))
+	.pipe(csso())
 	.pipe(maps.write('./'))
 	.pipe(gulp.dest(destCSS));
 });
@@ -92,6 +92,10 @@ gulp.task('createAppCss', function () {
 gulp.task('valid', function () {
     return gulp.src(scripts + '*.js')
     .pipe(jsValidate());
+});
+
+gulp.task('watch', function() {
+  gulp.watch('./src/styles/*.scss', ['createAppCss']);
 });
 
 gulp.task('default', ['runMochaTests', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'createAppCss', 'valid'], function () {

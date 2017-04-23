@@ -127,7 +127,7 @@ app.controller('ProjectController', ['$scope', function($scope) {
         updatedAt: howManyDaysAgo(2017, 0, 11, current),
         description: "I've seen plenty of waterfalls in my life. They're quite a charm to see, no matter where you are. Here is my website dedicated to all things waterfalls from someone who has seen plenty of them. Take time in enjoying everything I've seen and more.  ***Update *** This site was originally built using Ruby on Rails, but has been replaced with a bare-bones beta version, which provides the same look but with limited functionality of the full version.  The code for the full version is still available via GitHub.",
         link: "waterfall",
-        languages: ["Ruby", "Rails", "JavaScript"]
+        languages: "Ruby, Rails, JavaScript"
       },
       {
         image: "walla-walla",
@@ -199,7 +199,7 @@ app.controller('ProjectController', ['$scope', function($scope) {
         updatedAt: howManyDaysAgo(2017, 1, 9, current),
         description: "This little project was built with Webpack, compiling Babel-transpiled JavaScript, Sass-transpiled CSS and HTML.  A bare-bones version, source-code for this project is available via GitHub",
         link: "film",
-        languages: ["jQuery", "Webpack", "Mocha/Chai", "Bootstrap"]
+        languages: "jQuery, Webpack, Mocha/Chai, Bootstrap"
       },
       {
         image: "florence",
@@ -211,7 +211,7 @@ app.controller('ProjectController', ['$scope', function($scope) {
         updatedAt: howManyDaysAgo(2017, 1, 19, current),
         description: "My initial foray into Foundation framework, a different experience from my usual Bootstrap, I built this faux travel page using Bower to manage my dependencies.  Featuring pictures from my recent trip down to Florence, Oregon as well as other pictures I took in the area.  Full source-code for this project is available via GitHub",
         link: "florence",
-        languages: ["jQuery", "Foundation", "Bower"]
+        languages: "jQuery, Foundation, Bower"
       },
       {
         image: "nfl",
@@ -223,7 +223,7 @@ app.controller('ProjectController', ['$scope', function($scope) {
         updatedAt: howManyDaysAgo(2017, 3, 2, current),
         description: "Built with React, compiled with Webpack, and tested with Mocha and Chai, my new version of the NFL Passer Rating web page is better designed, with more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
         link: "nfl-passer-rating",
-        languages: ["React", "Webpack", "Mocha/Chai", "Foundation"]
+        languages: "React, Webpack, Mocha/Chai, Foundation"
       }
     ]
 
