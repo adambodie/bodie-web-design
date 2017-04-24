@@ -15,16 +15,20 @@ block content
             h3 {{randomFeature.title}}
       section#about
         .container
-          .row
+          .row(ng-controller='PictureWeekController')
             h2.section-heading Picture of the Week
             #week.col-md-6
               .photo
-                img.img-responsive(src='static/img/science.jpg', alt='I Love Science')
-                a(href='static/img/science.jpg')
+                img.img-responsive(ng-src='static/img/{{image}}.jpg', alt='{{title}}')
+                a(href='static/img/{{image}}.jpg')
                   .photo-overlay
-                    h3 I Love Science
-                    p Date Taken: July 17, 2008
-                    p Location: Portland, Oregon
+                    h3 {{title}}
+                    p Date Taken: {{dateTaken}}
+                    p Location: {{place}}
+            .col-md-6
+              div(map-lazy-load='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3')
+                ng-map(center='{{latitude}},{{longitude}}', zoom='12' style='height:420px')
+                  marker(position='[{{latitude}},{{longitude}}]' title='{{location}}')
       section
         .row.ad
           #ad
