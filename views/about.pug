@@ -20,12 +20,14 @@ block content
                         strong
                             a(href="mailto:adam.bodie@yahoo.com") adam.bodie@yahoo.com
                     p Of course, like any business that's not open 24 hours, I am closed for business from time to time.  Therefore, if you do send me an email after "closing hours," please note that I am not likely to respond until I'm ready to conduct business.  Please keep that in mind when sending me an email.  But I will respond, just give me time.  Thank you and have a good day!</p>
-                #container.block
+                .container.block(ng-controller="OpenController")
+                    p {{hours}}
+					
                 h2#programmingSkills Programming Skills
                 p These are programming skills that I have.  I mostly prefer front-end development with HTML5, CSS3 and JavaScript, but I have knowledge of other languages as well.  The information provided showcases languages, libraries and other parts that I have worked with at some point. I'm also skilled with programs like Microsoft Office and Adobe PhotoShop.  In a sense, I am flexible and can easily adapt with computer software.
                 .news
-                        ul(ng-controller="SkillsController")
-                           li(ng-repeat="skill in skills") {{skill}}
+                    ul(ng-controller="SkillsController")
+                       li(ng-repeat="skill in skills") {{skill}}
     .row
         #linkedinad
             button#close
