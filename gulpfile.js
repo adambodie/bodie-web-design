@@ -40,17 +40,6 @@ gulp.task('createVticker', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('createOpenOnDate', function() {
-  return gulp.src([scripts + 'open.coffee', scripts + 'date.coffee'])
-    .pipe(concat('./open-on-date.coffee'))
-    .pipe(maps.init())
-    .pipe(coffee())
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(maps.write())
-    .pipe(gulp.dest(destJS));
-});
-
 
 gulp.task('createImageLightbox', function() {
   return gulp.src([vendor + '/imageLightbox/imagelightbox.js', scripts + 'myLightbox.js'])
@@ -98,6 +87,6 @@ gulp.task('watch', function() {
   gulp.watch('./src/styles/*.scss', ['createAppCss']);
 });
 
-gulp.task('default', ['runMochaTests', 'createScrollBar', 'createVticker', 'createOpenOnDate', 'createImageLightbox', 'minify', 'createAppCss', 'valid'], function () {
+gulp.task('default', ['runMochaTests', 'minify', 'createAppCss', 'valid'], function () {
 	console.log("All tasks completed");
 });
