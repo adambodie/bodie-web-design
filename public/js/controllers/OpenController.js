@@ -1,7 +1,12 @@
 app.controller('OpenController', ['$scope', function($scope) {
-	var laborDate, memorialDate, open, thanksgivingDate;
+	$scope.fullDate = new Date();
+	$scope.year = $scope.fullDate.getFullYear();
+	$scope.month = $scope.fullDate.getMonth();
+	$scope.date = $scope.fullDate.getDate(); 
+	$scope.day = $scope.fullDate.getDay();
+	$scope.hours = $scope.fullDate.getHours();
 
-	thanksgivingDate = function(year) {
+	var thanksgivingDate = function(year) {
 	  var moveToThursday, november;
 	  november = new Date(year, 10, 1);
 	  if (november.getDay() === 4) {
@@ -16,7 +21,7 @@ app.controller('OpenController', ['$scope', function($scope) {
 	  return november.getDate() + moveToThursday + 21;
 	};
 
-	memorialDate = function(year) {
+	var memorialDate = function(year) {
 	  var may, moveToMonday;
 	  may = new Date(year, 4, 1);
 	  if (may.getDay() === 1) {
@@ -35,7 +40,7 @@ app.controller('OpenController', ['$scope', function($scope) {
 	  }
 	};
 
-	laborDate = function(year) {
+	var laborDate = function(year) {
 	  var moveToMonday, sept;
 	  sept = new Date(year, 8, 1);
 	  if (sept.getDay() === 1) {
@@ -51,7 +56,7 @@ app.controller('OpenController', ['$scope', function($scope) {
 	  }
 	};
 
-	open = function(year, month, day, week, hour) {
+	var open = function(year, month, day, week, hour) {
 	  var christmas, date, dayDate, hourDate, independence, monthDate, newyear, thanksgiving, weekDate, yearDate;
 	  date = new Date();
 	  if (year === void 0) {
@@ -93,7 +98,7 @@ app.controller('OpenController', ['$scope', function($scope) {
 	  } else {
 		  return "Sorry, but I'm not available to talk.  My hours are from 7:00AM - 8:00PM.";
 	  }
-	var date = new Date();
-	$scope.hours = open(date.getFullYear(), date.getMonth(), date.getDate(), date.getDay(), date.getHours());
-  }
+	};
+	$scope.open = open($scope.year, $scope.month, $scope.date, $scope.day, $scope.hours);
+
   }]);
