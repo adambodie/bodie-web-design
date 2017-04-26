@@ -1,12 +1,18 @@
-app.controller('PictureWeekController', ['$scope', 'NgMap', function($scope, NgMap) {
+app.controller('PictureWeekController', ['$scope', 'NgMap', 'pictureService', function($scope, NgMap, pictureService) {
 
-  $scope.title = 'I Love Science';
-  $scope.dateTaken = 'July 17, 2008';
-  $scope.place = 'Portland, Oregon';
-  $scope.image = 'science';
-  NgMap.getMap().then(function(map) {
-    $scope.location = 'OMSI';
-    $scope.latitude = 45.508741;
-    $scope.longitude = -122.6684867;
+    $scope.pictures = pictureService.query(function(data) {
+		$scope.length = data.length;
+		$scope.data = data[$scope.length - 1];
+		$scope.title = $scope.data.title;  
+		$scope.place = $scope.data.location + ", " + $scope.data.state;
+		$scope.image = $scope.data.image;
+		$scope.week = $scope.data.week;
+		
+		NgMap.getMap().then(function(map) {
+			$scope.latitude = $scope.data.coordinates.lat;
+			$scope.longitude = $scope.data.coordinates.lng;
+		});
+		
   });
+
   }]);

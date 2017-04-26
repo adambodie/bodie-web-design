@@ -999,4 +999,17 @@
 			"lat": 45.3424211,
 			"lng": -123.9805904
 		}
-	}]
+	}, {
+		"title": "I Love Science",
+		"image": "img/science.jpg",
+		"description": "I Love Science",
+		"location": "Portland",
+		"state": "Oregon",
+		"week": "April 23, 2017",
+		"coordinates": {
+			"lat": 45.508741,
+			"lng": -122.6684867
+		}
+	}
+	
+]

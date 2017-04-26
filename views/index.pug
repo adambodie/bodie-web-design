@@ -19,11 +19,11 @@ block content
             h2.section-heading Picture of the Week
             #week.col-md-6
               .photo
-                img.img-responsive(ng-src='static/img/{{image}}.jpg', alt='{{title}}')
-                a(href='static/img/{{image}}.jpg')
+                img.img-responsive(ng-src='static/{{image}}', alt='{{title}}')
+                a(href='static/{{image}}')
                   .photo-overlay
                     h3 {{title}}
-                    p Date Taken: {{dateTaken}}
+                    p Week of: {{week}}
                     p Location: {{place}}
             .col-md-6
               div(map-lazy-load='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3')
