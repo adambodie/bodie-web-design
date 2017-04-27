@@ -14,20 +14,20 @@ script(src='static/js/ng-map.min.js')
 
 // custom JS
 
-script(src="static/js/overlay.min.js")
+
 script(src="static/js/ad.min.js")
 script(src="static/js/vticker.min.js")
 script(src="static/js/scrollbar.min.js")
 script(src='static/js/services/PictureService.js')
 
 if path === '/'
+	script(src="static/js/overlay.min.js")
 	script(src='static/js/controllers/UpdateController.js')
 	script(src='static/js/controllers/ProjectController.js')
 	script(src='static/js/controllers/FeatureController.js')
 	script(src='static/js/controllers/PictureWeekController.js')
 
 if path === '/about'
-	//script(src="static/js/open-on-date.min.js")
 	script(src='static/js/controllers/OpenController.js')
 	script(src='static/js/controllers/SkillsController.js')
 

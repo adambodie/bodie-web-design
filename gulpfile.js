@@ -12,6 +12,7 @@ var jsonlint = require('gulp-jsonlint');
 var mocha = require('gulp-mocha');
 var csso = require('gulp-csso');
 var iff = require('gulp-if');
+var pugLinter = require('gulp-pug-linter');
 
 var destJS = './public/js/';
 var destCSS = './public/css/';
@@ -19,12 +20,14 @@ var vendor = './src/vendor/';
 var scripts = './src/scripts/';
 var styles = './src/styles/';
 
-gulp.task('runMochaTests', function(){
+// 
+
+gulp.task('mocha', function(){
   gulp.src(['./test/HolidayTest.js', './test/OpenTest.js', './test/TimeTest.js'], {read: false})
       .pipe(mocha({reporter: 'nyan'}))
 });
 
-gulp.task('createScrollBar', function() {
+gulp.task('scrollbar', function() {
   return gulp.src([vendor + 'scroll-up-bar/scroll-up-bar.js', scripts + '/scroll.js'])
     .pipe(concat('./scrollbar.js'))
     .pipe(rename({suffix: '.min'}))
@@ -41,7 +44,7 @@ gulp.task('createVticker', function() {
 });
 
 
-gulp.task('createImageLightbox', function() {
+gulp.task('lightbox', function() {
   return gulp.src([vendor + '/imageLightbox/imagelightbox.js', scripts + 'myLightbox.js'])
     .pipe(concat('./myImageLightbox.js'))
     .pipe(rename({suffix: '.min'}))
@@ -49,8 +52,8 @@ gulp.task('createImageLightbox', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('overlay', function () {
-	return gulp.src(scripts + 'overlay.coffee')
+gulp.task('coffee', function () {
+	return gulp.src([scripts + 'overlay.coffee', scripts + 'ad.coffee'])
   .pipe(maps.init())
   .pipe(coffee())
   .pipe(rename({suffix: '.min'}))
@@ -60,14 +63,7 @@ gulp.task('overlay', function () {
 });
 
 
-gulp.task('minify', function () {
-	return gulp.src([scripts + 'locations.js'])
-	.pipe(rename({suffix: '.min'}))
-	.pipe(uglify())
-	.pipe(gulp.dest(destJS));
-});
-
-gulp.task('createAppCss', function () {
+gulp.task('css', function () {
 	return gulp.src([styles + 'normalize.css', styles + 'main.scss'])
 	.pipe(maps.init())
 	.pipe(iff('main.scss', sass()))
@@ -83,10 +79,22 @@ gulp.task('valid', function () {
     .pipe(jsValidate());
 });
 
-gulp.task('watch', function() {
-  gulp.watch('./src/styles/*.scss', ['createAppCss']);
+gulp.task('json', function() {
+	return gulp.src('./public/data/pictures.json')
+	.pipe(jsonlint())
+	.pipe(jsonlint.reporter());
 });
 
-gulp.task('default', ['runMochaTests', 'minify', 'createAppCss', 'valid'], function () {
+gulp.task('pug', function(){
+	return gulp.src('./views/*.pug')
+	.pipe(pugLinter())
+	.pipe(pugLinter.reporter())
+});
+
+gulp.task('watch', function() {
+  gulp.watch('./src/styles/*.scss', ['css']);
+});
+
+gulp.task('default', ['mocha', 'css', 'coffee', 'json', 'valid'], function () {
 	console.log("All tasks completed");
 });
