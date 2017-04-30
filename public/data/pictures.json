@@ -1010,5 +1010,17 @@
 			"lat": 45.508741,
 			"lng": -122.6684867
 		}
+	},
+	{
+		"title": "Portland Sunset",
+		"image": "img/portland-sunset.jpg",
+		"description": "Loving Life and Experiencing it to the Max",
+		"location": "Portland",
+		"state": "Oregon",
+		"week": "April 30, 2017",
+		"coordinates": {
+			"lat": 45.513252,
+			"lng": -122.6720327
+		}
 	}
 ]
