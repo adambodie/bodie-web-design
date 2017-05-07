@@ -25,6 +25,7 @@ block content
                     h3 {{title}}
                     p Week of: {{week}}
                     p Location: {{place}}
+                    p(style="text-align: center") {{description}}
             .col-md-6
               div(map-lazy-load='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3')
                 ng-map(center='{{latitude}},{{longitude}}', zoom='12' style='height:420px')

@@ -1022,5 +1022,17 @@
 			"lat": 45.513252,
 			"lng": -122.6720327
 		}
+	},
+	{
+		"title": "Painted Hills",
+		"image": "img/paint.jpg",
+		"description": "Nature is such a Beautiful Thing. Don't let the Orange Man Destroy It.",
+		"location": "John Day Fossil Beds National Monument",
+		"state": "Oregon",
+		"week": "May 7, 2017",
+		"coordinates": {
+			"lat": 44.643287,
+			"lng": -120.2728235
+		}
 	}
 ]
