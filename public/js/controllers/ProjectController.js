@@ -87,11 +87,11 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Read Your Fortune Cookie",
         created: "July 17, 2015",
         createdAt: howManyDaysAgo(2015, 6, 17, current),
-        updated: "November 11, 2015",
-        updatedAt: howManyDaysAgo(2015, 10, 11, current),
+        updated: "May 11, 2017",
+        updatedAt: howManyDaysAgo(2017, 4, 11, current),
         description: "A simple yet mind boggling app that gives you a fortune cookie to read. All you got to do is fill in your name and age, and let the app do the rest. Don't you love 21st Century Single Page Application Technology. You never know what your fortune cookie will tell you! It's that simple! Trust me.",
         link: "fortune-cookie",
-        languages: "AngularJS"
+        languages: "AngularJS, Bootstrap, Sass, Grunt"
       },
       {
         image: "delaware",

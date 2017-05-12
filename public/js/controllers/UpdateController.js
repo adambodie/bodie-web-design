@@ -1,6 +1,10 @@
 
 app.controller('UpdateController', ['$scope', function($scope) {
     $scope.updates = [
+      {
+  			title: "Fortune Cookie",
+  			description: "Launched version 2.0 May 11, 2017 with better structured code"
+  		},
 		{
 			title: "NFL Passer Rating",
 			description: "Launched April 2, 2017"
@@ -20,10 +24,6 @@ app.controller('UpdateController', ['$scope', function($scope) {
 		{
 			title: "Adam's Wonderful World of Waterfalls",
 			description: "Updated January 11, 2017, replaced with Beta Version.  See note below."
-		},
-		{
-			title: "Duck vs. Blue Hen!",
-			description: "Updated January 8, 2017 with redesign, Slick jQuery plugin"
 		}
 
 
