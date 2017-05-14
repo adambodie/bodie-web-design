@@ -1034,5 +1034,17 @@
 			"lat": 44.643287,
 			"lng": -120.2728235
 		}
+	},
+	{
+		"title": "Behind Middle North Falls",
+		"image": "img/middle-north.jpg",
+		"description": "Behind the Waterfall: The Story of my 32nd Birthday",
+		"location": "Silver Falls State Park",
+		"state": "Oregon",
+		"week": "May 14, 2017",
+		"coordinates": {
+			"lat": 44.88872,
+			"lng": -122.6450397
+		}
 	}
 ]
