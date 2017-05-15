@@ -1,6 +1,11 @@
 
 app.controller('UpdateController', ['$scope', function($scope) {
     $scope.updates = [
+
+      {
+        title: "Adam Hits the Big 3-0",
+        description: "Launced version 2.0 May 14, 2017, built with Ember"
+      },
       {
   			title: "Fortune Cookie",
   			description: "Launched version 2.0 May 11, 2017 with better structured code"
@@ -20,10 +25,6 @@ app.controller('UpdateController', ['$scope', function($scope) {
 		{
 			title: "Dreidel Duel!",
 			description: "Launched January 22, 2017"
-		},
-		{
-			title: "Adam's Wonderful World of Waterfalls",
-			description: "Updated January 11, 2017, replaced with Beta Version.  See note below."
 		}
 
 

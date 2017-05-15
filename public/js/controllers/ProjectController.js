@@ -51,11 +51,11 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Adam Hits the Big 3-0",
         created: "July 11, 2015",
         createdAt: howManyDaysAgo(2015, 6, 11, current),
-        updated: "October 9, 2015",
-        updatedAt: howManyDaysAgo(2015, 9, 9, current),
+        updated: "May 14, 2017",
+        updatedAt: howManyDaysAgo(2017, 4, 14, current),
         description: "Check out Adam's 30th Birthday Celebration at the Grand Canyon! Enjoy all the pictures and videos Adam and the Bodie family took at the Grand Canyon and surrounding areas, and don't forget to read Adam's interesting facts about the Grand Canyon and surrounding area. A trip in itself, without actually going there (if you can't, of course, you should if you can)",
         link: "grand-canyon",
-        languages: "jQuery"
+        languages: "Ember, Bootstrap, jQuery"
       },
       {
         image: "beer",
