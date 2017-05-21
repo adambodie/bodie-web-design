@@ -1046,5 +1046,17 @@
 			"lat": 44.88872,
 			"lng": -122.6450397
 		}
+	},
+	{
+		"title": "Sportsmen's Lodge",
+		"image": "img/pool.jpg",
+		"description": "Lots of Fun in Los Angeles, made even better with my family.",
+		"location": "Los Angeles",
+		"state": "California",
+		"week": "May 21, 2017",
+		"coordinates": {
+			"lat": 34.1455978,
+			"lng": -118.4140777
+		}
 	}
 ]
