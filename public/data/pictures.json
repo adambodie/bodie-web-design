@@ -1058,5 +1058,17 @@
 			"lat": 34.1455978,
 			"lng": -118.4140777
 		}
+	},
+		{
+			"title": "Upper Klamath Lake",
+			"image": "img/free-bird.jpg",
+			"description": "Like this Bird, I feel Free at Last",
+			"location": "Klamath Falls",
+			"state": "Oregon",
+			"week": "May 28, 2017",
+			"coordinates": {
+				"lat": 42.234471,
+				"lng": -121.8151947
+			}
 	}
 ]
