@@ -147,11 +147,11 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Adam's Art Showcase",
         created: "April 16, 2016",
         createdAt: howManyDaysAgo(2016, 3, 16, current),
-        updated: "April 16, 2016",
-        updatedAt: howManyDaysAgo(2016, 3, 16, current),
+        updated: "May 29, 2017",
+        updatedAt: howManyDaysAgo(2017, 4, 29, current),
         description: "Back in 2001-2002, I loved to draw and paint. It was a real passion. I must have spent hours drawing whatever interested me. I even made two projects of a select few with Microsoft PowerPoint. With my new web skills, I have turned my old projects into a web page full of my old drawings and paintings. Talk about a trip down memory lane.",
         link: "adamsartshowcase",
-        languages: "jQuery"
+        languages: "React, React Router, Sass, Bootstrap, Gulp"
       },
       {
         image: "nama",
