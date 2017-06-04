@@ -1070,5 +1070,17 @@
 				"lat": 42.234471,
 				"lng": -121.8151947
 			}
+	},
+		{
+			"title": "Save the Earth?  Absolutely!",
+			"image": "img/earth.jpg",
+			"description": "Save the Earth?  Absolutely!",
+			"location": "Crandon",
+			"state": "Wisconsin",
+			"week": "June 4, 2017",
+			"coordinates": {
+				"lat": 45.5684738,
+				"lng": -88.9018942
+			}
 	}
 ]
