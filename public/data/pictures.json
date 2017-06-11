@@ -1082,5 +1082,17 @@
 				"lat": 45.5684738,
 				"lng": -88.9018942
 			}
+	},
+		{
+			"title": "Baby Got Back",
+			"image": "img/baby.jpg",
+			"description": "Baby Got Back",
+			"location": "Laurel",
+			"state": "Maryland",
+			"week": "June 11, 2017",
+			"coordinates": {
+				"lat": 39.095373,
+				"lng": -76.8775
+			}
 	}
 ]
