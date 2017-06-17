@@ -1094,5 +1094,17 @@
 				"lat": 39.095373,
 				"lng": -76.8775
 			}
+	},
+		{
+			"title": "Baltimore",
+			"image": "img/baltimore.jpg",
+			"description": "East Coast, Here I Come!!!",
+			"location": "Baltimore",
+			"state": "Maryland",
+			"week": "June 18, 2017",
+			"coordinates": {
+				"lat": 39.2831252,
+				"lng": -76.6178262
+			}
 	}
 ]
