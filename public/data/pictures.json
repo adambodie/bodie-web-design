@@ -1106,5 +1106,17 @@
 				"lat": 39.2831252,
 				"lng": -76.6178262
 			}
+	},
+		{
+			"title": "New York City",
+			"image": "img/new-york.jpg",
+			"description": "New York City: I came, I saw, I conquered!",
+			"location": "New York",
+			"state": "New York",
+			"week": "June 25, 2017",
+			"coordinates": {
+				"lat": 40.748817,
+				"lng": -73.985428
+			}
 	}
 ]
