@@ -1118,5 +1118,17 @@
 				"lat": 40.748817,
 				"lng": -73.985428
 			}
+	},
+		{
+			"title": "Anne Amie Vinyards",
+			"image": "img/anne.jpg",
+			"description": "Make Like Your Own Paradise, One View at a Time",
+			"location": "Carlton",
+			"state": "Oregon",
+			"week": "July 2, 2017",
+			"coordinates": {
+				"lat": 45.2617934,
+				"lng": -123.150199
+			}
 	}
 ]
