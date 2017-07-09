@@ -1130,5 +1130,17 @@
 				"lat": 45.2617934,
 				"lng": -123.150199
 			}
+	},
+		{
+			"title": "Cottonwood Canyon State Park",
+			"image": "img/cottonwood.jpg",
+			"description": "A Journey Through Time",
+			"location": "Wasco",
+			"state": "Oregon",
+			"week": "July 9, 2017",
+			"coordinates": {
+				"lat": 45.4789512,
+				"lng": -120.471611
+			}
 	}
 ]
