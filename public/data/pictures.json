@@ -1142,5 +1142,17 @@
 				"lat": 45.4789512,
 				"lng": -120.471611
 			}
+	},
+		{
+			"title": "Boston from Bunker Hill Monument",
+			"image": "img/bunker.jpg",
+			"description": "Boston Cream Pies from Above",
+			"location": "Boston",
+			"state": "Massachusetts",
+			"week": "July 16, 2017",
+			"coordinates": {
+				"lat": 42.3764,
+				"lng": -71.0608
+			}
 	}
 ]
