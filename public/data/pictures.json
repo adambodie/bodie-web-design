@@ -1154,5 +1154,17 @@
 				"lat": 42.3764,
 				"lng": -71.0608
 			}
+	},
+		{
+			"title": "Burney Falls",
+			"image": "img/burney.jpg",
+			"description": "Burney Falls: One Year Later, Still Beautiful",
+			"location": "McArthur-Burney Falls Memorial State Park",
+			"state": "California",
+			"week": "July 23, 2017",
+			"coordinates": {
+				"lat": 41.0124203,
+				"lng": -121.6528829
+			}
 	}
 ]
