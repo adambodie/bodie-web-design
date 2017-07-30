@@ -1166,5 +1166,17 @@
 				"lat": 41.0124203,
 				"lng": -121.6528829
 			}
+	},
+		{
+			"title": "Phoenix",
+			"image": "img/phoenix.jpg",
+			"description": "The Maverick Strikes Again!",
+			"location": "Phoenix",
+			"state": "Arizona",
+			"week": "July 30, 2017",
+			"coordinates": {
+				"lat": 33.4559759,
+				"lng": -112.077743
+			}
 	}
 ]
