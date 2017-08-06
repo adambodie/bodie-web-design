@@ -1166,8 +1166,7 @@
 				"lat": 41.0124203,
 				"lng": -121.6528829
 			}
-	},
-		{
+	}, {
 			"title": "Phoenix",
 			"image": "img/phoenix.jpg",
 			"description": "The Maverick Strikes Again!",
@@ -1178,5 +1177,17 @@
 				"lat": 33.4559759,
 				"lng": -112.077743
 			}
+	}, {
+			"title": "Roman Forum",
+			"image": "img/rome.jpg",
+			"description": "Roman Forum: Always Legendary",
+			"location": "Rome",
+			"state": "Italy",
+			"week": "August 6, 2017",
+			"coordinates": {
+				"lat": 41.8913072,
+				"lng": 12.4855132
+			}
 	}
+
 ]
