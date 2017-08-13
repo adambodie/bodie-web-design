@@ -1188,6 +1188,17 @@
 				"lat": 41.8913072,
 				"lng": 12.4855132
 			}
+	}, {
+			"title": "Buck'Em Cowboy",
+			"image": "img/cowboy.jpg",
+			"description": "Buck'Em Cowboy",
+			"location": "Pendleton",
+			"state": "Oregon",
+			"week": "August 13, 2017",
+			"coordinates": {
+				"lat": 45.6694331,
+				"lng": -118.802668
+			}
 	}
 
 ]
