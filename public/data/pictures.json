@@ -1199,6 +1199,17 @@
 				"lat": 45.6694331,
 				"lng": -118.802668
 			}
+	}, {
+			"title": "Eclipse!!!",
+			"image": "img/eclipse.jpg",
+			"description": "The Eclipse is Coming!!!",
+			"location": "Ashland",
+			"state": "Oregon",
+			"week": "August 20, 2017",
+			"coordinates": {
+				"lat": 42.1819009,
+				"lng": -122.6630427
+			}
 	}
 
 ]
