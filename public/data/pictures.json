@@ -1210,6 +1210,16 @@
 				"lat": 42.1819009,
 				"lng": -122.6630427
 			}
+	}, {
+			"title": "The Great Eclipse of 2017",
+			"image": "img/adam-eclipse.jpg",
+			"description": "I survived the Great Eclipse of 2017.  Now where's my T-Shirt?",
+			"location": "Beaverton",
+			"state": "Oregon",
+			"week": "August 27, 2017",
+			"coordinates": {
+				"lat": 45.4949047,
+				"lng": -122.8249488
+			}
 	}
-
 ]
