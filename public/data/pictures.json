@@ -1221,5 +1221,16 @@
 				"lat": 45.4949047,
 				"lng": -122.8249488
 			}
+	}, {
+			"title": "Philadelphia Skyline",
+			"image": "img/philadelphia.jpg",
+			"description": "The Wait is Almost Here!",
+			"location": "Philadelphia",
+			"state": "Pennsylvania",
+			"week": "September 3, 2017",
+			"coordinates": {
+				"lat": 39.9655697,
+				"lng": -75.1811548
+			}
 	}
 ]
