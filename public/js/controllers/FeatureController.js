@@ -70,6 +70,11 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	image : "nfl",
       	title : "NFL Passer Rating",
       	link : "nfl-passer-rating"
+      },
+      {
+      	image : "nadm2",
+      	title : "N.A.D.M. 2 - The Infamous",
+      	link : "nadm2"
       }
     ],
 

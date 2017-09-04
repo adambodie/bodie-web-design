@@ -224,6 +224,18 @@ app.controller('ProjectController', ['$scope', function($scope) {
         description: "Built with React, compiled with Webpack, and tested with Mocha and Chai, my new version of the NFL Passer Rating web page is better designed, with more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
         link: "nfl-passer-rating",
         languages: "React, Webpack, Mocha/Chai, Foundation"
+      },
+      {
+        image: "nadm2",
+        alt: "NADM 2",
+        title: "N.A.D.M. 2 - The Infamous",
+        created: "September 4, 2017",
+        createdAt: howManyDaysAgo(2017, 8, 4, current),
+        updated: "September 4, 2017",
+        updatedAt: howManyDaysAgo(2017, 8, 4, current),
+        description: "Built with Angular 2 using TypeScript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
+        link: "nadm2",
+        languages: "Angular 2, TypeScript"
       }
     ]
 
