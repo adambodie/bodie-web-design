@@ -1232,5 +1232,16 @@
 				"lat": 39.9655697,
 				"lng": -75.1811548
 			}
+	}, {
+			"title": "Punch Bowl Falls",
+			"image": "img/punch-bowl.jpg",
+			"description": "The Columbia River Gorge, A True Jewel",
+			"location": "Eagle Creek",
+			"state": "Oregon",
+			"week": "September 10, 2017",
+			"coordinates": {
+				"lat": 45.6215053,
+				"lng": -121.89466
+			}
 	}
 ]
