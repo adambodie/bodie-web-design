@@ -1243,5 +1243,16 @@
 				"lat": 45.6215053,
 				"lng": -121.89466
 			}
+	}, {
+			"title": "Go Gophers Go!!!",
+			"image": "img/gopher.jpg",
+			"description": "Gophers 48 - Beavers 14.  The picture that says it all...",
+			"location": "Corvallis",
+			"state": "Oregon",
+			"week": "September 17, 2017",
+			"coordinates": {
+				"lat": 44.559,
+				"lng": -123.281
+			}
 	}
 ]
