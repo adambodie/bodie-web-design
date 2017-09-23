@@ -7,11 +7,6 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	link : "grand-canyon"
       },
       {
-      	image : "beer",
-      	title : "Great Breweries in Oregon",
-      	link : "brewery"
-      },
-      {
       	image : "ashland",
       	title : "Visit Ashland, Oregon",
       	link : "ashland"
@@ -30,11 +25,6 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	image : "small",
       	title : "Great Small Towns",
       	link : "small-town"
-      },
-      {
-      	image : "waterfall-beta",
-      	title : "Adam's Wonderful World of Waterfalls",
-      	link : "waterfall"
       },
       {
       	image : "walla-walla",
@@ -60,11 +50,6 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	image : "dreidel",
       	title : "Dreidel Duel!",
       	link : "dreidel"
-      },
-      {
-      	image : "florence",
-      	title : "Florence Foundations",
-      	link : "florence"
       },
       {
       	image : "nfl",

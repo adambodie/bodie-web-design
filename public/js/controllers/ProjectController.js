@@ -58,18 +58,6 @@ app.controller('ProjectController', ['$scope', function($scope) {
         languages: "Ember, Bootstrap, jQuery"
       },
       {
-        image: "beer",
-        alt: "Breweries",
-        title: "Great Breweries in Oregon",
-        created: "July 11, 2015",
-        createdAt: howManyDaysAgo(2015, 6, 11, current),
-        updated: "July 11, 2015",
-        updatedAt: howManyDaysAgo(2015, 6, 11, current),
-        description: "One passion I've developed over the past four years is Beer-culture. Living in a city with over 40 microbreweries on site alone, it's no wonder that Oregon is one of the best states for tasty craft beer. Here, you will find out the best breweries that I've come across in Oregon.",
-        link: "brewery",
-        languages: "AngularJS"
-      },
-      {
         image: "ashland",
         alt: "Ashland",
         title: "Visit Ashland, Oregon",
@@ -116,18 +104,6 @@ app.controller('ProjectController', ['$scope', function($scope) {
         description: "Yes, it's always fun to visit the big city lights. But what would happen if the massive crowds and noise got too much for you? That's why you should appreciate the finest in small town tourism. You may be surprised by how much is out there.",
         link: "small-town",
         languages: "AngularJS"
-      },
-      {
-        image: "waterfall-beta",
-        alt: "Adam's Wonderful World of Waterfalls",
-        title: "Adam's Wonderful World of Waterfalls",
-        created: "March 13, 2016",
-        createdAt: howManyDaysAgo(2016, 2, 13, current),
-        updated: "January 11, 2017",
-        updatedAt: howManyDaysAgo(2017, 0, 11, current),
-        description: "I've seen plenty of waterfalls in my life. They're quite a charm to see, no matter where you are. Here is my website dedicated to all things waterfalls from someone who has seen plenty of them. Take time in enjoying everything I've seen and more.  ***Update *** This site was originally built using Ruby on Rails, but has been replaced with a bare-bones beta version, which provides the same look but with limited functionality of the full version.  The code for the full version is still available via GitHub.",
-        link: "waterfall",
-        languages: "Ruby, Rails, JavaScript"
       },
       {
         image: "walla-walla",
@@ -183,9 +159,9 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Dreidel Duel",
         created: "January 5, 2017",
         createdAt: howManyDaysAgo(2017, 0, 5, current),
-        updated: "January 22, 2017",
-        updatedAt: howManyDaysAgo(2017, 0, 22, current),
-        description: "Viewable from CodePen and built with React JS, this is a simple Dreidel game that can be played with two players.  This is more of a development version and prototype, but code is available to view on the CodePen site.",
+        updated: "September 22, 2017",
+        updatedAt: howManyDaysAgo(2017, 8, 22, current),
+        description: "Built with React JS, this is a simple Dreidel game that can be played with two players.",
         link: "dreidel",
         languages: "React"
       },
@@ -200,18 +176,6 @@ app.controller('ProjectController', ['$scope', function($scope) {
         description: "This little project was built with Webpack, compiling Babel-transpiled JavaScript, Sass-transpiled CSS and HTML.  A bare-bones version, source-code for this project is available via GitHub",
         link: "film",
         languages: "jQuery, Webpack, Mocha/Chai, Bootstrap"
-      },
-      {
-        image: "florence",
-        alt: "Florence Foundations",
-        title: "Florence Foundations",
-        created: "February 19, 2017",
-        createdAt: howManyDaysAgo(2017, 1, 19, current),
-        updated: "February 19, 2017",
-        updatedAt: howManyDaysAgo(2017, 1, 19, current),
-        description: "My initial foray into Foundation framework, a different experience from my usual Bootstrap, I built this faux travel page using Bower to manage my dependencies.  Featuring pictures from my recent trip down to Florence, Oregon as well as other pictures I took in the area.  Full source-code for this project is available via GitHub",
-        link: "florence",
-        languages: "jQuery, Foundation, Bower"
       },
       {
         image: "nfl",

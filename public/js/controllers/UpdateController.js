@@ -1,6 +1,10 @@
 
 app.controller('UpdateController', ['$scope', function($scope) {
     $scope.updates = [
+			{
+				title: "Dreidel Duel!",
+				description: "Moved to its own webpage September 22, 2017"
+			},
       {
   			title: "N.A.D.M. 2 - The Infamous",
   			description: "Launched September 4, 2017, built with Angular 2"
@@ -20,13 +24,7 @@ app.controller('UpdateController', ['$scope', function($scope) {
 		{
 			title: "NFL Passer Rating",
 			description: "Launched April 2, 2017"
-		},
-		{
-			title: "Florence Foundations",
-			description: "Launched February 19, 2017"
 		}
-
-
-
+	
     ]
   }]);
