@@ -1254,5 +1254,16 @@
 				"lat": 44.559,
 				"lng": -123.281
 			}
-	}
+	}, {
+		"title": "Oracle Arena",
+		"image": "img/oakland.jpg",
+		"description": "Don't Hate The Player, Hate the Game: First Amendent Rights For All",
+		"location": "Oakland",
+		"state": "California",
+		"week": "September 24, 2017",
+		"coordinates": {
+			"lat": 	37.750278,
+			"lng": -122.203056
+		}
+}
 ]
