@@ -40,7 +40,9 @@ h1 {
 .block {
 	display: inline-block;
 }
-
+p {
+	font-size: 14px;
+}
 .section-heading {
 	padding: 10px;
 	font-weight: bold;
@@ -146,6 +148,19 @@ h1 {
 
 .description {
 	line-height: 0.75;
+}
+
+/* MOBILE STYLES
+------------------------*/
+.mobile {
+	max-width: 375px;
+	height: 300px;
+	overflow: hidden;
+	border:1px solid black;
+	.content {
+		max-width: 375px;
+		max-height: 3146px;
+	}
 }
 
 /* FOOTER STYLES
@@ -360,7 +375,6 @@ footer {
 				right: 1.25em; /* 20 */
 			}
 		}
-
 
 @import '_about.scss';
 
