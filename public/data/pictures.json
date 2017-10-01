@@ -1265,5 +1265,16 @@
 			"lat": 	37.750278,
 			"lng": -122.203056
 		}
+}, {
+	"title": "Clear Lake",
+	"image": "img/clear.jpg",
+	"description": "Peace",
+	"location": "Clear Lake",
+	"state": "Oregon",
+	"week": "October 1, 2017",
+	"coordinates": {
+		"lat": 	44.3679297,
+		"lng": -121.9942731
+	}
 }
 ]
