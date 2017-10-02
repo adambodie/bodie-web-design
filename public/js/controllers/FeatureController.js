@@ -60,6 +60,11 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	image : "nadm2",
       	title : "N.A.D.M. 2 - The Infamous",
       	link : "nadm2"
+      },
+      {
+      	image : "wildwildwest",
+      	title : "Adam's Wild Wild West",
+      	link : "wildwildwest"
       }
     ],
 

@@ -200,6 +200,18 @@ app.controller('ProjectController', ['$scope', function($scope) {
         description: "Built with Angular 2 using TypeScript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
         link: "nadm2",
         languages: "Angular 2, TypeScript"
+      },
+      {
+        image: "wildwildwest",
+        alt: "Adam's Wild Wild West",
+        title: "Adam's Wild Wild West",
+        created: "October 1, 2017",
+        createdAt: howManyDaysAgo(2017, 9, 0, current),
+        updated: "October 1, 2017",
+        updatedAt: howManyDaysAgo(2017, 9, 0, current),
+        description: "Built with React, this picture carousel uses the Flickr API to get pictures from a album gallery.  Source code available via GitHub.",
+        link: "wildwildwest",
+        languages: "React"
       }
     ]
 
