@@ -1276,5 +1276,16 @@
 		"lat": 	44.3679297,
 		"lng": -121.9942731
 	}
+}, {
+	"title": "Pray for Vegas",
+	"image": "img/mandalay.jpg",
+	"description": "Pray for Vegas",
+	"location": "Las Vegas",
+	"state": "Nevada",
+	"week": "October 8, 2017",
+	"coordinates": {
+		"lat": 	36.091667,
+		"lng": -115.174722
+	}
 }
 ]
