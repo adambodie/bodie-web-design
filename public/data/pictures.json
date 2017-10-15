@@ -1287,5 +1287,16 @@
 		"lat": 	36.091667,
 		"lng": -115.174722
 	}
+}, {
+	"title": "All Hail the Rap God",
+	"image": "img/eminem.jpg",
+	"description": "All Hail the Rap God",
+	"location": "Minneapolis",
+	"state": "Minnesota",
+	"week": "October 15, 2017",
+	"coordinates": {
+		"lat": 	44.97800,
+		"lng": -93.27594
+	}
 }
 ]
