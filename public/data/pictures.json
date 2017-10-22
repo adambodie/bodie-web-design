@@ -1298,5 +1298,16 @@
 		"lat": 	44.97800,
 		"lng": -93.27594
 	}
+}, {
+	"title": "Idaho State Capitol",
+	"image": "img/boise.jpg",
+	"description": "My Private Lincoln in Idaho",
+	"location": "Boise",
+	"state": "Idaho",
+	"week": "October 22, 2017",
+	"coordinates": {
+		"lat": 	43.616979,
+		"lng": -116.200399
+	}
 }
 ]
