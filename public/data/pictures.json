@@ -1309,5 +1309,16 @@
 		"lat": 	43.616979,
 		"lng": -116.200399
 	}
+}, {
+	"title": "My Car's En Fuego",
+	"image": "img/fire.jpg",
+	"description": "My Car's En Fuego",
+	"location": "White Salmon",
+	"state": "Washington",
+	"week": "October 29, 2017",
+	"coordinates": {
+		"lat": 	45.7372446,
+		"lng": -121.5226089
+	}
 }
 ]
