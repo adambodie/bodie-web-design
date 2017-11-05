@@ -1320,5 +1320,16 @@
 		"lat": 	45.7372446,
 		"lng": -121.5226089
 	}
+}, {
+	"title": "Hat Rock State Park",
+	"image": "img/hat.jpg",
+	"description": "Nice Hat!",
+	"location": "Hat Rock State Park",
+	"state": "Oregon",
+	"week": "November 5, 2017",
+	"coordinates": {
+		"lat": 	45.9128143,
+		"lng": -119.1717949
+	}
 }
 ]
