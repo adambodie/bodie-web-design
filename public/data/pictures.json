@@ -1331,5 +1331,16 @@
 		"lat": 	45.9128143,
 		"lng": -119.1717949
 	}
+}, {
+	"title": "Iao Valley State Park",
+	"image": "img/ioa.jpg",
+	"description": "I Can do Black and White Too: Iao!",
+	"location": "Ioa Valley State Park",
+	"state": "Hawaii",
+	"week": "November 12, 2017",
+	"coordinates": {
+		"lat": 	20.880833,
+		"lng": -156.545
+	}
 }
 ]
