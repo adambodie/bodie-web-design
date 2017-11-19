@@ -1342,5 +1342,16 @@
 		"lat": 	20.880833,
 		"lng": -156.545
 	}
+}, {
+	"title": "Rochester, Minnesota",
+	"image": "img/rochester.jpg",
+	"description": "I was here once, this actually happened.",
+	"location": "Rochester",
+	"state": "Minnesota",
+	"week": "November 19, 2017",
+	"coordinates": {
+		"lat": 	44.0319233,
+		"lng": -92.4591142
+	}
 }
 ]
