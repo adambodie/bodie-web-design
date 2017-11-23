@@ -206,9 +206,9 @@ app.controller('ProjectController', ['$scope', function($scope) {
         alt: "Adam's Wild Wild West",
         title: "Adam's Wild Wild West",
         created: "October 1, 2017",
-        createdAt: howManyDaysAgo(2017, 9, 0, current),
+        createdAt: howManyDaysAgo(2017, 9, 1, current),
         updated: "October 1, 2017",
-        updatedAt: howManyDaysAgo(2017, 9, 0, current),
+        updatedAt: howManyDaysAgo(2017, 9, 1, current),
         description: "Built with React, this picture carousel uses the Flickr API to get pictures from a album gallery.  Source code available via GitHub.",
         link: "wildwildwest",
         languages: "React"
@@ -218,9 +218,9 @@ app.controller('ProjectController', ['$scope', function($scope) {
         alt: "Adam's Adventures",
         title: "Adam's Adventures",
         created: "November 23, 2017",
-        createdAt: howManyDaysAgo(2017, 12, 23, current),
+        createdAt: howManyDaysAgo(2017, 10, 23, current),
         updated: "November 23, 2017",
-        updatedAt: howManyDaysAgo(2017, 12, 23, current),
+        updatedAt: howManyDaysAgo(2017, 10, 23, current),
         description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
         link: "adventures",
         languages: "React"
