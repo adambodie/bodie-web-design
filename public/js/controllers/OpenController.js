@@ -87,7 +87,7 @@ app.controller('OpenController', ['$scope', function($scope) {
 	  if (month === 11 && day === 25) {
 		return "Today is Christmas.  I'm enjoying my time off.";
 	  }
-	  if (month === 10 && day === thansgivingDate(year)) {
+	  if (month === 10 && day === thanksgivingDate(year)) {
 		return "Today is Thanksgiving. I'm enjoying my time off.";
 	  }
 	  if (week === 0 || week === 6) {
