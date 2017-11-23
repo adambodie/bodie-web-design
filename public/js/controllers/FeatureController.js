@@ -65,6 +65,11 @@ app.controller('FeatureController', ['$scope', function($scope) {
       	image : "wildwildwest",
       	title : "Adam's Wild Wild West",
       	link : "wildwildwest"
+      },
+      {
+      	image : "adventures",
+      	title : "Adam's Adventures",
+      	link : "adventures"
       }
     ],
 

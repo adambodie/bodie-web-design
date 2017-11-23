@@ -212,6 +212,18 @@ app.controller('ProjectController', ['$scope', function($scope) {
         description: "Built with React, this picture carousel uses the Flickr API to get pictures from a album gallery.  Source code available via GitHub.",
         link: "wildwildwest",
         languages: "React"
+      },
+      {
+        image: "adventures",
+        alt: "Adam's Adventures",
+        title: "Adam's Adventures",
+        created: "November 23, 2017",
+        createdAt: howManyDaysAgo(2017, 12, 23, current),
+        updated: "November 23, 2017",
+        updatedAt: howManyDaysAgo(2017, 12, 23, current),
+        description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
+        link: "adventures",
+        languages: "React"
       }
     ]
 
