@@ -1353,5 +1353,16 @@
 		"lat": 	44.0319233,
 		"lng": -92.4591142
 	}
+}, {
+	"title": "Mirror Lake",
+	"image": "img/mirror.jpg",
+	"description": "Sometimes it's fun to reminisce about the good times.",
+	"location": "Mount Hood National Forest",
+	"state": "Oregon",
+	"week": "November 26, 2017",
+	"coordinates": {
+		"lat": 	45.2962612,
+		"lng": -121.7950415
+	}
 }
 ]
