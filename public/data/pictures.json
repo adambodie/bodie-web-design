@@ -1364,5 +1364,16 @@
 		"lat": 	45.2962612,
 		"lng": -121.7950415
 	}
+}, {
+	"title": "New York New York in Las Vegas",
+	"image": "img/jenn-vegas.jpg",
+	"description": "One picture from my Mom, one from my Dad, now it's my Sister's turn",
+	"location": "Las Vegas",
+	"state": "Nevada",
+	"week": "December 3, 2017",
+	"coordinates": {
+		"lat": 	36.102055,
+		"lng":  -115.172727
+	}
 }
 ]
