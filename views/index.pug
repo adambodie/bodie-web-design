@@ -51,7 +51,7 @@ block content
                   strong {{update.title}}
                   p {{update.description}}
             div(ng-controller='ProjectController')
-              div(ng-repeat='project in projects')
+              div(ng-repeat='project in projects|reverse')
                 .row
                   .box.block.col-sm-6.links
                     img.img-responsive(ng-src='/static/img/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
