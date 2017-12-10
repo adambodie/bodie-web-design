@@ -1375,5 +1375,16 @@
 		"lat": 	36.102055,
 		"lng":  -115.172727
 	}
+}, {
+	"title": "Lake Winnebago",
+	"image": "img/winnebago.jpg",
+	"description": "Next Stop on the Greatest Mystery Ever Told",
+	"location": "Fond du Lac",
+	"state": "Wisconsin",
+	"week": "December 10, 2017",
+	"coordinates": {
+		"lat": 	43.7975059,
+		"lng":  -88.4404087
+	}
 }
 ]
