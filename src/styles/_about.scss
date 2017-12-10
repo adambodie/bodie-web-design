@@ -10,7 +10,7 @@
 
 h4 {
 	a {
-		color:  $primary-color;
+		color:  white;
 	}
 	&:hover {
 		color: $darken;	
@@ -33,7 +33,7 @@ h3 {
     	list-style: none;
     	font-size: 2em;
     	font-weight: bold;
-    	color: $primary-color;
+    	color: white;
     	text-align: left;
     	&:hover {
 			color: $darken;    	

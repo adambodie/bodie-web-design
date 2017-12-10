@@ -53,7 +53,7 @@ gulp.task('lightbox', function() {
 });
 
 gulp.task('coffee', function () {
-	return gulp.src([scripts + 'overlay.coffee', scripts + 'ad.coffee'])
+	return gulp.src(scripts + 'overlay.coffee')
   .pipe(maps.init())
   .pipe(coffee())
   .pipe(rename({suffix: '.min'}))

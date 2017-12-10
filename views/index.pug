@@ -33,8 +33,6 @@ block content
       section
         .row.ad
           #ad
-            button#close
-              i.fa.fa-times
             a(href='http://www.github.com/adambodie', target='_blank')
               div#github
                 h1
@@ -42,17 +40,18 @@ block content
                 i.fa.fa-github.fa-5x
       section#projects
         .container
-          h2.section-heading Projects
           .row
+            h2.section-heading Projects
             h3#update Recent updates
             .update(ng-controller='UpdateController')
               ul
                 li(ng-repeat='update in updates')
-                  strong {{update.title}}
-                  p {{update.description}}
+                  p
+                    strong {{update.title}} 
+                    | - {{update.description}}
             div(ng-controller='ProjectController')
               div(ng-repeat='project in projects|reverse')
-                .row
+                .row.project
                   .box.block.col-sm-6.links
                     img.img-responsive(ng-src='/static/img/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
                   .box.block.col-sm-6
@@ -77,6 +76,10 @@ block content
                     p {{project.description}}
                     h3
                       a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+      section
+        .row.ad
+          a(href='https://teamtreehouse.com/adambodie', target='_blank')  
+            img.img-responsive(ng-src='/static/img/treehouse.png', alt='Treehouse')
       section#mobile-projects
         .container
           h2.section-heading Mobile Projects

@@ -23,7 +23,7 @@ app.controller('UpdateController', ['$scope', function($scope) {
   		},
       {
         title: "Adam Hits the Big 3-0",
-        description: "Launced version 2.0 May 14, 2017, built with Ember"
+        description: "Launched version 2.0 May 14, 2017, built with Ember"
       }
     ]
   }]);

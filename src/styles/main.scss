@@ -1,6 +1,6 @@
 $primary-color: #5a5a5a;
 $primary-bg-color: #CAE1FF;
-$footer-color: #9d9d9d;
+$footer-color: white;
 $white: white;
 $darken: darken($white, 50%);
 $raleway: 'Raleway', sans-serif;
@@ -17,10 +17,11 @@ $fjalla:  'Fjalla One', sans-serif;
 -------------------------------------------------- */
 
 body {
-  color: $primary-color;
-  background-color: $primary-bg-color;
+  color: $white;
+  background: url('/static/img/background.jpg') fixed no-repeat center;
+  background-size: cover;
   padding-bottom: 40px;
-  font-family: $raleway;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover {
@@ -116,7 +117,7 @@ p {
 	li {
     	list-style: none;
     	font-size: 1.2em;
-    	color: $primary-color;
+    	color: $white;
     	text-align: left;
     	&:hover {
 			color: $darken;
@@ -127,7 +128,7 @@ p {
 /* PROJECT STYLES
 ------------------------- */
 .container {
-	.row {
+	.project {
 		border-top: 1px solid $white;
 	}
 
@@ -173,6 +174,9 @@ footer {
   p {
 		margin-right: 10px;
   }
+  #year {
+	  margin-left: 20px;
+  }
   a {
 		color: $footer-color;
 		&:hover {
@@ -214,12 +218,8 @@ footer {
 	font-weight: bold;
 }
 
-#feature img {
-	border-radius: 40px;
-}
-
 #feature img:hover {
-	box-shadow: 5px 5px 10px gray;
+	box-shadow: 5px 5px 10px black;
 }
 
 /* PICTURE OF THE WEEK
