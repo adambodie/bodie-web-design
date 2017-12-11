@@ -100,7 +100,7 @@ app.controller('ProjectController', ['$scope', function($scope) {
         created: "September 7, 2015",
         createdAt: howManyDaysAgo(2015, 8, 7, current),
         updated: "August 28, 2016",
-        updatedAt: howManyDaysAgo(2015, 7, 28, current),
+        updatedAt: howManyDaysAgo(2016, 7, 28, current),
         description: "Yes, it's always fun to visit the big city lights. But what would happen if the massive crowds and noise got too much for you? That's why you should appreciate the finest in small town tourism. You may be surprised by how much is out there.",
         link: "small-town",
         languages: "AngularJS"
