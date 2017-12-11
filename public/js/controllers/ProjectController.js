@@ -147,11 +147,11 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Reno Nice 'n' Cool: A Better RNC",
         created: "August 5, 2016",
         createdAt: howManyDaysAgo(2016, 7, 5, current),
-        updated: "August 5, 2016",
-        updatedAt: howManyDaysAgo(2016, 7, 5, current),
-        description: "With a week vacation from work, I went on a road trip down to Reno, where I visited the city, Lake Tahoe and plenty of places along the way. To see my adventures and get a better RNC experience, click the link below.",
+        updated: "December 11, 2017",
+        updatedAt: howManyDaysAgo(2017, 11, 11, current),
+        description: "With a week vacation from work, I went on a road trip down to Reno, where I visited the city, Lake Tahoe and plenty of places along the way. To see my adventures and get a better RNC experience, click the link below. - Version 2.0 contains a slightly different layout and was built with Vue.js",
         link: "reno",
-        languages: "jQuery"
+        languages: "Vue"
       },
       {
         image: "dreidel",
