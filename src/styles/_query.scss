@@ -22,78 +22,7 @@
 	#pic-caption {
 		font-size: 1em;
 	}
-	/* GITHUB AD STYLES
-	----------------------*/
-  .ad {
-      border-top: none!important;
-  }
 
-  #ad {
-  	display: block;
-    @include gradient(grey, purple);
-  	color: white;
-  	height: 120px;
-  	width: 100%;
-  	position:relative;
-	h1 {
-  		float: left;
-  		margin-left: 50px;
-  		padding: 10px;
-  		text-shadow: 3px 3px 10px black;
-      font-family: 'Architects Daughter', cursive;
-      font-size: 3em; 
-	}
-  .fa-github {
-    text-shadow: 3px 3px 10px black;
-  }
-	h4 {
-  		margin-left: 100px;
-  		float: left;
-  		clear: both;
-	}
-
-	a {
-  		color: white;
-	}
-	a:hover {
-  		color: gray;
-	}
-
-  }
-  #github {
-      h1 {
-        margin-top: 30px;
-      }
-      .fa {
-        margin-top: 20px;
-      }
-	}
-
-  /*linkedin ad styles
-  ---------------------------*/
-  #linkedinad {
-	background-image:url('../img/linkedin.png');
- 	display: block;
- 	position: relative;
- 	padding: 20px;
- 	margin-bottom: 50px;
- 	margin-left: 10%;
- 	margin-right: 10%;
- 	font-family: $fjalla;
- 	max-height: 110px;
- 	h2 {
- 		color: white;
-		display: inline-block;
-		font-weight: bold;
-		&:hover {
-			color: lightgray;
-		}
-	 }
- 	img {
- 		margin-left: 20px;
-		margin-top: -10px;
- 	}
-}
 	.box {
 		border-top: 1px solid white;
 	}

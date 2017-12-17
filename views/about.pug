@@ -28,8 +28,7 @@ block content
                 .news
                     ul(ng-controller="SkillsController")
                        li(ng-repeat="skill in skills") {{skill}}
-    .row
-        #linkedinad
-            a(href="https://www.linkedin.com/in/adam-bodie/", target="_blank")
-                h2 View My Profile on LinkedIn!!!
-                    img(src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png", width="160", height="33", border="0" alt="View Adam Bodie's profile on LinkedIn", style="display: inline-block;").img-responsive
+    section
+        .row.ad
+         a(href="https://www.linkedin.com/in/adam-bodie/", target="_blank")  
+            img.img-responsive(ng-src='/static/img/linkedin.png', alt='LinkedIn')            
