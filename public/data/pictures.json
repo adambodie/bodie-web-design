@@ -1397,5 +1397,16 @@
 		"lat": 	34.7290074,
 		"lng":  -86.5894167
 	}
+}, {
+	"title": "Portland Skyline",
+	"image": "img/portland-night.jpg",
+	"description": "Portland, Oregon: My Hometown at Night",
+	"location": "Portland",
+	"state": "Oregon",
+	"week": "December 24, 2017",
+	"coordinates": {
+		"lat": 	45.5114777,
+		"lng":  -122.6701047
+	}
 }
 ]
