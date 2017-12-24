@@ -7,32 +7,20 @@ function howManyDaysAgo (years, months, days, current) {
     var daysAgo = (current.getTime() - update.getTime())/86400000;
 		if (daysAgo >= -1) {
 		    if (daysAgo > 365) {
-		    	var yearsAgo = daysAgo / 365;
-		    	if (daysAgo <= 729) {
-		    		var ago = " year ago.";
-		    	} else {
-		    		var ago = " years ago.";
-		    	}
+				var yearsAgo = daysAgo / 365;
+				var ago = (daysAgo <= 729) ? " year ago." : " years ago.";
 		    	return Math.floor(yearsAgo) + ago;
 		    }
 
 		    if (daysAgo > 31) {
-		    	var monthsAgo = daysAgo / 31;
-		    	if (daysAgo <= 60) {
-		    		var ago = " month ago.";
-		    	} else {
-		    		var ago = " months ago.";
-		    	}
+				var monthsAgo = daysAgo / 31;
+				var ago = (daysAgo <= 60) ? " month ago." : " months ago.";
 		    	return Math.floor(monthsAgo) + ago;
 		    }
 
 		    if (daysAgo > 7) {
-		    	var weeksAgo = daysAgo / 7;
-		    	if (daysAgo <= 13) {
-		    		var ago = " week ago.";
-		    	} else {
-		    		var ago = " weeks ago.";
-		    	}
+				var weeksAgo = daysAgo / 7;
+				var ago = (daysAgo <= 13) ? " week ago." : " weeks ago.";
 		    	return Math.round(weeksAgo) + ago;
 		    }
 		    if (daysAgo >= 2) {
