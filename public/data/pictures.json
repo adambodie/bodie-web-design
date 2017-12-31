@@ -1408,5 +1408,16 @@
 		"lat": 	45.5114777,
 		"lng":  -122.6701047
 	}
+}, {
+	"title": "New York, New York",
+	"image": "img/liberty.jpg",
+	"description": "Happy New Year!  Let's make this a Great Orange-Free Year",
+	"location": "New York",
+	"state": "New York",
+	"week": "December 31, 2017",
+	"coordinates": {
+		"lat": 	40.688172,
+		"lng":  -74.048073
+	}
 }
 ]
