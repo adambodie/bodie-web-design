@@ -52,17 +52,6 @@ gulp.task('lightbox', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('coffee', function () {
-	return gulp.src(scripts + 'overlay.coffee')
-  .pipe(maps.init())
-  .pipe(coffee())
-  .pipe(rename({suffix: '.min'}))
-  .pipe(uglify())
-  .pipe(maps.write())
-  .pipe(gulp.dest(destJS));
-});
-
-
 gulp.task('css', function () {
 	return gulp.src([styles + 'normalize.css', styles + 'main.scss'])
 	.pipe(maps.init())
@@ -95,6 +84,6 @@ gulp.task('watch', function() {
   gulp.watch('./src/styles/*.scss', ['css']);
 });
 
-gulp.task('default', ['mocha', 'css', 'coffee', 'json', 'valid'], function () {
+gulp.task('default', ['mocha', 'css', 'json', 'valid'], function () {
 	console.log("All tasks completed");
 });

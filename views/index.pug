@@ -18,7 +18,7 @@ block content
             #week.col-md-6
               .photo
                 img.img-responsive(ng-src='static/{{image}}', alt='{{title}}')
-                a(href='static/{{image}}')
+                a(href='static/{{image}}' data-imagelightbox="a")
                   .photo-overlay
                     h3 {{title}}
                     p Week of: {{week}}
