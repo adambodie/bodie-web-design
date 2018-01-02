@@ -159,8 +159,8 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "Dreidel Duel",
         created: "January 5, 2017",
         createdAt: howManyDaysAgo(2017, 0, 5, current),
-        updated: "September 22, 2017",
-        updatedAt: howManyDaysAgo(2017, 8, 22, current),
+        updated: "January 1, 2018",
+        updatedAt: howManyDaysAgo(2018, 0, 1, current),
         description: "Built with React JS, this is a simple Dreidel game that can be played with two players.",
         link: "dreidel",
         languages: "React"
