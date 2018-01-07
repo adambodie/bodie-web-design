@@ -11,6 +11,10 @@ block content
             a(href='http://{{randomFeature.link}}.bodiewebdesign.com')
               img(ng-src='static/img/{{randomFeature.image}}.jpg' class='img-responsive center-block')
             h3 {{randomFeature.title}}
+      section
+        .row.ad
+          a(href="https://www.linkedin.com/in/adam-bodie/", target="_blank")  
+            img.img-responsive(ng-src='/static/img/linkedin.png', alt='LinkedIn')
       section#about
         .container
           .row(ng-controller='PictureWeekController')
@@ -46,9 +50,9 @@ block content
             div(ng-controller='ProjectController')
               div(ng-repeat='project in projects|reverse')
                 .row.project
-                  .box.block.col-sm-6.links
+                  .box.block.col-sm-4.links
                     img.img-responsive(ng-src='/static/img/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
-                  .box.block.col-sm-6
+                  .box.block.col-sm-8
                     h2 {{project.title}}
                     .description
                       p
@@ -78,11 +82,11 @@ block content
         .container
           h2.section-heading Mobile Projects
             .row.project
-              .box.block.col-sm-6.links
+              .box.block.col-sm-4.links
                 .mobile
                   .content
                     img.img-responsive(ng-src='/static/img/walla-walla-native.jpg', alt='Walla Walla Native')
-              .box.block.col-sm-6
+              .box.block.col-sm-8
                 h2 Walla Walla Native
                 p
                   strong Created:
@@ -94,11 +98,11 @@ block content
                 h3
                   a.btn(href='https://github.com/adambodie/walla-walla-native', role='button') Check Me Out! &raquo;
             .row.project
-              .box.block.col-sm-6.links
+              .box.block.col-sm-4.links
                 .mobile
                   .content
                     img.img-responsive(ng-src='/static/img/smallTownNative.jpg', alt='Small Towns Native')
-              .box.block.col-sm-6
+              .box.block.col-sm-8
                 h2 Small Towns Native
                 p
                   strong Created:
@@ -110,10 +114,10 @@ block content
                 h3
                   a.btn(href='https://github.com/adambodie/SmallTownNative', role='button') Check Me Out! &raquo;
             .row.project
-              .box.block.col-sm-6.links
+              .box.block.col-sm-4.links
                 .android
                   img.img-responsive(ng-src='/static/img/21zf8r.gif', alt='Kevin\'s Fun Facts')
-              .box.block.col-sm-6
+              .box.block.col-sm-8
                 h2 Kevin's Fun Facts
                 p
                   strong Created:

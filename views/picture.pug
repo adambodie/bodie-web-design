@@ -15,4 +15,4 @@ block content
                       p  {{item.location}}, {{item.state}}
                       p(style="text-align: center") {{item.description}}
             .row.flex-container
-              ul.flex-item(uib-pagination='', total-items='totalItems', ng-model='currentPage')
+              ul.flex-item(uib-pagination='', total-items='totalItems', ng-model='currentPage' direction-links='false')

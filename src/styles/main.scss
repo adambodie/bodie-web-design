@@ -163,8 +163,12 @@ p {
 		max-height: 3146px;
 	}
 }
-.android img {
-	width: 375px;
+.android { 
+	min-width: 290px;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 }
 /* FOOTER STYLES
 ------------------------*/

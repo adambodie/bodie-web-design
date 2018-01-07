@@ -5,13 +5,12 @@ app.controller('PictureController', ['$scope', 'pictureService', function ($scop
 
     $scope.itemsPerPage = 9;
     $scope.currentPage = 1;
-
     $scope.pageCount = function () {
       return Math.ceil($scope.data.length / $scope.itemsPerPage);
     };
 
     $scope.pictures.$promise.then(function () {
-      $scope.totalItems = $scope.data.length + 14;
+      $scope.totalItems = $scope.data.length + ($scope.pageCount() - 1);
       $scope.$watch('currentPage + itemsPerPage', function() {
         var begin = (($scope.currentPage - 1) * $scope.itemsPerPage),
           end = begin + $scope.itemsPerPage;
