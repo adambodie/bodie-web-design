@@ -183,8 +183,8 @@ app.controller('ProjectController', ['$scope', function($scope) {
         title: "NFL Passer Rating",
         created: "April 2, 2017",
         createdAt: howManyDaysAgo(2017, 3, 2, current),
-        updated: "April 2, 2017",
-        updatedAt: howManyDaysAgo(2017, 3, 2, current),
+        updated: "January 7, 2018",
+        updatedAt: howManyDaysAgo(2018, 0, 7, current),
         description: "Built with React, compiled with Webpack, and tested with Mocha and Chai, my new version of the NFL Passer Rating web page is better designed, with more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
         link: "nfl-passer-rating",
         languages: "React, Webpack, Mocha/Chai, Foundation"

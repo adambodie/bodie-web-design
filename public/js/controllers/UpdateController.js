@@ -2,8 +2,12 @@
 app.controller('UpdateController', ['$scope', function($scope) {
     $scope.updates = [
       {
+  			title: "NFL Passer Rating",
+  			description: "Reconfigured components to allow flexibility of button colors, January 7, 2018"
+  		},      
+      {
         title: "Dreidel Duel",
-        description: "Added new feature, converted syntax to ES6"
+        description: "Added new feature, converted syntax to ES6, January 1, 2018"
       },       
       {
         title: "Reno Nice 'n' Cool",
@@ -20,10 +24,6 @@ app.controller('UpdateController', ['$scope', function($scope) {
 			{
 				title: "Dreidel Duel!",
 				description: "Moved to its own webpage September 22, 2017"
-			},
-      {
-  			title: "N.A.D.M. 2 - The Infamous",
-  			description: "Launched September 4, 2017, built with Angular 2"
-  		}
+			}
     ]
   }]);
