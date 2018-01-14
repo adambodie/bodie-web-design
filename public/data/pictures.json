@@ -1425,10 +1425,21 @@
 	"description": "Humpty Trumpty sat on a wall. Humpty Trumpty had a great fall.  All of Trump's horses and all of Trump's Men.  Couldn't put Trumpty together again.",
 	"location": "Rock City",
 	"state": "Georgia",
-	"week": "January 7, 2017",
+	"week": "January 7, 2018",
 	"coordinates": {
 		"lat": 	34.9733888,
 		"lng":  -85.3519574
+	}
+}, {
+	"title": "Three Fingered Jack",
+	"image": "img/three-fingered-jack.jpg",
+	"description": "The Legend of Three Fingered Jack Blazing the Trail Through the Oregon West",
+	"location": "Redmond",
+	"state": "Oregon",
+	"week": "January 14, 2018",
+	"coordinates": {
+		"lat": 	44.4433478,
+		"lng":  -121.6998267
 	}
 }
 ]
