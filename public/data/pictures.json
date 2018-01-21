@@ -1441,5 +1441,16 @@
 		"lat": 	44.4433478,
 		"lng":  -121.6998267
 	}
+}, {
+	"title": "Skol Vikings!",
+	"image": "img/viking.jpg",
+	"description": "Skol Vikings! Bring It Home!",
+	"location": "Alexandria",
+	"state": "Minnesota",
+	"week": "January 21, 2018",
+	"coordinates": {
+		"lat": 	45.8910234,
+		"lng":  -95.3802087
+	}
 }
 ]
