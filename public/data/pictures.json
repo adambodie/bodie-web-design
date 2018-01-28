@@ -1452,5 +1452,16 @@
 		"lat": 	45.8910234,
 		"lng":  -95.3802087
 	}
+}, {
+	"title": "Case Closed",
+	"image": "img/minneapolis.jpg",
+	"description": "Case Closed",
+	"location": "Minneapolis",
+	"state": "Minnesota",
+	"week": "January 28, 2018",
+	"coordinates": {
+		"lat": 	44.9594758,
+		"lng":  -93.2714657
+	}
 }
 ]
