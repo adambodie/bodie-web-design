@@ -1463,5 +1463,16 @@
 		"lat": 	44.9594758,
 		"lng":  -93.2714657
 	}
+}, {
+	"title": "Phantom Ship",
+	"image": "img/ship.jpg",
+	"description": "Real Ship, Meet Phantom Ship",
+	"location": "Crater Lake National Park",
+	"state": "Oregon",
+	"week": "February 4, 2018",
+	"coordinates": {
+		"lat": 	42.9071874,
+		"lng":  -122.0997051
+	}
 }
 ]
