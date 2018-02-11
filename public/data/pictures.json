@@ -1474,5 +1474,16 @@
 		"lat": 	42.9071874,
 		"lng":  -122.0997051
 	}
+}, {
+	"title": "Utah Lake and Mt. Timpanogos",
+	"image": "img/utah.jpg",
+	"description": "New Family in Utah.  Awesome!",
+	"location": "Utah Lake",
+	"state": "Utah",
+	"week": "February 11, 2018",
+	"coordinates": {
+		"lat": 	40.2682721,
+		"lng":  -111.8139117
+	}
 }
 ]
