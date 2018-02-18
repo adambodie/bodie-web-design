@@ -1485,5 +1485,16 @@
 		"lat": 	40.2682721,
 		"lng":  -111.8139117
 	}
+}, {
+	"title": "Ecola State Park",
+	"image": "img/ecola.jpg",
+	"description": "The Beautiful Oregon Coast: One of a Kind",
+	"location": "Cannon Beach",
+	"state": "Oregon",
+	"week": "February 18, 2018",
+	"coordinates": {
+		"lat": 	45.9195088,
+		"lng":  -123.9771892
+	}
 }
 ]
