@@ -1496,5 +1496,16 @@
 		"lat": 	45.9195088,
 		"lng":  -123.9771892
 	}
+}, {
+	"title": "Fire 'n' Ice",
+	"image": "img/fire-ice.jpg",
+	"description": "Fire 'n' Ice: A great way to enjoy snow and sun in the morning",
+	"location": "Beaverton",
+	"state": "Oregon",
+	"week": "February 25, 2018",
+	"coordinates": {
+		"lat": 45.4949047,
+		"lng": -122.8249488
+	}
 }
 ]
