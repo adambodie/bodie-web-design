@@ -1507,5 +1507,16 @@
 		"lat": 45.4949047,
 		"lng": -122.8249488
 	}
+}, {
+	"title": "Abandoned Building in Antelope",
+	"image": "img/antelope.jpg",
+	"description": "Anything can happen anywhere, even in the smallest of towns",
+	"location": "Antelope",
+	"state": "Oregon",
+	"week": "March 4, 2018",
+	"coordinates": {
+		"lat": 44.9116074,
+		"lng": -120.7326327
+	}
 }
 ]
