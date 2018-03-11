@@ -1518,5 +1518,16 @@
 		"lat": 44.9116074,
 		"lng": -120.7326327
 	}
+}, {
+	"title": "House on Stilts",
+	"image": "img/columbia-city.jpg",
+	"description": "How does that House stay up like that?",
+	"location": "Columbia City",
+	"state": "Oregon",
+	"week": "March 11, 2018",
+	"coordinates": {
+		"lat": 45.890672,
+		"lng": -122.8068974
+	}
 }
 ]
