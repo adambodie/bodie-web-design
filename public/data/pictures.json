@@ -1529,5 +1529,16 @@
 		"lat": 45.890672,
 		"lng": -122.8068974
 	}
+}, {
+	"title": "Peace Arch",
+	"image": "img/canada.jpg",
+	"description": "O Canada!  O Canada!  I made it to Canada!",
+	"location": "Surrey",
+	"state": "British Columbia",
+	"week": "March 18, 2018",
+	"coordinates": {
+		"lat": 49.0020898,
+		"lng": -122.7587212
+	}
 }
 ]
