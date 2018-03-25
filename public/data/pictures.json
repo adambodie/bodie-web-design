@@ -1540,5 +1540,16 @@
 		"lat": 49.0020898,
 		"lng": -122.7587212
 	}
+}, {
+	"title": "Wallowa Lake Tramway",
+	"image": "img/joseph.jpg",
+	"description": "Now That's a Mighty Mighty Drop!",
+	"location": "Joseph",
+	"state": "Oregon",
+	"week": "March 25, 2018",
+	"coordinates": {
+		"lat": 45.2605702,
+		"lng": -117.2382579
+	}
 }
 ]
