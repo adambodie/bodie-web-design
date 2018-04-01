@@ -1551,5 +1551,16 @@
 		"lat": 45.2605702,
 		"lng": -117.2382579
 	}
+}, {
+	"title": "San Gorgonio Pass",
+	"image": "img/wind.jpg",
+	"description": "The road to Palm Springs: Wind, Wind and More Wind",
+	"location": "Palm Springs",
+	"state": "California",
+	"week": "April 1, 2018",
+	"coordinates": {
+		"lat": 33.922629,
+		"lng": -116.6949628
+	}
 }
 ]
