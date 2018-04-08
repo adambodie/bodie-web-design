@@ -1562,5 +1562,16 @@
 		"lat": 33.922629,
 		"lng": -116.6949628
 	}
+}, {
+	"title": "National Civil Rights Museum",
+	"image": "img/mlk.jpg",
+	"description": "50 Years Later: Still Tragic",
+	"location": "Memphis",
+	"state": "Tennessee",
+	"week": "April 8, 2018",
+	"coordinates": {
+		"lat": 35.1347118,
+		"lng": -90.0596495
+	}
 }
 ]
