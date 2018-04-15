@@ -1573,5 +1573,16 @@
 		"lat": 35.1347118,
 		"lng": -90.0596495
 	}
+}, {
+	"title": "Bend from Pilot Butte",
+	"image": "img/bend.jpg",
+	"description": "Bend, Bend, Oh Wonderful Bend, How Wondeful Bend Could Be",
+	"location": "Bend",
+	"state": "Oregon",
+	"week": "April 15, 2018",
+	"coordinates": {
+		"lat": 44.0606176,
+		"lng": -121.2832469
+	}
 }
 ]
