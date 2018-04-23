@@ -1584,5 +1584,16 @@
 		"lat": 44.0606176,
 		"lng": -121.2832469
 	}
+}, {
+	"title": "Victoria",
+	"image": "img/victoria.jpg",
+	"description": "Victoria, the Beautiful!",
+	"location": "Victoria",
+	"state": "British Columbia",
+	"week": "April 22, 2018",
+	"coordinates": {
+		"lat": 48.422515,
+		"lng": -123.368692
+	}
 }
 ]
