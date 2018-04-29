@@ -1595,5 +1595,16 @@
 		"lat": 48.422515,
 		"lng": -123.368692
 	}
+}, {
+	"title": "Bellingham Sunset",
+	"image": "img/zuanich.jpg",
+	"description": "Riding off into the sunset with no Safe Return",
+	"location": "Bellingham",
+	"state": "Washington",
+	"week": "April 29, 2018",
+	"coordinates": {
+		"lat": 48.753854,
+		"lng": -122.499570
+	}
 }
 ]
