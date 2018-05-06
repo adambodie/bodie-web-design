@@ -1606,5 +1606,16 @@
 		"lat": 48.753854,
 		"lng": -122.499570
 	}
+}, {
+	"title": "Lost Creek Lake",
+	"image": "img/lost-creek.jpg",
+	"description": "Lost Tree at Lost Creek Lake",
+	"location": "Lost Creek Lake",
+	"state": "Oregon",
+	"week": "May 6, 2018",
+	"coordinates": {
+		"lat": 42.6812154,
+		"lng": -122.6304858
+	}
 }
 ]
