@@ -1617,5 +1617,16 @@
 		"lat": 42.6812154,
 		"lng": -122.6304858
 	}
+}, {
+	"title": "Storm Clouds over Baker City",
+	"image": "img/baker-city.jpg",
+	"description": "A Hot and Stormy Summer is Coming",
+	"location": "Baker City",
+	"state": "Oregon",
+	"week": "May 13, 2018",
+	"coordinates": {
+		"lat": 44.784055,
+		"lng": -117.808878
+	}
 }
 ]
