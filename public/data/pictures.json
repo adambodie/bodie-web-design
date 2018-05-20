@@ -1628,5 +1628,16 @@
 		"lat": 44.784055,
 		"lng": -117.808878
 	}
+}, {
+	"title": "Airplane over Stateline",
+	"image": "img/airplane.jpg",
+	"description": "Sometimes you just need to get away",
+	"location": "Stateline",
+	"state": "Nevada",
+	"week": "May 20, 2018",
+	"coordinates": {
+		"lat": 38.960038,
+		"lng": -119.9438247
+	}
 }
 ]
