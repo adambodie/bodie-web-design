@@ -1639,5 +1639,16 @@
 		"lat": 38.960038,
 		"lng": -119.9438247
 	}
+}, {
+	"title": "Crooked River Ranch",
+	"image": "img/crooked-river-ranch.jpg",
+	"description": "Imperfect Yet Perfect: A Great Way to Get Away",
+	"location": "Crooked River Ranch",
+	"state": "Oregon",
+	"week": "May 27, 2018",
+	"coordinates": {
+		"lat": 44.4620101,
+		"lng": -121.3082731
+	}
 }
 ]
