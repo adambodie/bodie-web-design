@@ -1650,5 +1650,16 @@
 		"lat": 44.4620101,
 		"lng": -121.3082731
 	}
+}, {
+	"title": "Times Square",
+	"image": "img/times-square.jpg",
+	"description": "Party over Here Until Midnight!!!",
+	"location": "New York",
+	"state": "New York",
+	"week": "June 3, 2018",
+	"coordinates": {
+		"lat": 40.7586477,
+		"lng": -73.9888829
+	}
 }
 ]
