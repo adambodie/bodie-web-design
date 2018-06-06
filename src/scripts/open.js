@@ -1,73 +1,53 @@
-var laborDate, memorialDate, open, thanksgivingDate;
+let laborDate, memorialDate, open, thanksgivingDate;
 
-thanksgivingDate = function(year) {
-  var moveToThursday, november;
-  november = new Date(year, 10, 1);
-  if (november.getDay() === 4) {
-    return november.getDate() + 21;
-  } else {
-    if (november.getDay() === 5 || november.getDay() === 6) {
-      moveToThursday = 11 - november.getDay();
+thanksgivingDate = year => {
+    let moveToThursday, november, day;
+	  november = new Date(year, 10, 1);
+	  day = november.getDay();
+	  if (day === 4) {
+	    moveToThursday = 0;
+    } else if (day === 5 || day === 6) {
+	    moveToThursday = 11 - day;
     } else {
-      moveToThursday = 4 - november.getDay();
+	    moveToThursday = 4 - day;
     }
-  }
-  return november.getDate() + moveToThursday + 21;
+return november.getDate() + moveToThursday + 21;
+} 
+
+
+memorialDate = year => {
+    let may, moveToMonday, day;
+    may = new Date(year, 4, 1);
+    day = may.getDay();
+  	if (day === 1) {
+    		moveToMonday = 8;
+  	} else if (day === 0) {
+      	moveToMonday = 9;
+    } else if (day === 6) {
+      	moveToMonday = 10;
+    } else {
+      		moveToMonday = 9 - day;
+    	}
+  return may.getDate() + moveToMonday + 20;
 };
 
-memorialDate = function(year) {
-  var may, moveToMonday;
-  may = new Date(year, 4, 1);
-  if (may.getDay() === 1) {
-    return may.getDate() + 28;
-  } else {
-    if (may.getDay() === 0) {
-      moveToMonday = 1 + may.getDay();
-      return may.getDate() + moveToMonday + 28;
-    } else if (may.getDay() === 6) {
-      moveToMonday = 8 - may.getDay();
-      return may.getDate() + moveToMonday + 28;
-    } else {
-      moveToMonday = 8 - may.getDay();
-      return may.getDate() + moveToMonday + 21;
+laborDate = year => {
+    let moveToMonday, sept, day;
+  	sept = new Date(year, 8, 1);
+    day = sept.getDay();
+  	if (day === 1) {
+    		moveToMonday = 0;
+  	} else if (day === 0) {
+      	moveToMonday = 1;
+    	} else {
+      	moveToMonday = 8 - day;    		
     }
-  }
-};
+	  return sept.getDate() + moveToMonday;
+}
 
-laborDate = function(year) {
-  var moveToMonday, sept;
-  sept = new Date(year, 8, 1);
-  if (sept.getDay() === 1) {
-    return sept.getDate();
-  } else {
-    if (sept.getDay() === 0) {
-      moveToMonday = 1 + sept.getDay();
-      return sept.getDate() + moveToMonday;
-    } else {
-      moveToMonday = 8 - sept.getDay();
-      return sept.getDate() + moveToMonday;
-    }
-  }
-};
-
-open = function(year, month, day, week, hour) {
-  var christmas, date, dayDate, hourDate, independence, monthDate, newyear, thanksgiving, weekDate, yearDate;
+open = (year, month, day, week, hour) => {
+  let christmas, date, independence, newyear, thanksgiving;
   date = new Date();
-  if (year === void 0) {
-    yearDate = date.getFullYear();
-  }
-  if (month === void 0) {
-    monthDate = date.getMonth();
-  }
-  if (day === void 0) {
-    dayDate = date.getDate();
-  }
-  if (week === void 0) {
-    weekDate = date.getDay();
-  }
-  if (hour === void 0) {
-    hourDate = date.getHours();
-  }
   newyear = new Date(year, 0, 1);
   independence = new Date(year, 6, 4);
   christmas = new Date(year, 11, 25);

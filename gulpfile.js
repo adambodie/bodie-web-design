@@ -1,33 +1,33 @@
 'use strict';
 
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var sass = require('gulp-sass');
-var coffee = require('gulp-coffee');
-var maps = require('gulp-sourcemaps');
-var jsValidate = require('gulp-jsvalidate');
-var jsonlint = require('gulp-jsonlint');
-var mocha = require('gulp-mocha');
-var csso = require('gulp-csso');
-var iff = require('gulp-if');
-var pugLinter = require('gulp-pug-linter');
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass');
+const coffee = require('gulp-coffee');
+const maps = require('gulp-sourcemaps');
+const jsValidate = require('gulp-jsvalidate');
+const jsonlint = require('gulp-jsonlint');
+const mocha = require('gulp-mocha');
+const csso = require('gulp-csso');
+const iff = require('gulp-if');
+const pugLinter = require('gulp-pug-linter');
 
-var destJS = './public/js/';
-var destCSS = './public/css/';
-var vendor = './src/vendor/';
-var scripts = './src/scripts/';
-var styles = './src/styles/';
+const destJS = './public/js/';
+const destCSS = './public/css/';
+const vendor = './src/vendor/';
+const scripts = './src/scripts/';
+const styles = './src/styles/';
 
 // 
 
-gulp.task('mocha', function(){
+gulp.task('mocha', () =>{
   gulp.src(['./test/HolidayTest.js', './test/OpenTest.js', './test/TimeTest.js'], {read: false})
       .pipe(mocha({reporter: 'nyan'}))
 });
 
-gulp.task('scrollbar', function() {
+gulp.task('scrollbar', () => {
   return gulp.src([vendor + 'scroll-up-bar/scroll-up-bar.js', scripts + '/scroll.js'])
     .pipe(concat('./scrollbar.js'))
     .pipe(rename({suffix: '.min'}))
@@ -35,7 +35,7 @@ gulp.task('scrollbar', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('createVticker', function() {
+gulp.task('createVticker', () => {
   return gulp.src([vendor + '/vticker/jquery.vticker.js', scripts + '/ticker.js'])
     .pipe(concat('./vticker.js'))
     .pipe(rename({suffix: '.min'}))
@@ -44,7 +44,7 @@ gulp.task('createVticker', function() {
 });
 
 
-gulp.task('lightbox', function() {
+gulp.task('lightbox', () => {
   return gulp.src([vendor + '/imageLightbox/imagelightbox.js', scripts + 'myLightbox.js'])
     .pipe(concat('./myImageLightbox.js'))
     .pipe(rename({suffix: '.min'}))
@@ -52,7 +52,7 @@ gulp.task('lightbox', function() {
     .pipe(gulp.dest(destJS));
 });
 
-gulp.task('css', function () {
+gulp.task('css', () => {
 	return gulp.src([styles + 'normalize.css', styles + 'main.scss'])
 	.pipe(maps.init())
 	.pipe(iff('main.scss', sass()))
@@ -63,27 +63,27 @@ gulp.task('css', function () {
 	.pipe(gulp.dest(destCSS));
 });
 
-gulp.task('valid', function () {
+gulp.task('valid', () => {
     return gulp.src(scripts + '*.js')
     .pipe(jsValidate());
 });
 
-gulp.task('json', function() {
+gulp.task('json', () => {
 	return gulp.src('./public/data/pictures.json')
 	.pipe(jsonlint())
 	.pipe(jsonlint.reporter());
 });
 
-gulp.task('pug', function(){
+gulp.task('pug', () => {
 	return gulp.src('./views/*.pug')
 	.pipe(pugLinter())
 	.pipe(pugLinter.reporter())
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch('./src/styles/*.scss', ['css']);
 });
 
-gulp.task('default', ['mocha', 'css', 'json', 'valid'], function () {
+gulp.task('default', ['mocha', 'css', 'json', 'valid'], () => {
 	console.log("All tasks completed");
 });
