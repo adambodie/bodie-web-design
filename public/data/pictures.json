@@ -1661,5 +1661,16 @@
 		"lat": 40.7586477,
 		"lng": -73.9888829
 	}
+}, {
+	"title": "Horsethief Lake",
+	"image": "img/horsethief.jpg",
+	"description": "Mount Hood from Horsethief Butte over Horsethief Lake.",
+	"location": "Columbia Hills Historical State Park",
+	"state": "Washington",
+	"week": "June 10, 2018",
+	"coordinates": {
+		"lat": 45.6476077,
+		"lng": -121.1011157
+	}
 }
 ]
