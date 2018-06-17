@@ -1672,5 +1672,16 @@
 		"lat": 45.6476077,
 		"lng": -121.1011157
 	}
+}, {
+	"title": "Leavenworth",
+	"image": "img/leavenworth.jpg",
+	"description": "Leavenworth: Like Germany but in Washington",
+	"location": "Leavenworth",
+	"state": "Washington",
+	"week": "June 17, 2018",
+	"coordinates": {
+		"lat": 47.5958239,
+		"lng": -120.6626441
+	}
 }
 ]
