@@ -1683,5 +1683,16 @@
 		"lat": 47.5958239,
 		"lng": -120.6626441
 	}
+}, {
+	"title": "Elvis on the Roof",
+	"image": "img/elvis.jpg",
+	"description": "And Singing on Rooftop, it's Elvis!",
+	"location": "Nashville",
+	"state": "Tennessee",
+	"week": "June 24, 2018",
+	"coordinates": {
+		"lat": 36.1608528,
+		"lng": -86.77868
+	}
 }
 ]
