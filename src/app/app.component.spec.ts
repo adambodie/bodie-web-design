@@ -13,7 +13,11 @@ describe('AppComponent', () => {
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));
+<<<<<<< HEAD
   it(`should have as title 'app'`, async(() => {
+=======
+  /*it(`should have as title 'app'`, async(() => {
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.title).toEqual('app');
@@ -22,6 +26,11 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
+<<<<<<< HEAD
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to Bodie-Web-Design!');
   }));
+=======
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to bodieWebDesign!');
+  }));*/
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
 });

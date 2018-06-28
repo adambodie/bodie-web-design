@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "Bodie-Web-Design": {
+=======
+    "bodieWebDesign": {
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +17,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "outputPath": "dist/Bodie-Web-Design",
+=======
+            "outputPath": "dist/bodieWebDesign",
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +58,30 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "Bodie-Web-Design:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "Bodie-Web-Design:build:production"
+=======
+            "browserTarget": "bodieWebDesign:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bodieWebDesign:build:production"
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "Bodie-Web-Design:build"
+=======
+            "browserTarget": "bodieWebDesign:build"
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
           }
         },
         "test": {
@@ -95,7 +115,11 @@
         }
       }
     },
+<<<<<<< HEAD
     "Bodie-Web-Design-e2e": {
+=======
+    "bodieWebDesign-e2e": {
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +127,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
+<<<<<<< HEAD
             "devServerTarget": "Bodie-Web-Design:serve"
           },
           "configurations": {
             "production": {
               "devServerTarget": "Bodie-Web-Design:serve:production"
+=======
+            "devServerTarget": "bodieWebDesign:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "bodieWebDesign:serve:production"
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
             }
           }
         },
@@ -123,5 +155,9 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "Bodie-Web-Design"
+=======
+  "defaultProject": "bodieWebDesign"
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
 }

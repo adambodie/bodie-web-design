@@ -7,6 +7,10 @@
 
 # dependencies
 /node_modules
+<<<<<<< HEAD
+=======
+/archive
+>>>>>>> 78669965e0a833fc1617a0ee441744bbae60016e
 
 # IDEs and editors
 /.idea
