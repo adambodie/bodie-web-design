@@ -1,2 +1,39 @@
-h2.section-heading Welcome to Bodie Web Design
-p Here is my portfolio page, containing links to some of my best projects.  As you’ll see, I primarily work with JavaScript, mainly focused on React, but able to build with jQuery and AngularJS, to name a few.  This page uses AngularJS as the front end, Express middleware and backed with Node.js; all while using AWS Elastic Beanstalk to serve the project.    All of my project’s source code can be found on my Github page.  To read more about me, feel free to visit the About page for more info, including contact info, or enjoy my many pictures in the Picture page.
+.container.intro
+      .row
+        .col-md-6
+          h2.section-heading Welcome to Bodie Web Design
+          p Here is my portfolio page, containing links to some of my best projects.  As you’ll see, I primarily work with JavaScript, mainly focused on React, but able to build with jQuery and AngularJS, to name a few.  This page uses AngularJS as the front end, Express middleware and backed with Node.js; all while using AWS Elastic Beanstalk to serve the project.    All of my project’s source code can be found on my Github page.  To read more about me, feel free to visit the About page for more info, including contact info, or enjoy my many pictures in the Picture page.
+        .col-md-6
+          h1#feature_project Featured Project
+          #feature
+            a(href='http://www.bodiewebdesign.com')
+              img(ng-src='http://via.placeholder.com/350x150' class='img-responsive center-block')
+            h3 Title
+      section
+        .row.ad
+          a(href="https://www.linkedin.com/in/adam-bodie/", target="_blank")  
+            img.img-responsive(ng-src='http://via.placeholder.com/900x150', alt='LinkedIn')
+      section#about
+        .container
+          .row
+            h2.section-heading Picture of the Week
+            #week.col-md-6
+              .photo
+                img.img-responsive(ng-src='http://via.placeholder.com/350x150', alt='TItle')
+                a(href='http://via.placeholder.com/350x150' data-imagelightbox="a")
+                  .photo-overlay
+                    h3 Title
+                    p Week of: Week
+                    p Location: Place
+                    p(style="text-align: center") Description
+            .col-md-6
+              h1 Testing
+      section
+        .row.ad
+          a(href='https://github.com/adambodie', target='_blank')  
+            img.img-responsive(ng-src='http://via.placeholder.com/350x150', alt='GitHub')
+      section
+        .row.ad
+          a(href='https://teamtreehouse.com/adambodie', target='_blank')  
+            img.img-responsive(ng-src='http://via.placeholder.com/350x150', alt='Treehouse')
+      

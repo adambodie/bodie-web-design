@@ -1,0 +1,418 @@
+$primary-color: #5a5a5a;
+$primary-bg-color: #CAE1FF;
+$footer-color: white;
+$white: white;
+$darken: darken($white, 50%);
+$raleway: 'Raleway', sans-serif;
+$fjalla:  'Fjalla One', sans-serif;
+
+@mixin gradient($color1, $color2) {
+	background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($color1, $color2); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($color1, $color2); /* Standard syntax (must be last) */
+}
+
+/* MAIN.CSS
+-------------------------------------------------- */
+
+body {
+  color: $white;
+  background: url('/static/img/background.jpg') fixed no-repeat center;
+  background-size: cover;
+  padding-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+	text-decoration: none;
+	color: lighten(black, 50%);
+}
+
+h1 {
+  text-align: center;
+}
+
+.intro {
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+.block {
+	display: inline-block;
+}
+p {
+	font-size: 14px;
+}
+.section-heading {
+	padding: 10px;
+	font-weight: bold;
+}
+.link {
+	color: white;
+	text-decoration: underline;
+}
+
+/* TOPBAR STYLES
+--------------------*/
+#topbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	border-bottom: 1px solid black;
+	@include gradient (black, $primary-color);
+	#navbar {
+		float: left;
+		width: 100%;
+		@include gradient(black, $primary-color);
+	}
+	img {
+		float: left;
+		margin: 10px;
+		display: inline-block;
+	}
+	ul {
+			padding: 0;
+			text-align: center;
+			height: 60px;
+			margin-top: -30px;
+			display: block;
+	}
+	li {
+		font-size: 0.8em;
+   	margin-top: 30px;
+   	padding: 10px;
+
+   	a {
+   		color: $white;
+			text-decoration: none;
+			&:hover {
+				color: $darken;
+			}
+   	}
+	}
+}
+
+
+
+/* BUTTON STYLES
+----------------------*/
+
+.btn {
+	@include gradient(black, $primary-color);
+   color: $white;
+   border: 1px solid black;
+	&:hover {
+		color: $darken;
+	}
+}
+
+
+/* UPDATE STYLES
+-----------------*/
+#update {
+	text-align: left;
+	font-weight: bold;
+}
+.update {
+	li {
+    	list-style: none;
+    	font-size: 1.2em;
+    	color: $white;
+    	text-align: left;
+    	&:hover {
+			color: $darken;
+    	}
+	}
+}
+
+/* PROJECT STYLES
+------------------------- */
+.container {
+	.project {
+		border-top: 1px solid $white;
+	}
+
+	.box {
+		vertical-align: top;
+		border-top: none;
+		padding-top: 10px;
+		padding-bottom: 10px;
+ 		font-weight: normal;
+		p {
+  			margin-right: 10px;
+  			margin-left: 10px;
+  			text-align: justify;
+  			clear: both;
+  		}
+	}
+}
+
+.description {
+	line-height: 0.75;
+}
+
+/* MOBILE STYLES
+------------------------*/
+.mobile {
+	max-width: 375px;
+	height: 300px;
+	overflow: hidden;
+	border:1px solid black;
+	.content {
+		max-width: 375px;
+		max-height: 3146px;
+	}
+}
+.android { 
+	min-width: 290px;
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+/* FOOTER STYLES
+------------------------*/
+
+footer {
+  color: $footer-color;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  p {
+		margin-right: 10px;
+  }
+  #year {
+	  margin-left: 20px;
+  }
+  a {
+		color: $footer-color;
+		&:hover {
+			text-decoration: none;
+			color: white;
+		}
+  }
+
+}
+
+.navbar-bottom {
+	margin-bottom: -50px;
+	border-radius: 0;
+}
+
+/* GITHUB AD STYLES
+----------------------*/
+.ad {
+	  margin-left: 0;
+	  margin-right: 0;
+}
+
+
+/* FEATURE PROJECT
+-------------------------*/
+#feature_project {
+	font-weight: bold;
+}
+
+#feature img:hover {
+	box-shadow: 5px 5px 10px black;
+}
+
+/* PICTURE OF THE WEEK
+-----------------------*/
+.photo {
+	position: relative;
+	margin-bottom: 2em;
+	overflow: hidden;
+		img {
+			transform-origin: 0 0;
+			display: black;
+			margin: 0 auto;
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
+}
+
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+	opacity: 0;
+	transition: opacity 1s;
+	&:hover {
+		opacity: 1;
+	}
+	h3 {
+		font-weight: bold;
+	}
+}
+
+
+
+/* IMAGE LIGHTBOX STYLES
+---------------------------*/
+	#imagelightbox {
+			cursor: pointer;
+			position: fixed;
+			z-index: 10000;
+            transform: none!important;
+			-ms-touch-action: none;
+			touch-action: none;
+
+			-webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+			box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+	}
+
+
+		/* OVERLAY */
+
+		#imagelightbox-overlay {
+			background-color: black;
+			position: fixed;
+			z-index: 9998;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+
+		/* "CLOSE" BUTTON */
+
+		#imagelightbox-close{
+			width: 2.5em; /* 40 */
+			height: 2.5em; /* 40 */
+			text-align: left;
+			background-color: $primary-color;
+			position: fixed;
+			z-index: 10002;
+			top: 2.5em; /* 40 */
+			right: 2.5em; /* 40 */
+
+			-webkit-transition: color .3s ease;
+			transition: color .3s ease;
+		}
+			#imagelightbox-close:hover, #imagelightbox-close:focus {
+				background-color: $darken;
+			}
+			#imagelightbox-close:before, #imagelightbox-close:after{
+				width: 2px;
+				background-color: #fff;
+				content: '';
+				position: absolute;
+				top: 20%;
+				bottom: 20%;
+				left: 50%;
+				margin-left: -1px;
+			}
+			#imagelightbox-close:before {
+				-webkit-transform: rotate( 45deg );
+				-ms-transform: rotate( 45deg );
+				transform: rotate( 45deg );
+			}
+			#imagelightbox-close:after {
+				-webkit-transform: rotate( -45deg );
+				-ms-transform: rotate( -45deg );
+				transform: rotate( -45deg );
+			}
+
+
+		/* CAPTION */
+
+		#imagelightbox-caption {
+			text-align: center;
+			color: #fff;
+			font-size: 1.5em;
+			background-color: black;
+			position: fixed;
+			z-index: 10001;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 0.625em; /* 10 */
+		}
+
+		#imagelightbox-loading,
+		#imagelightbox-overlay,
+		#imagelightbox-close,
+		#imagelightbox-caption
+		{
+			-webkit-animation: fade-in .25s linear;
+			animation: fade-in .25s linear;
+		}
+			@-webkit-keyframes fade-in
+			{
+				from	{ opacity: 0; }
+				to		{ opacity: 1; }
+			}
+			@keyframes fade-in
+			{
+				from	{ opacity: 0; }
+				to		{ opacity: 1; }
+			}
+
+		@media only screen and (max-width: 41.250em) /* 660 */
+		{
+			#imagelightbox-close
+			{
+				top: 1.25em; /* 20 */
+				right: 1.25em; /* 20 */
+			}
+        }
+/* MEDIA QUERIES
+-------------------------------------*/
+
+@media (min-width: 769px) {
+    #overlay {
+      background:rgba(0,0,0,0.7);
+      width:100%;
+      height:120%;
+      position:fixed;
+      top:0;
+      left:0;
+      display:none;
+      text-align:center;
+		img {
+     		margin-top: 80px;
+     		transform: scale(1.1, 1.1);
+    	}
+	}
+	p {
+		text-align: justify;
+	}
+	#pic-caption {
+		font-size: 1em;
+	}
+
+	.box {
+		border-top: 1px solid white;
+	}
+
+	#topbar {
+		#navbar {
+			float: none;
+		}
+		ul {
+			text-align: left;
+			margin-top: 0;
+		}
+		li {
+			font-size: 1.3em;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}
