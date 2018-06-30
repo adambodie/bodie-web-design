@@ -4,12 +4,12 @@ section#about
             h2.section-heading Picture of the Week
             #week.col-md-6
               .photo
-                img.img-responsive(src='../assets/elvis.jpg', alt='Elvis')
-                a(href='../assets/elvis.jpg' data-imagelightbox="a")
+                img.img-responsive(src='../assets/{{image}}', alt='{{title}}')
+                a(href='../assets/{{image}}' data-imagelightbox="a")
                   .photo-overlay
-                    h3 Elvis on the Roof
-                    p Week of: June 24, 2018
-                    p Location: Nashville, Tennessee
-                    p(style="text-align: center") And Singing on Rooftop, it's Elvis!
+                    h3 {{title}}
+                    p Week of: {{week}}
+                    p Location: {{location}}, {{state}}
+                    p(style="text-align: center") {{description}}
             .col-md-6
               div(map-lazy-load='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3')
