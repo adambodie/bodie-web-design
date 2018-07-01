@@ -1,0 +1,15 @@
+.container.intro
+        .row
+            h1 Picture of the Week
+            .row(style="border: none")
+              .col-sm-4(*ngFor='let picture of pictures')
+                .photo
+                  img(src="../assets/{{picture.image}}" class="img-responsive" alt="{{picture.title}}")
+                  a(href="../assets/{{picture.image}}" data-imagelightbox="a")
+                    .photo-overlay
+                      h1 {{picture.title}}
+                      p  Week of: {{picture.week}}
+                      p  {{picture.location}}, {{picture.state}}
+                      p(style="text-align: center") {{picture.description}}
+            //.row.flex-container
+              //ul.flex-item(uib-pagination='', total-items='totalItems', ng-model='currentPage' direction-links='false')

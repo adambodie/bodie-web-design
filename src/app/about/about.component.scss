@@ -1,0 +1,56 @@
+/* ABOUT.CSS
+----------------------------------------------*/
+.about {
+	margin-top: 100px;
+	h1 {
+    text-align: left;
+	}
+}
+
+h4 {
+	a {
+		color:  white;
+	}
+	&:hover {
+        //color: $darken;
+        color: black;	
+		text-decoration: none;
+	}
+}
+
+.row {
+	margin-top: 20px;
+}
+
+h3 {
+	text-align: center;
+}
+
+/* NEWS STYLES
+-----------------*/
+.news {
+	li {
+    	list-style: none;
+    	font-size: 2em;
+    	font-weight: bold;
+    	color: white;
+    	text-align: left;
+    	&:hover {
+            color: black;
+			//color: $darken;    	
+    	}
+	}
+}
+
+
+/* AUTHOR IMG STYLES
+-----------------------*/
+#adam {
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 10px black;
+}
+#authorDiv {
+	text-align: center;
+}
