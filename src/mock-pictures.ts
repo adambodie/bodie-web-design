@@ -1,5 +1,5 @@
-import {Picture} from './picture';
-import {Coordinate} from './coordinate';
+import {Picture} from './properties/picture';
+import {Coordinate} from './properties/coordinate';
 
 export const PICTURESOFTHEWEEK: Picture[] = [
     {

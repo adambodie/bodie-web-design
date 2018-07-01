@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Picture } from '../picture';
+import { Picture } from '../properties/picture';
 import {PICTURESOFTHEWEEK} from '../mock-pictures';
 
 @Injectable({

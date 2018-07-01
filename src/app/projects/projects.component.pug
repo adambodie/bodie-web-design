@@ -3,29 +3,29 @@ section#projects
     .row
       h2.section-heading Projects
       div
-        div
+        div(*ngFor="let project of projects")
           .row.project
             .box.block.col-sm-4.links
-              img.img-responsive(src='../assets/wildwildwest.jpg', alt='Wild Wild West', width='400', height='300')
+              img.img-responsive(src='../assets/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
             .box.block.col-sm-8
-              h2 Adam's Wild Wild West
+              h2 {{project.title}}
             .description
               p
                 strong Created:
-                |  2017
+                |  {{project.created}}
               p
                 strong Added:
-                |  Last Year
+                |  {{project.updated}}
               br
               p
                 strong Updated:
-                |  2017
+                |  {{project.createdAt}}
               p
                 strong Last Updated:
-                |  2017
+                |  {{project.updatedAt}}
               p
                 strong Technologies Used:
-                |  React
-              p Photo Gallery
+                |  {{project.languages}}
+              p {{project.description}}
               h3
-                a.btn(href='http://wildwildwest.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+                a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
