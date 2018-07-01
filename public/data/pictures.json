@@ -1694,5 +1694,16 @@
 		"lat": 36.1608528,
 		"lng": -86.77868
 	}
+}, {
+	"title": "Running with the Broncos",
+	"image": "img/bronco.jpg",
+	"description": "Running with the Broncos towards Denver",
+	"location": "Denver",
+	"state": "Colorado",
+	"week": "July 1, 2018",
+	"coordinates": {
+		"lat": 39.742574,
+		"lng": -105.0206722
+	}
 }
 ]
