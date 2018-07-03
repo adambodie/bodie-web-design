@@ -11,7 +11,7 @@ export class PicturesComponent implements OnInit {
 
   constructor(private picturesService: PicturesService) { }
   pictures: Picture[];
-
+  p: number = 1;
   ngOnInit() {
     this.getPictures();
   }

@@ -2,7 +2,7 @@
         .row
             h1 Picture of the Week
             .row(style="border: none")
-              .col-sm-4(*ngFor='let picture of pictures')
+              .col-sm-4(*ngFor='let picture of pictures | paginate: { itemsPerPage: 9, currentPage: p }')
                 .photo
                   img(src="../assets/{{picture.image}}" class="img-responsive" alt="{{picture.title}}")
                   a(href="../assets/{{picture.image}}" data-imagelightbox="a")
@@ -11,5 +11,4 @@
                       p  Week of: {{picture.week}}
                       p  {{picture.location}}, {{picture.state}}
                       p(style="text-align: center") {{picture.description}}
-            //.row.flex-container
-              //ul.flex-item(uib-pagination='', total-items='totalItems', ng-model='currentPage' direction-links='false')
+            pagination-controls((pageChange)="p = $event" maxSize="20")
