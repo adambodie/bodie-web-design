@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TestBed, async, ComponentFixture } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { RouterLinkDirectiveStub } from './../router-link-directive-stub';
 
 @Component({selector: 'app-navbar', template: ''})
 class NavbarStubComponent {}
@@ -8,15 +9,8 @@ class NavbarStubComponent {}
 @Component({selector: 'app-footer', template: ''})
 class FooterStubComponent {}
 
-@Component({selector: 'app-projects', template: ''})
-class ProjectsStubComponent {}
-
-@Component({selector: 'app-feature', template: ''})
-class FeatureStubComponent {}
-
-@Component({selector: 'app-picture-week', template: ''})
-class PictureWeekStubComponent {}
-
+@Component({ selector: 'router-outlet', template: '' })
+class RouterOutletStubComponent { }
 
 describe('AppComponent', () => {
   let component: AppComponent;
@@ -28,9 +22,8 @@ describe('AppComponent', () => {
         AppComponent,
         NavbarStubComponent,
         FooterStubComponent,
-        ProjectsStubComponent,
-        FeatureStubComponent,
-        PictureWeekStubComponent
+        RouterLinkDirectiveStub,
+        RouterOutletStubComponent
       ],
     }).compileComponents();
     fixture = TestBed.createComponent(AppComponent);

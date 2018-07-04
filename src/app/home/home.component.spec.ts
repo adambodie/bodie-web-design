@@ -1,5 +1,15 @@
+import { Component } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+
+@Component({selector: 'app-projects', template: ''})
+class ProjectsStubComponent {}
+
+@Component({selector: 'app-feature', template: ''})
+class FeatureStubComponent {}
+
+@Component({selector: 'app-picture-week', template: ''})
+class PictureWeekStubComponent {}
 import { HomeComponent } from './home.component';
 
 describe('HomeComponent', () => {
@@ -8,7 +18,10 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      declarations: [ HomeComponent,
+        ProjectsStubComponent,
+        FeatureStubComponent,
+        PictureWeekStubComponent ]
     })
     .compileComponents();
   }));
