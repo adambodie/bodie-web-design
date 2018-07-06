@@ -6,7 +6,7 @@ section#projects
         div(*ngFor="let project of projects")
           .row.project
             .box.block.col-sm-4.links
-              img.img-responsive(src='../assets/{{project.image}}.jpg', alt='{{project.alt}}', width='400', height='300')
+              img.img-responsive(src='../assets/{{project.image}}', alt='{{project.alt}}')
             .box.block.col-sm-8
               h2 {{project.title}}
             .description
@@ -29,3 +29,40 @@ section#projects
               p {{project.description}}
               h3
                 a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+section
+    .row.ad
+      a(href='https://teamtreehouse.com/adambodie', target='_blank')  
+        img.img-responsive(src='../assets/treehouse.png', alt='Treehouse')
+section
+  .container
+    .row
+      h2.section-heading Mobile Projects
+      div
+        div(*ngFor="let mobileProject of mobileProjects")
+          .row.project
+            .box.block.col-sm-4.links
+              .mobile
+                perfect-scrollbar([config]='config').content
+                  img.img-responsive(src='../assets/{{mobileProject.image}}', alt='{{mobileProject.alt}}', width='400', height='300')
+            .box.block.col-sm-8
+              h2 {{mobileProject.title}}
+            .description
+              p
+                strong Created:
+                |  {{mobileProject.created}}
+              p
+                strong Added:
+                |  {{mobileProject.updated}}
+              br
+              p
+                strong Updated:
+                |  {{mobileProject.createdAt}}
+              p
+                strong Last Updated:
+                |  {{mobileProject.updatedAt}}
+              p
+                strong Technologies Used:
+                |  {{mobileProject.languages}}
+              p {{mobileProject.description}}
+              h3
+                a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;        

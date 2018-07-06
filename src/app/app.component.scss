@@ -157,22 +157,15 @@ p {
 /* MOBILE STYLES
 ------------------------*/
 .mobile {
-	max-width: 375px;
-	height: 300px;
+	max-width: 192px;
+	height: 360px;
 	overflow: hidden;
-	border:1px solid black;
 	.content {
-		max-width: 375px;
+		max-width: 192px;
 		max-height: 3146px;
 	}
 }
-.android { 
-	min-width: 290px;
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-}
+
 /* FOOTER STYLES
 ------------------------*/
 

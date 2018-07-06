@@ -9,4 +9,5 @@ export class Project {
     description: string;
     link: string;
     languages: string;
+    isScrollable?: boolean;
 }
