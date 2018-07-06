@@ -1,4 +1,4 @@
-import {Project} from './properties/project';
+import {Project} from '../properties/project';
 
 export const howManyDaysAgo = (years, months, days, current) => {
   let update = new Date();
@@ -179,8 +179,7 @@ export const MOBILEPROJECTS: Project[] = [
       updatedAt: howManyDaysAgo(2017, 8, 20, new Date()),
       description: "My first mobile project, using React Native. Click the link below for the source code, or scroll the image to see the final version.",
       link: "walla-walla",
-      languages: "React Native",
-      isScrollable: true,
+      languages: "React Native"
     },   {
       image: "smallTownNative.jpg",
       alt: "Small Town Native",

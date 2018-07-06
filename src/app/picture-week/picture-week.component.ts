@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PicturesService} from '../pictures.service';
+import {PicturesService} from '../services/pictures.service';
 import {Picture} from '../../properties/picture';
 import {Coordinate} from '../../properties/coordinate';
 
@@ -12,7 +12,6 @@ export class PictureWeekComponent implements OnInit {
 
   constructor(private picturesService: PicturesService ) { }
   pictures: Picture[];
-  coordinate: Coordinate[];
   image = '';
   title = '';
   week = '';

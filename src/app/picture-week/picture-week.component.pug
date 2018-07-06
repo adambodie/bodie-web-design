@@ -1,8 +1,8 @@
 section#about
         .container
           .row
-            h2.section-heading Picture of the Week
-            #week.col-md-6
+            #week.col-md-6.col-md-offset-3
+              h2.section-heading(style="text-align:center") Picture of the Week
               .photo
                 img.img-responsive(src='../assets/{{image}}', alt='{{title}}')
                 a(href='../assets/{{image}}' data-imagelightbox="a")
@@ -12,4 +12,3 @@ section#about
                     p Location: {{location}}, {{state}}
                     p(style="text-align: center") {{description}}
             .col-md-6
-              div(map-lazy-load='https:/maps.googleapis.com/maps/api/js?key=AIzaSyBrpgMWBTZRs58bzHOzCfESQPsvI09zOuo&v=3')
