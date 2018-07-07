@@ -1,14 +1,29 @@
+@import '../../imports.scss';
+
 .ngx-pagination {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
+	li {
+		background-color: white;
+		border: 1px solid #cacaca;
+		margin-right: 0!important;	
+	}
+	.disabled {
+		color: black!important;
+		background: #cacaca;
+		&:hover {
+			background: #cacaca!important;
+			color: #cacaca;
+		}		
+	}
+	.current {
+		background: $darken!important;
+	}
 }
-/* ARCHIVE.CSS
--------------------------------------*/
 
 #imagelightbox {
     position: fixed;
     z-index: 9999;
-
     -ms-touch-action: none;
     touch-action: none;
 }
@@ -20,17 +35,14 @@
 	position: fixed;
 	z-index: 10000;
 	transform: none!important;
-
 	-ms-touch-action: none;
 	touch-action: none;
-
 	-webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
 	box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
 }
 
 
 /* OVERLAY */
-
 #imagelightbox-overlay {
 	background-color: black;
 	position: fixed;
@@ -43,24 +55,21 @@
 
 
 /* "CLOSE" BUTTON */
-
-#imagelightbox-close{
-	width: 2.5em; /* 40 */
-	height: 2.5em; /* 40 */
+#imagelightbox-close {
+	width: 2.5em;
+	height: 2.5em;
 	text-align: left;
-	background-color: black;
-	//background-color: $primary-color;
+	background-color: $primary-color;
 	position: fixed;
 	z-index: 10002;
-	top: 2.5em; /* 40 */
-	right: 2.5em; /* 40 */
-
+	top: 2.5em;
+	right: 2.5em;
 	-webkit-transition: color .3s ease;
 	transition: color .3s ease;
 }
 #imagelightbox-close:hover, #imagelightbox-close:focus {
-	//background-color: $darken;
-	background-color: black;
+	background-color: $darken;
+
 }
 #imagelightbox-close:before, #imagelightbox-close:after{
 	width: 2px;
@@ -87,27 +96,22 @@
 #imagelightbox-loading,
 #imagelightbox-overlay,
 #imagelightbox-close,
-#imagelightbox-caption
-	{
+#imagelightbox-caption {
 	-webkit-animation: fade-in .25s linear;
 	animation: fade-in .25s linear;
-	}
-	@-webkit-keyframes fade-in
-	{
+}
+@-webkit-keyframes fade-in {
 	from	{ opacity: 0; }
 	to		{ opacity: 1; }
-	}
-	@keyframes fade-in
-	{
+}
+@keyframes fade-in {
 	from	{ opacity: 0; }
 	to		{ opacity: 1; }
-	}
+}
 
-@media only screen and (max-width: 41.250em) /* 660 */
-	{
-		#imagelightbox-close
-		{
-			top: 1.25em; /* 20 */
-			right: 1.25em; /* 20 */
-		}
+@media only screen and (max-width: 41.250em){
+	#imagelightbox-close {
+		top: 1.25em;
+		right: 1.25em;
 	}
+}

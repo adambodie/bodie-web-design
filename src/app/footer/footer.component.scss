@@ -1,0 +1,26 @@
+@import '../../imports.scss';
+
+footer {
+    color: $footer-color;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    p {
+          margin-right: 10px;
+    }
+    #year {
+        margin-left: 20px;
+    }
+    a {
+          color: $footer-color;
+          &:hover {
+              text-decoration: none;
+              color: white;
+          }
+    }
+  
+  }
+  
+  .navbar-bottom {
+      margin-bottom: -50px;
+      border-radius: 0;
+  }

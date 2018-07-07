@@ -1,20 +1,19 @@
-/* ABOUT.CSS
-----------------------------------------------*/
+@import '../../imports.scss';
+
 .about {
 	margin-top: 100px;
 	h1 {
-    text-align: left;
+    	text-align: left;
 	}
 }
 
 h4 {
 	a {
 		color:  white;
-	}
-	&:hover {
-        //color: $darken;
-        color: black;	
-		text-decoration: none;
+		&:hover {
+    		color: $darken;
+			text-decoration: none;
+		}
 	}
 }
 
@@ -24,22 +23,6 @@ h4 {
 
 h3 {
 	text-align: center;
-}
-
-/* NEWS STYLES
------------------*/
-.news {
-	li {
-    	list-style: none;
-    	font-size: 2em;
-    	font-weight: bold;
-    	color: white;
-    	text-align: left;
-    	&:hover {
-            color: black;
-			//color: $darken;    	
-    	}
-	}
 }
 
 

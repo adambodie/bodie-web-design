@@ -1,15 +1,7 @@
 section#projects
   .container
     .row
-      h2.section-heading Projects
-      h3#update Recent updates
-      perfect-scrollbar([config]='config').content
-        .update
-          ul
-            li(*ngFor='let update of updates')
-              p
-                strong {{update.title}} 
-                | - {{update.description}}      
+      h2.section-heading Projects 
       div
         div(*ngFor="let project of projects")
           .row.project
@@ -34,7 +26,7 @@ section#projects
               p
                 strong Technologies Used:
                 |  {{project.languages}}
-              p {{project.description}}
+              p.paragraph-description {{project.description}}
               h3
                 a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
 section
@@ -71,6 +63,23 @@ section#mobile-projects
               p
                 strong Technologies Used:
                 |  {{mobileProject.languages}}
-              p {{mobileProject.description}}
+              p.paragraph-description {{mobileProject.description}}
               h3
-                a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;        
+                a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+      section#development-projects
+        .container
+          h2.section-heading Development Projects
+            .row.project
+              .box.block.col-sm-4.links
+                img.img-responsive(src='../assets/speech-text.jpg', alt='Adams Speech to Text')              
+              .box.block.col-sm-8
+                h2 Adam's Speech to Text
+                p
+                  strong Created:
+                  |  December 28, 2017
+                p
+                  strong Technologies Used:
+                  |  JavaScript, jQuery, Watson API, Jest
+                p.paragraph-description This project, based on IBM's Zero to Cognitive Tutorial series (Chapter 3 in particular), is my first foray using IBM Watson.  I further expanded on this project by converting spoken text into Pig Latin. 
+                h3
+                  a.btn(href='https://github.com/adambodie/adam-speech-to-text', role='button') Check Me Out! &raquo;
