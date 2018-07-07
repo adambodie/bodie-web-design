@@ -214,5 +214,4 @@ export const MOBILEPROJECTS: Project[] = [
       link: "bellingham",
       languages: "React Native"
     }
-    
 ]

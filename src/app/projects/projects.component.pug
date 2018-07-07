@@ -2,6 +2,14 @@ section#projects
   .container
     .row
       h2.section-heading Projects
+      h3#update Recent updates
+      perfect-scrollbar([config]='config').content
+        .update
+          ul
+            li(*ngFor='let update of updates')
+              p
+                strong {{update.title}} 
+                | - {{update.description}}      
       div
         div(*ngFor="let project of projects")
           .row.project
