@@ -1,5 +1,3 @@
-import { Coordinate } from './coordinate';
-
 export class Picture {
     image: string;
     title: string;
@@ -7,5 +5,4 @@ export class Picture {
     description: string;
     location: string;
     state: string;
-    coordinates: Coordinate;
   }

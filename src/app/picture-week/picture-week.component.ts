@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PicturesService} from '../services/pictures.service';
 import {Picture} from '../../properties/picture';
-import {Coordinate} from '../../properties/coordinate';
 
 @Component({
   selector: 'app-picture-week',
