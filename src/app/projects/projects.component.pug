@@ -1,0 +1,85 @@
+section#projects
+  .container
+    .row
+      h2.section-heading Projects 
+      div
+        div(*ngFor="let project of projects")
+          .row.project
+            .box.block.col-sm-4.links
+              img.img-responsive(src='../assets/{{project.image}}', alt='{{project.alt}}')
+            .box.block.col-sm-8
+              h2 {{project.title}}
+            .description
+              p
+                strong Created:
+                |  {{project.created}}
+              p
+                strong Added:
+                |  {{project.updated}}
+              br
+              p
+                strong Updated:
+                |  {{project.createdAt}}
+              p
+                strong Last Updated:
+                |  {{project.updatedAt}}
+              p
+                strong Technologies Used:
+                |  {{project.languages}}
+              p.paragraph-description {{project.description}}
+              h3
+                a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+section
+    .row.ad
+      a(href='https://teamtreehouse.com/adambodie', target='_blank')  
+        img.img-responsive(src='../assets/treehouse.png', alt='Treehouse')
+section#mobile-projects
+  .container
+    .row
+      h2.section-heading Mobile Projects
+      div
+        div(*ngFor="let mobileProject of mobileProjects")
+          .row.project
+            .box.block.col-sm-4.links
+              .mobile
+                perfect-scrollbar([config]='config').content
+                  img.img-responsive(src='../assets/{{mobileProject.image}}', alt='{{mobileProject.alt}}', width='400', height='300')
+            .box.block.col-sm-8
+              h2 {{mobileProject.title}}
+            .description
+              p
+                strong Created:
+                |  {{mobileProject.created}}
+              p
+                strong Added:
+                |  {{mobileProject.updated}}
+              br
+              p
+                strong Updated:
+                |  {{mobileProject.createdAt}}
+              p
+                strong Last Updated:
+                |  {{mobileProject.updatedAt}}
+              p
+                strong Technologies Used:
+                |  {{mobileProject.languages}}
+              p.paragraph-description {{mobileProject.description}}
+              h3
+                a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+      section#development-projects
+        .container
+          h2.section-heading Development Projects
+            .row.project
+              .box.block.col-sm-4.links
+                img.img-responsive(src='../assets/speech-text.jpg', alt='Adams Speech to Text')              
+              .box.block.col-sm-8
+                h2 Adam's Speech to Text
+                p
+                  strong Created:
+                  |  December 28, 2017
+                p
+                  strong Technologies Used:
+                  |  JavaScript, jQuery, Watson API, Jest
+                p.paragraph-description This project, based on IBM's Zero to Cognitive Tutorial series (Chapter 3 in particular), is my first foray using IBM Watson.  I further expanded on this project by converting spoken text into Pig Latin. 
+                h3
+                  a.btn(href='https://github.com/adambodie/adam-speech-to-text', role='button') Check Me Out! &raquo;

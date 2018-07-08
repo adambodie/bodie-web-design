@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Orbitron:500');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import './app/app.component.scss';
+@import './app/navbar/navbar.component.scss';
+@import './app/feature/feature.component.scss';
+@import './app/about/about.component.scss';
+@import './app/pictures/pictures.component.scss';
+@import './app/picture-week/picture-week.component.scss';
+@import './app/projects/projects.component.scss';
+
+/* MEDIA QUERIES
+-------------------------------------*/
+
+@media (min-width: 769px) {
+    #overlay {
+      background:rgba(0,0,0,0.7);
+      width:100%;
+      height:120%;
+      position:fixed;
+      top:0;
+      left:0;
+      display:none;
+      text-align:center;
+		img {
+     		margin-top: 80px;
+     		transform: scale(1.1, 1.1);
+    	}
+	}
+	p {
+		text-align: justify;
+	}
+	#pic-caption {
+		font-size: 1em;
+	}
+
+	.box {
+		border-top: 1px solid white;
+	}
+
+	#topbar {
+		#navbar {
+			float: none;
+		}
+		ul {
+			text-align: left;
+			margin-top: 0;
+		}
+		li {
+			font-size: 1.3em;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+}
