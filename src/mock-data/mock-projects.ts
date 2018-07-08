@@ -164,6 +164,18 @@ export const PROJECTS: Project[] = [
         description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
         link: "adventures",
         languages: "React"
+      },
+      {
+        image: "victoria.jpg",
+        alt: "Adam's Black Ball",
+        title: "Adam's Black Ball",
+        created: "May 22, 2018",
+        createdAt: howManyDaysAgo(2018, 4, 22, new Date()),        
+        updated: "May 22, 2018",
+        updatedAt: howManyDaysAgo(2018, 4, 22, new Date()),        
+        description: "Source code available via GitHub.",
+        link: "victoria",
+        languages: "React"
       }
 ]
 

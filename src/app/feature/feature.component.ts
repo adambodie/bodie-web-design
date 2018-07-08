@@ -1,32 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { Feature } from '../../properties/feature';
+import {ProjectsService} from '../services/projects.service';
+import {Project} from '../../properties/project';
 
 @Component({
   selector: 'app-feature',
   templateUrl: './feature.component.pug',
-  styleUrls: ['./feature.component.scss']
+  styleUrls: ['./feature.component.scss'],
+  providers: [ProjectsService]
 })
 export class FeatureComponent implements OnInit {
-  feature: Feature[] = [{
-    id: 1,
-    image : "adventures",
-    title : "Adam's Adventures",
-    link : "adventures"
-  },
-  {
-    id: 2,
-    image : "wildwildwest",
-    title : "Adam's Wild Wild West",
-    link : "wildwildwest"
-  }
-];
-  random = Math.floor(Math.random() * this.feature.length);
-  randomImage = this.feature[this.random].image;
-  randomLink = this.feature[this.random].link;
-  randomTitle = this.feature[this.random].title;
-  constructor() { }
+  constructor(private projectsService: ProjectsService) { }
+  projects: Project[];  
+  randomImage;
+  randomLink;
+  randomTitle;
 
   ngOnInit() {
+    this.getProjects();
   }
+  getProjects(): void {
+    this.projects = this.projectsService.getProjects().slice().reverse();
+    let random = Math.floor(Math.random() * this.projects.length);
+    this.randomImage = this.projects[random].image;
+    this.randomLink = this.projects[random].link;
+    this.randomTitle = this.projects[random].title;
+  }
+
 
 }

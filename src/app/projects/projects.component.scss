@@ -3,6 +3,9 @@
 .container {
 	.project {
 		border-top: 1px solid white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 
 	.box {
@@ -33,6 +36,8 @@
 	max-width: 192px;
 	height: 360px;
 	overflow: hidden;
+	display: block;
+    margin: 0 auto;	
 	.content {
 		max-width: 192px;
 		max-height: 3146px;

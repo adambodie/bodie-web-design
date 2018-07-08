@@ -30,6 +30,7 @@ export class PictureWeekComponent implements OnInit {
     this.state = this.pictures[this.pictures.length - 1].state;
   }
   updates = [
+    { title: "Adam's Black Ball", description: "Launched May 22, 2018, built with React"},
     { title: "Bellingham Native", description: "Launched April 23, 2018, built with React Native"},   
     { title: "Read Your Fortune Cookie", description: "Upgraded to Angular & TypeScript, January 28, 2018"},
     { title: "Kevin's Fun Facts", description: "Launched January 1, 2018, built with Android and Kotlin"}, 

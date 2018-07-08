@@ -1092,5 +1092,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Denver",
 	"state": "Colorado",
 	"week": "July 1, 2018"
+}, {
+	"title": "Bobbie the Wonder Dog",
+	"image": "img/silverton.jpg",
+	"description": "Only Great Dogs get Murals",
+	"location": "Silverton",
+	"state": "Oregon",
+	"week": "July 8, 2018"
 }
 ]
