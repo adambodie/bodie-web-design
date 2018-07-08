@@ -1085,5 +1085,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	location: "Nashville",
 	state: "Tennessee",
 	week: "June 24, 2018"
+}, {
+	"title": "Running with the Broncos",
+	"image": "img/broncos.jpg",
+	"description": "Running with the Broncos towards Denver",
+	"location": "Denver",
+	"state": "Colorado",
+	"week": "July 1, 2018"
 }
 ]
