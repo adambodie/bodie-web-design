@@ -3,37 +3,38 @@
 .about {
 	margin-top: 100px;
 	h1 {
-    	text-align: left;
+		text-align: left;
 	}
 }
-
 h4 {
 	a {
 		color:  white;
 		&:hover {
-    		color: $darken;
+			color: $darken;
 			text-decoration: none;
 		}
 	}
 }
 
-.row {
+.flex-container {
+	display: flex;
 	margin-top: 20px;
 }
 
+.flex-item {
+	flex: 1;
+	padding: 10px;
+}
 h3 {
 	text-align: center;
 }
 
 
-/* AUTHOR IMG STYLES
------------------------*/
 #adam {
-  border-radius: 100%;
-  display: inline-block;
-  margin-bottom: 30px;
-  box-shadow: 10px 10px 10px black;
+	border-radius: 100%;
+	box-shadow: 10px 10px 10px black;
+	@include center-image();
+	max-width: 100%;
+	height: auto;
 }
-#authorDiv {
-	text-align: center;
-}
+

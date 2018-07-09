@@ -12,3 +12,8 @@ $fjalla:  'Fjalla One', sans-serif;
 	background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6 to 15 */
 	background: linear-gradient($color1, $color2); /* Standard syntax (must be last) */
 }
+
+@mixin center-image {
+	display: block;
+	margin: 0 auto;
+}

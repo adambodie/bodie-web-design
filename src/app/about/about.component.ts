@@ -48,15 +48,16 @@ export class AboutComponent implements OnInit {
       } else if (day === 0) {
           moveToMonday = 1;
       } else {
-          moveToMonday = 8 - day;    		
+          moveToMonday = 8 - day;
       }
       return sept.getDate() + moveToMonday;
   } 
-  open() {
-    let year: number = this.fullDate.getFullYear();
-    let month: number = this.fullDate.getMonth();
-    let day: number = this.fullDate.getFullYear();
-    let hours: number = this.fullDate.getHours();
+  open(date) {
+	let fullDate = new Date(date);
+    let year: number = fullDate.getFullYear();
+    let month: number = fullDate.getMonth();
+    let day: number = fullDate.getDate();
+    let hours: number = fullDate.getHours();
     if (month === 0 && day === 1) {
         return "Closed - New Year's Day.";
     }
@@ -84,5 +85,5 @@ export class AboutComponent implements OnInit {
       return "Closed";
     }
   };
-
+	current = this.open(this.fullDate);
 }
