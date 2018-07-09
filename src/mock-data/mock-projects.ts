@@ -173,9 +173,21 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2018, 4, 22, new Date()),        
         updated: "May 22, 2018",
         updatedAt: howManyDaysAgo(2018, 4, 22, new Date()),        
-        description: "Source code available via GitHub.",
+        description: "Expanding on my previous photo based projects, I created a travel based website.  I focused on better organization of my components, splitting out the routes and containers.  Exploring more of the testing side, I added basic tests in Jest and Enzyme to show my evolving skills in unit testing.  Source code available via GitHub.",
         link: "victoria",
-        languages: "React"
+        languages: "React, Jest, Enzyme"
+      },
+      {
+        image: "leavenworth.jpg",
+        alt: "Leavenworth: The Bavarian Experience in Washington",
+        title: "Leavenworth: The Bavarian Experience in Washington",
+        created: "July 7, 2018",
+        createdAt: howManyDaysAgo(2018, 6, 7, new Date()),        
+        updated: "July 7, 2018",
+        updatedAt: howManyDaysAgo(2018, 6, 7, new Date()),        
+        description: "Previously learning Vue on the fly, I opted to learn more specifics of Vue with this project. The photo gallery I used the Owl-Carousel dependency to use a different carousel.  The flash cards is based off the Vue Basics course on Team Treehouse, expanding on the original content to add additional methods.  Finally, I focused on both basic vue syntax mixed with Single File Components to differentiate between the two.  Source code available via GitHub.",
+        link: "leavenworth",
+        languages: "Vue, Browserify, Express, Pug, Jest, Gulp"
       }
 ]
 
