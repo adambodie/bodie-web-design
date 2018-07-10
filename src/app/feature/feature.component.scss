@@ -1,7 +1,15 @@
-#feature_project {
+@import '../../imports.scss';
+
+h1 {
 	font-weight: bold;
 }
 
-#feature img:hover {
-	box-shadow: 5px 5px 10px black;
+#feature {
+	img {
+		margin-top: 10px;
+		@include responsive();
+		&:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+		}
+	}	
 }
