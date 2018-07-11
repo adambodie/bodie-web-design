@@ -7,7 +7,7 @@ import { PicturesComponent } from './pictures.component';
 class PaginationControlsStubComponent {}
 
 describe('PicturesComponent', () => {
-/*  let component: PicturesComponent;
+  let component: PicturesComponent;
   let fixture: ComponentFixture<PicturesComponent>;
 
   beforeEach(async(() => {
@@ -23,7 +23,7 @@ describe('PicturesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+ /* it('should create', () => {
     expect(component).toBeTruthy();
   });*/
 });

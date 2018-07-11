@@ -22,3 +22,13 @@ $fjalla:  'Fjalla One', sans-serif;
 	max-width: 100%;
 	height: auto;
 }
+
+.flex-container {
+	display: flex;
+	margin-top: 20px;
+}
+
+.flex-item {
+	flex: 1;
+	padding: 10px;
+}

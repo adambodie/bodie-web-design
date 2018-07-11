@@ -5,9 +5,31 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import './app/app.component.scss';
 @import './app/navbar/navbar.component.scss';
-@import './app/pictures/pictures.component.scss';
 @import './app/picture-week/picture-week.component.scss';
 @import './app/projects/projects.component.scss';
+
+
+
+.ngx-pagination {
+	display: flex;
+	justify-content: center;
+	li {
+		background-color: white;
+		border: 1px solid #cacaca;
+		margin-right: 0!important;	
+	}
+	.disabled {
+		color: black!important;
+		background: #cacaca;
+		&:hover {
+			background: #cacaca!important;
+			color: #cacaca;
+		}
+	}
+	.current {
+		background: $darken!important;
+	}
+}
 
 /* MEDIA QUERIES
 -------------------------------------*/

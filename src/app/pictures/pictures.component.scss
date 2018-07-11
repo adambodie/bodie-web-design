@@ -1,23 +1,30 @@
 @import '../../imports.scss';
 
-.ngx-pagination {
-	display: flex;
-	justify-content: center;
-	li {
-		background-color: white;
-		border: 1px solid #cacaca;
-		margin-right: 0!important;	
+.pictures {
+	h1 {
+		margin-top: 125px;
 	}
-	.disabled {
-		color: black!important;
-		background: #cacaca;
-		&:hover {
-			background: #cacaca!important;
-			color: #cacaca;
-		}		
+	p {
+		text-align: center;
 	}
-	.current {
-		background: $darken!important;
+	.flex-container {
+		flex-wrap: wrap;
+		border: none;
+	}
+	.flex-item {
+		flex: 33%;
+	}
+}
+
+.photo {
+	img {
+		@include responsive();
+	}
+}
+
+.photo-overlay {
+	h2 {
+		text-align: center;
 	}
 }
 

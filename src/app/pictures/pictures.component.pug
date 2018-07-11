@@ -1,14 +1,14 @@
-.container.intro
-        .row
-            h1 Picture of the Week
-            .row(style="border: none")
-              .col-sm-4(*ngFor='let picture of pictures | paginate: { itemsPerPage: 9, currentPage: p }')
-                .photo
-                  img(src="../assets/{{picture.image}}" class="img-responsive" alt="{{picture.title}}")
-                  a(href="../assets/{{picture.image}}" data-imagelightbox="a")
-                    .photo-overlay
-                      h1 {{picture.title}}
-                      p  Week of: {{picture.week}}
-                      p  {{picture.location}}, {{picture.state}}
-                      p(style="text-align: center") {{picture.description}}
-            pagination-controls((pageChange)="p = $event" maxSize="20")
+.container
+  .pictures
+    h1 Picture of the Week
+    .flex-container
+      .flex-item(*ngFor='let picture of pictures | paginate: { itemsPerPage: 9, currentPage: p }')
+        .photo
+          img(src="../assets/{{picture.image}}" alt="{{picture.title}}")
+          a(href="../assets/{{picture.image}}" data-imagelightbox="a")
+            .photo-overlay
+              h2 {{picture.title}}
+              p Week of: {{picture.week}}
+              p {{picture.location}}, {{picture.state}}
+              p {{picture.description}}
+    pagination-controls((pageChange)="p = $event" maxSize="20")
