@@ -5,8 +5,7 @@
 	left: 0;
 	width: 100%;
 	z-index: 999;
-	border-bottom: 1px solid black;
-	display: flex;
+	border-bottom: 1px solid black;	
 	@include gradient (black, $primary-color);
 	#navbar {
 		width: 100%;
@@ -14,6 +13,7 @@
 	}
 	img {
 		margin: 10px;
+		@include responsive();
 	}
 	ul {
 		padding: 0;
@@ -26,6 +26,7 @@
 		font-size: 0.8em;
    		margin-top: 30px;
    		padding: 10px;
+   		display: inline-block;
    		a {
    			color: $white;
 			text-decoration: none;
@@ -35,8 +36,10 @@
    		}
 	}
 }
-@media (min-width: 769px) {
+
+@media (min-width: 512px) {
 	#topbar {
+		display: flex;
 		ul {
 			text-align: left;
 			margin-top: 0;
@@ -47,4 +50,5 @@
 			margin-right: 10px;
 		}
 	}
+
 }

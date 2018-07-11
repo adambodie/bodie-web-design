@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import './app/app.component.scss';
-@import './app/navbar/navbar.component.scss';
 @import './app/picture-week/picture-week.component.scss';
 @import './app/projects/projects.component.scss';
 
@@ -60,18 +59,5 @@
 		border-top: 1px solid white;
 	}
 
-	#topbar {
-		#navbar {
-			float: none;
-		}
-		ul {
-			text-align: left;
-			margin-top: 0;
-		}
-		li {
-			font-size: 1.3em;
-			margin-left: 10px;
-			margin-right: 10px;
-		}
-	}
+	
 }

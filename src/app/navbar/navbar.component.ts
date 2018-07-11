@@ -9,7 +9,10 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() { }
+  links = [
+    { name: "Home", url: "/"},
+    { name: "About", url: "/about"},
+    { name: "Pictures", url: "/pictures"}
+  ]  
 }
