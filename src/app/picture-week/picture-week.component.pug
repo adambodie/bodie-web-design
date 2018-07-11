@@ -1,21 +1,20 @@
-section#about
-        .container
-          .row
-            #week.col-md-6
-              h2.section-heading(style="text-align:center") Picture of the Week
-              .photo
-                img.img-responsive(src='../assets/{{image}}', alt='{{title}}')
-                a(href='../assets/{{image}}' data-imagelightbox="a")
-                  .photo-overlay
-                    h3 {{title}}
-                    p Week of: {{week}}
-                    p Location: {{location}}, {{state}}
-                    p(style="text-align: center") {{description}}
-            .col-md-6
-              h2.section-heading(style="text-align:center") Recent Updates
-              .update
-                  ul
-                    li(*ngFor='let update of updates')
-                      p
-                        strong {{update.title}} 
-                        | - {{update.description}}     
+.container
+  .flex-container
+    .flex-item
+      h2.section-heading Picture of the Week
+       .photo
+         img(src='../assets/{{image}}', alt='{{title}}')
+         a(href='../assets/{{image}}' data-imagelightbox="a")
+           .photo-overlay
+              h3 {{title}}
+              p Week of: {{week}}
+              p Location: {{location}}, {{state}}
+              p {{description}}
+    .flex-item
+      h2.section-heading Recent Updates
+      .update
+        ul
+          li(*ngFor='let update of updates')
+            p
+              strong {{update.title}} 
+              | - {{update.description}}     
