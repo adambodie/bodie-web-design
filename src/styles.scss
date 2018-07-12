@@ -5,9 +5,46 @@
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 @import './app/app.component.scss';
 
-@import './app/projects/projects.component.scss';
+.photo {
+	position: relative;
+	margin-bottom: 2em;
+	overflow: hidden;
+		img {
+			transform-origin: 0 0;
+			@include responsive();
+			@include center-image();
+		}
+		&:hover img {
+			transform: scale(1.2);
+		}
+}
 
-
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, .5);
+	opacity: 0;
+	transition: opacity 1s;
+	&:hover {
+		opacity: 1;
+	}
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+	}
+}
 
 .ngx-pagination {
 	display: flex;
@@ -58,6 +95,103 @@
 	.box {
 		border-top: 1px solid white;
 	}
+}
 
-	
+
+
+
+
+#imagelightbox {
+    position: fixed;
+    z-index: 9999;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+/* IMAGE LIGHTBOX STYLES
+---------------------------*/
+#imagelightbox {
+	cursor: pointer;
+	position: fixed;
+	z-index: 10000;
+	transform: none!important;
+	-ms-touch-action: none;
+	touch-action: none;
+	-webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+	box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+}
+
+
+/* OVERLAY */
+#imagelightbox-overlay {
+	background-color: black;
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+
+/* "CLOSE" BUTTON */
+#imagelightbox-close {
+	width: 2.5em;
+	height: 2.5em;
+	text-align: left;
+	background-color: $primary-color;
+	position: fixed;
+	z-index: 10002;
+	top: 2.5em;
+	right: 2.5em;
+	-webkit-transition: color .3s ease;
+	transition: color .3s ease;
+}
+#imagelightbox-close:hover, #imagelightbox-close:focus {
+	background-color: $darken;
+
+}
+#imagelightbox-close:before, #imagelightbox-close:after{
+	width: 2px;
+	background-color: #fff;
+	content: '';
+	position: absolute;
+	top: 20%;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -1px;
+}
+#imagelightbox-close:before {
+	-webkit-transform: rotate( 45deg );
+	-ms-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+}
+#imagelightbox-close:after {
+	-webkit-transform: rotate( -45deg );
+	-ms-transform: rotate( -45deg );
+	transform: rotate( -45deg );
+}
+
+
+#imagelightbox-loading,
+#imagelightbox-overlay,
+#imagelightbox-close,
+#imagelightbox-caption {
+	-webkit-animation: fade-in .25s linear;
+	animation: fade-in .25s linear;
+}
+@-webkit-keyframes fade-in {
+	from	{ opacity: 0; }
+	to		{ opacity: 1; }
+}
+@keyframes fade-in {
+	from	{ opacity: 0; }
+	to		{ opacity: 1; }
+}
+
+@media only screen and (max-width: 41.250em){
+	#imagelightbox-close {
+		top: 1.25em;
+		right: 1.25em;
+	}
 }

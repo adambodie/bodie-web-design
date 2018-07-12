@@ -7,20 +7,17 @@
 		align-items: center;
 		justify-content: center;
 	}
+}
 
-	.box {
-		vertical-align: top;
-		border-top: none;
-		padding-top: 10px;
-		padding-bottom: 10px;
- 		font-weight: normal;
-		p {
-  			margin-right: 10px;
-  			margin-left: 10px;
-  			text-align: justify;
-  			clear: both;
-  		}
+.links {
+	flex: 40%;
+	img {
+		@include responsive();
+		@include center-image();
 	}
+}
+.link-descriptions {
+	flex: 60%;
 }
 
 .description {
@@ -44,18 +41,4 @@
 	}
 }
 
-#update {
-	text-align: left;
-	font-weight: bold;
-}
-.update {
-	li {
-    	list-style: none;
-    	font-size: 1.2em;
-    	color: white;
-    	text-align: left;
-    	&:hover {
-			color: $darken;
-    	}
-	}
-}
+
