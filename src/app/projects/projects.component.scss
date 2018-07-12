@@ -27,6 +27,15 @@
 	}
 }
 
+.btn {
+	@include gradient(black, $primary-color);
+	color: $white;
+	border: 1px solid black;
+	&:hover {
+		color: $darken;
+	}
+}
+
 /* MOBILE STYLES
 ------------------------*/
 .mobile {
