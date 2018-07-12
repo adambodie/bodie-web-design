@@ -5,11 +5,22 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
   color: white;
   padding-bottom: 40px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 a:hover {
@@ -127,7 +138,12 @@ p {
 
 
 
-
+.ad {
+	img {
+		@include responsive();
+		@include center-image();
+	}
+}
 
 #imagelightbox {
     position: fixed;

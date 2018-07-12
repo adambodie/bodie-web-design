@@ -22,7 +22,7 @@ h4 {
 }
 
 .flex-item {
-	flex: 1;
+	flex: 100%;
 	padding: 10px;
 }
 h3 {
@@ -37,3 +37,8 @@ h3 {
 	@include responsive();
 }
 
+@media (min-width: 512px) {
+.flex-item {
+	flex: 50%;
+}
+}

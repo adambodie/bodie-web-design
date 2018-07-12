@@ -12,9 +12,16 @@
 		flex-wrap: wrap;
 		border: none;
 	}
-	.flex-item {
-		flex: 33%;
+	.flex-picture{
+		flex: 100%;
 	}
 }
 
-
+@media (min-width: 512px) {
+.pictures {
+	.flex-picture {
+		flex: 33%;
+		padding: 10px;
+	}
+}
+}

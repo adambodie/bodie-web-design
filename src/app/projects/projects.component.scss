@@ -10,14 +10,14 @@
 }
 
 .links {
-	flex: 40%;
+	flex: 100%;
 	img {
 		@include responsive();
 		@include center-image();
 	}
 }
 .link-descriptions {
-	flex: 60%;
+	flex: 100%;
 }
 
 .description {
@@ -51,3 +51,15 @@
 }
 
 
+@media (min-width: 512px) {
+.links {
+	flex: 40%;
+	img {
+		@include responsive();
+		@include center-image();
+	}
+}
+.link-descriptions {
+	flex: 60%;
+}
+}
