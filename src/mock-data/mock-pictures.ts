@@ -1106,5 +1106,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Hollywood",
 	"state": "California",
 	"week": "July 15, 2018"
+}, {
+	"title": "San Clemente",
+	"image": "img/san-clemente.jpg",
+	"description": "Sunsets are the best when you're with your family",
+	"location": "San Clemente",
+	"state": "California",
+	"week": "July 22, 2018"
 }
 ]
