@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2015, 6, 11, new Date()),
         updated: "May 14, 2017",
         updatedAt: howManyDaysAgo(2017, 4, 14, new Date()),
-        description: "Check out Adam's 30th Birthday Celebration at the Grand Canyon! Enjoy all the pictures and videos Adam and the Bodie family took at the Grand Canyon and surrounding areas, and don't forget to read Adam's interesting facts about the Grand Canyon and surrounding area. A trip in itself, without actually going there (if you can't, of course, you should if you can)",
+        description: "This is one of my earliest major web projects I built.  I initially used jQuery to build this page in 2015, but as my developing skills got better and web technologies got more advanced, I rebuilt this in 2017 using Ember, helped cut down the repetitiveness of my code in my initial project. Source code available via GitHub.",
         link: "grand-canyon",
         languages: "Ember, Bootstrap, jQuery"
       },
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2015, 6, 17, new Date()),        
         updated: "January 28, 2018",
         updatedAt: howManyDaysAgo(2018, 0, 28, new Date()),        
-        description: "A simple yet mind boggling app that gives you a fortune cookie to read. All you got to do is fill in your name and age, and let the app do the rest. Don't you love 21st Century Single Page Application Technology. You never know what your fortune cookie will tell you! It's that simple! Trust me.",
+        description: "I built this app first using AngularJS, to showcase my skills in AngularJS, as well as learning to build more projects other than the basic photo gallery.  I later added CSS animation to this project to give a more interactive user experience.  With AngularJS being updated to Angular, I opted to rebuild this project using Angular with Typescript, backed with Webpack. Source code available via GitHub.",
         link: "fortune-cookie",
         languages: "Angular, TypeScript, Webpack"
       },
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2016, 7, 5, new Date()),        
         updated: "December 11, 2017",
         updatedAt: howManyDaysAgo(2017, 11, 11, new Date()),        
-        description: "With a week vacation from work, I went on a road trip down to Reno, where I visited the city, Lake Tahoe and plenty of places along the way. To see my adventures and get a better RNC experience, click the link below. - Version 2.0 contains a slightly different layout and was built with Vue.js",
+        description: "I first built this project using jQuery, but used some different plugins for this project, most notably Owl Carousel.  I later rebuilt this project using Vue, my first project using this framework.  Source code available via GitHub.",
         link: "reno",
         languages: "Vue"
       },
@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2017, 0, 5, new Date()),        
         updated: "January 1, 2018",
         updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),        
-        description: "Built with React JS, this is a simple Dreidel game that can be played with two players.",
+        description: "This was my first project built in React, partly based off a Team Treehouse course: Introduction to React.  I first used the ES5 syntax for the project, but later updated it using ES6 syntax.  Source code available via GitHub.",
         link: "dreidel",
         languages: "React"
       },
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2017, 3, 2, new Date()),        
         updated: "January 7, 2018",
         updatedAt: howManyDaysAgo(2018, 0, 7, new Date()),        
-        description: "Built with React, compiled with Webpack, and tested with Mocha and Chai, my new version of the NFL Passer Rating web page is better designed, with more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
+        description: "My first iteration of this project was built when I was first learning Java back in 2014, using NetBeans to build a GUI program.  Expanding my knowledge in coding and focusing on Web Devleopment, I built a new version with React, compiled with Webpack, and tested with Mocha and Chai, which is better designed, has more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
         link: "nfl-passer-rating",
         languages: "React, Webpack, Mocha/Chai, Foundation"
       },
@@ -94,9 +94,9 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2017, 8, 4, new Date()),       
         updated: "September 4, 2017",
         updatedAt: howManyDaysAgo(2017, 8, 4, new Date()),        
-        description: "Built with Angular 2 using TypeScript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
+        description: "This was my first project built with Angular and Typescript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
         link: "nadm2",
-        languages: "Angular 2, TypeScript"
+        languages: "Angular, TypeScript"
       },
       {
         image: "wildwildwest.jpg",
@@ -106,7 +106,7 @@ export const PROJECTS: Project[] = [
         createdAt: howManyDaysAgo(2017, 9, 1, new Date()),        
         updated: "October 1, 2017",
         updatedAt: howManyDaysAgo(2017, 9, 1, new Date()),        
-        description: "Built with React, this picture carousel uses the Flickr API to get pictures from a album gallery.  Source code available via GitHub.",
+        description: "This project of a photo carousel was built with React. For this project, I used Axios to retrieve photos from the Flickr API.  Source code available via GitHub.",
         link: "wildwildwest",
         languages: "React"
       },
@@ -180,7 +180,7 @@ export const MOBILEPROJECTS: Project[] = [
       createdAt: howManyDaysAgo(2018, 0, 1, new Date()),
       updated: "January 1, 2018",
       updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),
-      description: "My first Android project based off a TeamTreehouse course: Build a Simple Android App with Kotlin, I incorporated new elements by using Firebase API's RealTime Database to retrieve data. Facts provided by a co-worker whom this project is named after. Click the link below for the source code, or view the image to see the final version.",
+      description: "My first Android project based off a Team Treehouse course: Build a Simple Android App with Kotlin, I incorporated new elements by using Firebase API's RealTime Database to retrieve data. Facts provided by a co-worker whom this project is named after. Click the link below for the source code, or view the image to see the final version.",
       link: "small-towns",
       languages: "Android, Kotlin, Firebase API"
     }, {
