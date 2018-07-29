@@ -5,6 +5,7 @@ section#projects
         .flex-container.project
           .flex-item.links
             img(src='../assets/{{project.image}}', alt='{{project.alt}}')
+            h4 {{project.languages}}
           .flex-item.link-descriptions
             h2 {{project.title}}
             .description
@@ -13,18 +14,15 @@ section#projects
                 |  {{project.created}}
               p
                 strong Added:
-                |  {{project.updated}}
+                |  {{project.createdAt}}
               br
               p
                 strong Updated:
-                |  {{project.createdAt}}
+                |  {{project.updated}}
               p
                 strong Last Updated:
                 |  {{project.updatedAt}}
               br
-              p
-                strong Technologies Used:
-                |  {{project.languages}}
               p.paragraph-description {{project.description}}
               h3
                 a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
@@ -40,6 +38,7 @@ section#mobile-projects
             .mobile
               perfect-scrollbar([config]='config').content
                 img(src='../assets/{{mobileProject.image}}', alt='{{mobileProject.alt}}')
+            h4 {{mobileProject.languages}}
           .flex-item.link-descriptions
             h2 {{mobileProject.title}}
             .description
@@ -48,18 +47,15 @@ section#mobile-projects
                 |  {{mobileProject.created}}
               p
                 strong Added:
-                |  {{mobileProject.updated}}
+                |  {{mobileProject.createdAt}}
               br
               p
                 strong Updated:
-                |  {{mobileProject.createdAt}}
+                |  {{mobileProject.updated}}
               p
                 strong Last Updated:
                 |  {{mobileProject.updatedAt}}
               br
-              p
-                strong Technologies Used:
-                |  {{mobileProject.languages}}
               p.paragraph-description {{mobileProject.description}}
               h3
                 a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
@@ -68,15 +64,13 @@ section#development-projects
     h2.section-heading Development Projects
     .flex-container.project
       .flex-item.links
-        img(src='../assets/speech-text.jpg', alt='Adams Speech to Text')              
+        img(src='../assets/speech-text.jpg', alt='Adams Speech to Text')
+        h4 JavaScript, jQuery, Watson API, Jest          
       .flex-item.link-descriptions
         h2 Adam's Speech to Text
         p
           strong Created:
-          |  December 28, 2017
-        p
-          strong Technologies Used:
-          |  JavaScript, jQuery, Watson API, Jest
+          |  December 28, 2017 
         p.paragraph-description This project, based on IBM's Zero to Cognitive Tutorial series (Chapter 3 in particular), is my first foray using IBM Watson.  I further expanded on this project by converting spoken text into Pig Latin. 
         h3
           a.btn(href='https://github.com/adambodie/adam-speech-to-text', role='button') Check Me Out! &raquo;

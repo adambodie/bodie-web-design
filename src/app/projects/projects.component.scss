@@ -15,6 +15,10 @@
 		@include responsive();
 		@include center-image();
 	}
+	h4 {
+		text-align: center;
+		text-transform: uppercase;
+	}
 }
 .link-descriptions {
 	flex: 100%;
