@@ -5,7 +5,8 @@ section#projects
         .flex-container.project
           .flex-item.links
             img(src='../assets/{{project.image}}', alt='{{project.alt}}')
-            h4 {{project.languages}}
+            ul.languages
+              li(*ngFor="let language of project.languages") {{language.name}}
           .flex-item.link-descriptions
             h2 {{project.title}}
             .description
@@ -38,7 +39,8 @@ section#mobile-projects
             .mobile
               perfect-scrollbar([config]='config').content
                 img(src='../assets/{{mobileProject.image}}', alt='{{mobileProject.alt}}')
-            h4 {{mobileProject.languages}}
+            ul.languages
+              li(*ngFor="let language of mobileProject.languages") {{language.name}}
           .flex-item.link-descriptions
             h2 {{mobileProject.title}}
             .description
@@ -65,7 +67,10 @@ section#development-projects
     .flex-container.project
       .flex-item.links
         img(src='../assets/speech-text.jpg', alt='Adams Speech to Text')
-        h4 JavaScript, jQuery, Watson API, Jest          
+        ul.languages
+          li jQuery
+          li Watson API
+          li Jest      
       .flex-item.link-descriptions
         h2 Adam's Speech to Text
         p

@@ -1,3 +1,5 @@
+import {Language} from './language';
+
 export class Project {
     image: string;
     alt: string;
@@ -8,6 +10,6 @@ export class Project {
     updatedAt: string;
     description: string;
     link: string;
-    languages: string;
+    languages: Language[];
     isScrollable?: boolean;
 }

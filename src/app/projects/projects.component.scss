@@ -31,6 +31,22 @@
 	}
 }
 
+.languages {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	li {
+		list-style: none;
+		margin: 5px;
+    	width: 110px;
+    	text-align: center;
+    	text-transform: uppercase;
+		border: 1px solid white;
+		border-radius: 5px;
+    	font-weight: bold;
+	}
+}
 .btn {
 	@include gradient(black, $primary-color);
 	color: $white;

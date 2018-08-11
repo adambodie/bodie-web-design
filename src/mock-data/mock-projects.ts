@@ -12,7 +12,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 4, 14, new Date()),
         description: "This is one of my earliest major web projects I built.  I initially used jQuery to build this page in 2015, but as my developing skills got better and web technologies got more advanced, I rebuilt this in 2017 using Ember, helped cut down the repetitiveness of my code in my initial project. Source code available via GitHub.",
         link: "grand-canyon",
-        languages: "Ember, Bootstrap, jQuery"
+        languages: [{name:"Ember"}, {name: "Bootstrap"},{name: "jQuery"}]
       },
       {
         image: "fortune.jpg",
@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2018, 0, 28, new Date()),        
         description: "I built this app first using AngularJS, to showcase my skills in AngularJS, as well as learning to build more projects other than the basic photo gallery.  I later added CSS animation to this project to give a more interactive user experience.  With AngularJS being updated to Angular, I opted to rebuild this project using Angular with Typescript, backed with Webpack. Source code available via GitHub.",
         link: "fortune-cookie",
-        languages: "Angular, TypeScript, Webpack"
+        languages: [{name:"Angular"}, {name: "TypeScript"},{name: "Webpack"}]
       },
       {
         image: "artshowcase.jpg",
@@ -36,7 +36,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 4, 29, new Date()),        
         description: "Back in 2001-2002, I loved to draw and paint. It was a real passion. I must have spent hours drawing whatever interested me. I even made two projects of a select few with Microsoft PowerPoint. With my new web skills, I have turned my old projects into a web page full of my old drawings and paintings. Talk about a trip down memory lane.",
         link: "adamsartshowcase",
-        languages: "React, React Router, Sass, Bootstrap, Gulp"
+        languages: [{name:"React"}, {name: "Sass"}]
       },
       {
         image: "nama.jpg",
@@ -48,7 +48,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2016, 6, 17, new Date()),        
         description: "During my senior year of college at the University of Minnesota, I took a Linguistics class and had to write a final paper on a language of my choice. I chose Nama, a Khoisan langauge in Africa that's known for their click consonants. With that said, here is my 25 page paper turned into an Ember.js backed web project.",
         link: "nama",
-        languages: "Ember"
+        languages: [{name:"Ember"}]
       },
       {
         image: "reno-rnc.jpg",
@@ -60,7 +60,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 11, 11, new Date()),        
         description: "I first built this project using jQuery, but used some different plugins for this project, most notably Owl Carousel.  I later rebuilt this project using Vue, my first project using this framework.  Source code available via GitHub.",
         link: "reno",
-        languages: "Vue"
+        languages: [{name:"Vue"}]
       },
       {
         image: "dreidel.jpg",
@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),        
         description: "This was my first project built in React, partly based off a Team Treehouse course: Introduction to React.  I first used the ES5 syntax for the project, but later updated it using ES6 syntax.  Source code available via GitHub.",
         link: "dreidel",
-        languages: "React"
+        languages: [{name:"React"}, {name: "Webpack"}]
       },
       {
         image: "nfl.jpg",
@@ -84,7 +84,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2018, 0, 7, new Date()),        
         description: "My first iteration of this project was built when I was first learning Java back in 2014, using NetBeans to build a GUI program.  Expanding my knowledge in coding and focusing on Web Devleopment, I built a new version with React, compiled with Webpack, and tested with Mocha and Chai, which is better designed, has more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
         link: "nfl-passer-rating",
-        languages: "React, Webpack, Mocha/Chai, Foundation"
+        languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"},{name: "Mocha/Chai"},{name: "Foundation"}]
       },
       {
         image: "nadm2.jpg",
@@ -96,7 +96,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 8, 4, new Date()),        
         description: "This was my first project built with Angular and Typescript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
         link: "nadm2",
-        languages: "Angular, TypeScript"
+        languages: [{name:"Angular"}, {name: "TypeScript"},{name: "Webpack"}]
       },
       {
         image: "wildwildwest.jpg",
@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 9, 1, new Date()),        
         description: "This project of a photo carousel was built with React. For this project, I used Axios to retrieve photos from the Flickr API.  Source code available via GitHub.",
         link: "wildwildwest",
-        languages: "React"
+        languages: [{name:"React"}, {name:"Axios API"}]
       },
       {
         image: "adventures.jpg",
@@ -120,7 +120,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2017, 10, 23, new Date()),        
         description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
         link: "adventures",
-        languages: "React"
+        languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"}]
       },
       {
         image: "victoria.jpg",
@@ -132,7 +132,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2018, 4, 22, new Date()),        
         description: "Expanding on my previous photo based projects, I created a travel based website.  I focused on better organization of my components, splitting out the routes and containers.  Exploring more of the testing side, I added basic tests in Jest and Enzyme to show my evolving skills in unit testing.  Source code available via GitHub.",
         link: "victoria",
-        languages: "React, Jest, Enzyme"
+        languages: [{name:"React"}, {name: "Jest"},{name: "Enzyme"}]
       },
       {
         image: "leavenworth.jpg",
@@ -144,7 +144,7 @@ export const PROJECTS: Project[] = [
         updatedAt: howManyDaysAgo(2018, 6, 7, new Date()),        
         description: "Previously learning Vue on the fly, I opted to learn more specifics of Vue with this project. The photo gallery I used the Owl-Carousel dependency to use a different carousel.  The flash cards is based off the Vue Basics course on Team Treehouse, expanding on the original content to add additional methods.  Finally, I focused on both basic vue syntax mixed with Single File Components to differentiate between the two.  Source code available via GitHub.",
         link: "leavenworth",
-        languages: "Vue, Browserify, Express, Pug, Jest, Gulp"
+        languages: [{name:"Vue"}, {name: "Browserify"},{name: "Express"},{name: "Pug"},{name: "Jest"},{name: "Less"},{name: "Gulp"}]
       }
 ]
 
@@ -160,7 +160,7 @@ export const MOBILEPROJECTS: Project[] = [
       updatedAt: howManyDaysAgo(2017, 8, 20, new Date()),
       description: "My first mobile project, using React Native. Click the link below for the source code, or scroll the image to see the final version.",
       link: "walla-walla",
-      languages: "React Native"
+      languages: [{name:"React Native"}]
     },   {
       image: "smallTownNative.jpg",
       alt: "Small Town Native",
@@ -171,7 +171,7 @@ export const MOBILEPROJECTS: Project[] = [
       updatedAt: howManyDaysAgo(2017, 10, 12, new Date()),
       description: "Another React Native project based on a previous project, I used a native build, rather than Create React Native App, to provide more flexibility. Click the link below for the source code, or scroll the image to see the final version.",
       link: "small-towns",
-      languages: "React Native"
+      languages: [{name:"React Native"}]
     }, {
       image: "21zf8r.gif",
       alt: "Kevin's Fun Facts",
@@ -182,7 +182,7 @@ export const MOBILEPROJECTS: Project[] = [
       updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),
       description: "My first Android project based off a Team Treehouse course: Build a Simple Android App with Kotlin, I incorporated new elements by using Firebase API's RealTime Database to retrieve data. Facts provided by a co-worker whom this project is named after. Click the link below for the source code, or view the image to see the final version.",
       link: "small-towns",
-      languages: "Android, Kotlin, Firebase API"
+      languages: [{name:"Android"}, {name: "Kotlin"},{name: "Firebase API"}]
     }, {
       image: "bellingham-native.jpg",
       alt: "Bellingham Native",
@@ -193,6 +193,6 @@ export const MOBILEPROJECTS: Project[] = [
       updatedAt: howManyDaysAgo(2018, 3, 23, new Date()),
       description: "Based off my design for the Wild Wild West React project but built with React Native as a mobile app, this project is a mobile approach to a Photo Gallery. A desktop version can also be viewed here",
       link: "bellingham",
-      languages: "React Native"
+      languages: [{name:"React Native"}]
     }
 ]
