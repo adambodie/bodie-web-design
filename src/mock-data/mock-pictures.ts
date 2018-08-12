@@ -1120,5 +1120,19 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Boise",
 	"state": "Idaho",
 	"week": "July 29, 2018"
+}, {
+	"title": "Currin Bridge over Row River",
+	"image": "img/bridge.jpg",
+	"description": "Covered Bridge to Nowhere",
+	"location": "Cottage Grove",
+	"state": "Oregon",
+	"week": "August 5, 2018"
+}, {
+	"title": "Yucca brevifolia",
+	"image": "img/yucca.jpg",
+	"description": "Yucca brevifolia: The Joshua Tree stands alone",
+	"location": "Joshua Tree National Park",
+	"state": "California",
+	"week": "August 12, 2018"
 }
 ]
