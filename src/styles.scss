@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron:500');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
 
 * {
     -webkit-box-sizing: border-box;
@@ -44,6 +45,56 @@ p {
 	text-decoration: underline;
 }
 
+.advertisement {   
+    height: 100px;
+    width: 100%;
+    a {
+      display: flex;
+	  align-items: center;
+	  height: 100px;
+      color: white;
+      text-decoration: none;
+    }
+    img {
+      width: 75px;
+      height: 75px;
+	  margin-left: 20px;
+	  margin-right: 20px;
+    }
+    h1 {
+	  text-shadow: 2px 2px 4px black;
+	  margin-right: 50px;
+	  font-family: $concert-one;
+	  font-size: 1.5em;
+    }
+  }
+.treehouse {
+	background-color: white;
+	&:hover {
+		background-color: rgb(228, 228, 228);
+	}
+    h1 {
+		color: #64CE83;
+		text-shadow: none;
+		font-weight: bold;
+		
+		
+	  }	
+}
+
+.github {
+	background-color: #801180;
+    &:hover {
+		background-color: rgb(75, 1, 75);
+	  }
+}
+
+.linkedin {
+	background-color: #283E4A;
+    &:hover {
+		background-color: rgb(18, 29, 34);
+	  }
+}
 .photo {
 	position: relative;
 	margin-bottom: 2em;
@@ -114,6 +165,11 @@ p {
 -------------------------------------*/
 
 @media (min-width: 769px) {
+	.advertisement { 
+		h1 {
+		  font-size: 3em;
+		}
+	  }	
     #overlay {
       background:rgba(0,0,0,0.7);
       width:100%;
