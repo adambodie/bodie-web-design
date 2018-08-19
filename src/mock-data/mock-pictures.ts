@@ -1134,5 +1134,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Joshua Tree National Park",
 	"state": "California",
 	"week": "August 12, 2018"
+}, {
+	"title": "Wooden Shoe Tulip Farm Rainbows",
+	"image": "img/tulip.jpg",
+	"description": "Tulip Rainbows are the best Man-Made Rainbows",
+	"location": "Woodburn",
+	"state": "Oregon",
+	"week": "August 19, 2018"
 }
 ]
