@@ -11,5 +11,6 @@ export class Project {
     description: string;
     link: string;
     languages: Language[];
+    visible: boolean;
     isScrollable?: boolean;
 }

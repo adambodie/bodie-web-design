@@ -1,7 +1,19 @@
 @import '../../imports.scss';
 
+.edit {
+	div {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+select {
+	color: black;
+	height: 33px;
+}
+
 .container {
-	.project {
+	.project{
 		border-top: 1px solid white;
 		display: flex;
 		align-items: center;
@@ -82,4 +94,9 @@
 .link-descriptions {
 	flex: 60%;
 }
+}
+
+.invisible {
+	display: none;
+	visibility: visible;
 }

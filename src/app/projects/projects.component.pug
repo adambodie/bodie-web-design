@@ -1,32 +1,40 @@
 section#projects
   .container
-      h2.section-heading Projects 
+      h2.section-heading Projects
+      .flex-container.edit
+        div.options
+          select((change)="filterList()")
+            option(value="") Filter by Technology...
+            option(*ngFor="let item of uniqueOptions") {{item}}
+        div.button
+          a.btn((click)="reset()") Reset     
       div(*ngFor="let project of projects")
-        .flex-container.project
-          .flex-item.links
-            img(src='../assets/{{project.image}}', alt='{{project.alt}}')
-            ul.languages
-              li(*ngFor="let language of project.languages") {{language.name}}
-          .flex-item.link-descriptions
-            h2 {{project.title}}
-            .description
-              p
-                strong Created:
-                |  {{project.created}}
-              p
-                strong Added:
-                |  {{project.createdAt}}
-              br
-              p
-                strong Updated:
-                |  {{project.updated}}
-              p
-                strong Last Updated:
-                |  {{project.updatedAt}}
-              br
-              p.paragraph-description {{project.description}}
-              h3
-                a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
+        div([class]="project.visible ? 'visible' : 'invisible'")
+          .flex-container.project(*ngIf="project.visible")          
+            .flex-item.links
+              img(src='../assets/{{project.image}}', alt='{{project.alt}}')
+              ul.languages
+                li(*ngFor="let language of project.languages") {{language.name}}
+            .flex-item.link-descriptions
+              h2 {{project.title}}
+              .description
+                p
+                  strong Created:
+                  |  {{project.created}}
+                p
+                  strong Added:
+                  |  {{project.createdAt}}
+                br
+                p
+                  strong Updated:
+                  |  {{project.updated}}
+                p
+                  strong Last Updated:
+                  |  {{project.updatedAt}}
+                br
+                p.paragraph-description {{project.description}}
+                h3
+                  a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
 section.advertisement.treehouse
       a(href='https://teamtreehouse.com/adambodie', target='_blank')  
         img(src='../assets/team-treehouse.gif', alt='Treehouse')
