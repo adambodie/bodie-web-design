@@ -4,9 +4,9 @@ export class Project {
     image: string;
     alt: string;
     title: string;
-    created: string;
+    created: Date;
     createdAt: string;
-    updated: string;
+    updated: Date;
     updatedAt: string;
     description: string;
     link: string;
