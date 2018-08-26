@@ -1,6 +1,6 @@
 section#projects
   .container
-      h2.section-heading Projects
+      h1.section-heading Projects
      
       .filter
         div
@@ -10,8 +10,7 @@ section#projects
               select((change)="filterList()")
                 option(value="") Filter by Technology...
                 option(*ngFor="let item of uniqueOptions") {{item}}
-            div.button
-              a.btn((click)="reset()") Reset
+            a.btn((click)="reset()") Reset
         div
           h3 Sort Projects
           .flex-container.sort
@@ -51,7 +50,7 @@ section.advertisement.treehouse
         h1 View my Treehouse Profile
 section#mobile-projects
   .container
-      h2.section-heading Mobile Projects
+      h1.section-heading Mobile Projects
       div(*ngFor="let mobileProject of mobileProjects")
         .flex-container.project
           .flex-item.links
@@ -82,7 +81,7 @@ section#mobile-projects
                 a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
 section#development-projects
   .container
-    h2.section-heading Development Projects
+    h1.section-heading Development Projects
     .flex-container.project
       .flex-item.links
         img(src='../assets/speech-text.jpg', alt='Adams Speech to Text')

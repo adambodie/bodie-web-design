@@ -1,14 +1,20 @@
 @import '../../imports.scss';
 
+h1 {
+	font-size: 3em;
+	text-align: left;
+}
 .filter {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .filter > div {
-	width: 50%;
+	width: 100%;
 	padding: 20px;
 	margin: 20px;
-	height: 150px;
+	min-height: 200px;
 	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 3px 6px 0 rgba(255, 255, 255, 0.8);
 	h3 {
 		margin-top: -10px;
@@ -17,10 +23,16 @@
 }
 
 .edit {
-	div {
+	justify-content: center;
+	.options {
 		margin-left: 20px;
 		margin-right: 20px;
-	}
+		margin-top: 10px;
+	}	
+	.btn {
+		margin-top: 10px;
+		width: 200px;
+	}	
 }
 
 .sort {
@@ -28,6 +40,7 @@
 	justify-content: center;
 	.btn {
 		margin: 10px;
+		width: 100%;
 	}
 }
 select {
@@ -98,6 +111,11 @@ select {
 	}
 }
 
+.invisible {
+	display: none;
+	visibility: visible;
+}
+
 /* MOBILE STYLES
 ------------------------*/
 .mobile {
@@ -114,19 +132,26 @@ select {
 
 
 @media (min-width: 512px) {
-.links {
-	flex: 40%;
-	img {
-		@include responsive();
-		@include center-image();
+	.links {
+		flex: 40%;
+		img {
+			@include responsive();
+			@include center-image();
+		}
+	}
+	.link-descriptions {
+		flex: 60%;
 	}
 }
-.link-descriptions {
-	flex: 60%;
-}
-}
 
-.invisible {
-	display: none;
-	visibility: visible;
+@media (min-width: 768px) {
+
+	.filter > div {
+		width: 40%;
+	}
+	.edit {
+		.btn {
+			margin-top: 10px;
+		}
+	}
 }
