@@ -1,7 +1,7 @@
 .container
   .pictures
     h1 Picture of the Week
-    .flex-container
+    .flex-container.picture-container
       .flex-picture(*ngFor='let picture of pictures | paginate: { itemsPerPage: 9, currentPage: p }')
         .photo
           img(src="../assets/{{picture.image}}" alt="{{picture.title}}")

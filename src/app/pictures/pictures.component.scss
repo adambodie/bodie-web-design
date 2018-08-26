@@ -1,6 +1,8 @@
 @import '../../imports.scss';
 
-
+.picture-container {
+	min-height: 900px;
+}
 .pictures {
 	h1 {
 		margin-top: 125px;
@@ -12,15 +14,15 @@
 		flex-wrap: wrap;
 		border: none;
 	}
-	.flex-picture{
-		flex: 100%;
+	.flex-picture {
+		width: 100%;
 	}
 }
 
 @media (min-width: 512px) {
 .pictures {
 	.flex-picture {
-		flex: 33%;
+		width: 33%;
 		padding: 10px;
 	}
 }
