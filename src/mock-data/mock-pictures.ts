@@ -1141,5 +1141,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Woodburn",
 	"state": "Oregon",
 	"week": "August 19, 2018"
+}, {
+	"title": "Grand Canyon",
+	"image": "img/grand-canyon.jpg",
+	"description": "R.I.P. John McCain",
+	"location": "Grand Canyon National Park",
+	"state": "Arizona",
+	"week": "August 26, 2018"
 }
 ]
