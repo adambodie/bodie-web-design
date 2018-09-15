@@ -78,22 +78,33 @@ section#mobile-projects
               br
               p.paragraph-description {{mobileProject.description}}
               h3
-                a.btn(href='http://{{mobileProject.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
-section#development-projects
+                a.btn(href='https://github.com/adambodie/{{mobileProject.link}}', role='button') Check Me Out! &raquo;
+section#mobile-projects
   .container
-    h1.section-heading Development Projects
-    .flex-container.project
-      .flex-item.links
-        img(src='../assets/speech-text.jpg', alt='Adams Speech to Text')
-        ul.languages
-          li jQuery
-          li Watson API
-          li Jest      
-      .flex-item.link-descriptions
-        h2 Adam's Speech to Text
-        p
-          strong Created:
-          |  December 28, 2017 
-        p.paragraph-description This project, based on IBM's Zero to Cognitive Tutorial series (Chapter 3 in particular), is my first foray using IBM Watson.  I further expanded on this project by converting spoken text into Pig Latin. 
-        h3
-          a.btn(href='https://github.com/adambodie/adam-speech-to-text', role='button') Check Me Out! &raquo;
+      h1.section-heading Development Projects
+      div(*ngFor="let developmentProject of developmentProjects")
+        .flex-container.project
+          .flex-item.links
+            img(src='../assets/{{developmentProject.image}}', alt='{{developmentProject.alt}}')
+            ul.languages
+              li(*ngFor="let language of developmentProject.languages") {{language.name}}
+          .flex-item.link-descriptions
+            h2 {{developmentProject.title}}
+            .description
+              p
+                strong Created:
+                |  {{months[developmentProject.created.getMonth()]}} {{developmentProject.created.getDate()}}, {{developmentProject.created.getFullYear()}}
+              p
+                strong Added:
+                |  {{developmentProject.createdAt}}
+              br
+              p
+                strong Updated:
+                |  {{months[developmentProject.updated.getMonth()]}} {{developmentProject.updated.getDate()}}, {{developmentProject.updated.getFullYear()}}
+              p
+                strong Last Updated:
+                |  {{developmentProject.updatedAt}}
+              br
+              p.paragraph-description {{developmentProject.description}}
+              h3
+                a.btn(href='https://github.com/adambodie/{{developmentProject.link}}', role='button') Check Me Out! &raquo;

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Project } from '../../properties/project';
 import {PROJECTS} from '../../mock-data/mock-projects';
 import {MOBILEPROJECTS} from '../../mock-data/mock-projects';
+import {DEVELOPMENTPROJECTS} from '../../mock-data/mock-projects';
 
 @Injectable({
   providedIn: 'root'
@@ -12,5 +13,8 @@ export class ProjectsService {
   }
   getMobileProjects(): Project[] {
     return MOBILEPROJECTS;
-  }  
+  }
+  getDevelopmentProjects(): Project[] {
+    return DEVELOPMENTPROJECTS;
+  }      
 }

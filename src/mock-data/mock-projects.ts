@@ -171,7 +171,7 @@ export const MOBILEPROJECTS: Project[] = [
       updated: new Date('September 20, 2017'),
       updatedAt: howManyDaysAgo(2017, 8, 20, new Date()),
       description: "My first mobile project, using React Native. Click the link below for the source code, or scroll the image to see the final version.",
-      link: "walla-walla",
+      link: "walla-walla-native",
       languages: [{name:"React Native"}],
       visible: true
     },   {
@@ -183,7 +183,7 @@ export const MOBILEPROJECTS: Project[] = [
       updated: new Date('November 12, 2017'),
       updatedAt: howManyDaysAgo(2017, 10, 12, new Date()),
       description: "Another React Native project based on a previous project, I used a native build, rather than Create React Native App, to provide more flexibility. Click the link below for the source code, or scroll the image to see the final version.",
-      link: "small-towns",
+      link: "SmallTownNative",
       languages: [{name:"React Native"}],
       visible: true
     }, {
@@ -195,7 +195,7 @@ export const MOBILEPROJECTS: Project[] = [
       updated: new Date('January 1, 2018'),
       updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),
       description: "My first Android project based off a Team Treehouse course: Build a Simple Android App with Kotlin, I incorporated new elements by using Firebase API's RealTime Database to retrieve data. Facts provided by a co-worker whom this project is named after. Click the link below for the source code, or view the image to see the final version.",
-      link: "small-towns",
+      link: "fun-facts",
       languages: [{name:"Android"}, {name: "Kotlin"},{name: "Firebase API"}],
       visible: true
     }, {
@@ -207,8 +207,37 @@ export const MOBILEPROJECTS: Project[] = [
       updated: new Date('April 23, 2018'),
       updatedAt: howManyDaysAgo(2018, 3, 23, new Date()),
       description: "Based off my design for the Wild Wild West React project but built with React Native as a mobile app, this project is a mobile approach to a Photo Gallery. A desktop version can also be viewed here",
-      link: "bellingham",
+      link: "bellingham-native",
       languages: [{name:"React Native"}],
+      visible: true
+    }
+]
+
+export const DEVELOPMENTPROJECTS: Project[] = [
+  {
+      image: "speech-text.jpg",
+      alt: "Adam's Speech to Text",
+      title: "Adam's Speech to Text",
+      created: new Date('December 28, 2017'),
+      createdAt: howManyDaysAgo(2017, 11, 28, new Date()),
+      updated: new Date('December 28, 2017'),
+      updatedAt: howManyDaysAgo(2017, 11, 28, new Date()),
+      description: "This project, based on IBM's Zero to Cognitive Tutorial series (Chapter 3 in particular), is my first foray using IBM Watson.  I further expanded on this project by converting spoken text into Pig Latin.",
+      link: "adam-speech-to-text",
+      languages: [{name:"jQuery"}, {name: "Watson API"},{name: "Jest"}],
+      visible: true
+    },
+    {
+      image: "israel.jpg",
+      alt: "Israel Bucket List",
+      title: "Israel Bucket List",
+      created: new Date('September 6, 2018'),
+      createdAt: howManyDaysAgo(2018, 8, 6, new Date()),        
+      updated: new Date('September 6, 2018'),
+      updatedAt: howManyDaysAgo(2018, 8, 6, new Date()),        
+      description: "This project is based off a course I took on a Treehouse course User Authentication With Express and Mongo. I followed the course in setting up a basic user authentication system and tieing the application with the MongoDB database to store users, hash passwords and storing sessions. My intention for this project is to build off the basic design of the app from the course to add additional features.  Source code available via GitHub.",
+      link: "javascript-express-auth",
+      languages: [{name:"Express"}, {name: "MongoDB"},{name: "Pug"}, {name: "Bootstrap"}],
       visible: true
     }
 ]

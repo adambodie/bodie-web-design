@@ -1148,5 +1148,19 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Grand Canyon National Park",
 	"state": "Arizona",
 	"week": "August 26, 2018"
+}, {
+	"title": "Spokane",
+	"image": "img/spokane.jpg",
+	"description": "I finally made it to Spokane",
+	"location": "Spokane",
+	"state": "Washington",
+	"week": "September 2, 2018"
+}, {
+	"title": "Lower Lewis River Falls",
+	"image": "img/lewis.jpg",
+	"description": "Enjoy Summer While it Lasts!",
+	"location": "Lewis River",
+	"state": "Washington",
+	"week": "September 9, 2018"
 }
 ]

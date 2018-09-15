@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit {
 	constructor(private projectsService: ProjectsService) { }
 	projects: Project[];
 	mobileProjects: Project[];
+	developmentProjects: Project[];	
 	uniqueOptions;
 	createCount = 0;
 	updateCount = 0;
@@ -31,6 +32,7 @@ export class ProjectsComponent implements OnInit {
 	getProjects(): void {
 		this.projects = this.projectsService.getProjects().slice().reverse();
 		this.mobileProjects = this.projectsService.getMobileProjects().slice().reverse();
+		this.developmentProjects = this.projectsService.getDevelopmentProjects().slice().reverse();		
 	}
 
     compareTitle(a,b) {
