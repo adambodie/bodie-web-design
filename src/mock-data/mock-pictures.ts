@@ -1162,5 +1162,26 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Lewis River",
 	"state": "Washington",
 	"week": "September 9, 2018"
+}, {
+	"title": "Stormy Maui",
+	"image": "img/storm.jpg",
+	"description": "Thinking of those affected by Hurricanes or any other Tropical Storm",
+	"location": "Ka'anapali",
+	"state": "Hawaii",
+	"week": "September 16, 2018"
+}, {
+	"title": "Mt. Hood Sunrise",
+	"image": "img/hood-sunrise.jpg",
+	"description": "A Nice View on the Way to Work.",
+	"location": "Beaverton",
+	"state": "Oregon",
+	"week": "September 23, 2018"
+}, {
+	"title": "Capri Island",
+	"image": "img/capri.jpg",
+	"description": "Living the High Life in Capri",
+	"location": "Capri",
+	"state": "Italy",
+	"week": "September 30, 2018"
 }
 ]

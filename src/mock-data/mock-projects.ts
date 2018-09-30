@@ -157,6 +157,19 @@ export const PROJECTS: Project[] = [
         link: "leavenworth",
         languages: [{name:"Vue"}, {name:"Axios API"}, {name: "Browserify"},{name: "Express"},{name: "Pug"},{name: "Jest"},{name: "Less"},{name: "Gulp"}],
         visible: true
+      },
+      {
+        image: "spokane.jpg",
+        alt: "Pigging Out in Spokane",
+        title: "Pigging Out in Spokane",
+        created: new Date('September 29, 2018'),
+        createdAt: howManyDaysAgo(2018, 8, 29, new Date()),        
+        updated: new Date('September 29, 2018'),
+        updatedAt: howManyDaysAgo(2018, 8, 29, new Date()),        
+        description: "I partly based this off my more recent photo carousel projects, but used Typescript instead of Javascript.  Source code available via GitHub.",
+        link: "spokane",
+        languages: [{name:"React"}, {name: "TypeScript"}, {name:"Axios API"}, {name: "Enzyme"}],
+        visible: true
       }
 ]
 
