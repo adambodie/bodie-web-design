@@ -30,6 +30,8 @@ export class PictureWeekComponent implements OnInit {
     this.state = this.pictures[this.pictures.length - 1].state;
   }
   updates = [
+    { title: "Adam's Wild Wild West", description: "Moved photos from Flickr to S3.  November 23, 2018" },    
+    { title: "Dreidel Duel", description: "Broke React down to Components, added testing, built with GatsbyJS, October 14, 2018" },
     { title: "Pigging Out in Spokane", description: "Launched September 29, 2018"}, 
     { title: "Israel Bucket List", description: "Launched September 6, 2018"}, 
     { title: "Adam's Art Showcase", description: "Updated August 18, 2018, added features"},    

@@ -1183,5 +1183,47 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Capri",
 	"state": "Italy",
 	"week": "September 30, 2018"
+}, {
+	"title": "Devil's Homestead",
+	"image": "img/devils.jpg",
+	"description": "Devil's Anything is always worth checking out!",
+	"location": "Lava Beds National Monument",
+	"state": "California",
+	"week": "October 7, 2018"
+}, {
+	"title": "Autzen Stadium",
+	"image": "img/autzen.jpg",
+	"description": "There's No Place Like Autzen Stadium",
+	"location": "Eugene",
+	"state": "Oregon",
+	"week": "October 14, 2018"
+}, {
+	"title": "Happy Fall!",
+	"image": "img/fall.jpg",
+	"description": "Happy Fall Y'All!!!",
+	"location": "Beaverton",
+	"state": "Oregon",
+	"week": "October 21, 2018"
+}, {
+	"title": "Verona Arena",
+	"image": "img/verona.jpg",
+	"description": "Roses: A True Sign of Love",
+	"location": "Verona",
+	"state": "Italy",
+	"week": "October 28, 2018"
+}, {
+	"title": "Mt. Hood",
+	"image": "img/aerial-hood.jpg",
+	"description": "Going on Vacation!  See you in Two Weeks!",
+	"location": "Mt. Hood",
+	"state": "Oregon",
+	"week": "November 4, 2018"
+}, {
+	"title": "Minnesota > Wisconsin",
+	"image": "img/goldy.jpg",
+	"description": "Finally, Paul Bunyan's Axe is Ours!!!",
+	"location": "Minneapolis",
+	"state": "Minnesota",
+	"week": "November 25, 2018"
 }
 ]

@@ -73,11 +73,11 @@ export const PROJECTS: Project[] = [
         title: "Dreidel Duel",
         created: new Date('January 5, 2017'),
         createdAt: howManyDaysAgo(2017, 0, 5, new Date()),        
-        updated: new Date('January 1, 2018'),
-        updatedAt: howManyDaysAgo(2018, 0, 1, new Date()),        
-        description: "This was my first project built in React, partly based off a Team Treehouse course: Introduction to React.  I first used the ES5 syntax for the project, but later updated it using ES6 syntax.  Source code available via GitHub.",
+        updated: new Date('October 14, 2018'),
+        updatedAt: howManyDaysAgo(2018, 9, 14, new Date()),        
+        description: "This was my first project built in React, partly based off a Team Treehouse course: Introduction to React.  I first used the ES5 syntax for the project, but later updated it using ES6 syntax.  Version 3 further broke down components, added Sass, and built on GatsbyJS. Source code available via GitHub.",
         link: "dreidel",
-        languages: [{name:"React"}, {name: "Webpack"}],
+        languages: [{name:"React"}, {name: "GatsbyJS"}, {name: "Sass"}, {name: "Jest"}, {name: "Enzyme"}],
         visible: true
       },
       {
@@ -112,9 +112,9 @@ export const PROJECTS: Project[] = [
         title: "Adam's Wild Wild West",
         created: new Date('October 1, 2017'),
         createdAt: howManyDaysAgo(2017, 9, 1, new Date()),        
-        updated: new Date('October 1, 2017'),
-        updatedAt: howManyDaysAgo(2017, 9, 1, new Date()),        
-        description: "This project of a photo carousel was built with React. For this project, I used Axios to retrieve photos from the Flickr API.  Source code available via GitHub.",
+        updated: new Date('November 23, 2018'),
+        updatedAt: howManyDaysAgo(2018, 10, 23, new Date()),        
+        description: "This project of a photo carousel was built with React. For this project, I used Axios to retrieve photos from S3.  Source code available via GitHub.",
         link: "wildwildwest",
         languages: [{name:"React"}, {name:"Axios API"}],
         visible: true
