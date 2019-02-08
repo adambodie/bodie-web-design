@@ -1,7 +1,6 @@
 section#projects
   .container
       h1.section-heading Projects
-     
       .filter
         div
           h3 Filter Projects
@@ -44,67 +43,3 @@ section#projects
                 p.paragraph-description {{project.description}}
                 h3
                   a.btn(href='http://{{project.link}}.bodiewebdesign.com', role='button') Check Me Out! &raquo;
-section.advertisement.treehouse
-      a(href='https://teamtreehouse.com/adambodie', target='_blank')  
-        img(src='../assets/team-treehouse.gif', alt='Treehouse')
-        h1 View my Treehouse Profile
-section#mobile-projects
-  .container
-      h1.section-heading Mobile Projects
-      div(*ngFor="let mobileProject of mobileProjects")
-        .flex-container.project
-          .flex-item.links
-            .mobile
-              perfect-scrollbar([config]='config').content
-                img(src='../assets/{{mobileProject.image}}', alt='{{mobileProject.alt}}')
-            ul.languages
-              li(*ngFor="let language of mobileProject.languages") {{language.name}}
-          .flex-item.link-descriptions
-            h2 {{mobileProject.title}}
-            .description
-              p
-                strong Created:
-                |  {{months[mobileProject.created.getMonth()]}} {{mobileProject.created.getDate()}}, {{mobileProject.created.getFullYear()}}
-              p
-                strong Added:
-                |  {{mobileProject.createdAt}}
-              br
-              p
-                strong Updated:
-                |  {{months[mobileProject.updated.getMonth()]}} {{mobileProject.updated.getDate()}}, {{mobileProject.updated.getFullYear()}}
-              p
-                strong Last Updated:
-                |  {{mobileProject.updatedAt}}
-              br
-              p.paragraph-description {{mobileProject.description}}
-              h3
-                a.btn(href='https://github.com/adambodie/{{mobileProject.link}}', role='button') Check Me Out! &raquo;
-section#mobile-projects
-  .container
-      h1.section-heading Development Projects
-      div(*ngFor="let developmentProject of developmentProjects")
-        .flex-container.project
-          .flex-item.links
-            img(src='../assets/{{developmentProject.image}}', alt='{{developmentProject.alt}}')
-            ul.languages
-              li(*ngFor="let language of developmentProject.languages") {{language.name}}
-          .flex-item.link-descriptions
-            h2 {{developmentProject.title}}
-            .description
-              p
-                strong Created:
-                |  {{months[developmentProject.created.getMonth()]}} {{developmentProject.created.getDate()}}, {{developmentProject.created.getFullYear()}}
-              p
-                strong Added:
-                |  {{developmentProject.createdAt}}
-              br
-              p
-                strong Updated:
-                |  {{months[developmentProject.updated.getMonth()]}} {{developmentProject.updated.getDate()}}, {{developmentProject.updated.getFullYear()}}
-              p
-                strong Last Updated:
-                |  {{developmentProject.updatedAt}}
-              br
-              p.paragraph-description {{developmentProject.description}}
-              h3
-                a.btn(href='https://github.com/adambodie/{{developmentProject.link}}', role='button') Check Me Out! &raquo;
