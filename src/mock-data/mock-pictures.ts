@@ -268,7 +268,7 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 		state: "Oregon",
 		week: "April 10, 2016"
 	}, {
-		title: "Prauge Castle",
+		title: "Prague Castle",
 		image: "img/prague.jpg",
 		description: "Vítejte na krásné Praze, v České republice!",
 		location: "Prague",
@@ -1225,5 +1225,75 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Minneapolis",
 	"state": "Minnesota",
 	"week": "November 25, 2018"
+}, {
+	"title": "The Greatest City in the World",
+	"image": "img/tel-aviv.jpg",
+	"description": "It's True: Tel Aviv is the Greatest City in the World!",
+	"location": "Tel Aviv",
+	"state": "Israel",
+	"week": "December 2, 2018"
+}, {
+	"title": "Farewell Bend",
+	"image": "img/farewell-bend.jpg",
+	"description": "Farewell Bend, or Welcome Bend?",
+	"location": "Bend",
+	"state": "Oregon",
+	"week": "December 9, 2018"
+}, {
+	"title": "Seattle",
+	"image": "img/kerry.jpg",
+	"description": "Legendary View from Kerry Park",
+	"location": "Seattle",
+	"state": "Washington",
+	"week": "December 16, 2018"
+}, {
+	"title": "Red Rocks Amphitheatre",
+	"image": "img/red-rock.jpg",
+	"description": "Legendary View of Red Rocks",
+	"location": "Morrison",
+	"state": "Colorado",
+	"week": "December 23, 2018"
+}, {
+	"title": "Rainbow over Vancouver Island",
+	"image": "img/juan-de-fuca.jpg",
+	"description": "The most incredible Picture taken in 2018 (shockingly not in Israel)",
+	"location": "Strait of Juan de Fuca",
+	"state": "British Columbia",
+	"week": "December 30, 2018"
+}, {
+	"title": "Western Wall",
+	"image": "img/western-wall.jpg",
+	"description": "Beginning the New Year with an Homage to the Holiest Site in Judaism",
+	"location": "Jerusalem",
+	"state": "Israel",
+	"week": "January 6, 2019"
+}, {
+	"title": "Kansas City",
+	"image": "img/kansas-city.jpg",
+	"description": "Kansas City: Quasi-Minneapolis, the Dark Edition",
+	"location": "Kansas City",
+	"state": "Missouri",
+	"week": "January 13, 2019"
+}, {
+	"title": "Kansas City",
+	"image": "img/kansas-city-light.jpg",
+	"description": "Kansas City: Quasi-Minneapolis, the Light Edition",
+	"location": "Kansas City",
+	"state": "Missouri",
+	"week": "January 20, 2019"
+}, {
+	"title": "Yad Vashem: Never Forget",
+	"image": "img/yad-vashem.jpg",
+	"description": "On International Holocaust Rememberence Day, We Never Forget",
+	"location": "Jerusalem",
+	"state": "Israel",
+	"week": "January 27, 2019"
+}, {
+	"title": "Multnomah Creek",
+	"image": "img/multnomah-creek.jpg",
+	"description": "A sombering reminder of how Forest Fires affect the beauty of nature",
+	"location": "Multnomah Creek",
+	"state": "Oregon",
+	"week": "February 3, 2019"
 }
 ]
