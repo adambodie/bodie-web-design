@@ -47,11 +47,11 @@ export const PROJECTS: Project[] = [
         title: "NFL Passer Rating",
         created: new Date('April 2, 2017'),
         createdAt: howManyDaysAgo(2017, 3, 2, new Date()),        
-        updated: new Date('January 7, 2018'),
-        updatedAt: howManyDaysAgo(2018, 0, 7, new Date()),        
-        description: "My first iteration of this project was built when I was first learning Java back in 2014, using NetBeans to build a GUI program.  Expanding my knowledge in coding and focusing on Web Devleopment, I built a new version with React, compiled with Webpack, and tested with Mocha and Chai, which is better designed, has more accessibility, a better UI and tested to be effective.  Source code available via GitHub.",
+        updated: new Date('February 18, 2019'),
+        updatedAt: howManyDaysAgo(2019, 1, 18, new Date()),        
+        description: "My first iteration of this project was built when I was first learning Java back in 2014, using NetBeans to build a GUI program.  Expanding my knowledge in coding and focusing on Web Devleopment, I built a new version with React, compiled with Webpack, and tested with Mocha and Chai, which is better designed, has more accessibility, a better UI and tested to be effective.  Newest update uses React version 16, Webpack 4, Babel 7, and replaces testing library with Jest. Source code available via GitHub.",
         link: "nfl-passer-rating",
-        languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"},{name: "Mocha/Chai"},{name: "Foundation"}],
+        languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"},{name: "Jest"},{name: "Foundation"}, {name: "Babel"}],
         visible: true
       },
       {

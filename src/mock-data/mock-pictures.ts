@@ -1295,5 +1295,47 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Multnomah Creek",
 	"state": "Oregon",
 	"week": "February 3, 2019"
+}, {
+	"title": "Sunset over the Oquirrh Mountains",
+	"image": "img/oquirrh.jpg",
+	"description": "Welcome to Utah",
+	"location": "Holladay",
+	"state": "Utah",
+	"week": "February 10, 2019"
+}, {
+	"title": "Michael Jordan",
+	"image": "img/mj.jpg",
+	"description": "Happy Birthday Michael Jordan!",
+	"location": "Chicago",
+	"state": "Illinois",
+	"week": "February 17, 2019"
+}, {
+	"title": "Chautaqua Park",
+	"image": "img/boulder.jpg",
+	"description": "Rocky Mountain Boulder",
+	"location": "Boulder",
+	"state": "Colorado",
+	"week": "February 24, 2019"
+}, {
+	"title": "Astoria Boardwalk",
+	"image": "img/astoria.jpg",
+	"description": "Astoria Boardwalk through the Bubble",
+	"location": "Astoria",
+	"state": "Oregon",
+	"week": "March 3, 2019"
+}, {
+	"title": "Silver Legacy Reno",
+	"image": "img/silver-legacy.jpg",
+	"description": "Bright Lights are More Fun at Night",
+	"location": "Reno",
+	"state": "Nevada",
+	"week": "March 10, 2019"
+}, {
+	"title": "Mt. Rainier",
+	"image": "img/rainier.jpg",
+	"description": "Inspiration at Reflection Lakes",
+	"location": "Mt. Rainier National Park",
+	"state": "Washington",
+	"week": "March 17, 2019"
 }
 ]
