@@ -73,11 +73,11 @@ export const PROJECTS: Project[] = [
         title: "Adam's Adventures",
         created: new Date('November 23, 2017'),
         createdAt: howManyDaysAgo(2017, 10, 23, new Date()),        
-        updated: new Date('November 23, 2017'),
-        updatedAt: howManyDaysAgo(2017, 10, 23, new Date()),        
+        updated: new Date('March 19, 2019'),
+        updatedAt: howManyDaysAgo(2019, 2, 19, new Date()),        
         description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
         link: "adventures",
-        languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"}],
+        languages: [{name:"React"}, {name: "Redux"}, {name: "Jest"}, {name: "Sass"}],
         visible: true
       },
       {

@@ -10,6 +10,7 @@ export class UpdateComponent {
   constructor( ) { }
 
   updates = [
+    { title: "Adam's Adventures", description: "Upgraded UI, added Jest/Redux.  March 19, 2019" },
     { title: "NFL Passer Rating", description: "Upgraded React, Webpack, Babel, added Jest.  February 18, 2019" }, 
     { title: "Adam's Black Ball", description: "Moved photos from Flickr to S3.  December 2, 2018" }, 
     { title: "Dreidel Duel", description: "Broke React down to Components, added testing, built with GatsbyJS, October 14, 2018" },

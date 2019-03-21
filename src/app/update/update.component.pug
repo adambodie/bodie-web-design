@@ -1,7 +1,8 @@
 h2.section-heading Recent Updates
-.update
-  ul
-    li(*ngFor='let update of updates')
-      p
-        strong {{update.title}} 
-        | - {{update.description}}     
+perfect-scrollbar.perfect-scrollbar([config]='config')
+  .update
+    ol
+      li(*ngFor='let update of updates')
+        p
+          strong {{update.title}} 
+          | - {{update.description}}     
