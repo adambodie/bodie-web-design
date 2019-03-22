@@ -9,7 +9,6 @@ import {Project} from '../../properties/project';
 	providers: [ProjectsService]
 })
 export class ProjectsComponent implements OnInit {
-
 	constructor(private projectsService: ProjectsService) { }
 	projects: Project[];
 	uniqueOptions;
@@ -26,7 +25,7 @@ export class ProjectsComponent implements OnInit {
 		this.getProjects();
 		this.uniqueLanguageList();
 	}
-  
+	  
 	getProjects(): void {
 		this.projects = this.projectsService.getProjects().slice().reverse();
 	}
