@@ -1337,5 +1337,12 @@ export const PICTURESOFTHEWEEK: Picture[] = [
 	"location": "Mt. Rainier National Park",
 	"state": "Washington",
 	"week": "March 17, 2019"
+}, {
+	"title": "Salt Palace",
+	"image": "img/salt.jpg",
+	"description": "Two Sides to Anything",
+	"location": "Salt Lake City",
+	"state": "Utah",
+	"week": "March 24, 2019"
 }
 ]
