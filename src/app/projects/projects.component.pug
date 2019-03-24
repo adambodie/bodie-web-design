@@ -9,7 +9,10 @@ section#projects
               select((change)="filterList()")
                 option(value="") Filter by Technology...
                 option(*ngFor="let item of uniqueOptions") {{item}}
-            a.btn((click)="reset()") Reset
+              a.btn((click)="reset()") Reset
+              p  
+              | Results: 
+              span {{results}}
         div
           h3 Sort Projects
           .flex-container.sort

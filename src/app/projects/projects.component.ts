@@ -15,6 +15,7 @@ export class ProjectsComponent implements OnInit {
 	createCount = 0;
 	updateCount = 0;
 	titleCount = 0;
+	results = 0;
 	createOrder = 'Oldest';
 	updateOrder = 'Oldest';
 	titleOrder = 'A-Z';
@@ -28,6 +29,7 @@ export class ProjectsComponent implements OnInit {
 	  
 	getProjects(): void {
 		this.projects = this.projectsService.getProjects().slice().reverse();
+		this.results = this.projects.length;
 	}
 
     compareTitle(a,b) {
@@ -102,15 +104,18 @@ export class ProjectsComponent implements OnInit {
 		this.titleCount++;
 	}		
 	filterList(){
+		let count = 0;
 		for (let item of this.projects) {
 			for (let x of item.languages) {
 				if (x.name == (<HTMLInputElement>event.target).value) {
 					item.visible = true;
+					count++;
 					break;
 				} else {
 					item.visible = false;
 				}
 			}
+			this.results = count;
 		}
 	}
 	
@@ -118,5 +123,6 @@ export class ProjectsComponent implements OnInit {
 		for (let item of this.projects) {
 			item.visible = true;
 		}
+		this.results = this.projects.length;
 	}
 }

@@ -12,10 +12,7 @@ h1 {
 
 .filter > div {
 	width: 100%;
-	padding: 20px;
-	margin: 20px;
 	min-height: 200px;
-	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8), 0 3px 6px 0 rgba(255, 255, 255, 0.8);
 	h3 {
 		margin-top: -10px;
 		text-align: center;
@@ -23,16 +20,24 @@ h1 {
 }
 
 .edit {
-	justify-content: center;
-	.options {
-		margin-left: 20px;
-		margin-right: 20px;
-		margin-top: 10px;
+	width: 60%;
+	@include center-image;
+	select {
+		margin-top: 20px;
+		width: 100%;
 	}	
 	.btn {
+		margin-top: 20px;
+		width: 100%;
+	}
+	p {
 		margin-top: 10px;
-		width: 200px;
-	}	
+		font-size: 1.25em;
+	}
+	span {
+		font-weight: bold;
+		font-size: 1.375em;
+	}
 }
 
 .sort {
@@ -118,18 +123,6 @@ select {
 
 /* MOBILE STYLES
 ------------------------*/
-.mobile {
-	max-width: 192px;
-	height: 360px;
-	overflow: hidden;
-	display: block;
-    margin: 0 auto;	
-	.content {
-		max-width: 192px;
-		max-height: 3146px;
-	}
-}
-
 
 @media (min-width: 512px) {
 	.links {
@@ -145,13 +138,10 @@ select {
 }
 
 @media (min-width: 768px) {
-
 	.filter > div {
 		width: 40%;
 	}
 	.edit {
-		.btn {
-			margin-top: 10px;
-		}
+		width: 60%;
 	}
 }
