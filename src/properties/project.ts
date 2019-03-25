@@ -12,5 +12,4 @@ export class Project {
     link: string;
     languages: Language[];
     visible: boolean;
-    isScrollable?: boolean;
 }

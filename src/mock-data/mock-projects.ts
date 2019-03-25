@@ -99,11 +99,11 @@ export const PROJECTS: Project[] = [
         title: "Leavenworth: The Bavarian Experience in Washington",
         created: new Date('July 7, 2018'),
         createdAt: howManyDaysAgo(2018, 6, 7, new Date()),        
-        updated: new Date('July 7, 2018'),
-        updatedAt: howManyDaysAgo(2018, 6, 7, new Date()),        
-        description: "Previously learning Vue on the fly, I opted to learn more specifics of Vue with this project. The photo gallery I used the Owl-Carousel dependency to use a different carousel.  The flash cards is based off the Vue Basics course on Team Treehouse, expanding on the original content to add additional methods.  Finally, I focused on both basic vue syntax mixed with Single File Components to differentiate between the two.  Source code available via GitHub.",
-        link: "leavenworth",
-        languages: [{name:"Vue"}, {name: "Browserify"},{name: "Express"},{name: "Pug"},{name: "Jest"},{name: "Less"}],
+        updated: new Date('March 3, 2019'),
+        updatedAt: howManyDaysAgo(2019, 2, 3, new Date()),        
+        description: "This flash cards SPA is based off the Vue Basics course on Team Treehouse, expanding on the original content to add additional methods.  Source code available via GitHub.",
+        link: "leavenworth-cards",
+        languages: [{name:"Vue"}, {name: "Vuex"}, {name: "Jest"},{name: "Less"}],
         visible: true
       },
       {
@@ -118,5 +118,18 @@ export const PROJECTS: Project[] = [
         link: "spokane",
         languages: [{name:"React"}, {name: "TypeScript"}, {name: "Enzyme"}],
         visible: true
-      }
+      },
+      {
+        image: "birthright-israel.jpg",
+        alt: "Adam's Birthright Trip to the Land of Israel",
+        title: "Adam's Birthright Trip to the Land of Israel",
+        created: new Date('February 6, 2019'),
+        createdAt: howManyDaysAgo(2019, 1, 6, new Date()),        
+        updated: new Date('February 6, 2019'),
+        updatedAt: howManyDaysAgo(2019, 1, 6, new Date()),        
+        description: "A blog styled project capturing my 7-Day trip to Israel, this project expands on my development knowledge by including among other things, state management for components via Context.  Source code available via GitHub.",
+        link: "birthright-israel",
+        languages: [{name:"React"}, {name: "Sass"}, {name: "Jest"}, {name: "Context"}, {name: "Foundation"} ],
+        visible: true
+      }      
 ]
