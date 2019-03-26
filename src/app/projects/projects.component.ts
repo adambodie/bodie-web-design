@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ProjectsService} from '../services/projects.service';
-import {Project} from '../../properties/project';
+import { ProjectsService} from '../services/projects.service';
+import { Project } from '../../properties/project';
 
 @Component({
 	selector: 'app-projects',
@@ -8,6 +8,7 @@ import {Project} from '../../properties/project';
 	styleUrls: ['./projects.component.scss'],
 	providers: [ProjectsService]
 })
+
 export class ProjectsComponent implements OnInit {
 	constructor(private projectsService: ProjectsService) { }
 	projects: Project[];
@@ -19,7 +20,6 @@ export class ProjectsComponent implements OnInit {
 	createOrder = 'Oldest';
 	updateOrder = 'Oldest';
 	titleOrder = 'A-Z';
-	
 	months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 	
 	ngOnInit() {

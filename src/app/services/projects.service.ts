@@ -6,7 +6,7 @@ import {PROJECTS} from '../../mock-data/mock-projects';
   providedIn: 'root'
 })
 export class ProjectsService {
-  getProjects(): Project[] {
-    return PROJECTS;
-  }    
+	getProjects(): Project[] {
+		return PROJECTS;
+	}
 }
