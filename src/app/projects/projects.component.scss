@@ -60,14 +60,13 @@ select {
 	}
 }
 
-.container {
-	.project{
+	.project {
 		border-top: 1px solid white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
-}
+
 
 .links {
 	flex: 100%;

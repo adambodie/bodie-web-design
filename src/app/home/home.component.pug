@@ -1,35 +1,24 @@
-.container.intro
+.container
   .flex-container
-    .flex-item
+    .flex-item.intro
       h2.section-heading {{title}}
       p
-      | Welcome to my portfolio page. Here you will find links to some of my best projects.  I work primarily as a front-end Web Developer, using JavaScript and many of its frameworks.  My favorite framework to use is 
-      span React
-      | , but I&apos;m also capable of building web apps with 
-      span Angular
-      |  and 
-      span Vue
-      | .  
-      p 
-      | I first built my portfolio site with 
-      span AngularJS
-      | , 
-      span Express
-      |  and 
-      span Node.js; 
-      | served with AWS Elastic Beanstalk.  Since the beginning, my site has gone through multiple versions.  This version is currently built with 
-      |
-      span Angular
-      | ,   
-      span Node.js 
-      | and served with AWS S3.  I've also used additional tools to help develop my projects, from CSS preprocessors (i.e. Sass) to templating engines (i.e. Pug).
-    .flex-item
+        | Allow me to introduce myself. My name is Adam Bodie, Web Developer, and this is my portfolio page. Here you will find links to some of my best projects. I work primarily as a front-end Web Developer, using JavaScript and many of its frameworks. My favorite framework to use is 
+        span React
+        | , but I&apos;m also capable of building web apps with 
+        span Angular
+        |  and 
+        span Vue
+        | . To learn more about me, click 
+        a.about-intro(routerlink='/about') here
+        | .
+    .flex-item.feature
       app-feature
   section.advertisement.linkedin
     a(href="https://www.linkedin.com/in/adam-bodie/", target="_blank")  
       img(src='../assets/linkedin-icon.png', alt='LinkedIn')
       h1 View my LinkedIn profile
-  .container
+  section
     .flex-container
       .flex-item    
         app-picture-week

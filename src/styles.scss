@@ -17,13 +17,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 a:hover {
 	text-decoration: none;
 	color: lighten(black, 50%);
@@ -45,7 +38,8 @@ p {
 	text-decoration: underline;
 }
 
-.advertisement {   
+.advertisement {  
+	margin-top: 20px;
     height: 100px;
     width: 100%;
     a {
@@ -165,6 +159,10 @@ p {
 -------------------------------------*/
 
 @media (min-width: 769px) {
+	.container {
+		width: 75%;
+		@include center-image;
+	}
 	.advertisement { 
 		h1 {
 		  font-size: 3em;
