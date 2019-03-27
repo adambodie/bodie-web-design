@@ -14,6 +14,7 @@
 	img {
 		margin: 10px;
 		@include responsive();
+		height: 50px;
 	}
 	ul {
 		padding: 0;
@@ -37,7 +38,7 @@
 	}
 }
 
-@media (min-width: 512px) {
+@media (min-width: 768px) {
 	#topbar {
 		display: flex;
 		ul {
@@ -48,6 +49,9 @@
 			font-size: 1.3em;
 			margin-left: 10px;
 			margin-right: 10px;
+		}
+		img {
+			height: 85px;
 		}
 	}
 

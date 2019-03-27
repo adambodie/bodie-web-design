@@ -1,12 +1,17 @@
 @import '../../imports.scss';
 
 .intro {
-  margin-top: 85px;
-  span {
-	font-weight: bold;
-	text-transform: uppercase;
-  }
+	margin-top: 50px;
+	span {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
 }
+
+.feature {
+	margin-top: 60px;
+}
+
 
 .about-intro {
 	color: white;
@@ -15,6 +20,9 @@
 	}
 }
 @media (min-width: 768px) {
+	.intro {
+		margin-top: 85px;
+	}
 	.feature {
 		margin-top: 100px;
 	}
