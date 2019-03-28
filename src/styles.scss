@@ -103,7 +103,11 @@ p {
 		}
 }
 
-
+.modal-image  {
+	img {
+		transform: none!important;
+	}
+}
 .photo-overlay {
 	color: #fff;
 	position: absolute;
@@ -167,20 +171,6 @@ p {
 		h1 {
 		  font-size: 3em;
 		}
-	  }	
-    #overlay {
-      background:rgba(0,0,0,0.7);
-      width:100%;
-      height:120%;
-      position:fixed;
-      top:0;
-      left:0;
-      display:none;
-      text-align:center;
-		img {
-     		margin-top: 80px;
-     		transform: scale(1.1, 1.1);
-    	}
 	}
 	p {
 		text-align: justify;
@@ -188,16 +178,14 @@ p {
 	#pic-caption {
 		font-size: 1em;
 	}
-
 	.box {
 		border-top: 1px solid white;
 	}
-	
-.photo-overlay {
-	h2 {
-		font-size: 1.5em;
+	.photo-overlay {
+		h2 {
+			font-size: 1.5em;
+		}
 	}
-}	
 }
 
 
@@ -209,99 +197,44 @@ p {
 	}
 }
 
-#imagelightbox {
-    position: fixed;
-    z-index: 9999;
-    -ms-touch-action: none;
-    touch-action: none;
+.modal-header {
+	border-bottom: none;
+	button {
+		color: white;
+		opacity: 1;
+		background-color: gray;
+		padding: 10px;
+		&:hover {
+			color: white;
+			opacity: 0.5;
+		}
+	}
+}
+.modal-content {
+	background-color: rgba(0,0,0,0.8);
+	height: 125vh;
 }
 
-/* IMAGE LIGHTBOX STYLES
----------------------------*/
-#imagelightbox {
-	cursor: pointer;
-	position: fixed;
-	z-index: 10000;
-	transform: none!important;
-	-ms-touch-action: none;
-	touch-action: none;
-	-webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
-	box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 ); /* 50 */
+.modal-footer {
+	display: none;
+}
+.modal-dialog {
+	width: auto;
+	margin: 0;
 }
 
-
-/* OVERLAY */
-#imagelightbox-overlay {
-	background-color: black;
-	position: fixed;
-	z-index: 9998;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-
-/* "CLOSE" BUTTON */
-#imagelightbox-close {
-	width: 2.5em;
-	height: 2.5em;
-	text-align: left;
-	background-color: $primary-color;
-	position: fixed;
-	z-index: 10002;
-	top: 2.5em;
-	right: 2.5em;
-	-webkit-transition: color .3s ease;
-	transition: color .3s ease;
-}
-#imagelightbox-close:hover, #imagelightbox-close:focus {
-	background-color: $darken;
-
-}
-#imagelightbox-close:before, #imagelightbox-close:after{
-	width: 2px;
-	background-color: #fff;
-	content: '';
-	position: absolute;
-	top: 20%;
-	bottom: 20%;
-	left: 50%;
-	margin-left: -1px;
-}
-#imagelightbox-close:before {
-	-webkit-transform: rotate( 45deg );
-	-ms-transform: rotate( 45deg );
-	transform: rotate( 45deg );
-}
-#imagelightbox-close:after {
-	-webkit-transform: rotate( -45deg );
-	-ms-transform: rotate( -45deg );
-	transform: rotate( -45deg );
-}
-
-
-#imagelightbox-loading,
-#imagelightbox-overlay,
-#imagelightbox-close,
-#imagelightbox-caption {
-	-webkit-animation: fade-in .25s linear;
-	animation: fade-in .25s linear;
-}
-@-webkit-keyframes fade-in {
-	from	{ opacity: 0; }
-	to		{ opacity: 1; }
-}
-@keyframes fade-in {
-	from	{ opacity: 0; }
-	to		{ opacity: 1; }
-}
-
-@media only screen and (max-width: 41.250em){
-	#imagelightbox-close {
-		top: 1.25em;
-		right: 1.25em;
+.modal-image {
+	img {
+		max-height: 80vh;
 	}
 }
 
-
+.modal-description {
+	h2 {
+		text-align: center;
+	}
+	p {
+		text-align: center;
+		line-height: 0.9em;
+	}
+}

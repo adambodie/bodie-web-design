@@ -4,11 +4,19 @@
     .flex-container.picture-container
       .flex-picture(*ngFor='let picture of pictures | paginate: { itemsPerPage: 9, currentPage: p }')
         .photo
-          img(src="../assets/{{picture.image}}" alt="{{picture.title}}")
-          a(href="../assets/{{picture.image}}" data-imagelightbox="a")
-            .photo-overlay
-              h2 {{picture.title}}
-              p Week of: {{picture.week}}
-              p {{picture.location}}, {{picture.state}}
-              p {{picture.description}}
+          img(src='../assets/{{picture.image}}', alt='{{picture.title}}')
+          modal(#modal)
+            modal-content
+              .modal-image
+                img(src='../assets/{{picture.image}}', alt='{{picture.title}}')
+                .modal-description
+                  h2 {{picture.title}}
+                  p Week of: {{picture.week}}
+                  p Location: {{picture.location}}, {{picture.state}}
+                  p {{picture.description}}    
+          .photo-overlay((click)='modal.open()')
+            h2 {{picture.title}}
+            p Week of: {{picture.week}}
+            p Location: {{picture.location}}, {{picture.state}}
+            p {{picture.description}}
     pagination-controls((pageChange)="p = $event" maxSize="10" previousLabel="" nextLabel="")

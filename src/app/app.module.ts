@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
+import { ModalModule } from 'ngx-modal';
 import { AppComponent } from './app.component';
 import { FeatureComponent } from './feature/feature.component';
 import { PictureWeekComponent } from './picture-week/picture-week.component';
@@ -31,6 +32,7 @@ import { PicturesComponent } from './pictures/pictures.component';
     BrowserModule,
     AppRoutingModule,
     NgxPaginationModule,
+    ModalModule,
     PerfectScrollbarModule
   ],
   providers: [],
