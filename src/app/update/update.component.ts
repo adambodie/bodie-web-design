@@ -1,22 +1,27 @@
 import { Component, OnInit } from '@angular/core';
-import { UpdateService } from '../services/update.service';
-import { Update } from '../../properties/update';
+import axios from 'axios';
 
 @Component({
 	selector: 'app-update',
 	templateUrl: './update.component.pug',
-	styleUrls: ['./update.component.scss'],
-	providers: [UpdateService]
+	styleUrls: ['./update.component.scss']
 })
 export class UpdateComponent implements OnInit {
-	constructor(private updateService: UpdateService) { }
-	updates: Update[];
+	constructor() { }
+	updates;
 	
 	ngOnInit() {
-		this.getUpdates();
+		this.fetchAll();
 	}
-	  
-	getUpdates(): void {
-		this.updates = this.updateService.getUpdates();
-	}
+
+	fetchAll(){
+		axios.get('../assets/update.json')
+			.then(response => {
+				this.updates = response.data;
+			})
+			.catch(e => {
+				console.log(e);
+			})
+		}
+	
 }
