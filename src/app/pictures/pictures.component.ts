@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PicturesService} from '../services/pictures.service';
-import {Picture} from '../../properties/picture';
+import axios from 'axios';
 
 @Component({
 	selector: 'app-pictures',
@@ -8,13 +7,19 @@ import {Picture} from '../../properties/picture';
 	styleUrls: ['./pictures.component.scss']
 })
 export class PicturesComponent implements OnInit {
-	constructor(private picturesService: PicturesService) { }
-	pictures: Picture[];
+	constructor() { }
+	pictures;
 	p: number = 1;
 	ngOnInit() {
-		this.getPictures();
+		this.fetchAll();
 	}
-	getPictures(): void {
-		this.pictures = this.picturesService.getPictures().slice().reverse();
-	}
+	fetchAll(){
+		axios.get('../assets/pictures.json')
+			.then(response => {
+				this.pictures = response.data.slice().reverse();
+			})
+			.catch(e => {
+				console.log(e);
+			})
+		}
 }

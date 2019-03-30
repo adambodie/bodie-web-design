@@ -1,20 +1,20 @@
 h2.section-heading Picture of the Week
 .photo
-  .photo-week
-    img(src='../assets/{{image}}', alt='{{title}}')
+  .photoweek
+    img(src='../assets/{{newest.image}}', alt='{{newest.title}}')
     modal(#firstModal)
       modal-content
         .modal-image
-          img(src='../assets/{{image}}', alt='{{title}}')
+          img(src='../assets/{{newest.image}}', alt='{{newest.title}}')
           .modal-description
-            h2 {{title}}
-            p Week of: {{week}}
-            p Location: {{location}}, {{state}}
-            p {{description}}    
+            h2 {{newest.title}}
+            p Week of: {{newest.week}}
+            p Location: {{newest.location}}, {{newest.state}}
+            p {{newest.description}}    
     .photo-overlay((click)='firstModal.open()')
-      h2 {{title}}
-      p Week of: {{week}}
-      p Location: {{location}}, {{state}}
-      p {{description}}
+      h2 {{newest.title}}
+      p Week of: {{newest.week}}
+      p Location: {{newest.location}}, {{newest.state}}
+      p {{newest.description}}
 
  

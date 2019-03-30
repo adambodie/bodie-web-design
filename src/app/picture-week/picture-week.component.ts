@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {PicturesService} from '../services/pictures.service';
-import {Picture} from '../../properties/picture';
+import axios from 'axios';
 
 @Component({
   selector: 'app-picture-week',
@@ -8,27 +7,19 @@ import {Picture} from '../../properties/picture';
   styleUrls: ['./picture-week.component.scss']
 })
 export class PictureWeekComponent implements OnInit {
-
-  constructor(private picturesService: PicturesService ) { }
-  pictures: Picture[];
-  image = '';
-  title = '';
-  week = '';
-  description = '';
-  location = '';
-  state = '';
-  ngOnInit() {
-    this.getPictures();
-  }
-  getPictures(): void {
-    this.pictures = this.picturesService.getPictures();
-    const pictures = this.pictures;
-    const length = pictures.length - 1;
-    this.image = pictures[length].image;
-    this.title = pictures[length].title;
-    this.description = pictures[length].description;
-    this.week = pictures[length].week;
-    this.location = pictures[length].location;
-    this.state = pictures[length].state;
-  } 
+	constructor() { }
+	newest = new Object('');
+	ngOnInit() {
+		this.fetchAll();
+	}
+	fetchAll() {
+		axios.get('../assets/pictures.json')
+			.then(response => {
+				const picture = response.data;
+				this.newest = picture.pop();
+			})
+			.catch(e => {
+				console.log(e);
+			})
+		}
 }
