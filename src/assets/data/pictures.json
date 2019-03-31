@@ -1341,5 +1341,12 @@
 		"location": "Salt Lake City",
 		"state": "Utah",
 		"week": "March 24, 2019"
+	}, {
+		"title": "The Three Graces",
+		"image": "img/garibaldi.jpg",
+		"description": "Hidden Treasures in the least expected place",
+		"location": "Garaibaldi",
+		"state": "Oregon",
+		"week": "March 31, 2019"
 	}
 ]
