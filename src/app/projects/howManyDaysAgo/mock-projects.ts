@@ -1,5 +1,5 @@
-import {Project} from '../properties/project';
-import {howManyDaysAgo} from '../howManyDaysAgo';
+import {Project} from './project';
+import {howManyDaysAgo} from './howManyDaysAgo';
 
 export const PROJECTS: Project[] = [
       {

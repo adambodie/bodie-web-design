@@ -14,7 +14,7 @@ export class PicturesComponent implements OnInit {
 		this.fetchAll();
 	}
 	fetchAll(){
-		axios.get('../assets/pictures.json')
+		axios.get('../assets/data/pictures.json')
 			.then(response => {
 				this.pictures = response.data.slice().reverse();
 			})

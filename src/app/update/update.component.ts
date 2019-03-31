@@ -15,7 +15,7 @@ export class UpdateComponent implements OnInit {
 	}
 
 	fetchAll(){
-		axios.get('../assets/update.json')
+		axios.get('../assets/data/update.json')
 			.then(response => {
 				this.updates = response.data;
 			})

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 import axios from 'axios';
 
 @Component({
@@ -8,12 +9,12 @@ import axios from 'axios';
 })
 export class PictureWeekComponent implements OnInit {
 	constructor() { }
-	newest = new Object('');
+	newest: any = new Object('');
 	ngOnInit() {
-		this.fetchAll();
+		this.fetch();
 	}
-	fetchAll() {
-		axios.get('../assets/pictures.json')
+	fetch() {
+		axios.get('../assets/data/pictures.json')
 			.then(response => {
 				const picture = response.data;
 				this.newest = picture.pop();
