@@ -1348,5 +1348,33 @@
 		"location": "Garaibaldi",
 		"state": "Oregon",
 		"week": "March 31, 2019"
+	}, {
+		"title": "Windmills",
+		"image": "img/windmill.jpg",
+		"description": "No Carcinogens in this Picture!",
+		"location": "Wasco",
+		"state": "Oregon",
+		"week": "April 7, 2019"
+	}, {
+		"title": "Florence Cathedral Rooftop",
+		"image": "img/florence.jpg",
+		"description": "A Perfectly Fine Way to live the Florentine Life",
+		"location": "Florence",
+		"state": "Italy",
+		"week": "April 14, 2019"
+	}, {
+		"title": "Circles in the Sand",
+		"image": "img/bandon.jpg",
+		"description": "Life is like a Maze: It's best to Enjoy each twist and turn",
+		"location": "Bandon",
+		"state": "Oregon",
+		"week": "April 21, 2019"
+	}, {
+		"title": "Nashville",
+		"image": "img/nashville-skyline.jpg",
+		"description": "The Future is Now",
+		"location": "Nashville",
+		"state": "Tennessee",
+		"week": "April 28, 2019"
 	}
 ]
