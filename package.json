@@ -1,64 +1,37 @@
 {
-  "name": "bodie-web-design",
-  "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build-prod": "ng build --prod --aot",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "node ./ng-add-pug-loader.js"
-  },
+  "name": "bodie-web-design-2.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@angular/animations": "^7.2.10",
-    "@angular/common": "^7.2.10",
-    "@angular/compiler": "^7.2.10",
-    "@angular/core": "^7.2.10",
-    "@angular/forms": "^7.2.10",
-    "@angular/http": "^7.2.10",
-    "@angular/platform-browser": "^7.2.10",
-    "@angular/platform-browser-dynamic": "^7.2.10",
-    "@angular/router": "^7.2.10",
-    "axios": "^0.18.0",
-    "core-js": "^2.6.4",
-    "ng-cli-pug-loader": "^0.1.7",
-    "ngx-modal": "0.0.29",
-    "ngx-pagination": "^3.2.1",
-    "ngx-perfect-scrollbar": "^6.3.1",
-    "rxjs": "6.4.0",
-    "zone.js": "^0.8.29"
+    "@csstools/normalize.css": "^10.0.0",
+    "bootstrap": "^4.3.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.1"
   },
-  "devDependencies": {
-    "@angular-devkit/build-angular": "~0.6.8",
-    "@angular/cli": "~7.3.6",
-    "@angular/compiler-cli": "^7.2.10",
-    "@angular/language-service": "^7.2.10",
-    "@types/jasmine": "^2.8.16",
-    "@types/jasminewd2": "^2.0.6",
-    "@types/node": "~8.9.4",
-    "apply-loader": "^2.0.0",
-    "codelyzer": "~4.2.1",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "^3.1.4",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "^2.0.4",
-    "karma-jasmine": "~1.1.1",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "^5.4.2",
-    "pug": "^2.0.3",
-    "pug-loader": "^2.4.0",
-    "ts-node": "~5.0.1",
-    "tslint": "~5.9.1",
-    "typescript": "~3.2.4"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.5%",
-    "not dead",
-    "last 2 versions",
-    "Firefox ESR"
-  ]
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
