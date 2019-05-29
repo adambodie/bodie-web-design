@@ -1,0 +1,42 @@
+$primary-color: #5a5a5a;
+$primary-bg-color: #CAE1FF;
+$footer-color: white;
+$white: white;
+$darken: darken($white, 50%);
+$raleway: 'Raleway', sans-serif;
+$fjalla:  'Fjalla One', sans-serif;
+$concert-one: 'Concert One', cursive;
+
+@mixin gradient($color1, $color2) {
+	background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($color1, $color2); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($color1, $color2); /* Standard syntax (must be last) */
+}
+
+@mixin center-image {
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+.flex-container {
+	display: flex;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	flex: 100%;
+}
+
+@media (min-width: 512px) {
+.flex-item {
+	flex: 50%;
+	padding: 10px;
+}
+}
