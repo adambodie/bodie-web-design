@@ -1,9 +1,6 @@
 @import './imports.scss';
 
 #footer {
-	position: absolute;
-	bottom: 0;
-	left: 0;
 	width: 100%;
 	color: $footer-color;
 	@include gradient (black, $primary-color);
