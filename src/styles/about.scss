@@ -1,0 +1,36 @@
+@import './imports.scss';
+
+.about {
+	margin-top: 100px;
+	h1 {
+		text-align: left;
+	}
+}
+h4 {
+	a {
+		color:  white;
+		&:hover {
+			color: $darken;
+			text-decoration: none;
+		}
+	}
+}
+h3 {
+	text-align: center;
+}
+
+
+#adam {
+	border-radius: 100%;
+	box-shadow: 10px 10px 10px black;
+	@include center-image();
+	@include responsive();
+	float: right;
+	margin-left: 20px;
+}
+
+@media (min-width: 512px) {
+.flex-item {
+	flex: 50%;
+}
+}
