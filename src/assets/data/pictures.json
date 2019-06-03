@@ -1376,5 +1376,40 @@
 		"location": "Nashville",
 		"state": "Tennessee",
 		"week": "April 28, 2019"
+	}, {
+		"title": "Riding Five Horses",
+		"image": "img/horses.jpg",
+		"description": "Horses do the Craziest Things",
+		"location": "Bugac Puszta",
+		"state": "Hungary",
+		"week": "May 5, 2019"
+	}, {
+		"title": "Old Town Fort Collins",
+		"image": "img/fort-collins.jpg",
+		"description": "Old is New in Fort Collins",
+		"location": "Fort Collins",
+		"state": "Colorado",
+		"week": "May 12, 2019"
+	}, {
+		"title": "Mt. St. Helens",
+		"image": "img/mt-st-helens.jpg",
+		"description": "29 Years Later...",
+		"location": "Mt. St. Helens National Volcanic Monument",
+		"state": "Washington",
+		"week": "May 19, 2019"
+	}, {
+		"title": "Fighting Rabbit",
+		"image": "img/fighting-rabbit.jpg",
+		"description": "Keep on Fighting!",
+		"location": "St. Louis",
+		"state": "Missouri",
+		"week": "May 26, 2019"
+	}, {
+		"title": "Golden Moon",
+		"image": "img/medford-moon.jpg",
+		"description": "Everything's Better in Gold",
+		"location": "Medford",
+		"state": "Oregon",
+		"week": "July 2, 2019"
 	}
 ]
