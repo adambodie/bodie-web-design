@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/header.scss';
 import logo from '../assets/bodie-web-design.jpg';
+import store from '../store';
 
 const Header = () => {
 	return (
@@ -13,15 +14,11 @@ const Header = () => {
 				</button>
 				<div className="collapse navbar-collapse" id="navbar1">
 					<ul className="navbar-nav mr-auto">
-						<li className="nav-item active">
-							<Link to="/" className="nav-link">Home</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/about" className="nav-link">About</Link>
-						</li>
-						<li className="nav-item">
-							<Link to="/pictures" className="nav-link">Pictures</Link>
-						</li>
+						{store.getState().links.map((x, index) => 
+							<li className="nav-item" key={index}>
+								<Link to={x.link} className="nav-link">{x.name}</Link>
+							</li>
+						)}
 					</ul>
 				</div>
 			</nav>
