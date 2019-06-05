@@ -150,4 +150,6 @@ export const UPDATES = [
 	{ "title": "Adam's Adventures", "description": "Launched November 23, 2017, built with React" }
 ]
 
-export const LINKS = [{name: 'Home', link: '/'}, {name: 'About', link: '/about'}, {name: 'Pictures', link: '/pictures'}]
+export const LINKS = [{name: 'Home', link: '/'}, {name: 'About', link: '/about'}, {name: 'Pictures', link: '/pictures'}];
+
+export const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
