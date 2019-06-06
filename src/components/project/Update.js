@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import '../styles/update.scss';
-import store from '../store';
+import '../../styles/update.scss';
+import store from '../../store';
 
 export default class Update extends Component {
 	render() {

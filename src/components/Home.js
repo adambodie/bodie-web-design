@@ -2,7 +2,7 @@ import React from 'react';
 import Advertisement from './Advertisement';
 import Banner from './Banner';
 
-import Projects from './Projects';
+import Projects from './project/Projects';
 import logo from '../assets/linkedin-icon.png';
 import '../styles/App.scss';
 

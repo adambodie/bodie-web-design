@@ -1,10 +1,8 @@
 import React from 'react';
-import '../styles/projects.scss';
+import '../../styles/projects.scss';
 import Update from './Update';
-import Button from './Button';
-import Description from './Description';
-import Languages from './Languages';
-import store from '../store';
+import Project from './Project';
+import store from '../../store';
 
 const Projects = () => (
 	<React.Fragment>
@@ -26,19 +24,19 @@ const Projects = () => (
 			<a className="btn" href="/">UpdatedOrder</a>
 		</div> 
 		{store.getState().projects.map((x, index) => 
-			<div className="row project" key={index}>
-				<div className="col-md-6">
-					<img src={`https://www.bodiewebdesign.com/assets/${x.image}`} alt={x.alt} className="img-fluid"/>
-					<Languages languages={x.languages} />
-				</div>
-				<div className="col-md-6">
-					<h2><strong>{x.title}</strong></h2>
-					<div className="description">
-						<Description created={x.created} createdAt={x.createdAt} updated={x.updated} updatedAt={x.updatedAt} description={x.description} />
-						<Button link={x.link} />
-					</div>
-				</div>
-			</div>
+			<Project 
+				key={index}
+				image={x.image}
+				alt={x.alt}
+				languages={x.languages}
+				title={x.title}
+				created={x.created} 
+				createdAt={x.createdAt} 
+				updated={x.updated} 
+				updatedAt={x.updatedAt} 
+				description={x.description} 
+				link={x.link}
+				/>
 		)}
 	</React.Fragment>
 )

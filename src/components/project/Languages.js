@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/projects.scss';
+import '../../styles/projects.scss';
 import Language from './Language';
 
 const Languages = ({languages}) => (
