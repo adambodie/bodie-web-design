@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { PROJECTS, UPDATES, LINKS } from '../constants'
+import { PROJECTS, UPDATES, MONTHS, LINKS } from '../constants'
 
 export const uniqueLanguages = (state = PROJECTS, action) => {
 	const options = [];
@@ -16,24 +16,11 @@ export const uniqueLanguages = (state = PROJECTS, action) => {
 	return state
 }
 
-/*export const filterList = (state = 0) => {
-	for (let item of PROJECTS) {
-		for (let x of item.languages) {
-			if (x.name === 'React') {
-				item.visible = true;
-				state++;
-				break;
-			} else {
-				item.visible = false;
-			}
-		}
-		return state
-	}
-}*/
-
 export const footerDate = (state = new Date().getFullYear()) => state
 
 export const projects = (state = PROJECTS) => state
+
+export const months = (state = MONTHS) => state
 
 export const updates = (state = UPDATES) => state
 
@@ -44,5 +31,6 @@ export const rootReducer = combineReducers({
   projects,
   links,
   updates,
+  months,
   uniqueLanguages
 })

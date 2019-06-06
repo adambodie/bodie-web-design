@@ -32,7 +32,7 @@ const Projects = () => (
 					<Languages languages={x.languages} />
 				</div>
 				<div className="col-md-6">
-					<h2>{x.title}</h2>
+					<h2><strong>{x.title}</strong></h2>
 					<div className="description">
 						<Description created={x.created} createdAt={x.createdAt} updated={x.updated} updatedAt={x.updatedAt} description={x.description} />
 						<Button link={x.link} />
