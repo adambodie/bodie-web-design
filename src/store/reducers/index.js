@@ -16,6 +16,12 @@ export const uniqueLanguages = (state = PROJECTS, action) => {
 	return state
 }
 
+export const selectRandomProjects = (state = '') => {
+	let random = Math.floor(Math.random() * PROJECTS.length);
+	let project = PROJECTS[random];
+	state = project
+	return state
+}
 export const footerDate = (state = new Date().getFullYear()) => state
 
 export const projects = (state = PROJECTS) => state
@@ -32,5 +38,6 @@ export const rootReducer = combineReducers({
   links,
   updates,
   months,
-  uniqueLanguages
+  uniqueLanguages,
+  selectRandomProjects
 })

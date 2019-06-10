@@ -1,9 +1,19 @@
-import React from 'react';
-import '../styles/App.scss'
+import React, { Component } from 'react';
+import '../styles/App.scss';
+import store from '../store';
 
-const Banner = () => (
-	<div className="container-fluid banner">
-	</div>
-);
-
-export default Banner;
+export default class Banner extends Component {
+	render() {
+	const project = store.getState().selectRandomProjects;
+	const banner = `https://bodiewebdesign.com/assets/${project.banner}`;
+	const styles = {
+		backgroundImage: 'url(' + banner + ')',
+		backgroundSize: 'cover',
+		backgroundPosition: 'center',
+	};
+	return (
+		// eslint-disable-next-line
+		<a href={`http://${project.link}.bodiewebdesign.com`} className="container-fluid banner" style={styles}></a>
+		);
+	}
+}

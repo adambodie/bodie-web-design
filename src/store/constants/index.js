@@ -36,6 +36,7 @@ export const howManyDaysAgo = (years, months, days) => {
 export const PROJECTS = [
 	{
 		image: "fortune.jpg",
+		banner: "fortune-banner.jpg",
 		alt: "Read Your Fortune Cookie",
 		title: "Read Your Fortune Cookie",
 		created: new Date("July 17, 2015"),
@@ -49,6 +50,7 @@ export const PROJECTS = [
       },
       {
         image: "reno-rnc.jpg",
+        banner: "reno-banner.jpg",
         alt: "Reno Nice 'n' Cool",
         title: "Reno Nice 'n' Cool: A Better RNC",
         created: new Date("August 5, 2016"),
@@ -62,6 +64,7 @@ export const PROJECTS = [
       },
       {
         image: "dreidel.jpg",
+        banner: "dreidel-banner.jpg",
         alt: "Dreidel",
         title: "Dreidel Duel",
         created: new Date("January 5, 2017"),
@@ -75,6 +78,7 @@ export const PROJECTS = [
       },
       {
         image: "nfl.jpg",
+        banner: "nfl-banner.jpg",        
         alt: "NFL Passer Rating",
         title: "NFL Passer Rating",
         created: new Date("April 2, 2017"),
@@ -87,7 +91,8 @@ export const PROJECTS = [
         visible: true
       },
       {
-        image: "nadm2.jpg",
+        image: "nadm2.jpg",        
+        banner: "nadm-banner.jpg",
         alt: "NADM 2",
         title: "N.A.D.M. 2 - The Infamous",
         created: new Date("September 4, 2017"),
@@ -101,6 +106,7 @@ export const PROJECTS = [
       },
       {
         image: "adventures.jpg",
+        banner: "adventures-banner.jpg",        
         alt: "Adam's Adventures",
         title: "Adam's Adventures",
         created: new Date("November 23, 2017"),
@@ -114,6 +120,7 @@ export const PROJECTS = [
       },
       {
         image: "victoria.jpg",
+        banner: "victoria-banner.jpg",        
         alt: "Adam's Black Ball",
         title: "Adam's Black Ball",
         created: new Date("May 22, 2018"),
@@ -127,6 +134,7 @@ export const PROJECTS = [
       },
       {
         image: "leavenworth.jpg",
+        banner: "leavenworth-banner.jpg",        
         alt: "Leavenworth: The Bavarian Experience in Washington",
         title: "Leavenworth: The Bavarian Experience in Washington",
         created: new Date("July 7, 2018"),
@@ -139,7 +147,8 @@ export const PROJECTS = [
         visible: true
       },
       {
-        image: "spokane.jpg",
+        image: "spokane.jpg",        
+        banner: "spokane-banner.jpg",
         alt: "Pigging Out in Spokane",
         title: "Pigging Out in Spokane",
         created: new Date("September 29, 2018"),
@@ -153,6 +162,7 @@ export const PROJECTS = [
       },
       {
         image: "birthright-israel.jpg",
+        banner: "birthright-israel-banner.jpg",        
         alt: "Adam's Birthright Trip to the Land of Israel",
         title: "Adam's Birthright Trip to the Land of Israel",
         created: new Date("February 6, 2019"),
