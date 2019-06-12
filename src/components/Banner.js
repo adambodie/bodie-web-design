@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
+import Slider from 'react-slick';
 import '../styles/App.scss';
 import store from '../store';
+import BannerItem from './BannerItem';
 
 export default class Banner extends Component {
 	render() {
-	const project = store.getState().selectRandomProjects;
-	const banner = `https://bodiewebdesign.com/assets/${project.banner}`;
-	const styles = {
-		backgroundImage: 'url(' + banner + ')',
-		backgroundSize: 'cover',
-		backgroundPosition: 'center',
+	const settings = {
+		infinite: true,
+		arrows: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
 	};
+	const projects = store.getState().selectRandomProjects;
 	return (
-		// eslint-disable-next-line
-		<a href={`http://${project.link}.bodiewebdesign.com`} className="container-fluid banner" style={styles}></a>
+		<Slider {...settings} className="container-fluid banner">
+		{projects.map((x, index) => <BannerItem link={x.link} banner={x.banner} alt={x.alt} key={index} />)}
+		</Slider>
 		);
 	}
 }

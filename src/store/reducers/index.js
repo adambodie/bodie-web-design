@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { PROJECTS, UPDATES, MONTHS, LINKS } from '../constants'
 
-export const uniqueLanguages = (state = PROJECTS, action) => {
+export const uniqueLanguages = (state = PROJECTS) => {
 	const options = [];
 	const uniqueOptions = [];
 	state.forEach((option) => {
@@ -17,9 +17,15 @@ export const uniqueLanguages = (state = PROJECTS, action) => {
 }
 
 export const selectRandomProjects = (state = '') => {
-	let random = Math.floor(Math.random() * PROJECTS.length);
-	let project = PROJECTS[random];
-	state = project
+	const banners = [];
+	let projectCopy = Object.assign([], PROJECTS);
+	for (let i = 0; i < 3; i++) {
+		let random = Math.floor(Math.random() * projectCopy.length);
+		let project = projectCopy[random];
+		banners.push(project);
+		projectCopy.splice(random, 1);
+	}
+	state = banners
 	return state
 }
 export const footerDate = (state = new Date().getFullYear()) => state
