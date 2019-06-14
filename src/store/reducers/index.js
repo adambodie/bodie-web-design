@@ -1,13 +1,11 @@
 import { combineReducers } from 'redux'
 import { PROJECTS, UPDATES, MONTHS, LINKS } from '../constants'
 
-export const uniqueLanguages = (state = PROJECTS) => {
+export const uniqueLanguages = (state = '') => {
 	const options = [];
 	const uniqueOptions = [];
-	state.forEach((option) => {
-		options.push(...option.languages);
-	});
-	options.forEach((option)=>{
+	PROJECTS.forEach((option) => options.push(...option.languages));
+	options.forEach((option) => {
 		if(!uniqueOptions.includes(option.name)) {
 			uniqueOptions.push(option.name);
 		}

@@ -99,14 +99,25 @@ select {
 	@include gradient(black, $primary-color);
 	color: $white;
 	border: 1px solid black;
+
 	&:hover {
 		color: $darken;
 	}
 }
-
+.filter {
+	align-items: center;
+	.btn {
+		width: 150px;
+	}
+}
 .invisible {
 	display: none;
 	visibility: visible;
 }
 
-
+select {
+	height: 38px;
+}
+option {
+	color: black;
+}
