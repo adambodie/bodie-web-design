@@ -1,0 +1,45 @@
+.pagination {
+	justify-content: center;
+	li {
+		background: white;
+		min-width: 35px;
+		min-height: 30px;
+		padding: 5px;
+		border: 1px solid #cacaca;
+		position: relative;
+		text-align: center;
+		&:hover {
+			background: #cacaca;
+		}
+		a {
+			color: black;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			&:hover {
+			text-decoration: none;
+			}
+		}
+	}
+	.active {
+		background: #807f7f;
+		&:hover {
+			background: #685d5d;
+		}
+	}
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	li {
+		max-width: 33%;
+		list-style: none;
+		padding: 5px;
+	}
+	h4 {
+		text-align: center;
+	}
+}
