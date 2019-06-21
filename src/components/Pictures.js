@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import PictureModal from './PictureModal';
 import axios from 'axios';
 import '../styles/pictures.scss';
 import ReactPaginate from 'react-paginate';
+import Modal from 'react-modal';
 
 export default class Pictures extends Component {
 	constructor(props) {
@@ -9,12 +11,25 @@ export default class Pictures extends Component {
 		this.state = {
 			data: [],
 			offset: 0,
+			modalIsOpen: false
 		};
+		this.openModal = this.openModal.bind(this);
+		this.closeModal = this.closeModal.bind(this);
 	}
-	
+	openModal(e, index) {
+		const { data } = this.state;
+		let thisData = data[index];
+		this.setState({
+			modalIsOpen: true,
+			thisData: thisData
+		});
+	}
+
+	closeModal() {
+		this.setState({modalIsOpen: false});
+	}
 	loadPhotos() {
-		let pictureData = 'https://bodiewebdesign.com/assets/data/pictures.json';
-		  axios.get(pictureData)
+		axios.get('https://bodiewebdesign.com/assets/data/pictures.json')
 			.then(response => {
 				this.setState({
 					data: response.data.reverse(),
@@ -22,10 +37,9 @@ export default class Pictures extends Component {
 				});
 			})
 			.catch(error => {
-			  console.log('Error fetching and parsing Items data', error);
+			  console.log('Error fetching and parsing Items data');
 			});
 	}
-	
 	componentDidMount() {
 		this.loadPhotos()
 	};
@@ -37,35 +51,56 @@ export default class Pictures extends Component {
 			this.loadPhotos();
 		});
 	};
-	
 	render(){
-		const { data, offset } = this.state;
+		const { data, offset, pageCount, thisData, modalIsOpen } = this.state;
 		return (
 			<div className="container">
 				<h1>Picture Gallery</h1>   
-					<ul className="list">
+					<div className="flex-picture">
 						{data.map((item, index) => {
 							if (index >= offset && index < offset + 9) {
 								return(
-									<li key={index}>
+									<div key={index} className="photo" onClick={()=> {this.openModal(this, index)}}>
 										<img src={`https://bodiewebdesign.com/assets/${item.image}`} alt={item.alt} className="img-fluid"/>
-									</li>
+										<div className="photo-overlay">
+											<h2>{item.title}</h2>
+											<p>Week of: {item.week}</p>
+											<p>Location: {item.location}, {item.state}</p>
+											<p>{item.description}</p>
+										</div>
+									</div>
 								)
 							}
 							return null
 						})}
-					</ul>
-				<ReactPaginate previousLabel={"<"}
-						   nextLabel={">"}
-						   breakClassName={"break-me"}
-						   pageCount={this.state.pageCount}
-						   marginPagesDisplayed={5}
-						   pageRangeDisplayed={1}
-						   onPageChange={this.handlePageClick}
-						   containerClassName={"pagination"}
-						   subContainerClassName={"pages pagination"}
-						   activeClassName={"active"} />
-	</div>
+					</div>
+					{modalIsOpen === true &&
+						<Modal
+							isOpen={modalIsOpen}
+							onRequestClose={this.closeModal}
+							contentLabel='Picture Modal'
+							appElement={document.getElementById('root')}
+						>
+						<PictureModal thisData={thisData} />
+						<button className="close-button" onClick={()=> {this.closeModal()}}>x</button>
+						</Modal>
+					}
+				<ReactPaginate 
+					previousLabel={"<<"}
+					nextLabel={">>"}
+					breakClassName={"break-me"}
+					pageCount={pageCount}
+					marginPagesDisplayed={5}
+					pageRangeDisplayed={1}
+					onPageChange={this.handlePageClick}
+					containerClassName={"pagination"}
+					subContainerClassName={"pages pagination"}
+					activeClassName={"active"} 
+				/>
+		</div>
 		)
 	}
 }
+
+
+
