@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import PictureModal from './PictureModal';
+import PictureOverlay from './PictureOverlay';
 import axios from 'axios';
-import '../styles/pictures.scss';
+import '../../styles/pictures.scss';
 import ReactPaginate from 'react-paginate';
 import Modal from 'react-modal';
 
@@ -62,12 +63,7 @@ export default class Pictures extends Component {
 								return(
 									<div key={index} className="photo" onClick={()=> {this.openModal(this, index)}}>
 										<img src={`https://bodiewebdesign.com/assets/${item.image}`} alt={item.alt} className="img-fluid"/>
-										<div className="photo-overlay">
-											<h2>{item.title}</h2>
-											<p>Week of: {item.week}</p>
-											<p>Location: {item.location}, {item.state}</p>
-											<p>{item.description}</p>
-										</div>
+										<PictureOverlay item={item} />
 									</div>
 								)
 							}
@@ -90,7 +86,7 @@ export default class Pictures extends Component {
 					nextLabel={">>"}
 					breakClassName={"break-me"}
 					pageCount={pageCount}
-					marginPagesDisplayed={5}
+					marginPagesDisplayed={2}
 					pageRangeDisplayed={1}
 					onPageChange={this.handlePageClick}
 					containerClassName={"pagination"}
