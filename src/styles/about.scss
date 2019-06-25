@@ -1,10 +1,7 @@
 @import './imports.scss';
 
 .about {
-	margin-top: 100px;
-	h1 {
-		text-align: left;
-	}
+	padding: 20px;
 }
 h4 {
 	a {
@@ -29,8 +26,6 @@ h3 {
 	margin-left: 20px;
 }
 
-@media (min-width: 512px) {
-.flex-item {
-	flex: 50%;
-}
+.contact {
+	padding: 20px;
 }
