@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import '../../styles/projects.scss';
 import Update from './Update';
 import Project from './Project';
+import Select from './Select';
+import Sort from './Sort';
 import store from '../../store';
 
 export default class Projects extends Component {
@@ -27,7 +29,7 @@ export default class Projects extends Component {
 		let newCount = 0;
 		for (let item of store.getState().projects) {
 			for (let x of item.languages) {
-				if (x.name === event.target.value) {
+				if (x.name === event) {
 					item.visible = true;
 					newCount++;
 					break;
@@ -116,37 +118,19 @@ export default class Projects extends Component {
 				<h1>Projects</h1>
 				<Update />
 				<div className="row filter">
-					<div className="col-md-6">
-						<h3>Filter Projects</h3>
-						<div className="row">
-							<div className="col-md-5">
-							<select onChange={this.filterList}>
-								<option value="">Filter by Technology...</option>
-								{uniqueLanguages.map((x, index)=> <option key={index} value={x}>{x}</option>)}
-							</select>
-							</div>
-							<div className="col-md-4">
-								<button className="btn" onClick={() => this.resetFilter()}>Reset</button>
-							</div>
-							<div className="col-md-3">
-								<h5>Results {this.state.count}</h5>
-							</div>
-						</div>
-					</div>
-					<div className="col-md-6">
-						<h3>Sort Projects</h3>
-						<div className="row">
-							<div className="col-md-4">
-								<button className="btn" onClick={()=> this.sortByTitle()}>Title {this.state.titleOrder}</button>
-							</div>
-							<div className="col-md-4">
-								<button className="btn" onClick={()=> this.sortByCreatedDate()}>Created {this.state.createOrder}</button>
-							</div>
-							<div className="col-md-4">
-								<button className="btn" onClick={()=> this.sortByUpdatedDate()}>Update {this.state.updateOrder}</button>
-							</div>
-						</div>
-					</div>
+					<Select	filterList={this.filterList}
+							resetFilter={this.resetFilter}
+							uniqueLanguages={uniqueLanguages}
+							count={this.state.count}
+							projects={projects}
+					/>
+					<Sort 	sortByTitle={this.sortByTitle}
+							titleOrder={this.state.titleOrder}
+							sortByCreatedDate={this.sortByCreatedDate}
+							createOrder={this.state.createOrder}
+							sortByUpdatedDate={this.sortByUpdatedDate}
+							updateOrder={this.state.updateOrder}
+							/>
 				</div> 
 			{projects.map((x, index) => {
 				if (x.visible === true) {
