@@ -30,7 +30,7 @@ export default class Sort extends Component {
 						<button className="btn" onClick={this.handleSortByTitle}>Title {titleOrder}</button>
 					</div>
 					<div className="col-md-4">
-						<button className="btn" onClick={this.handleSortByCreatedDate}>Created {createOrder}</button>
+						<button className="btn" onClick={this.handleSortByCreatedDate}>Create {createOrder}</button>
 					</div>
 					<div className="col-md-4">
 						<button className="btn" onClick={this.handleSortByUpdatedDate}>Update {updateOrder}</button>

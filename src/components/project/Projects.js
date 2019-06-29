@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 import '../../styles/projects.scss';
 import Update from './Update';
-import Project from './Project';
+import ProjectList from './ProjectList';
 import Select from './Select';
 import Sort from './Sort';
-import store from '../../store';
 
 export default class Projects extends Component {
 	constructor(){
@@ -27,7 +26,8 @@ export default class Projects extends Component {
 	
 	filterList(event){
 		let newCount = 0;
-		for (let item of store.getState().projects) {
+		const { projects } = this.props;
+		for (let item of projects) {
 			for (let x of item.languages) {
 				if (x.name === event) {
 					item.visible = true;
@@ -41,9 +41,8 @@ export default class Projects extends Component {
 		this.setState({count: newCount});
 	}
 	resetFilter() {
-		for (let item of store.getState().projects) {
-			item.visible = true;
-			}
+		const { projects } = this.props;
+		for (let item of projects) {item.visible = true}
 		this.setState({count: 10});
 	}
 	compareTitle(a,b) {
@@ -75,44 +74,60 @@ export default class Projects extends Component {
 		return 0;
 	}
 	sortByUpdatedDate() {
+		let order = '';
+		const { projects } = this.props;
 		if (this.state.updateCount % 2 === 0) {
-			store.getState().projects.sort(this.compareUpdated).reverse();
-			this.setState({updateOrder: 'Newest'});
+			projects.sort(this.compareUpdated).reverse();
+			order = 'Newest';
 		} else {
-			store.getState().projects.sort(this.compareUpdated);
-			this.setState({updateOrder: 'Oldest'});
+			projects.sort(this.compareUpdated);
+			order = 'Oldest';
 		}
 		let newUpdateCount = this.state.updateCount;
 		newUpdateCount++;
-		this.setState({updateCount: newUpdateCount});
+		this.setState({
+			updateCount: newUpdateCount,
+			updateOrder: order
+			});
 	}
 	sortByCreatedDate() {
+		let order = '';
+		const { projects } = this.props;
 		if (this.state.createCount % 2 === 0) {
-			store.getState().projects.sort(this.compareCreated).reverse();
-			this.setState({updateOrder: 'Newest'});
+			projects.sort(this.compareCreated).reverse();
+			order = 'Newest';
 		} else {
-			store.getState().projects.sort(this.compareCreated);
-			this.setState({updateOrder: 'Oldest'});
+			projects.sort(this.compareCreated);
+			order = 'Oldest';
 		}
 		let newCreateCount = this.state.createCount;
 		newCreateCount++;
-		this.setState({createCount: newCreateCount});
+		this.setState({
+			createCount: newCreateCount,
+			createOrder: order
+		});
 	}
 	sortByTitle() {
+		let title = '';
+		const { projects } = this.props;
 		if (this.state.titleCount % 2 === 0) {
-			store.getState().projects.sort(this.compareTitle).reverse();
-			this.setState({titleOrder: "Z-A"});
+			projects.sort(this.compareTitle).reverse();
+			title = "Z-A";
 		} else {
-			store.getState().projects.sort(this.compareTitle);
-			this.setState({titleOrder: "A-Z"});
+			projects.sort(this.compareTitle);
+			title = "A-Z";
 		}
 		let newTitleCount = this.state.titleCount;
 		newTitleCount++;
-		this.setState({titleCount: newTitleCount});
+		this.setState({
+			titleCount: newTitleCount,
+			titleOrder: title
+		});
 
 	}	
 	render(){
-		let { uniqueLanguages, projects } = store.getState();
+		const { uniqueLanguages, projects } = this.props;
+		let { count, titleOrder, createOrder, updateOrder } = this.state;
 		return (
 			<React.Fragment>
 				<h1>Projects</h1>
@@ -121,36 +136,18 @@ export default class Projects extends Component {
 					<Select	filterList={this.filterList}
 							resetFilter={this.resetFilter}
 							uniqueLanguages={uniqueLanguages}
-							count={this.state.count}
+							count={count}
 							projects={projects}
 					/>
 					<Sort 	sortByTitle={this.sortByTitle}
-							titleOrder={this.state.titleOrder}
+							titleOrder={titleOrder}
 							sortByCreatedDate={this.sortByCreatedDate}
-							createOrder={this.state.createOrder}
+							createOrder={createOrder}
 							sortByUpdatedDate={this.sortByUpdatedDate}
-							updateOrder={this.state.updateOrder}
+							updateOrder={updateOrder}
 							/>
-				</div> 
-			{projects.map((x, index) => {
-				if (x.visible === true) {
-					return (
-					<Project 
-						key={index}
-						image={x.image}
-						alt={x.alt}
-						languages={x.languages}
-						title={x.title}
-						created={x.created} 
-						createdAt={x.createdAt} 
-						updated={x.updated} 
-						updatedAt={x.updatedAt} 
-						description={x.description} 
-						link={x.link}
-					/>)
-				}
-				return null
-			})}
+				</div>
+				<ProjectList projects={projects} /> 
 		</React.Fragment>
 		)
 	}
