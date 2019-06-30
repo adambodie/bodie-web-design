@@ -8,13 +8,11 @@ import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
 	return { 
-		projects: state.projects,
-		uniqueLanguages: state.uniqueLanguages,
 		selectRandomProjects: state.selectRandomProjects
 	};
 };
 
-const Home = ({projects, uniqueLanguages, selectRandomProjects}) => (
+const Home = ({selectRandomProjects}) => (
 	<React.Fragment>
 		<Banner selectRandomProjects={selectRandomProjects}/>
 		<div className="container">
@@ -26,7 +24,7 @@ const Home = ({projects, uniqueLanguages, selectRandomProjects}) => (
 				image={logo} 
 				link={"https://www.linkedin.com/in/adam-bodie/"} 
 				/>
-			<Projects projects={projects} uniqueLanguages={uniqueLanguages}/>
+			<Projects />
 		</div>
 	</React.Fragment>
 );

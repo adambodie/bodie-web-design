@@ -1,15 +1,29 @@
-import React, {Component} from 'react';
-import '../../styles/projects.scss';
+import React, { Component } from 'react';
+
 import Update from './Update';
 import ProjectList from './ProjectList';
 import Select from './Select';
 import Sort from './Sort';
 
-export default class Projects extends Component {
+import '../../styles/projects.scss';
+
+import { connect } from 'react-redux'
+import { counter, reset } from '../../store/actions';
+
+const mapStateToProps = (state) => {
+	return {
+		projects: state.projects,
+		uniqueLanguages: state.uniqueLanguages,
+		filterList: state.filterList
+	}
+}
+
+const mapDispatchToProps = { counter, reset }
+
+class Projects extends Component {
 	constructor(){
 		super();
 		this.state = {
-			count: 10,
 			updateCount: 0,
 			createCount: 0,
 			titleCount: 0,
@@ -17,34 +31,11 @@ export default class Projects extends Component {
 			createOrder: 'Oldest',
 			updateOrder: 'Oldest'
 		}
-		this.filterList = this.filterList.bind(this);
-		this.resetFilter = this.resetFilter.bind(this);
 		this.sortByTitle = this.sortByTitle.bind(this);
 		this.sortByCreatedDate = this.sortByCreatedDate.bind(this);
 		this.sortByUpdatedDate = this.sortByUpdatedDate.bind(this);
 	}
 	
-	filterList(event){
-		let newCount = 0;
-		const { projects } = this.props;
-		for (let item of projects) {
-			for (let x of item.languages) {
-				if (x.name === event) {
-					item.visible = true;
-					newCount++;
-					break;
-				} else {
-					item.visible = false;
-				}
-			}
-		}
-		this.setState({count: newCount});
-	}
-	resetFilter() {
-		const { projects } = this.props;
-		for (let item of projects) {item.visible = true}
-		this.setState({count: 10});
-	}
 	compareTitle(a,b) {
 		if (a.title > b.title) {
 			return -1;
@@ -126,17 +117,17 @@ export default class Projects extends Component {
 
 	}	
 	render(){
-		const { uniqueLanguages, projects } = this.props;
-		let { count, titleOrder, createOrder, updateOrder } = this.state;
+		const { uniqueLanguages, projects, counter, filterList, reset } = this.props;
+		let { titleOrder, createOrder, updateOrder } = this.state;
 		return (
 			<React.Fragment>
 				<h1>Projects</h1>
 				<Update />
 				<div className="row filter">
-					<Select	filterList={this.filterList}
-							resetFilter={this.resetFilter}
+					<Select	filterList={counter}
+							resetFilter={reset}
 							uniqueLanguages={uniqueLanguages}
-							count={count}
+							count={filterList}
 							projects={projects}
 					/>
 					<Sort 	sortByTitle={this.sortByTitle}
@@ -153,3 +144,7 @@ export default class Projects extends Component {
 	}
 }
 
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Projects)
