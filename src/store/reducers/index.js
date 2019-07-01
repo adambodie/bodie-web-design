@@ -1,5 +1,45 @@
 import { combineReducers } from 'redux'
-import { PROJECTS, UPDATES, MONTHS, LINKS, COUNTER, RESET } from '../constants'
+import { PROJECTS, UPDATES, MONTHS, LINKS, COUNTER, RESET, SORT_BY_TITLE, SORT_BY_CREATED, SORT_BY_UPDATED } from '../constants'
+
+let initialTitleState = { titleOrder: 'A-Z', titleCount: 0 }
+let initialCreatedState = { createdOrder: 'Oldest', createdCount: 0 }
+let initialUpdatedState = { updatedOrder: 'Oldest', updatedCount: 0 }
+
+const compareTitle = function(a,b) {
+	if (a.title > b.title) {
+		return -1;
+	}
+	if (a.title < b.title) {
+		return 1;
+	}
+	return 0;
+}
+
+const compareCreated = function(a,b) {
+	if (a.created > b.created) {
+		return -1;
+	}
+	if (a.created < b.created) {
+		return 1;
+	}
+	return 0;
+}
+
+const compareUpdated = function(a,b) {
+	if (a.updated > b.updated) {
+		return -1;
+	}
+	if (a.updated < b.updated) {
+		return 1;
+	}
+	return 0;
+}
+
+export const footerDate = (state = new Date().getFullYear()) => state
+export const projects = (state = PROJECTS) => state
+export const months = (state = MONTHS) => state
+export const updates = (state = UPDATES) => state
+export const links = (state = LINKS) => state
 
 export const uniqueLanguages = (state = '') => {
 	const options = [];
@@ -26,15 +66,6 @@ export const selectRandomProjects = (state = '') => {
 	state = banners
 	return state
 }
-export const footerDate = (state = new Date().getFullYear()) => state
-
-export const projects = (state = PROJECTS) => state
-
-export const months = (state = MONTHS) => state
-
-export const updates = (state = UPDATES) => state
-
-export const links = (state = LINKS) => state
 
 export function filterList(state = 10, action) {
 	switch (action.type) {
@@ -42,16 +73,16 @@ export function filterList(state = 10, action) {
 			let newCount = 0;
 			const language = action.text;
 			for (let item of PROJECTS) {
-			for (let x of item.languages) {
-				if (x.name === language) {
-					newCount++;
-					item.visible = true;
-					break;
-				} else {
-					item.visible = false;
+				for (let x of item.languages) {
+					if (x.name === language) {
+						newCount++;
+						item.visible = true;
+						break;
+					} else {
+						item.visible = false;
+					}
 				}
 			}
-		}
 			state = newCount;
 			return state;
 		case RESET:
@@ -63,6 +94,69 @@ export function filterList(state = 10, action) {
 	}
 }
 
+export function sortByTitle(state = initialTitleState, action) {
+	switch (action.type) {
+		case SORT_BY_TITLE:
+			let order = '';
+			if (state.titleCount % 2 === 0) {
+				PROJECTS.sort(compareTitle).reverse();
+				order = 'Z-A';
+			} else {
+				order = 'A-Z';
+				PROJECTS.sort(compareTitle);
+			}
+			let newTitleCount = state.titleCount;
+			newTitleCount++;
+			state.titleOrder = order;
+			state.titleCount = newTitleCount++;
+			return state
+		default:
+			return state;
+	}
+}
+
+export function sortByCreated(state = initialCreatedState, action) {
+	switch (action.type) {
+		case SORT_BY_CREATED:
+			let order = '';
+			if (state.createdCount % 2 === 0) {
+				PROJECTS.sort(compareCreated).reverse();
+				order = 'Newest';
+			} else {
+				order = 'Oldest';
+				PROJECTS.sort(compareCreated);
+			}
+			let newCreatedCount = state.createdCount;
+			newCreatedCount++;
+			state.createdOrder = order;
+			state.createdCount = newCreatedCount++;
+			return state
+		default:
+			return state;
+	}
+}
+
+export function sortByUpdated(state = initialUpdatedState, action) {
+	switch (action.type) {
+		case SORT_BY_UPDATED:
+			let order = '';
+			if (state.updatedCount % 2 === 0) {
+				PROJECTS.sort(compareUpdated).reverse();
+				order = 'Newest';
+			} else {
+				order = 'Oldest';
+				PROJECTS.sort(compareUpdated);
+			}
+			let newUpdatedCount = state.updatedCount;
+			newUpdatedCount++;
+			state.updatedOrder = order;
+			state.updatedCount = newUpdatedCount++;
+			return state
+		default:
+			return state;
+	}
+}
+
 export const rootReducer = combineReducers({
   footerDate,
   projects,
@@ -71,5 +165,8 @@ export const rootReducer = combineReducers({
   months,
   uniqueLanguages,
   selectRandomProjects,
-  filterList
+  filterList,
+  sortByTitle,
+  sortByCreated,
+  sortByUpdated
 })
