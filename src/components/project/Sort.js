@@ -4,7 +4,6 @@ import '../../styles/projects.scss';
 export default class Sort extends Component {
 	constructor(props){
 		super(props);
-
 		this.handleSortByTitle = this.handleSortByTitle.bind(this);
 		this.handleSortByCreatedDate = this.handleSortByCreatedDate.bind(this);
 		this.handleSortByUpdatedDate = this.handleSortByUpdatedDate.bind(this);

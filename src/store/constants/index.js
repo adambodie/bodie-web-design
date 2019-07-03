@@ -1,7 +1,6 @@
 import { howManyDaysAgo } from './howManyDaysAgo';
 
 export const LINKS = [{name: 'Home', link: '/'}, {name: 'About', link: '/about'}, {name: 'Pictures', link: '/pictures'}];
-export const MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 export const COUNTER = 'COUNTER';
 export const RESET = 'RESET';
 export const SORT_BY_TITLE = 'SORT_BY_TITLE';

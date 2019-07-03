@@ -4,7 +4,6 @@ import '../../styles/projects.scss';
 export default class Select extends Component {
 	constructor(props){
 		super(props);
-
 		this.handleResetFilter = this.handleResetFilter.bind(this);
 		this.handleFilterList = this.handleFilterList.bind(this);
 	}

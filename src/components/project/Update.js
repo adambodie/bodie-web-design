@@ -20,7 +20,12 @@ const Update = ({updates}) => (
 	<React.Fragment>
 		<h3>Recent Updates</h3>
 		<Slider {...settings}>
-			{updates.map((x, index) => <div className="update" key={index}><p>{index + 1}. <strong>{x.title}</strong> - {x.description}</p></div>)}
+			{updates.map((x, index) => (
+				<div className="update" key={index}>
+					<p>{index + 1}. <strong>{x.title}</strong> - {x.description}</p>
+				</div>
+				)
+			)}
 		</Slider>
 	</React.Fragment>
 );

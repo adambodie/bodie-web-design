@@ -10,7 +10,7 @@ export const compareCreated = function(a,b) {
 	return 0;
 }
 
-let initialCreatedState = { createdOrder: 'Oldest', createdCount: 0 }
+let initialCreatedState = { createdOrder: 'Newest', createdCount: 0 }
 
 export function sortByCreated(state = initialCreatedState, action) {
 	switch (action.type) {
@@ -18,9 +18,9 @@ export function sortByCreated(state = initialCreatedState, action) {
 			let order = '';
 			if (state.createdCount % 2 === 0) {
 				PROJECTS.sort(compareCreated).reverse();
-				order = 'Newest';
-			} else {
 				order = 'Oldest';
+			} else {
+				order = 'Newest';
 				PROJECTS.sort(compareCreated);
 			}
 			let newCreatedCount = state.createdCount;

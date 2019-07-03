@@ -77,8 +77,8 @@ export default class Pictures extends Component {
 							contentLabel='Picture Modal'
 							appElement={document.getElementById('root')}
 						>
-						<PictureModal thisData={thisData} />
-						<button className="close-button" onClick={()=> {this.closeModal()}}>x</button>
+							<PictureModal thisData={thisData} />
+							<button className="close-button" onClick={()=> {this.closeModal()}}>x</button>
 						</Modal>
 					}
 				<ReactPaginate 

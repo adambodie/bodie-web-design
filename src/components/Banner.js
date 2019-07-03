@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Slider from 'react-slick';
 import '../styles/App.scss';
 import BannerItem from './BannerItem';
+import { connect } from 'react-redux';
 
-export default class Banner extends Component {
-	render() {
-	const settings = {
-		infinite: true,
-		arrows: true,
-		slidesToShow: 1,
-		slidesToScroll: 1
+const mapStateToProps = state => {
+	return { 
+		selectRandomProjects: state.selectRandomProjects
 	};
-	const { selectRandomProjects } = this.props;
-	return (
-		<Slider {...settings} className="container-fluid banner">
+};
+
+const settings = {
+	infinite: true,
+	arrows: true,
+	slidesToShow: 1,
+	slidesToScroll: 1
+};
+
+const Banner = ({ selectRandomProjects }) => (
+	<Slider {...settings} className="container-fluid banner">
 		{selectRandomProjects.map((x, index) => <BannerItem link={x.link} banner={x.banner} alt={x.alt} key={index} />)}
-		</Slider>
-		);
-	}
-}
+	</Slider>
+);
+
+export default connect(mapStateToProps)(Banner);
