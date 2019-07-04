@@ -5,6 +5,8 @@ import axios from 'axios';
 import '../../styles/pictures.scss';
 import ReactPaginate from 'react-paginate';
 import Modal from 'react-modal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 
 export default class Pictures extends Component {
 	constructor(props) {
@@ -54,14 +56,15 @@ export default class Pictures extends Component {
 	};
 	render(){
 		const { data, offset, pageCount, thisData, modalIsOpen } = this.state;
+		const margin = (window.innerWidth > 512) ? 8 : 3;
 		return (
-			<div className="container">
-				<h1>Picture Gallery</h1>   
-					<div className="flex-picture">
+			<div className="container pictures">
+				<h1>Picture Gallery</h1>
+					<div className="row">
 						{data.map((item, index) => {
 							if (index >= offset && index < offset + 9) {
 								return(
-									<div key={index} className="photo" onClick={()=> {this.openModal(this, index)}}>
+									<div key={index} className="photo col-md-4" onClick={()=> {this.openModal(this, index)}}>
 										<img src={`https://bodiewebdesign.com/assets/${item.image}`} alt={item.alt} className="img-fluid"/>
 										<PictureOverlay item={item} />
 									</div>
@@ -82,11 +85,11 @@ export default class Pictures extends Component {
 						</Modal>
 					}
 				<ReactPaginate 
-					previousLabel={"<<"}
-					nextLabel={">>"}
+					previousLabel={<FontAwesomeIcon icon={faAngleDoubleLeft} size="lg" />}
+					nextLabel={<FontAwesomeIcon icon={faAngleDoubleRight} size="lg" />}
 					breakClassName={"break-me"}
 					pageCount={pageCount}
-					marginPagesDisplayed={2}
+					marginPagesDisplayed={margin}
 					pageRangeDisplayed={1}
 					onPageChange={this.handlePageClick}
 					containerClassName={"pagination"}

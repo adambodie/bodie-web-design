@@ -1,7 +1,12 @@
 @import './imports.scss';
 
+.pictures {
+	color: white;
+}
+
 h1 {
 	text-align: center;
+	color: white;
 }
 
 .pagination {
@@ -43,17 +48,6 @@ h1 {
 	}
 }
 
-.flex-picture {
-	display: flex;
-	flex-wrap: wrap;
-	.photo {
-		max-width: 90%;
-	}
-	h4 {
-		text-align: center;
-	}
-}
-
 .close-button {
 	position: absolute;
 	top: 0;
@@ -74,16 +68,16 @@ h1 {
 
 .photo {
 	position: relative;
-	
 	overflow: hidden;
-		img {
-			transform-origin: 0 0;
-			@include responsive();
-			@include center-image();
-		}
-		&:hover img {
-			transform: scale(1.2);
-		}
+	padding: 0;
+	margin: 5px;
+	img {
+		transform-origin: 0 0;
+
+	}
+	&:hover img {
+		transform: scale(1.2);
+	}
 }
 
 .photo-overlay {
@@ -117,23 +111,19 @@ h1 {
 }
 
 .ReactModal__Content, .ReactModal__Content--after-open {
-    top: 0px!important;
-    left: 0px!important;
-    bottom: 0px!important;
-    right: 0px!important;
-    background: rgba(0,0,0,0.9)!important;
-    display: flex;
+	top: 0px!important;
+	left: 0px!important;
+	bottom: 0px!important;
+	right: 0px!important;
+	background: rgba(0,0,0,0.9)!important;
+	display: flex;
 }
 
 .modal-body {
 	width: 100%;
 }
-
 @media (min-width: 768px) {
-	.flex-picture {
-		.photo {
-			max-width: 30%;
-			margin: 1em;
-		}
+	.col-md-4 {
+		max-width: 30%!important;
 	}
 }

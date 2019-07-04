@@ -26,19 +26,4 @@ $concert-one: 'Concert One', cursive;
 	height: auto;
 }
 
-.flex-container {
-	display: flex;
-	margin-top: 20px;
-	flex-wrap: wrap;
-}
 
-.flex-item {
-	flex: 100%;
-}
-
-@media (min-width: 512px) {
-.flex-item {
-	flex: 50%;
-	padding: 10px;
-}
-}
