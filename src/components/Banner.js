@@ -1,13 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick';
-import '../styles/App.scss';
+import '../styles/banner.scss';
 import BannerItem from './BannerItem';
 import { connect } from 'react-redux';
 
 const mapStateToProps = state => {
-	return { 
-		selectRandomProjects: state.selectRandomProjects
-	};
+	return { selectRandomProjects: state.selectRandomProjects };
 };
 
 const settings = {
