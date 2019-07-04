@@ -1,4 +1,5 @@
-import { PROJECTS, SORT_BY_UPDATED } from '../constants'
+import { SORT_BY_UPDATED } from '../constants';
+import { PROJECTS } from '../constants/projects';
 
 export const compareUpdated = function(a,b) {
 	if (a.updated > b.updated) {

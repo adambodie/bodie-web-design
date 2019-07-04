@@ -52,7 +52,7 @@ select {
 	color: black;
 	height: 33px;
 	border-radius: 5px;
-	width: 200px;
+	width: 100%;
 	text-indent: 1em;
 	background-color: white;
 	&:hover {
@@ -107,7 +107,7 @@ select {
 .filter {
 	align-items: center;
 	.btn {
-		width: 150px;
+		width: 100%;
 	}
 }
 .invisible {
@@ -120,4 +120,15 @@ select {
 }
 option {
 	color: black;
+}
+
+@media (min-width: 768px) {
+	.filter {
+		.btn {
+			width: 150px;
+		}
+	}
+	select {
+		width: 200px;
+	}
 }

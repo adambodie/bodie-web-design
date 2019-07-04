@@ -1,4 +1,5 @@
-import { PROJECTS, SORT_BY_TITLE } from '../constants'
+import { SORT_BY_TITLE } from '../constants';
+import { PROJECTS } from '../constants/projects';
 
 const compareTitle = function(a,b) {
 	if (a.title > b.title) {

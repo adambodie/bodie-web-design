@@ -1,5 +1,7 @@
-import { combineReducers } from 'redux'
-import { PROJECTS, UPDATES, LINKS } from '../constants'
+import { combineReducers } from 'redux';
+import { LINKS } from '../constants';
+import { PROJECTS } from '../constants/projects';
+import { UPDATES } from '../constants/updates';
 import { selectRandomProjects } from './projects'; 
 import { sortByTitle } from './title';
 import { sortByUpdated } from './updated';

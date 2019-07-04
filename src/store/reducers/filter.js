@@ -1,4 +1,5 @@
-import { PROJECTS, COUNTER, RESET } from '../constants'
+import { COUNTER, RESET } from '../constants';
+import { PROJECTS } from '../constants/projects';
 
 export function filterList(state = 10, action) {
 	switch (action.type) {

@@ -1,4 +1,6 @@
-import { PROJECTS, SORT_BY_CREATED } from '../constants'
+import { SORT_BY_CREATED } from '../constants';
+import { PROJECTS } from '../constants/projects';
+
 
 export const compareCreated = function(a,b) {
 	if (a.created > b.created) {

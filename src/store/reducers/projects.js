@@ -1,4 +1,4 @@
-import { PROJECTS } from '../constants'
+import { PROJECTS } from '../constants/projects'
 
 export const selectRandomProjects = (state = '') => {
 	const banners = [];
