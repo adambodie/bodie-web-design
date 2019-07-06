@@ -6,7 +6,7 @@ import '../../styles/pictures.scss';
 import ReactPaginate from 'react-paginate';
 import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleLeft, faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleLeft, faAngleDoubleRight, faWindowClose } from '@fortawesome/free-solid-svg-icons'
 
 export default class Pictures extends Component {
 	constructor(props) {
@@ -81,7 +81,7 @@ export default class Pictures extends Component {
 							appElement={document.getElementById('root')}
 						>
 							<PictureModal thisData={thisData} />
-							<button className="close-button" onClick={()=> {this.closeModal()}}>x</button>
+							<button className="close-button" onClick={()=> {this.closeModal()}}><FontAwesomeIcon icon={faWindowClose} size="3x" /></button>
 						</Modal>
 					}
 				<ReactPaginate 

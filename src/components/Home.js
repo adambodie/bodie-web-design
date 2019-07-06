@@ -10,7 +10,7 @@ const Home = () => (
 		<Banner/>
 		<div className="container home">
 			<h2>Welcome to Bodie Web Design</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus, eros et euismod interdum, enim dolor auctor ligula, et placerat magna tortor a tortor. Nulla ut risus turpis. Duis tempus interdum metus, sit amet consectetur augue facilisis quis. Morbi neque ex, auctor a lacus vel, aliquam gravida augue. Aenean auctor quam a tellus aliquam feugiat.</p>
+			<p>Here you will find my portfolio of websites I have built.  Feel free to view my projects, read about me or enjoy my weekly photos.</p>
 			<Advertisement 
 				color={"#283e4a"} 
 				paragraph={"View my LinkedIn Profile"} 

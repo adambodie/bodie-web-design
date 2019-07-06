@@ -22,7 +22,7 @@ export default class Sort extends Component {
 	render(){
 		const { titleOrder, createOrder, updateOrder } = this.props;
 		return (
-			<div className="col-md-6">
+			<div className="col-lg-6">
 				<h3>Sort Projects</h3>
 				<div className="row">
 					<div className="col-md-4">

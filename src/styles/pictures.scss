@@ -50,20 +50,22 @@ h1 {
 
 .close-button {
 	position: absolute;
-	top: 0;
-	right: 0;
-	background: #807f7f;
+	top: 5px;
+	right: 5px;
+	background: black;
+	color: white;
 	border: none;
 	font-weight: bold;
-	padding: 10px;
+	padding: 0;
 	&:hover {
-		background: #685d5d;
+		color: gray;
 	}
 }
 
 
 .modal-description {
 	padding: 10px;
+	color: white;
 }
 
 .photo {
@@ -123,7 +125,8 @@ h1 {
 	width: 100%;
 }
 @media (min-width: 768px) {
-	.col-md-4 {
+	
+	.photo {
 		max-width: 30%!important;
 	}
 }
