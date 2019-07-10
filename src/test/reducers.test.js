@@ -1,6 +1,7 @@
 import { sortByCreated } from '../store/reducers/created';
 import { sortByUpdated } from '../store/reducers/updated';
 import { sortByTitle } from '../store/reducers/title';
+import { filterList } from '../store/reducers/filter';
 import * as types from '../store/constants/';
 
 describe('sortByCreated reducer', () => {
@@ -39,5 +40,14 @@ describe('sortByTitle reducer', () => {
 		).toEqual(
 			{ titleOrder: 'A-Z', titleCount: 1 }
 		)
+	})
+})
+
+describe('filterList reducer', () => {
+	it('should handle COUNTER', () => {
+		expect(filterList(10 , {type: types.COUNTER, text: 'React' })).toEqual(6)
+	})
+	it('should handle RESET', () => {
+		expect(filterList(0 , {type: types.RESET, text: ''})).toEqual(10)
 	})
 })

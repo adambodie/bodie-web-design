@@ -9,7 +9,7 @@ import { sortByCreated } from './created';
 import { uniqueLanguages } from './languages';
 import { filterList } from './filter';
 
-export const projects = (state = PROJECTS) => state.reverse()
+export const projects = (state = PROJECTS.reverse()) => state
 export const updates = (state = UPDATES) => state
 export const links = (state = LINKS) => state
 

@@ -30,7 +30,10 @@ export default class Select extends Component {
 								<button className="btn" onClick={this.handleResetFilter}>Reset</button>
 							</div>
 							<div className="col-md-4">
-								<h5 className="results">Results {count}</h5>
+								<div className="results">
+									<h4>Results</h4>
+									<h6>{count}</h6>
+								</div>
 							</div>
 						</div>
 					</div>
