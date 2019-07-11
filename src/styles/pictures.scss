@@ -4,6 +4,9 @@
 	color: white;
 }
 
+.gallery {
+	justify-content: center;
+}
 h1 {
 	text-align: center;
 	color: white;
@@ -66,6 +69,9 @@ h1 {
 .modal-description {
 	padding: 10px;
 	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .photo {
@@ -123,9 +129,37 @@ h1 {
 
 .modal-body {
 	width: 100%;
+	img {
+		margin-top: 25px;
+	}
+}
+.modal-title {
+	h2 {
+		font-size: 2em;
+	}
+	p {
+		text-indent: 1em;
+		color: #BFBFBF;
+	}
+}
+.modal-info {
+	p {
+		margin-bottom: 0;
+		text-align: right;
+		font-size: 0.9em;
+	}
 }
 @media (min-width: 768px) {
-	
+	.modal-title {
+		h2 {
+			font-size: 3em;
+		}
+	}
+	.modal-body {
+		img {
+			margin-top: 0px;
+		}
+	}
 	.photo {
 		max-width: 30%!important;
 	}

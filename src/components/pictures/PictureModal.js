@@ -7,10 +7,14 @@ const PictureModal =({thisData}) => (
 			<img src={`https://bodiewebdesign.com/assets/${thisData.image}`} alt={thisData.title} className="img-fluid"/>
 		</div>
 		<div className="modal-description col-sm-6">
-			<h2>{thisData.title}</h2>
-			<p>Week of: {thisData.week}</p>
-			<p>Location: {thisData.location}, {thisData.state}</p>
-			<p>{thisData.description}</p>
+			<div className="modal-title">
+				<h2>{thisData.title}</h2>
+				<p>{thisData.description}</p>
+			</div>
+			<div className="modal-info">
+				<p>Week of: {thisData.week}</p>
+				<p>Location: {thisData.location}, {thisData.state}</p>
+			</div>
 		</div>
 	</div>
 )

@@ -60,7 +60,7 @@ export default class Pictures extends Component {
 		return (
 			<div className="container pictures">
 				<h1>Picture Gallery</h1>
-					<div className="row">
+					<div className="row gallery">
 						{data.map((item, index) => {
 							if (index >= offset && index < offset + 9) {
 								return(
