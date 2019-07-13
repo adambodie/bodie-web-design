@@ -21,10 +21,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = { counter, reset, sortByTitle, sortByCreated, sortByUpdated }
 
 const Projects = ({ uniqueLanguages, projects, counter, filterList, reset, sortByTitle, titleOrder, sortByCreated, createdOrder, updatedOrder, sortByUpdated }) => (
-	<React.Fragment>
+	<div className="container">
 		<h1>Projects</h1>
-		<Update />
-		<div className="row filter">
+		<div className="row">
+		<div className="filter">
 			<Select	filterList={counter}
 					resetFilter={reset}
 					uniqueLanguages={uniqueLanguages}
@@ -39,8 +39,10 @@ const Projects = ({ uniqueLanguages, projects, counter, filterList, reset, sortB
 					updateOrder={updatedOrder}
 			/>
 		</div>
+		<Update />
+		</div>
 		<ProjectList projects={projects} /> 
-	</React.Fragment>
+	</div>
 )
 
 export default connect(

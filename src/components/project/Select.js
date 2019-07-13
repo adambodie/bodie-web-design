@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../styles/projects.scss';
+import '../../styles/select.scss';
 
 export default class Select extends Component {
 	constructor(props){

@@ -1,9 +1,17 @@
+@import './imports.scss';
+
 body {
 	background: url('../assets/background.jpg') fixed no-repeat center; 
 	background-size: cover;
 }
 
 .home {
-	color: white;
+	color: $white;
 }
 
+
+.home-intro {
+	text-align: center;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $white;
+}

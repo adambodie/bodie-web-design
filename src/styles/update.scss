@@ -1,6 +1,13 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
+
+.updates {
+	padding: 20px;
+	width: 100%;
+	box-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+}
+
 .update p {
 	text-align: center;
 }

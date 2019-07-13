@@ -17,7 +17,7 @@ const settings = {
 	slidesToScroll: 1
 };
 const Update = ({updates}) => (
-	<React.Fragment>
+	<div className="updates">
 		<h3>Recent Updates</h3>
 		<Slider {...settings}>
 			{updates.map((x, index) => (
@@ -27,7 +27,7 @@ const Update = ({updates}) => (
 				)
 			)}
 		</Slider>
-	</React.Fragment>
+	</div>
 );
 
 export default connect(mapStateToProps)(Update)

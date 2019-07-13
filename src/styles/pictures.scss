@@ -1,7 +1,7 @@
 @import './imports.scss';
 
 .pictures {
-	color: white;
+	color: $white;
 }
 
 .gallery {
@@ -9,31 +9,27 @@
 }
 h1 {
 	text-align: center;
-	color: white;
+	color: $white;
 }
 
 .pagination {
 	justify-content: center;
 	li {
-		background: white;
+		background: $white;
 		min-width: 35px;
 		min-height: 30px;
 		padding: 5px;
-		border: 1px solid #cacaca;
+		border: 1px solid $darken;
 		position: relative;
 		text-align: center;
 		&:hover {
-			background: #cacaca;
+			background: $darken;
 		}
 		a {
 			color: #262626;
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			right: 0;
+			@include absolute();
 			&:hover {
-			text-decoration: none;
+				text-decoration: none;
 			}
 		}
 	}
@@ -44,9 +40,9 @@ h1 {
 		}
 	}
 	.disabled {
-		background: #cacaca;
+		background: $darken;
 		&:hover {
-			background: #cacaca;
+			background: $darken;
 		}
 	}
 }
@@ -56,21 +52,20 @@ h1 {
 	top: 5px;
 	right: 5px;
 	background: black;
-	color: white;
+	color: $white;
 	border: none;
 	font-weight: bold;
 	padding: 0;
 	&:hover {
-		color: gray;
+		color: $darken;
 	}
 }
 
 
 .modal-description {
 	padding: 10px;
-	color: white;
-	display: flex;
-	flex-direction: column;
+	color: $white;
+	@include flex-column();
 	justify-content: space-between;
 }
 
@@ -90,15 +85,10 @@ h1 {
 
 .photo-overlay {
 	color: #fff;
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	@include absolute();
 	padding-left: 20px;
 	padding-right: 20px;
-	display: flex;
-	flex-direction: column;
+	@include flex-column();
 	justify-content: center;
 	align-items: center;
 	background: rgba(0,0,0, .5);

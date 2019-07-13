@@ -1,14 +1,29 @@
 @import './imports.scss';
 
+.btn {
+	@include gradient(black, $primary-color);
+	color: $white;
+	border: 1px solid black;
+	&:hover {
+		color: $darken;
+	}
+}
+
 h1 {
 	font-size: 3em;
 	text-align: left;
 }
+
 .filter {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	@include flex();
+	width: 100%;
 	padding: 10px;
+	align-items: center;
+	box-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+	.btn {
+		width: 100%;
+		height: 45px;
+	}
 }
 
 .filter > div {
@@ -40,26 +55,6 @@ h1 {
 	}
 }
 
-.sort {
-	flex-wrap: wrap;
-	justify-content: center;
-	.btn {
-		margin: 10px;
-		width: 100%;
-	}
-}
-select {
-	color: black;
-	height: 33px;
-	border-radius: 5px;
-	width: 100%;
-	text-indent: 1em;
-	background-color: white;
-	&:hover {
-		background-color: #e4e4e4;
-	}
-}
-
 .project {
 	border-top: 1px solid white;
 	display: flex;
@@ -78,55 +73,42 @@ select {
 .description-data {
 	line-height: 0.5;
 }
-.languages {
+
+.description-links {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 20px;
+	.btn {
+		font-size: 12px;
+	}
+}
+
+.languages {
+	@include flex();
 	padding: 0;
 	li {
 		list-style: none;
 		margin: 5px;
-    	width: 110px;
-    	text-align: center;
-    	text-transform: uppercase;
+		width: 110px;
+		text-align: center;
+		text-transform: uppercase;
 		border: 1px solid white;
 		border-radius: 5px;
-    	font-weight: bold;
-    	font-size: 14px;
+		font-weight: bold;
+		font-size: 14px;
 	}
 }
-.btn {
-	@include gradient(black, $primary-color);
-	color: $white;
-	border: 1px solid black;
 
-	&:hover {
-		color: $darken;
-	}
-}
-.filter {
-	align-items: center;
-	.btn {
-		width: 100%;
-		height: 65px;
-	}
-}
 .invisible {
 	display: none;
 	visibility: visible;
 }
 
-select {
-	height: 65px;
-}
-option {
-	color: black;
-}
-
-.results {
-	height: 65px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+@media (min-width: 512px) {
+	.description-links {
+		padding: 0px;
+		.btn {
+			font-size: 16px;
+		}
+	}
 }

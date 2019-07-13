@@ -12,6 +12,7 @@ export const PROJECTS = [
 		updatedAt: howManyDaysAgo(2018, 0, 28),
 		description: "I built this app first using AngularJS, to showcase my skills in AngularJS, as well as learning to build more projects other than the basic photo gallery.  I later added CSS animation to this project to give a more interactive user experience.  With AngularJS being updated to Angular, I opted to rebuild this project using Angular with Typescript, backed with Webpack. Source code available via GitHub.",
 		link: "fortune-cookie",
+		github: "Fortune-Cookie",
 		languages: [{name:"Angular"}, {name: "TypeScript"},{name: "Webpack"}],
 		visible: true
       },
@@ -26,6 +27,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2017, 11, 11),
         description: "I first built this project using jQuery, but used some different plugins for this project, most notably Owl Carousel.  I later rebuilt this project using Vue, my first project using this framework.  Source code available via GitHub.",
         link: "reno",
+        github: "Reno",
         languages: [{name:"Vue"}],
         visible: true
       },
@@ -40,6 +42,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 3, 29),
         description: "This was my first project built in React, partly based off a Team Treehouse course: Introduction to React.  I first used the ES5 syntax for the project, but later updated it using ES6 syntax.  Version 3 further broke down components, added Sass, and built on GatsbyJS. Source code available via GitHub.",
         link: "dreidel",
+        github: "Dreidel-Duel",
         languages: [{name:"React"}, {name: "GatsbyJS"}, {name: "Sass"}, {name: "Jest"}, {name: "Enzyme"}],
         visible: true
       },
@@ -54,6 +57,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 1, 18),
         description: "My first iteration of this project was built when I was first learning Java back in 2014, using NetBeans to build a GUI program.  Expanding my knowledge in coding and focusing on Web Devleopment, I built a new version with React, compiled with Webpack, and tested with Mocha and Chai, which is better designed, has more accessibility, a better UI and tested to be effective.  Newest update uses React version 16, Webpack 4, Babel 7, and replaces testing library with Jest. Source code available via GitHub.",
         link: "nfl-passer-rating",
+        github: "nfl-passer-rating",
         languages: [{name:"React"}, {name: "Sass"},{name: "Webpack"},{name: "Jest"},{name: "Foundation"}, {name: "Babel"}],
         visible: true
       },
@@ -68,6 +72,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2017, 8, 4),
         description: "This was my first project built with Angular and Typescript, this project is a blog-styled page showcasing pictures from my trip to the East Coast.  Source code available via GitHub.",
         link: "nadm2",
+        github: "east-coast",
         languages: [{name:"Angular"}, {name: "TypeScript"},{name: "Webpack"}],
         visible: true
       },
@@ -82,6 +87,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 2, 19),
         description: "Built with React, this project is based on my Wild Wild West project but contains multiple projects linked together via React Router.  Source code available via GitHub.",
         link: "adventures",
+        github: "adventures",
         languages: [{name:"React"}, {name: "Redux"}, {name: "Jest"}, {name: "Sass"}],
         visible: true
       },
@@ -96,6 +102,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 3, 28),
         description: "Expanding on my previous photo based projects, I created a travel based website.  I focused on better organization of my components, splitting out the routes and containers.  Exploring more of the testing side, I added basic tests in Jest and Enzyme to show my evolving skills in unit testing.  Source code available via GitHub.",
         link: "victoria",
+        github: "victoria",
         languages: [{name:"React"}, {name: "Jest"},{name: "Enzyme"}],
         visible: true
       },
@@ -110,6 +117,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 2, 3),
         description: "This flash cards SPA is based off the Vue Basics course on Team Treehouse, expanding on the original content to add additional methods.  Source code available via GitHub.",
         link: "leavenworth-cards",
+        github: "leavenworth",
         languages: [{name:"Vue"}, {name: "Vuex"}, {name: "Jest"},{name: "Less"}],
         visible: true
       },
@@ -124,6 +132,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2018, 8, 29),
         description: "I partly based this off my more recent photo carousel projects, but used Typescript instead of Javascript.  Source code available via GitHub.",
         link: "spokane",
+        github: "spokane",
         languages: [{name:"React"}, {name: "TypeScript"}, {name: "Enzyme"}],
         visible: true
       },
@@ -138,6 +147,7 @@ export const PROJECTS = [
         updatedAt: howManyDaysAgo(2019, 1, 6),
         description: "A blog styled project capturing my 7-Day trip to Israel, this project expands on my development knowledge by including among other things, state management for components via Context.  Source code available via GitHub.",
         link: "birthright-israel",
+        github: "israel",
         languages: [{name:"React"}, {name: "Sass"}, {name: "Jest"}, {name: "Context"}, {name: "Foundation"} ],
         visible: true
       }      

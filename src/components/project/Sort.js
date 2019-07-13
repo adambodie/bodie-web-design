@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../styles/projects.scss';
+import '../../styles/sort.scss';
 
 export default class Sort extends Component {
 	constructor(props){

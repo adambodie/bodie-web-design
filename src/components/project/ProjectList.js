@@ -18,6 +18,7 @@ const ProjectList = ({projects}) => (
 					updatedAt={x.updatedAt} 
 					description={x.description} 
 					link={x.link}
+					github={x.github}
 				/>)
 			}
 			return null
