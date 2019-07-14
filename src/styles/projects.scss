@@ -1,5 +1,16 @@
 @import './imports.scss';
 
+.project {
+	border-top: 1px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	img {
+		@include center-image();
+	}
+}
+
 .btn {
 	@include gradient(black, $primary-color);
 	color: $white;
@@ -19,7 +30,6 @@ h1 {
 	width: 100%;
 	padding: 10px;
 	align-items: center;
-	box-shadow: 2px 2px 4px rgba(255,255,255,0.9);
 	.btn {
 		width: 100%;
 		height: 45px;
@@ -52,16 +62,6 @@ h1 {
 	span {
 		font-weight: bold;
 		font-size: 1.375em;
-	}
-}
-
-.project {
-	border-top: 1px solid white;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	img {
-		margin-top: 10px;
 	}
 }
 

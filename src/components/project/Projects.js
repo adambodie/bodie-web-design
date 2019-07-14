@@ -21,7 +21,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = { counter, reset, sortByTitle, sortByCreated, sortByUpdated }
 
 const Projects = ({ uniqueLanguages, projects, counter, filterList, reset, sortByTitle, titleOrder, sortByCreated, createdOrder, updatedOrder, sortByUpdated }) => (
-	<div className="container">
+	<div className="container-fluid">
 		<h1>Projects</h1>
 		<div className="row">
 		<div className="filter">

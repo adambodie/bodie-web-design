@@ -14,7 +14,8 @@ export default class Pictures extends Component {
 		this.state = {
 			data: [],
 			offset: 0,
-			modalIsOpen: false
+			modalIsOpen: false,
+			perPage: 15
 		};
 		this.openModal = this.openModal.bind(this);
 		this.closeModal = this.closeModal.bind(this);
@@ -36,7 +37,7 @@ export default class Pictures extends Component {
 			.then(response => {
 				this.setState({
 					data: response.data.reverse(),
-					pageCount: Math.ceil(response.data.length / 9)
+					pageCount: Math.ceil(response.data.length / this.state.perPage)
 				});
 			})
 			.catch(error => {
@@ -49,7 +50,7 @@ export default class Pictures extends Component {
 	
 	handlePageClick = (data) => {
 		let selected = data.selected;
-		let offset = Math.ceil(selected * 9);
+		let offset = Math.ceil(selected * this.state.perPage);
 		this.setState({offset: offset}, () => {
 			this.loadPhotos();
 		});
@@ -62,7 +63,7 @@ export default class Pictures extends Component {
 				<h1>Picture Gallery</h1>
 					<div className="row gallery">
 						{data.map((item, index) => {
-							if (index >= offset && index < offset + 9) {
+							if (index >= offset && index < offset + this.state.perPage) {
 								return(
 									<div key={index} className="photo col-md-4" onClick={()=> {this.openModal(this, index)}}>
 										<img src={`https://bodiewebdesign.com/assets/${item.image}`} alt={item.alt} className="img-fluid"/>
