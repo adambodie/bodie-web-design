@@ -1,0 +1,19 @@
+@import './imports.scss';
+
+#footer {
+	width: 100%;
+	color: $white;
+	@include gradient (black, $primary-color);
+	font-size: 1.5em;
+	margin-bottom: 0;
+	p {
+		margin-right: 10px;
+	}
+	#year {
+		margin-left: 20px;
+	}
+} 
+.navbar-bottom {
+	margin-bottom: -50px;
+	border-radius: 0;
+ }

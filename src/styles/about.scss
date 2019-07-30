@@ -1,0 +1,33 @@
+@import './imports.scss';
+
+.about {
+	padding: 20px;
+	color: white;
+}
+h4 {
+	a {
+		color:  white;
+		&:hover {
+			color: $darken;
+			text-decoration: none;
+		}
+	}
+}
+h3 {
+	text-align: center;
+}
+
+
+#adam {
+	border-radius: 100%;
+	box-shadow: 10px 10px 10px black;
+	@include center-image();
+	@include responsive();
+	float: right;
+	margin-left: 20px;
+}
+
+.contact {
+	padding: 20px;
+	color: white;
+}

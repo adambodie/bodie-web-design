@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+
+$primary-color: #5a5a5a;
+$primary-bg-color: #CAE1FF;
+$white: white;
+$darken: darken($white, 50%);
+$raleway: 'Raleway', sans-serif;
+$fjalla:  'Fjalla One', sans-serif;
+$concert-one: 'Concert One', cursive;
+
+@mixin gradient($color1, $color2) {
+	background: linear-gradient($color1, $color2);
+}
+
+@mixin center-image {
+	display: block;
+	margin: 0 auto;
+}
+
+@mixin responsive {
+	max-width: 100%;
+	height: auto;
+}
+
+@mixin flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}

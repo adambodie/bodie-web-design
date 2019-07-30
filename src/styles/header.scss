@@ -1,0 +1,53 @@
+@import './imports.scss';
+
+#topbar {
+	width: 100%;
+	border-bottom: 1px solid black;	
+	@include gradient (black, $primary-color);
+	#navbar {
+		width: 100%;
+		@include gradient(black, $primary-color);
+	}
+	img {
+		margin: 10px;
+		@include responsive();
+		height: 50px;
+	}
+	ul {
+		padding: 0;
+		text-align: center;
+		margin-top: -30px;
+		display: block;
+	}
+	li {
+		font-size: 0.8em;
+   		margin-top: 30px;
+   		padding: 10px;
+   		display: inline-block;
+   		a {
+   			color: $white;
+			text-decoration: none;
+			&:hover {
+				color: $darken;
+			}
+   		}
+	}
+}
+
+@media (min-width: 768px) {
+	#topbar {
+		ul {
+			text-align: left;
+			margin-top: 0;
+		}
+		li {
+			font-size: 1.3em;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		img {
+			height: 85px;
+		}
+	}
+
+}
