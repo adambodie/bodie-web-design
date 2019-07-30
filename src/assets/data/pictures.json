@@ -1410,6 +1410,41 @@
 		"description": "Everything's Better in Gold",
 		"location": "Medford",
 		"state": "Oregon",
-		"week": "July 2, 2019"
+		"week": "June 2, 2019"
+	}, {
+		"title": "Philly Pride",
+		"image": "img/philly-pride.jpg",
+		"description": "Love Trumps Hate in the City of Brotherly Love",
+		"location": "Philadelphia",
+		"state": "Pennsylvania",
+		"week": "June 9, 2019"
+	}, {
+		"title": "Columbia River Gorge",
+		"image": "img/columbia-gorge.jpg",
+		"description": "Oregon: The Beautful",
+		"location": "Chanticleer Point",
+		"state": "Oregon",
+		"week": "June 16, 2019"
+	}, {
+		"title": "Alvord Desert",
+		"image": "img/alvord.jpg",
+		"description": "Never chase a Lake in the Desert",
+		"location": "Alvord Desert",
+		"state": "Oregon",
+		"week": "June 23, 2019"
+	}, {
+		"title": "Cowboy Boots in Cheyenne",
+		"image": "img/cheyenne.jpg",
+		"description": "These Boots are made for Walkin' in Wyoming",
+		"location": "Cheyenne",
+		"state": "Wyoming",
+		"week": "June 30, 2019"
+	}, {
+		"title": "Happy 4th of July",
+		"image": "img/usa.jpg",
+		"description": "Celebrating our Independence",
+		"location": "Port Angeles",
+		"state": "Washington",
+		"week": "July 7, 2019"
 	}
 ]
