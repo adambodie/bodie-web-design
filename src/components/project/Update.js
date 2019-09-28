@@ -17,17 +17,21 @@ const settings = {
 	slidesToScroll: 1
 };
 const Update = ({updates}) => (
+<div className="container-fluid">
 	<div className="updates">
-		<h3>Recent Updates</h3>
-		<Slider {...settings}>
-			{updates.map((x, index) => (
-				<div className="update" key={index}>
-					<p>{index + 1}. <strong>{x.title}</strong> - {x.description}</p>
-				</div>
-				)
-			)}
-		</Slider>
+		<p style={{color: 'white'}}><strong>Newest Updates:</strong></p>
+		<div className="update-slide">
+			<Slider {...settings}>
+				{updates.map((x, index) => (
+					<div className="update" key={index}>
+						<p><strong>{x.title}</strong> - {x.description}</p>
+					</div>
+					)
+				)}
+			</Slider>
+		</div>
 	</div>
+</div>
 );
 
 export default connect(mapStateToProps)(Update)

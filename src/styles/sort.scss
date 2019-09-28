@@ -1,9 +1,0 @@
-@import './imports.scss';
-
-.sort {
-	@include flex();
-	.btn {
-		margin: 10px;
-		width: 100%;
-	}
-}

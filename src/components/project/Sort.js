@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../../styles/sort.scss';
+import '../../styles/header.scss';
 
 export default class Sort extends Component {
 	constructor(props){
@@ -22,20 +22,18 @@ export default class Sort extends Component {
 	render(){
 		const { titleOrder, createOrder, updateOrder } = this.props;
 		return (
-			<div className="col-lg-6">
-				<h3>Sort Projects</h3>
-				<div className="row">
-					<div className="col-md-4">
-						<button className="btn" onClick={this.handleSortByTitle}>Title {titleOrder}</button>
-					</div>
-					<div className="col-md-4">
-						<button className="btn" onClick={this.handleSortByCreatedDate}>Create {createOrder}</button>
-					</div>
-					<div className="col-md-4">
-						<button className="btn" onClick={this.handleSortByUpdatedDate}>Update {updateOrder}</button>
-					</div>
+			<React.Fragment>
+				<div className="option"><p><strong>Sort Projects: </strong></p></div>
+				<div className="option">
+					<button className="header-btn" onClick={this.handleSortByTitle}>Project Title {titleOrder}</button>
 				</div>
-			</div>
+				<div className="option">
+					<button className="header-btn" onClick={this.handleSortByCreatedDate}>Create Date {createOrder}</button>
+				</div>
+				<div className="option">
+					<button className="header-btn" onClick={this.handleSortByUpdatedDate}>Update Date {updateOrder}</button>
+				</div>
+			</React.Fragment>
 		)
 	}
 }

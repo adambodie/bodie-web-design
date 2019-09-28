@@ -1,7 +1,7 @@
 @import './imports.scss';
 
 .project {
-	border-top: 1px solid white;
+	border-bottom: 1px solid white;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -88,14 +88,14 @@ h1 {
 	padding: 0;
 	li {
 		list-style: none;
-		margin: 5px;
-		width: 110px;
+		margin: 3px;
+		width: 80px;
 		text-align: center;
 		text-transform: uppercase;
 		border: 1px solid white;
 		border-radius: 5px;
 		font-weight: bold;
-		font-size: 14px;
+		font-size: 10px;
 	}
 }
 
@@ -104,11 +104,18 @@ h1 {
 	visibility: visible;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 769px) {
 	.description-links {
 		padding: 0px;
 		.btn {
 			font-size: 16px;
+		}
+	}
+	.languages {
+		li {
+			margin: 5px;
+			width: 110px;
+			font-size: 14px;
 		}
 	}
 }
