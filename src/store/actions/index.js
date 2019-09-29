@@ -7,13 +7,6 @@ export function counter(text) {
 	}
 }
 
-export function reset(text) {
-	return {
-		type: types.RESET,
-		text
-	}
-}
-
 export function sortByTitle(text) {
 	return {
 		type: types.SORT_BY_TITLE,

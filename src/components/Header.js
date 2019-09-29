@@ -1,32 +1,53 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import '../styles/header.scss';
 import logo from '../assets/bodie-web-design.jpg';
-import { connect } from 'react-redux';
+import Select from './project/Select';
+import Sort from './project/Sort';
+import Update from './project/Update';
+import '../styles/projects.scss';
+import { connect } from 'react-redux'
+import { counter, sortByTitle, sortByCreated, sortByUpdated } from '../store/actions';
 
 const mapStateToProps = state => {
-	return { links: state.links };
-};
+	return {
+		projects: state.projects,
+		uniqueLanguages: state.uniqueLanguages,
+		filterList: state.filterList,
+		titleOrder: state.sortByTitle.titleOrder,
+		createdOrder: state.sortByCreated.createdOrder,
+		updatedOrder: state.sortByUpdated.updatedOrder
+	}
+}
 
-const Header = ({links}) =>  (
-	<div className="row">
+const mapDispatchToProps = { counter, sortByTitle, sortByCreated, sortByUpdated }
+
+const Header = ({ uniqueLanguages, projects, counter, filterList, sortByTitle, titleOrder, sortByCreated, createdOrder, updatedOrder, sortByUpdated }) =>  (
+	<div className="fixed-top">
 		<nav className="navbar navbar-expand-md navbar-dark bg-dark navbar-header" id="topbar">
 			<img src={logo} alt="Bodie Web Design" />
-			<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-				<span className="navbar-toggler-icon"></span>
-			</button>
 			<div className="collapse navbar-collapse" id="navbar1">
-				<ul className="navbar-nav mr-auto">
-					{links.map((x, index) => 
-						<li className="nav-item" key={index}>
-							<Link to={x.link} className="nav-link">{x.name}</Link>
-						</li>
-					)}
-				</ul>
+				<Select
+					filterList={counter}
+					uniqueLanguages={uniqueLanguages}
+					count={filterList}
+					projects={projects}
+				/>
+				<Sort
+						sortByTitle={sortByTitle}
+						titleOrder={titleOrder}
+						sortByCreatedDate={sortByCreated}
+						createOrder={createdOrder}
+						sortByUpdatedDate={sortByUpdated}
+						updateOrder={updatedOrder}
+				/>
 			</div>
+			<Update />
 		</nav>
+		
 	</div>
 );
 
-
-export default connect(mapStateToProps)(Header);
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Header)

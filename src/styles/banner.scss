@@ -8,6 +8,7 @@
 	background: black;
 	padding: 0;
 	border-bottom: 2px solid black;
+	margin-top: 85px;
 }
 
 .banner-div {
@@ -20,14 +21,14 @@
 }
 
 .slick-prev {
-	z-index: 10000;
+	z-index: 100;
 	left: 15px!important;
 	width: 30px;
 	height: 30px;
 }
 
 .slick-next {
-	z-index: 10000;
+	z-index: 100;
 	right: 15px!important;
 	width: 30px;
 	height: 30px;
@@ -37,9 +38,12 @@
 	font-size: 30px!important;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 768px) {
 	.banner, .banner-div {
 		height: 300px;
+	}
+	.banner {
+		margin-top: 110px;
 	}
 	.slick-prev {
 		left: 60px!important;

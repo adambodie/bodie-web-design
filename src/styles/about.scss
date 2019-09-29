@@ -1,10 +1,18 @@
 @import './imports.scss';
 
-.about {
-	padding: 20px;
-	color: white;
+.about-container {
+	h1 {
+		margin-top: 20px;
+	}
 }
-h4 {
+.about {
+	color: white;
+	@include center-image();
+	p {
+		padding: 10px;
+	}
+}
+p {
 	a {
 		color:  white;
 		&:hover {
@@ -13,21 +21,22 @@ h4 {
 		}
 	}
 }
-h3 {
-	text-align: center;
-}
-
 
 #adam {
 	border-radius: 100%;
 	box-shadow: 10px 10px 10px black;
 	@include center-image();
 	@include responsive();
-	float: right;
-	margin-left: 20px;
+	max-width: 300px;
 }
 
 .contact {
 	padding: 20px;
 	color: white;
+}
+
+@media (min-width: 769px) {
+	#adam {
+		margin-top: 25%;
+	}
 }

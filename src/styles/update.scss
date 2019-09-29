@@ -1,11 +1,27 @@
+@import './imports.scss';
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
 .updates {
-	width: 100%;
+	display: none;
 }
 
 .update p {
 	text-align: center;
+	color: white;
+}
+
+.update-slide {
+	width: 85%;
+}
+
+@media (min-width: 769px) {
+	.updates {
+		width: 100%;
+		display: flex;
+		p {
+			margin: 0!important;
+			font-size: 13px;
+		}
+	}
 }
