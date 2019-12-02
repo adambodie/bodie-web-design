@@ -1,8 +1,8 @@
-import React from 'react';
-import ProjectList from './ProjectList';
-import '../../styles/projects.scss';
+import React from 'react'
+import ProjectList from './ProjectList'
+import '../../styles/projects.scss'
 import { connect } from 'react-redux'
-import { counter, sortByTitle, sortByCreated, sortByUpdated } from '../../store/actions';
+import { counter, sortByTitle, sortByCreated, sortByUpdated } from '../../store/actions'
 
 const mapStateToProps = state => {
 	return {
@@ -17,8 +17,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = { counter,  sortByTitle, sortByCreated, sortByUpdated }
 
-const Projects = ({ uniqueLanguages, projects, counter, filterList, sortByTitle, titleOrder, sortByCreated, createdOrder, updatedOrder, sortByUpdated }) => (
-	<div className="container-fluid">
+const Projects = ({ projects }) => (
+	<div className='container-fluid'>
 		<h1>Projects</h1>
 		<ProjectList projects={projects} /> 
 	</div>

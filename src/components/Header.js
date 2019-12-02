@@ -1,12 +1,11 @@
-import React from 'react';
-import '../styles/header.scss';
-import logo from '../assets/bodie-web-design.jpg';
-import Select from './project/Select';
-import Sort from './project/Sort';
-import Update from './project/Update';
-import '../styles/projects.scss';
+import React from 'react'
+import '../styles/header.scss'
+import Select from './project/Select'
+import Sort from './project/Sort'
+import Update from './project/Update'
+import '../styles/projects.scss'
 import { connect } from 'react-redux'
-import { counter, sortByTitle, sortByCreated, sortByUpdated } from '../store/actions';
+import { counter, sortByTitle, sortByCreated, sortByUpdated } from '../store/actions'
 
 const mapStateToProps = state => {
 	return {
@@ -22,10 +21,10 @@ const mapStateToProps = state => {
 const mapDispatchToProps = { counter, sortByTitle, sortByCreated, sortByUpdated }
 
 const Header = ({ uniqueLanguages, projects, counter, filterList, sortByTitle, titleOrder, sortByCreated, createdOrder, updatedOrder, sortByUpdated }) =>  (
-	<div className="fixed-top">
-		<nav className="navbar navbar-expand-md navbar-dark bg-dark navbar-header" id="topbar">
-			<img src={logo} alt="Bodie Web Design" />
-			<div className="collapse navbar-collapse" id="navbar1">
+	<div className='fixed-top'>
+		<nav className='navbar navbar-expand-md navbar-dark bg-dark navbar-header' id='topbar'>
+			<img src={'/assets/bodie-web-design.jpg'} alt='Bodie Web Design' />
+			<div className='collapse navbar-collapse' id='navbar1'>
 				<Select
 					filterList={counter}
 					uniqueLanguages={uniqueLanguages}
@@ -45,7 +44,7 @@ const Header = ({ uniqueLanguages, projects, counter, filterList, sortByTitle, t
 		</nav>
 		
 	</div>
-);
+)
 
 export default connect(
 	mapStateToProps,

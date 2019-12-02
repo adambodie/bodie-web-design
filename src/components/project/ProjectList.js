@@ -1,10 +1,10 @@
-import React from 'react';
-import '../../styles/projects.scss';
-import Project from './Project';
+import React from 'react'
+import '../../styles/projects.scss'
+import Project from './Project'
 
 const ProjectList = ({projects}) => (
 	projects.map((x, index) => {
-		if (x.visible === true) {
+		if (x.visible) {
 			return (
 				<Project 
 					key={index}
@@ -25,5 +25,5 @@ const ProjectList = ({projects}) => (
 		}
 	)
 )
-export default ProjectList;
+export default ProjectList
 

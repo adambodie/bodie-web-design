@@ -1,14 +1,14 @@
 import { PROJECTS } from '../constants/projects'
 
 export const uniqueLanguages = (state = '') => {
-	const options = [];
-	const uniqueOptions = [];
-	PROJECTS.forEach((option) => options.push(...option.languages));
+	const options = []
+	const uniqueOptions = []
+	PROJECTS.forEach((option) => options.push(...option.languages))
 	options.forEach((option) => {
 		if(!uniqueOptions.includes(option.name)) {
-			uniqueOptions.push(option.name);
+			uniqueOptions.push(option.name)
 		}
 	})
-	state = uniqueOptions.sort();
+	state = uniqueOptions.sort()
 	return state
 }
